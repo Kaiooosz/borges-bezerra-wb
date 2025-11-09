@@ -9,19 +9,7 @@ import {
   Plus, Minus, Star, BarChart3, Landmark, ShieldCheck,
   Wallet, PiggyBank, GraduationCap, Search, ChevronRight
 } from "lucide-react";
-import { Source_Serif_4, Inter } from "next/font/google";
-
-const sourceSerif = Source_Serif_4({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap",  
-});
+import Image from "next/image";
 
 export default function OffshoreExpertPage() {
   const [openFaq, setOpenFaq] = useState(null);
@@ -301,9 +289,7 @@ export default function OffshoreExpertPage() {
   ];
 
   return (
-    <div 
-    className={`sfont-sans antialiased min-h-screen bg-black text-white`}
-   >
+    <div className="min-h-screen bg-black text-white font-serif">
       {/* Progress Bar */}
       <div 
         className="fixed top-0 left-0 h-1 bg-gradient-to-r from-white via-zinc-300 to-white z-50 transition-all duration-300"
@@ -330,13 +316,9 @@ export default function OffshoreExpertPage() {
             Advocacia Internacional Especializada
           </div>
 
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
-            ESTRUTURAS OFFSHORE
-            <br />
-            <span className="bg-gradient-to-r from-white via-zinc-300 to-white bg-clip-text text-transparent">
-              QUE REALMENTE FUNCIONAM
-            </span>
-          </h1>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance">
+              Estrutura Offshore <span className="italic text-zinc-400">que realmente funcionam.</span>
+            </h1>
 
           <p className="text-xl md:text-2xl text-zinc-400 max-w-4xl mx-auto leading-relaxed">
             Proteja seu patrimônio, otimize impostos e opere globalmente com segurança jurídica total. 
@@ -471,9 +453,14 @@ export default function OffshoreExpertPage() {
           </div>
 
           <div className="mt-16 h-96 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center">
-            <div className="text-center text-zinc-500">
-              <Building2 className="h-24 w-24 mx-auto mb-4 opacity-30" />
-              <p className="text-sm">[ IMAGEM: Mapa-múndi com pins nas principais jurisdições offshore ]</p>
+            <div className="">
+            <Image
+              src="/public/mapa-mundi.jpg"
+              alt="Mapa-múndi com pins nas principais jurisdições offshore"
+              width={1200}
+              height={600}
+              className="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-500"
+            />
             </div>
           </div>
         </div>

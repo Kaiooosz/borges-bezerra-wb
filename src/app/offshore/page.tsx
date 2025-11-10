@@ -455,8 +455,8 @@ export default function OffshoreExpertPage() {
           <div className="mt-16 h-96 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center">
             <div className="">
             <Image
-              src="/public/mapa-mundi.jpg"
-              alt="Mapa-múndi com pins nas principais jurisdições offshore"
+              src="/public/mapa.jpg"
+              alt="Mapa-múndi jurisdições offshore"
               width={1200}
               height={600}
               className="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-500"
@@ -536,7 +536,7 @@ export default function OffshoreExpertPage() {
             <p className="text-zinc-400 mb-8">Estruturas offshore profissionais desde 2016</p>
             <div className="space-y-2 text-sm text-zinc-400">
               <p>contato@borgesbezerra.com.br</p>
-              <p>+55 (11) 99999-9999</p>
+              <p>+55 (11) 94366-5367</p>
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-white/10 text-center text-sm text-zinc-500">

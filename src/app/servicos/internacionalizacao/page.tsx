@@ -259,8 +259,6 @@ export default function InternacionalizacaoPage() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }

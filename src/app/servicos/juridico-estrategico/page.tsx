@@ -238,8 +238,6 @@ export default function JuridicoEstrategicoPage() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }

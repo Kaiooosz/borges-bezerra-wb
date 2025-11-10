@@ -93,14 +93,14 @@ export function LeadMagnet() {
                       className="bg-black/50 border-white/10 text-white placeholder:text-zinc-600 focus:border-white/30"
                     />
                   </div>
-                  <Button
+                  {/* <Button
                     type="submit"
                     className="w-full bg-white text-black hover:bg-zinc-200"
                     size="lg"
                   >
                     Baixar ebook gratuito
                     <Download className="ml-2 h-4 w-4" />
-                  </Button>
+                  </Button> */}
                   <p className="text-xs text-zinc-600 text-center">
                     Seus dados estão protegidos e não serão compartilhados
                   </p>

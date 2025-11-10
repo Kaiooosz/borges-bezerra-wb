@@ -321,8 +321,6 @@ export default function LegalGrowthPage() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }

@@ -265,8 +265,6 @@ export default function PlanejamentoPatrimonialPage() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }

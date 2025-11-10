@@ -263,8 +263,6 @@ export default function ContenciosoPage() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }

@@ -262,8 +262,6 @@ export default function CriptoFintechsPage() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }

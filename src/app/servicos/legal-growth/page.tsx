@@ -200,7 +200,7 @@ export default function LegalGrowthPage() {
                       key={problem}
                       className="flex items-start gap-3 text-muted-foreground"
                     >
-                      <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0" />
+                      <div className="w-2 h-2 bg-red-400 rounded-full mt-2 shrink-0" />
                       <span>{problem}</span>
                     </li>
                   ))}
@@ -281,7 +281,7 @@ export default function LegalGrowthPage() {
                     transition={{ duration: 0.4, delay: index * 0.05 }}
                     className="flex items-start gap-3 p-4 bg-card rounded-lg border border-border"
                   >
-                    <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-6 h-6 text-green-400 shrink-0 mt-0.5" />
                     <span className="text-foregroung">{item}</span>
                   </motion.div>
                 ))}

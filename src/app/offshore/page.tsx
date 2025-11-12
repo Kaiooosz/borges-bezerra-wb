@@ -304,10 +304,10 @@ export default function OffshoreExpertPage() {
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" />
         </div>
 
-        <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 text-center space-y-8">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 text-center space-y-8 mt-20">
           <div className="mb-12 flex justify-center">
             <div className="h-32 w-32 bg-white/10 rounded-lg border border-white/20 flex items-center justify-center backdrop-blur-sm">
-              <Building2 className="h-16 w-16 text-foregroung" />
+              <Building2 className="h-16 w-16 text-white" />
             </div>
           </div>
 

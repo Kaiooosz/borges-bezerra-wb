@@ -63,11 +63,11 @@ const services = [
 
 export function Services() {
   return (
-    <section id="servicos" className="py-16 sm:py-20 md:py-24 bg-black">
+    <section id="servicos" className="py-16 sm:py-20 md:py-24 bg-backgroud">
       <div className="mx-auto px-4 sm:px-6">
         {/* Section header */}
         <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foregroung mb-4">
             Nossas especialidades
           </h2>
           <p className="text-base sm:text-lg text-zinc-400">
@@ -84,15 +84,15 @@ export function Services() {
               return (
                 <Card
                   key={index}
-                  className="p-6 bg-zinc-900/50 border border-white/10 hover:bg-zinc-900 hover:border-white/20 transition-all duration-300 h-full group flex flex-col"
+                  className="p-6 bg-zinc-900/50 border border-border hover:bg-zinc-900 hover:border-white/20 transition-all duration-300 h-full group flex flex-col"
                 >
                   <div className="mb-4">
-                    <Icon className="w-10 h-10 text-white group-hover:scale-110 transition-transform" />
+                    <Icon className="w-10 h-10 text-foregroung group-hover:scale-110 transition-transform" />
                   </div>
-                  <h3 className="font-serif text-xl text-white mb-3 leading-tight">
+                  <h3 className="font-serif text-xl text-foregroung mb-3 leading-tight">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-zinc-400 leading-relaxed flex-grow">
+                  <p className="text-sm text-zinc-400 leading-relaxed grow">
                     {service.description}
                   </p>
                 </Card>

@@ -79,7 +79,7 @@ const expertise = [
 
 export default function CriptoFintechsPage() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-backgroud">
       <Header />
 
       <main>
@@ -94,11 +94,11 @@ export default function CriptoFintechsPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-sm text-white mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-sm text-foregroung mb-6">
                 <Bitcoin className="w-4 h-4" />
                 <span>Cripto, Fintechs e Regulação</span>
               </div>
-              <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white mb-6 text-balance">
+              <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-foregroung mb-6 text-balance">
                 Compliance e estruturação para o{" "}
                 <span className="font-bold">mercado cripto</span>
               </h1>
@@ -131,7 +131,7 @@ export default function CriptoFintechsPage() {
               transition={{ duration: 0.6 }}
               className="text-center mb-12"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-white mb-4">
+              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-4">
                 Nossa Expertise em Cripto
               </h2>
             </motion.div>
@@ -146,10 +146,10 @@ export default function CriptoFintechsPage() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <Card className="p-6 bg-card border-border text-center h-full">
-                    <div className="text-4xl font-serif text-white mb-3">
+                    <div className="text-4xl font-serif text-foregroung mb-3">
                       {item.year}
                     </div>
-                    <h3 className="font-serif text-lg text-white mb-2">
+                    <h3 className="font-serif text-lg text-foregroung mb-2">
                       {item.title}
                     </h3>
                     <p className="text-muted-foreground text-sm">
@@ -175,8 +175,8 @@ export default function CriptoFintechsPage() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <Card className="p-8 bg-card border-border hover:border-white/30 transition-all duration-300 h-full">
-                    <service.icon className="w-12 h-12 text-white mb-6" />
-                    <h3 className="font-serif text-2xl text-white mb-3">
+                    <service.icon className="w-12 h-12 text-foregroung mb-6" />
+                    <h3 className="font-serif text-2xl text-foregroung mb-3">
                       {service.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -199,7 +199,7 @@ export default function CriptoFintechsPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-white mb-12 text-center">
+              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-12 text-center">
                 Soluções Completas para Cripto
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
@@ -213,7 +213,7 @@ export default function CriptoFintechsPage() {
                     className="flex items-start gap-3 p-4 bg-card rounded-lg border border-border"
                   >
                     <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                    <span className="text-white">{solution}</span>
+                    <span className="text-foregroung">{solution}</span>
                   </motion.div>
                 ))}
               </div>
@@ -231,7 +231,7 @@ export default function CriptoFintechsPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-white mb-6">
+              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-6">
                 Regularize e estruture seu projeto cripto
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
@@ -253,7 +253,7 @@ export default function CriptoFintechsPage() {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10 bg-transparent"
+                  className="border-white text-foregroung hover:bg-white/10 bg-transparent"
                 >
                   <Link href="/servicos">Ver Outros Serviços</Link>
                 </Button>

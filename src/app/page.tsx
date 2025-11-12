@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-backgroud">
       <Header />
       <main>
         <AnimatedHero />
@@ -17,7 +17,6 @@ export default function Home() {
         <ContactForm />
         <FAQ />
       </main>
-      <Footer />
     </div>
   )
 }

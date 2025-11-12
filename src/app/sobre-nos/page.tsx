@@ -131,12 +131,12 @@ export default function SobreNosPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white font-serif">
+    <div className="min-h-screen bg-backgroud text-foregroung font-serif">
       <Header />
 
       {/* Hero Section - Aparece imediatamente fixo no topo */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
 
         <div className="relative z-10 px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
@@ -155,7 +155,7 @@ export default function SobreNosPage() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 md:py-32 border-t border-white/10">
+      <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
           <motion.div {...fadeInUp} className="max-w-4xl mx-auto space-y-8">
             <h2 className="font-serif text-3xl md:text-5xl text-center text-balance">
@@ -166,7 +166,7 @@ export default function SobreNosPage() {
             <div className="grid md:grid-cols-2 gap-6 pt-8">
               <motion.div
                 {...fadeInUp}
-                className="p-8 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-colors"
+                className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors"
               >
                 <h3 className="font-serif text-xl mb-4">O que fazemos</h3>
                 <p className="text-zinc-400 leading-relaxed">
@@ -178,7 +178,7 @@ export default function SobreNosPage() {
 
               <motion.div
                 {...fadeInUp}
-                className="p-8 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-colors"
+                className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors"
               >
                 <h3 className="font-serif text-xl mb-4">Nossa missão</h3>
                 <p className="text-zinc-400 leading-relaxed">
@@ -193,7 +193,7 @@ export default function SobreNosPage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 md:py-32 border-t border-white/10">
+      <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-5xl mb-4 text-balance">
@@ -213,9 +213,9 @@ export default function SobreNosPage() {
               <motion.div
                 key={index}
                 {...fadeInUp}
-                className="p-8 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-all group"
+                className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all group"
               >
-                <service.icon className="h-10 w-10 mb-4 text-white group-hover:scale-110 transition-transform" />
+                <service.icon className="h-10 w-10 mb-4 text-foregroung group-hover:scale-110 transition-transform" />
                 <h3 className="font-serif text-xl mb-3">{service.title}</h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">
                   {service.description}
@@ -227,7 +227,7 @@ export default function SobreNosPage() {
       </section>
 
       {/* Differentials Section */}
-      <section className="py-20 md:py-32 border-t border-white/10">
+      <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-5xl mb-4 text-balance">
@@ -243,7 +243,7 @@ export default function SobreNosPage() {
               <motion.div
                 key={index}
                 {...fadeInUp}
-                className="p-6 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-colors text-center"
+                className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors text-center"
               >
                 <div className="text-4xl mb-4">{item.icon}</div>
                 <h3 className="font-serif text-lg mb-2">{item.title}</h3>
@@ -255,7 +255,7 @@ export default function SobreNosPage() {
       </section>
 
       {/* Ecosystem Section */}
-      <section className="py-20 md:py-32 border-t border-white/10">
+      <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
           <motion.div {...fadeInUp} className="max-w-4xl mx-auto space-y-12">
             <div className="text-center space-y-4">
@@ -273,7 +273,7 @@ export default function SobreNosPage() {
                 <motion.div
                   key={index}
                   {...fadeInUp}
-                  className="p-6 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-colors"
+                  className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors"
                 >
                   <h3 className="font-serif text-lg mb-2">{company.name}</h3>
                   <p className="text-zinc-400 text-sm">{company.description}</p>
@@ -292,7 +292,7 @@ export default function SobreNosPage() {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-20 md:py-32 border-t border-white/10">
+      <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
           <motion.div
             {...fadeInUp}
@@ -301,7 +301,7 @@ export default function SobreNosPage() {
             <h2 className="font-serif text-3xl md:text-5xl text-balance">
               Nossa filosofia
             </h2>
-            <blockquote className="text-2xl md:text-3xl font-serif italic text-zinc-300 text-balance">
+            <blockquote className="text-2xl md:text-3xl font-serif italic --ring text-balance">
               "O BBLAW não vende documentos — entrega caminhos."
             </blockquote>
             <p className="text-lg text-zinc-400 text-pretty">
@@ -322,8 +322,6 @@ export default function SobreNosPage() {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

@@ -25,7 +25,7 @@ const holdingTypes = [
 
 export function HoldingTypes() {
   return (
-    <section id="types" className="py-20 md:py-32 border-t border-white/10">
+    <section id="types" className="py-20 md:py-32 border-t border-border">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Tipos de Holdings</h2>
@@ -38,13 +38,13 @@ export function HoldingTypes() {
           {holdingTypes.map((type, index) => (
             <div
               key={index}
-              className="p-8 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
+              className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
             >
               <h3 className="text-2xl font-bold mb-3">{type.title}</h3>
               <p className="text-zinc-400 mb-6 leading-relaxed">{type.description}</p>
               <ul className="space-y-2">
                 {type.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-zinc-300 text-sm">
+                  <li key={idx} className="flex items-start gap-3 --ring text-sm">
                     <div className="w-2 h-2 rounded-full bg-white mt-2 flex-shrink-0" />
                     <span>{feature}</span>
                   </li>

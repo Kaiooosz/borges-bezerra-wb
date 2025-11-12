@@ -106,7 +106,7 @@ export default function ArtigosPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-backgroud text-foregroung">
       <Header />
 
       {/* Hero Section */}
@@ -130,7 +130,7 @@ export default function ArtigosPage() {
       </section>
 
       {/* Categories Filter */}
-      {/* } <section className="py-8 border-t border-white/10 sticky top-[140px] bg-black/95 backdrop-blur-sm z-40">
+      {/* } <section className="py-8 border-t border-border sticky top-[140px] bg-backgroud/95 backdrop-blur-sm z-40">
         <div className=" px-4">
           <motion.div {...fadeInUp} className="flex flex-wrap items-center justify-center gap-3 max-w-5xl mx-auto">
             {categories.map((category, index) => (
@@ -141,7 +141,7 @@ export default function ArtigosPage() {
                 className={
                   index === 0
                     ? "bg-white text-black hover:bg-zinc-200"
-                    : "border-white/20 text-zinc-300 hover:bg-white/10 bg-transparent"
+                    : "border-white/20 --ring hover:bg-white/10 bg-transparent"
                 }
               >
                 {category}
@@ -152,7 +152,7 @@ export default function ArtigosPage() {
       </section> */}
 
       {/* Featured Article */}
-      <section className="py-20 md:py-32 border-t border-white/10">
+      <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
           <motion.div {...fadeInUp} className="max-w-6xl mx-auto">
             <div className="mb-8">
@@ -167,7 +167,7 @@ export default function ArtigosPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="relative aspect-[16/10] rounded-lg overflow-hidden bg-white/5 border border-white/10"
+                className="relative aspect-[16/10] rounded-lg overflow-hidden bg-white/5 border border-border"
               >
                 <img
                   src={featuredArticle.image || "/placeholder.svg"}
@@ -222,7 +222,7 @@ export default function ArtigosPage() {
       </section>
 
       {/* Articles Grid */}
-      <section className="py-20 md:py-32 border-t border-white/10">
+      <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-5xl mb-4 text-balance">
@@ -238,7 +238,7 @@ export default function ArtigosPage() {
               <motion.article
                 key={index}
                 {...fadeInUp}
-                className="group bg-white/5 border border-white/10 rounded-lg overflow-hidden hover:bg-white/10 transition-all"
+                className="group bg-white/5 border border-border rounded-lg overflow-hidden hover:bg-white/10 transition-all"
               >
                 <Link href={`/artigos/${article.slug}`}>
                   <div className="relative aspect-[16/10] overflow-hidden bg-white/5">
@@ -260,7 +260,7 @@ export default function ArtigosPage() {
                       </div>
                     </div>
 
-                    <h3 className="font-serif text-xl leading-tight group-hover:text-zinc-300 transition-colors text-balance">
+                    <h3 className="font-serif text-xl leading-tight group-hover:--ring transition-colors text-balance">
                       {article.title}
                     </h3>
 
@@ -283,7 +283,7 @@ export default function ArtigosPage() {
             <Button
               variant="outline"
               size="lg"
-              className="border-white/20 text-white hover:bg-white/10 bg-transparent"
+              className="border-white/20 text-foregroung hover:bg-white/10 bg-transparent"
             >
               Carregar mais artigos
             </Button>
@@ -292,7 +292,7 @@ export default function ArtigosPage() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="py-20 md:py-32 border-t border-white/10">
+      <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
           <motion.div
             {...fadeInUp}
@@ -311,7 +311,7 @@ export default function ArtigosPage() {
               <Input
                 type="email"
                 placeholder="Seu melhor e-mail"
-                className="h-12 bg-white/5 border-white/10 text-white placeholder:text-zinc-500 focus:border-white/30"
+                className="h-12 bg-white/5 border-border text-foregroung placeholder:text--chart-1 focus:border-white/30"
               />
               <Button
                 size="lg"
@@ -321,7 +321,7 @@ export default function ArtigosPage() {
               </Button>
             </div>
 
-            <p className="text-xs text-zinc-500">
+            <p className="text-xs text--chart-1">
               Enviamos apenas conteúdo de valor. Sem spam. Cancele quando
               quiser.
             </p>

@@ -104,9 +104,9 @@ export default function HoldingPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-black text-white font-serif">
+    <div className="min-h-screen bg-backgroud text-foregroung font-serif">
       <div
-        className="fixed top-0 left-0 h-1 bg-white/30 z-50 transition-all duration-300"
+        className="fixed top-0 left-0 h-1 --muted-foregroun z-50 transition-all duration-300"
         style={{ width: `${scrollProgress}%` }}
       />
 
@@ -115,7 +115,7 @@ export default function HoldingPage() {
 
       {/* HERO SECTION */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
 
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 left-10 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" />
@@ -151,7 +151,7 @@ export default function HoldingPage() {
                 Agendar Consultoria Paga ($125)
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="px-8 py-4 border-2 border-white text-white rounded-full hover:bg-white/10 transition-all font-semibold hover:scale-105 duration-300">
+              <button className="px-8 py-4 border-2 border-white text-foregroung rounded-full hover:bg-white/10 transition-all font-semibold hover:scale-105 duration-300">
                 Baixar Guia Completo
               </button>
             </div>
@@ -160,7 +160,7 @@ export default function HoldingPage() {
       </section>
 
       {/* BENEFITS SECTION */}
-      <section id="benefits" className="py-20 md:py-32 border-t border-white/10">
+      <section id="benefits" className="py-20 md:py-32 border-t border-border">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Por que criar uma holding?</h2>
@@ -173,9 +173,9 @@ export default function HoldingPage() {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="p-8 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-300 group hover:shadow-xl hover:scale-105"
+                className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 group hover:shadow-xl hover:scale-105"
               >
-                <benefit.icon className="h-10 w-10 mb-4 text-white group-hover:scale-110 transition-transform" />
+                <benefit.icon className="h-10 w-10 mb-4 text-foregroung group-hover:scale-110 transition-transform" />
                 <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">{benefit.description}</p>
               </div>
@@ -185,7 +185,7 @@ export default function HoldingPage() {
       </section>
 
       {/* TYPES SECTION */}
-      <section id="types" className="py-20 md:py-32 border-t border-white/10">
+      <section id="types" className="py-20 md:py-32 border-t border-border">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Tipos de Holdings</h2>
@@ -198,14 +198,14 @@ export default function HoldingPage() {
             {holdingTypes.map((type, index) => (
               <div
                 key={index}
-                className="p-8 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
+                className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
               >
                 <h3 className="text-2xl font-bold mb-3">{type.title}</h3>
                 <p className="text-zinc-400 mb-6 leading-relaxed">{type.description}</p>
                 <ul className="space-y-2">
                   {type.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-zinc-300 text-sm">
-                      <div className="w-2 h-2 rounded-full bg-white mt-2 flex-shrink-0" />
+                    <li key={idx} className="flex items-start gap-3 --ring text-sm">
+                      <div className="w-2 h-2 rounded-full bg-white mt-2 shrink-0" />
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -217,7 +217,7 @@ export default function HoldingPage() {
       </section>
 
       {/* PROCESS SECTION */}
-      <section id="process" className="py-20 md:py-32 border-t border-white/10">
+      <section id="process" className="py-20 md:py-32 border-t border-border">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Nosso processo de implementação</h2>
@@ -230,9 +230,9 @@ export default function HoldingPage() {
             {processSteps.map((step, index) => (
               <div
                 key={index}
-                className="relative p-8 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
+                className="relative p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
               >
-                <div className="text-5xl font-bold text-white/10 mb-4">{step.number}</div>
+                <div className="text-5xl font-bold text-foregroung/10 mb-4">{step.number}</div>
                 <h3 className="text-xl font-bold mb-3">{step.title}</h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">{step.description}</p>
               </div>
@@ -242,19 +242,19 @@ export default function HoldingPage() {
       </section>
 
       {/* STATS SECTION */}
-      <section className="py-20 md:py-32 border-t border-white/10">
+      <section className="py-20 md:py-32 border-t border-border">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="p-8 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
-              <div className="text-5xl font-bold text-white mb-3">10+</div>
+            <div className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
+              <div className="text-5xl font-bold text-foregroung mb-3">10+</div>
               <p className="text-zinc-400">Anos de Experiência</p>
             </div>
-            <div className="p-8 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
-              <div className="text-5xl font-bold text-white mb-3">500+</div>
+            <div className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
+              <div className="text-5xl font-bold text-foregroung mb-3">500+</div>
               <p className="text-zinc-400">Holdings Estruturadas</p>
             </div>
-            <div className="p-8 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
-              <div className="text-5xl font-bold text-white mb-3">R$ 2B+</div>
+            <div className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
+              <div className="text-5xl font-bold text-foregroung mb-3">R$ 2B+</div>
               <p className="text-zinc-400">em Patrimônio Protegido</p>
             </div>
           </div>
@@ -262,7 +262,7 @@ export default function HoldingPage() {
       </section>
 
       {/* CTA SECTION */}
-      <section id="contact" className="py-20 md:py-32 border-t border-white/10">
+      <section id="contact" className="py-20 md:py-32 border-t border-border">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center space-y-8">
             <h2 className="text-3xl md:text-5xl font-bold text-balance">
@@ -275,20 +275,20 @@ export default function HoldingPage() {
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               <a
                 href="mailto:contato@borgesbezerra.com.br"
-                className="p-6 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:scale-105"
+                className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:scale-105"
               >
-                <Mail className="w-6 h-6 text-white mx-auto mb-3" />
-                <h3 className="font-bold text-white mb-2">Email</h3>
+                <Mail className="w-6 h-6 text-foregroung mx-auto mb-3" />
+                <h3 className="font-bold text-foregroung mb-2">Email</h3>
                 <p className="text-zinc-400 text-sm">contato@borgesbezerra.com.br</p>
               </a>
 
               <a
-                href="tel:+5511999999999"
-                className="p-6 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:scale-105"
+                href="tel:+551194366-5367"
+                className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:scale-105"
               >
-                <Phone className="w-6 h-6 text-white mx-auto mb-3" />
-                <h3 className="font-bold text-white mb-2">Telefone</h3>
-                <p className="text-zinc-400 text-sm">+55 (11) 99999-9999</p>
+                <Phone className="w-6 h-6 text-foregroung mx-auto mb-3" />
+                <h3 className="font-bold text-foregroung mb-2">Telefone</h3>
+                <p className="text-zinc-400 text-sm">+55 (11) 94366-5367</p>
               </a>
             </div>
 
@@ -299,9 +299,6 @@ export default function HoldingPage() {
           </div>
         </div>
       </section>
-
-      {/* FOOTER */}
-      <Footer />
     </div>
   )
 }

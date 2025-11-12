@@ -79,7 +79,7 @@ const approach = [
 
 export default function ContenciosoPage() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-backgroud">
       <Header />
 
       <main>
@@ -94,11 +94,11 @@ export default function ContenciosoPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-sm text-white mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-sm text-foregroung mb-6">
                 <TrendingUp className="w-4 h-4" />
                 <span>Contencioso Estratégico</span>
               </div>
-              <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white mb-6 text-balance">
+              <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-foregroung mb-6 text-balance">
                 Defesa patrimonial{" "}
                 <span className="font-bold">agressiva e estratégica</span>
               </h1>
@@ -133,8 +133,8 @@ export default function ContenciosoPage() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <Card className="p-8 bg-card border-border hover:border-white/30 transition-all duration-300 h-full">
-                    <service.icon className="w-12 h-12 text-white mb-6" />
-                    <h3 className="font-serif text-2xl text-white mb-3">
+                    <service.icon className="w-12 h-12 text-foregroung mb-6" />
+                    <h3 className="font-serif text-2xl text-foregroung mb-3">
                       {service.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -157,7 +157,7 @@ export default function ContenciosoPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-white mb-12 text-center">
+              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-12 text-center">
                 Nossa Expertise em Contencioso
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
@@ -171,7 +171,7 @@ export default function ContenciosoPage() {
                     className="flex items-start gap-3 p-4 bg-card rounded-lg border border-border"
                   >
                     <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                    <span className="text-white">{item}</span>
+                    <span className="text-foregroung">{item}</span>
                   </motion.div>
                 ))}
               </div>
@@ -189,7 +189,7 @@ export default function ContenciosoPage() {
               transition={{ duration: 0.6 }}
               className="text-center mb-12"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-white mb-4">
+              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-4">
                 Nossa Abordagem
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -207,10 +207,10 @@ export default function ContenciosoPage() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <Card className="p-6 bg-card border-border h-full">
-                    <div className="text-4xl font-serif text-white/20 mb-4">
+                    <div className="text-4xl font-serif text-foregroung/20 mb-4">
                       0{index + 1}
                     </div>
-                    <h3 className="font-serif text-xl text-white mb-3">
+                    <h3 className="font-serif text-xl text-foregroung mb-3">
                       {item.title}
                     </h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">
@@ -233,7 +233,7 @@ export default function ContenciosoPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-white mb-6">
+              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-6">
                 Proteja seu patrimônio agora
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
@@ -254,7 +254,7 @@ export default function ContenciosoPage() {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10 bg-transparent"
+                  className="border-white text-foregroung hover:bg-white/10 bg-transparent"
                 >
                   <Link href="/servicos">Ver Outros Serviços</Link>
                 </Button>

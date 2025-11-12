@@ -42,18 +42,18 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section className="py-24 px-4 bg-zinc-950">
+    <section className="py-24 px-4 bg-backgroud">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-12">
-            <div className="inline-flex p-4 rounded-lg bg-white/5 mb-6">
-              <HelpCircle className="h-8 w-8 text-white" />
+            <div className="inline-flex p-4 rounded-lg bg--chart-4 mb-6">
+              <HelpCircle className="h-8 w-8 text-foregroung" />
             </div>
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-white mb-4 tracking-tight">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-foregroung mb-4 tracking-tight">
               Perguntas frequentes
             </h2>
-            <p className="text-base sm:text-lg text-zinc-400 leading-relaxed">
+            <p className="text-base sm:text-lg text--chart-1 leading-relaxed">
               Respostas para as dúvidas mais comuns sobre nossos serviços
             </p>
           </div>
@@ -64,12 +64,11 @@ export function FAQ() {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-zinc-900/50 border border-white/10 rounded-lg px-6 data-[state=open]:bg-zinc-900"
-              >
-                <AccordionTrigger className="text-left text-white hover:text-zinc-300 py-6 text-base md:text-lg font-serif">
+                className="bg-zinc-900/50 border border-border rounded-lg px-6 data-[state=open]:bg-backgroud">
+                <AccordionTrigger className="text-left text-foregroung hover:--ring py-6 text-base md:text-lg font-serif">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-zinc-400 leading-relaxed pb-6">
+                <AccordionContent className="text--chart-1 leading-relaxed pb-6">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

@@ -25,7 +25,7 @@ const processSteps = [
 
 export function ProcessSteps() {
   return (
-    <section id="process" className="py-20 md:py-32 border-t border-white/10">
+    <section id="process" className="py-20 md:py-32 border-t border-border">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Nosso processo de implementação</h2>
@@ -38,9 +38,9 @@ export function ProcessSteps() {
           {processSteps.map((step, index) => (
             <div
               key={index}
-              className="relative p-8 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
+              className="relative p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
             >
-              <div className="text-5xl font-bold text-white/10 mb-4">{step.number}</div>
+              <div className="text-5xl font-bold text-foregroung/10 mb-4">{step.number}</div>
               <h3 className="text-xl font-bold mb-3">{step.title}</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">{step.description}</p>
             </div>

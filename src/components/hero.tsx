@@ -41,7 +41,7 @@ export function Hero() {
               Agendar Consultoria Paga ($125)
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="px-8 py-4 border-2 border-white text-white rounded-full hover:bg-white/10 transition-all font-semibold hover:scale-105 duration-300">
+            <button className="px-8 py-4 border-2 border-white text-foregroung rounded-full hover:bg-white/10 transition-all font-semibold hover:scale-105 duration-300">
               Baixar Guia Completo
             </button>
           </div>

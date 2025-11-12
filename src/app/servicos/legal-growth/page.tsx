@@ -80,13 +80,13 @@ const deliverables = [
 
 export default function LegalGrowthPage() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-backgroud">
       <Header />
 
       <main>
         {/* Hero Section */}
         <section className="pt-32 pb-16 relative overflow-hidden">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
 
           <div className=" relative z-10 px-4">
             <motion.div
@@ -95,10 +95,10 @@ export default function LegalGrowthPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <div className="inline-block px-4 py-2 bg-white/10 rounded-full text-sm text-white mb-6">
+              <div className="inline-block px-4 py-2 bg-white/10 rounded-full text-sm text-foregroung mb-6">
                 Exclusivo para Infoprodutores e Lançadores
               </div>
-              <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white mb-6 text-balance">
+              <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-foregroung mb-6 text-balance">
                 Do que adianta faturar{" "}
                 <span className="font-bold">7 dígitos</span> se você está
                 pagando{" "}
@@ -140,14 +140,14 @@ export default function LegalGrowthPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-white mb-8 text-center">
+              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-8 text-center">
                 O Problema Real
               </h2>
 
               <Card className="p-8 md:p-10 bg-card border-border mb-8">
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-4">
+                    <h3 className="text-xl font-bold text-foregroung mb-4">
                       Simples Nacional
                     </h3>
                     <p className="text-muted-foreground mb-4">
@@ -163,7 +163,7 @@ export default function LegalGrowthPage() {
                   </div>
 
                   <div className="border-l-2 border-white/20 pl-8">
-                    <h3 className="text-xl font-bold text-white mb-4">
+                    <h3 className="text-xl font-bold text-foregroung mb-4">
                       Com Legal Growth
                     </h3>
                     <p className="text-muted-foreground mb-4">
@@ -181,7 +181,7 @@ export default function LegalGrowthPage() {
                 </div>
 
                 <div className="mt-8 pt-8 border-t border-white/20 text-center">
-                  <p className="text-3xl font-bold text-white">
+                  <p className="text-3xl font-bold text-foregroung">
                     Economia de R$ 373.276,80
                   </p>
                   <p className="text-xl text-green-400 mt-2">
@@ -191,7 +191,7 @@ export default function LegalGrowthPage() {
               </Card>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-white flex items-center gap-2">
+                <h3 className="text-xl font-bold text-foregroung flex items-center gap-2">
                   Além dos impostos, você enfrenta:
                 </h3>
                 <ul className="space-y-3">
@@ -220,7 +220,7 @@ export default function LegalGrowthPage() {
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-white mb-4">
+              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-4">
                 Os 5 Pilares do Legal Growth
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -239,8 +239,8 @@ export default function LegalGrowthPage() {
                   className={index === 4 ? "md:col-span-2 lg:col-span-1" : ""}
                 >
                   <Card className="p-8 h-full bg-card border-border hover:border-white/30 transition-all duration-300">
-                    <pillar.icon className="w-12 h-12 text-white mb-6" />
-                    <h3 className="font-serif text-xl text-white mb-2">
+                    <pillar.icon className="w-12 h-12 text-foregroung mb-6" />
+                    <h3 className="font-serif text-xl text-foregroung mb-2">
                       {pillar.title}
                     </h3>
                     <p className="text-sm text-green-400 mb-4 font-semibold">
@@ -249,7 +249,7 @@ export default function LegalGrowthPage() {
                     <p className="text-muted-foreground mb-4 leading-relaxed">
                       {pillar.description}
                     </p>
-                    <p className="text-white font-semibold">{pillar.benefit}</p>
+                    <p className="text-foregroung font-semibold">{pillar.benefit}</p>
                   </Card>
                 </motion.div>
               ))}
@@ -267,7 +267,7 @@ export default function LegalGrowthPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-white mb-12 text-center">
+              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-12 text-center">
                 O que você vai receber
               </h2>
 
@@ -282,7 +282,7 @@ export default function LegalGrowthPage() {
                     className="flex items-start gap-3 p-4 bg-card rounded-lg border border-border"
                   >
                     <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                    <span className="text-white">{item}</span>
+                    <span className="text-foregroung">{item}</span>
                   </motion.div>
                 ))}
               </div>
@@ -300,7 +300,7 @@ export default function LegalGrowthPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-white mb-6">
+              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-6">
                 Até 90% menos impostos e muito mais segurança jurídica
               </h2>
               <p className="text-xl text-muted-foreground mb-8">

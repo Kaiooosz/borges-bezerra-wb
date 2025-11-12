@@ -37,7 +37,7 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section id="benefits" className="py-20 md:py-32 border-t border-white/10">
+    <section id="benefits" className="py-20 md:py-32 border-t border-border">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Por que criar uma holding?</h2>
@@ -50,9 +50,9 @@ export function Benefits() {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="p-8 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-300 group hover:shadow-xl hover:scale-105"
+              className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 group hover:shadow-xl hover:scale-105"
             >
-              <benefit.icon className="h-10 w-10 mb-4 text-white group-hover:scale-110 transition-transform" />
+              <benefit.icon className="h-10 w-10 mb-4 text-foregroung group-hover:scale-110 transition-transform" />
               <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">{benefit.description}</p>
             </div>

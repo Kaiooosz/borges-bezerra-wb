@@ -41,7 +41,7 @@ export function AnimatedHero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="space-y-4 md:space-y-6"
           >
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white leading-tight text-balance px-4">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-foregroung leading-tight text-balance px-4">
               Transformamos{" "}
               <span className="italic text-muted-foreground">
                 complexidades
@@ -77,7 +77,7 @@ export function AnimatedHero() {
               asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white/10 text-base bg-transparent w-full sm:w-auto"
+              className="border-white text-foregroung hover:bg-white/10 text-base bg-transparent w-full sm:w-auto"
             >
               <Link href="/servicos">Conhecer Serviços</Link>
             </Button>

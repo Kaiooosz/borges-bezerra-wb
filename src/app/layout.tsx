@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import "@/styles/global.css";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
@@ -42,9 +43,16 @@ export default function RootLayout({
       <body
         className={`${sourceSerif.variable} ${inter.variable} font-sans antialiased`}
       >
+<ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
         <Header />
         {children}
         <Footer />
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>

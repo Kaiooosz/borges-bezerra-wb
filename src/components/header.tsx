@@ -82,6 +82,10 @@ export function Header() {
               Offshore
             </Link>
 
+            <Link href="/artigos" className="text-sm --ring hover:text-foregroung transition-colors">
+              Artigos
+            </Link>
+
             <Link href="/contact" className="text-sm --ring hover:text-foregroung transition-colors">
               Contato
             </Link>

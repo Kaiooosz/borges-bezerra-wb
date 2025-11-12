@@ -111,7 +111,7 @@ export default function ArtigosPage() {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
 
         <div className=" relative z-10 px-4">
           <motion.div
@@ -167,7 +167,7 @@ export default function ArtigosPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="relative aspect-[16/10] rounded-lg overflow-hidden bg-white/5 border border-border"
+                className="relative aspect-16/10 rounded-lg overflow-hidden bg-white/5 border border-border"
               >
                 <img
                   src={featuredArticle.image || "/placeholder.svg"}
@@ -241,7 +241,7 @@ export default function ArtigosPage() {
                 className="group bg-white/5 border border-border rounded-lg overflow-hidden hover:bg-white/10 transition-all"
               >
                 <Link href={`/artigos/${article.slug}`}>
-                  <div className="relative aspect-[16/10] overflow-hidden bg-white/5">
+                  <div className="relative aspect-16/10 overflow-hidden bg-white/5">
                     <img
                       src={article.image || "/placeholder.svg"}
                       alt={article.title}
@@ -328,8 +328,6 @@ export default function ArtigosPage() {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

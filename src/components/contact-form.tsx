@@ -1,7 +1,6 @@
 "use client";
 
 import type React from "react";
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -17,16 +16,49 @@ export function ContactForm() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // 🔗 URL do seu Webhook Bitrix24
+  const webhookURL =
+    "https://bblaw.bitrix24.com.br/rest/21/wrvpxyzxcwnov1xf/crm.lead.add.json";
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would integrate with your form service
-    console.log("Contact form submission:", formData);
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({ name: "", email: "", phone: "", message: "" });
-    }, 3000);
+    setLoading(true);
+
+    try {
+      const response = await fetch(webhookURL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          fields: {
+            TITLE: "Novo contato via site",
+            NAME: formData.name,
+            EMAIL: [{ VALUE: formData.email, VALUE_TYPE: "WORK" }],
+            PHONE: [{ VALUE: formData.phone, VALUE_TYPE: "WORK" }],
+            COMMENTS: formData.message,
+            SOURCE_DESCRIPTION: "Formulário de contato do site institucional",
+          },
+          params: { REGISTER_SONET_EVENT: "Y" },
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.result) {
+        setSubmitted(true);
+        setFormData({ name: "", email: "", phone: "", message: "" });
+        setTimeout(() => setSubmitted(false), 4000);
+      } else {
+        alert("Ocorreu um erro ao enviar o formulário. Tente novamente.");
+        console.error("Erro Bitrix:", data);
+      }
+    } catch (error) {
+      console.error("Erro de conexão:", error);
+      alert("Erro de conexão. Verifique sua internet e tente novamente.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (
@@ -62,7 +94,9 @@ export function ContactForm() {
                 <div className="inline-flex p-4 rounded-full bg-green-500/10 mb-4">
                   <Send className="h-8 w-8 text-green-500" />
                 </div>
-                <h3 className="text-2xl text-foregroung mb-2">Mensagem enviada!</h3>
+                <h3 className="text-2xl text-foregroung mb-2">
+                  Mensagem enviada!
+                </h3>
                 <p className="text--chart-4">Entraremos em contato em breve.</p>
               </div>
             ) : (
@@ -149,9 +183,10 @@ export function ContactForm() {
                     type="submit"
                     className="flex-1 bg-white text-black hover:bg-zinc-200"
                     size="lg"
+                    disabled={loading}
                   >
-                    Enviar mensagem
-                    <Send className="ml-2 h-4 w-4" />
+                    {loading ? "Enviando..." : "Enviar mensagem"}
+                    {!loading && <Send className="ml-2 h-4 w-4" />}
                   </Button>
                   <Button
                     type="button"

@@ -129,28 +129,6 @@ export default function ArtigosPage() {
         </div>
       </section>
 
-      {/* Categories Filter */}
-      {/* } <section className="py-8 border-t border-border sticky top-[140px] bg-backgroud/95 backdrop-blur-sm z-40">
-        <div className=" px-4">
-          <motion.div {...fadeInUp} className="flex flex-wrap items-center justify-center gap-3 max-w-5xl mx-auto">
-            {categories.map((category, index) => (
-              <Button
-                key={index}
-                variant={index === 0 ? "default" : "outline"}
-                size="sm"
-                className={
-                  index === 0
-                    ? "bg-white text-black hover:bg-zinc-200"
-                    : "border-white/20 --ring hover:bg-white/10 bg-transparent"
-                }
-              >
-                {category}
-              </Button>
-            ))}
-          </motion.div>
-        </div>
-      </section> */}
-
       {/* Featured Article */}
       <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
@@ -210,7 +188,7 @@ export default function ArtigosPage() {
                   size="lg"
                   className="bg-white text-black hover:bg-zinc-200"
                 >
-                  <Link href={`/artigos/${featuredArticle.slug}`}>
+                  <Link href="/artigos/guia">
                     Ler artigo completo
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>

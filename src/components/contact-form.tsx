@@ -20,7 +20,7 @@ export function ContactForm() {
 
   // 🔗 URL do seu Webhook Bitrix24
   const webhookURL =
-    "https://bblaw.bitrix24.com.br/rest/37/gexzxip6uycclp7j/crm.contact.add.json";
+    "https://bblaw.bitrix24.com.br/rest/37/gexzxip6uycclp7j/crm.lead.add.json?NAME%3DformData.name%252C%2520%252F%252F%2520Nome%2520do%2520contato%26PHONE%3D%2520%255B%257B%2520VALUE%253A%2520formData.phone%252C%2520VALUE_TYPE%253A%2520%2522WORK%2522%2520%257D%255D%252C%2520%252F%252F%2520Telefone%26EMAIL%3D%255B%257B%2520VALUE%253A%2520formData.email%252C%2520VALUE_TYPE%253A%2520%2522WORK%2522%2520%257D%255D%252C%2520%252F%252F%2520E-mail%26COMMENTS%3DformData.message%252C%2520%252F%252F%2520Coment%25C3%25A1rios";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -32,7 +32,6 @@ export function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           fields: {
-            TITLE: "Novo contato via site",
             NAME: formData.name,
             EMAIL: [{ VALUE: formData.email, VALUE_TYPE: "WORK" }],
             PHONE: [{ VALUE: formData.phone, VALUE_TYPE: "WORK" }],

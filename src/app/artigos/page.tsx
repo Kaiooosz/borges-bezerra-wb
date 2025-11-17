@@ -28,7 +28,6 @@ export default function ArtigosPage() {
       "Descubra as melhores jurisdições, estratégias tributárias e passos práticos para criar sua holding offshore de forma segura e eficiente.",
     category: "Planejamento Patrimonial",
     date: "15 de Janeiro, 2025",
-    readTime: "12 min",
     image: "/modern-office-building-international-business.jpg",
     slug: "guia-holding-internacional-2025",
   };
@@ -40,7 +39,6 @@ export default function ArtigosPage() {
         "Entenda como obter residência fiscal no Paraguai e os benefícios tributários para empresários e investidores brasileiros.",
       category: "Internacionalização",
       date: "10 de Janeiro, 2025",
-      readTime: "8 min",
       image: "/paraguay-asuncion-skyline.jpg",
       slug: "residencia-fiscal-paraguai",
     },
@@ -50,7 +48,6 @@ export default function ArtigosPage() {
         "Análise completa das novas regras tributárias para criptomoedas no Brasil e estratégias de compliance para investidores.",
       category: "Cripto & Tributação",
       date: "5 de Janeiro, 2025",
-      readTime: "10 min",
       image: "/cryptocurrency-bitcoin-digital-finance.jpg",
       slug: "criptomoedas-tributacao-2025",
     },
@@ -60,7 +57,6 @@ export default function ArtigosPage() {
         "Passo a passo para obter licença MSB (Money Services Business) nos Estados Unidos e operar legalmente no mercado americano.",
       category: "Fintechs & Regulação",
       date: "28 de Dezembro, 2024",
-      readTime: "15 min",
       image: "/fintech-usa-financial-technology.jpg",
       slug: "msb-eua-licenca-fintech",
     },
@@ -70,7 +66,6 @@ export default function ArtigosPage() {
         "Conheça as principais estratégias jurídicas para proteger seu patrimônio de riscos empresariais e sucessórios.",
       category: "Planejamento Patrimonial",
       date: "20 de Dezembro, 2024",
-      readTime: "7 min",
       image: "/wealth-protection-legal-strategy.jpg",
       slug: "protecao-patrimonial-estrategias",
     },
@@ -80,7 +75,6 @@ export default function ArtigosPage() {
         "Tudo sobre abrir empresa em Dubai: custos, benefícios fiscais, vistos e processo de abertura bancária nos Emirados Árabes.",
       category: "Internacionalização",
       date: "15 de Dezembro, 2024",
-      readTime: "12 min",
       image: "/dubai-business-skyline-uae.jpg",
       slug: "offshore-dubai-brasileiros",
     },
@@ -90,7 +84,6 @@ export default function ArtigosPage() {
         "Como estruturar juridicamente seu negócio digital, reduzir impostos e escalar com segurança no mercado de infoprodutos.",
       category: "Jurídico Estratégico",
       date: "10 de Dezembro, 2024",
-      readTime: "9 min",
       image: "/digital-business-online-education.jpg",
       slug: "legal-growth-infoprodutores",
     },
@@ -171,7 +164,6 @@ export default function ArtigosPage() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="h-4 w-4" />
-                    <span>{featuredArticle.readTime}</span>
                   </div>
                 </div>
 
@@ -234,7 +226,6 @@ export default function ArtigosPage() {
                       </span>
                       <div className="flex items-center gap-1">
                         <Clock className="h-3 w-3" />
-                        <span>{article.readTime}</span>
                       </div>
                     </div>
 

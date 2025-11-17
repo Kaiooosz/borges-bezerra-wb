@@ -306,14 +306,20 @@ export default function OffshoreExpertPage() {
 
         <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 text-center space-y-8 mt-20">
           <div className="mb-12 flex justify-center">
-            <div className="h-32 w-32 bg-white/10 rounded-lg border border-white/20 flex items-center justify-center backdrop-blur-sm">
-              <Building2 className="h-16 w-16 text-white" />
+          <div className="mb-12 flex justify-center">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="h-48 w-auto opacity-90 drop-shadow-2xl"
+              >
+                <source
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Animac%CC%A7a%CC%83o%20logo-fj6CGOTzhzrRYqVrNCXk6nZpFllLH3.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </div>
-          </div>
-
-          <div className="inline-block px-6 py-2 bg-white/10 border border-white/20 rounded-full text-sm font-semibold mb-6 backdrop-blur-sm">
-            <Shield className="inline h-4 w-4 mr-2" />
-            Advocacia Internacional Especializada
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance">
@@ -452,11 +458,69 @@ export default function OffshoreExpertPage() {
             </div>
           </div>
 
-          <div className="mt-16 h-96 bg-white/5 border border-border rounded-2xl flex items-center justify-center">
+<div className="text-center mb-40 mt-42 ">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6">
+            Jurisdições
+            Exclusivas em
+              <br />
+              <span className="italic text-zinc-400">obertura Global</span>
+            </h2>
+            {/* <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
+              Não é sobre sonegação. É sobre inteligência patrimonial e liberdade financeira global.
+            </p> */}
+          </div>
+
+{/* <Link href="/" className="flex items-center gap-3">
+            <div className="shrink-0">
+              <img 
+                src="/LogoBranco.svg" 
+                alt="BB Logo" 
+                className="h-14 w-14 md:h-16 md:w-16"
+              />
+            </div> 
+          </Link> */}
+
+          <div className="mt-42 h-96 bg-white/5 border border-border rounded-2xl flex items-center justify-center">
             <div className="">
             <Image
-              src="/public/mapa.jpg"
-              alt="Mapa-múndi jurisdições offshore"
+              src="/image-caribe.jpg"
+              alt="caribe"
+              width={1200}
+              height={600}
+              className="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-500"
+            />
+            </div>
+          </div>
+          
+          <div className="mt-42 h-96 bg-white/5 border border-border rounded-2xl flex items-center justify-center">
+            <div className="">
+            <Image
+              src="/image-europa.jpg"
+              alt="europa"
+              width={1200}
+              height={600}
+              className="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-500"
+            />
+            </div>
+          </div>
+
+          <div className="mt-42 h-96 bg-white/5 border border-border rounded-2xl flex items-center justify-center">
+            <div className="">
+            <Image
+              src="/image-asia.jpg"
+              alt="asia"
+              width={1200}
+              height={600}
+              className="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-500"
+            />
+            </div>
+          </div>
+
+          <div className="mt-42 h-96 bg-white/5 border border-border rounded-2xl flex items-center justify-center">
+            <div className="">
+            <Image
+              src="/image-sul-africa.jpg"
+              alt="america do sul e africa"
               width={1200}
               height={600}
               className="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-500"

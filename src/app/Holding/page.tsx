@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react"
 import { Shield, Building2, TrendingUp, ArrowRight, Mail, Phone, Users, Lock, FileText } from "lucide-react"
 import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
+import { Download } from 'lucide-react';
 
 export default function HoldingPage() {
   const [scrollProgress, setScrollProgress] = useState(0)
@@ -23,6 +23,16 @@ export default function HoldingPage() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  const handleDownload = () => {
+    // Cria um link temporário
+    const link = document.createElement('a');
+    link.href = 'public/BBLAW_AP.pdf';
+    link.download = 'Guia_Completo_Offshore.pdf'; // Nome do arquivo ao baixar
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   const benefits = [
     {
@@ -151,9 +161,13 @@ export default function HoldingPage() {
                 Agendar Consultoria Paga ($125)
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="px-8 py-4 border-2 border-white text-foregroung rounded-full hover:bg-white/10 transition-all font-semibold hover:scale-105 duration-300">
-                Baixar Guia Completo
-              </button>
+              <button 
+    onClick={handleDownload}
+    className="px-8 py-4 border-2 border-white text-foreground rounded-full hover:bg-white/10 transition-all font-semibold hover:scale-105 duration-300 flex items-center justify-center gap-2"
+  >
+    Baixar Guia Completo
+    <Download className="h-5 w-5" />
+  </button>
             </div>
           </div>
         </div>

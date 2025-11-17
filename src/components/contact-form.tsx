@@ -20,7 +20,7 @@ export function ContactForm() {
 
   // 🔗 URL do seu Webhook Bitrix24
   const webhookURL =
-    "https://bblaw.bitrix24.com.br/rest/21/wrvpxyzxcwnov1xf/crm.lead.add.json";
+    "https://bblaw.bitrix24.com.br/rest/37/gexzxip6uycclp7j/crm.contact.add.json";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

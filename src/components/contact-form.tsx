@@ -32,6 +32,7 @@ export function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           fields: {
+            TITLE: formData.name, // Nome do lead
             NAME: formData.name,
             EMAIL: [{ VALUE: formData.email, VALUE_TYPE: "WORK" }],
             PHONE: [{ VALUE: formData.phone, VALUE_TYPE: "WORK" }],

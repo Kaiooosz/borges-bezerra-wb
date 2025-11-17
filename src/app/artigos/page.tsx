@@ -218,7 +218,7 @@ export default function ArtigosPage() {
                 {...fadeInUp}
                 className="group bg-white/5 border border-border rounded-lg overflow-hidden hover:bg-white/10 transition-all"
               >
-                <Link href={`/artigos/${article.slug}`}>
+                <Link href={`/artigos/artigos-completos`}>
                   <div className="relative aspect-16/10 overflow-hidden bg-white/5">
                     <img
                       src={article.image || "/placeholder.svg"}

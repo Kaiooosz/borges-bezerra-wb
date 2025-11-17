@@ -88,7 +88,7 @@ export function ContactForm() {
           </div>
 
           {/* Form */}
-          <Card className="bg-zinc-900/50 border-border p-6 md:p-8 lg:p-12">
+          <Card className="bg--chart-4 border-border p-6 md:p-8 lg:p-12">
             {submitted ? (
               <div className="text-center py-12">
                 <div className="inline-flex p-4 rounded-full bg-green-500/10 mb-4">
@@ -181,7 +181,7 @@ export function ContactForm() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button
                     type="submit"
-                    className="flex-1 bg-white text-black hover:bg-zinc-200"
+                    className="flex-1 bg-chart-4 text-black hover:bg-zinc-200"
                     size="lg"
                     disabled={loading}
                   >
@@ -192,7 +192,7 @@ export function ContactForm() {
                     type="button"
                     asChild
                     variant="outline"
-                    className="flex-1 border-white/20 text-foregroung hover:bg-white/10 bg-transparent"
+                    className="flex-1 border-white/20 text-foregroung hover:bg-white/10 bg-chart-5"
                     size="lg"
                   >
                     <a

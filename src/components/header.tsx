@@ -20,7 +20,7 @@ export function Header() {
   }, [])
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-backgroud backdrop-blur-sm border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-backgroud backdrop-blur-sm border-b border-border font-serif">
       <div
         className="fixed top-0 left-0 h-1 --muted-foregroun z-50 transition-all duration-300"
         style={{ width: `${scrollProgress}%` }}
@@ -28,7 +28,7 @@ export function Header() {
       {/* Top bar with contact info */}
       <div className="border-b border-border">
         <div className="mx-auto px-4 py-2">
-          <div className="flex flex-wrap items-center justify-between gap-4 text-xs md:text-sm text-zinc-400">
+          <div className="flex flex-wrap items-center justify-between gap-4 text-xs md:text-sm text-chart-1">
             <div className="flex flex-wrap items-center gap-4 md:gap-6">
               <a href="tel:+5511943665367" className="flex items-center gap-2 hover:text-foregroung transition-colors">
                 <Phone className="h-3 w-3" />

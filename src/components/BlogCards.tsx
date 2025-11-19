@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
 
-const BlogCard = ({ title, date, author, excerpt, fullContent }: any) => {
+const BlogCard = ({ image, title, date, author, excerpt, fullContent }: any) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -11,7 +11,7 @@ const BlogCard = ({ title, date, author, excerpt, fullContent }: any) => {
         {/* Imagem */}
         <div className="relative h-64 overflow-hidden">
           <img 
-            src="/bb-simbolo.png" 
+            src={image} 
             alt={title}
             className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
           />
@@ -19,24 +19,24 @@ const BlogCard = ({ title, date, author, excerpt, fullContent }: any) => {
 
         {/* Conteúdo */}
         <div className="p-6 flex flex-col grow">
-          <h3 className="text-xl font-bold bg-foregroud mb-3 line-clamp-3 hover:text-chart-2 transition-colors">
+          <h3 className="text-xl font-bold text-foreground mb-3 line-clamp-3 hover:text-primary transition-colors">
             {title}
           </h3>
 
-          <p className="bg-foregroud text-sm mb-4 line-clamp-2 grow">
+          <p className="text-muted-foreground text-sm mb-4 line-clamp-2 grow">
             {excerpt}
           </p>
 
           {/* Footer do Card */}
-          <div className="flex items-center justify-between pt-4 border-t border-chart-04">
-            <div className="text-xs text-chart-02">
+          <div className="flex items-center justify-between pt-4 border-t border-border">
+            <div className="text-xs text-muted-foreground">
               <p>{date}</p>
-              <p className="font-semibold text-foreground">Por: {author}</p>
+              <p className="font-semibold text-gray-700">Por: {author}</p>
             </div>
 
             <button
               onClick={() => setIsOpen(true)}
-              className="px-6 py-2 bg-muted-foreground text-background rounded-full hover:bg-primary transition-all font-semibold text-sm hover:scale-105 shadow-md"
+              className="px-6 py-2 bg-chart-4 text-black rounded-full hover:bg-chart-2 transition-all font-semibold text-sm hover:scale-105 shadow-md"
             >
               Ver Mais
             </button>
@@ -46,26 +46,26 @@ const BlogCard = ({ title, date, author, excerpt, fullContent }: any) => {
 
       {/* Modal da Matéria Completa */}
       {isOpen && (
-        <div className="fixed inset-0 bg-background backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fadeIn">
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fadeIn">
           <div className="bg-background rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-slideUp">
             {/* Header do Modal */}
-            <div className="sticky top-0 bg-background border-b border-gray-200 px-8 py-6 flex items-center justify-between rounded-t-3xl">
+            <div className="sticky top-0 bg-chart-5 border-b border-border px-8 py-6 flex items-center justify-between rounded-t-3xl">
               <div>
-                <p className="text-sm text-chart-02 mb-1">{date}</p>
-                <p className="text-sm font-semibold text-background">Por: {author}</p>
+                <p className="text-sm text-muted-foreground mb-1">{date}</p>
+                <p className="text-sm font-semibold text-foreground">Por: {author}</p>
               </div>
               <button
                 onClick={() => setIsOpen(false)}
                 className="p-2 hover:bg-gray-100 rounded-full transition-colors"
               >
-                <X className="h-6 w-6 bg-foregroud" />
+                <X className="h-6 w-6 text-gray-600" />
               </button>
             </div>
 
             {/* Imagem Principal */}
             <div className="relative h-96 overflow-hidden">
               <img 
-                src="/bb-simbolo.png"
+                src={image} 
                 alt={title}
                 className="w-full h-full object-cover"
               />
@@ -73,11 +73,11 @@ const BlogCard = ({ title, date, author, excerpt, fullContent }: any) => {
 
             {/* Conteúdo da Matéria */}
             <div className="px-8 py-8">
-              <h1 className="text-4xl font-bold text-chart-1 mb-6">
+              <h1 className="text-4xl font-bold text-gray-900 mb-6">
                 {title}
               </h1>
 
-              <div className="prose prose-lg max-w-none text-chart-3 leading-relaxed">
+              <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                 {fullContent}
               </div>
 
@@ -85,7 +85,7 @@ const BlogCard = ({ title, date, author, excerpt, fullContent }: any) => {
               <div className="mt-8 pt-6 border-t border-gray-200 flex justify-center">
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="px-8 py-3 bg-muted-foreground text-white rounded-full hover:bg-border transition-all font-semibold"
+                  className="px-8 py-3 bg-gray-800 text-white rounded-full hover:bg-gray-900 transition-all font-semibold"
                 >
                   Fechar Matéria
                 </button>
@@ -128,11 +128,11 @@ const BlogCard = ({ title, date, author, excerpt, fullContent }: any) => {
 export default function BlogCards() {
   const posts = [
     {
-      image: "/bb-simbolo.png",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
       title: "Onde operar tráfego pago sem o novo imposto de 2026: 6 jurisdições estratégicas",
       excerpt: "Descubra as melhores jurisdições para operar seu negócio digital sem o impacto do novo imposto de 2026...",
       date: "05/11/2025",
-      author: "Bezzera borges",
+      author: "Bezerra Borges",
       fullContent: (
         <>
           <p className="mb-4">
@@ -160,11 +160,11 @@ export default function BlogCards() {
       )
     },
     {
-      image: "/bb-simbolo.png",
+      image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&q=80",
       title: "Como abrir empresa no Reino Unido (Inglaterra): rápido, sem burocracia e 100% legal",
       excerpt: "Guia completo para estabelecer sua empresa no Reino Unido de forma rápida e totalmente legal...",
       date: "30/10/2025",
-      author: "Lucas correia",
+      author: "Bezerra Borges",
       fullContent: (
         <>
           <p className="mb-4">
@@ -188,15 +188,15 @@ export default function BlogCards() {
       )
     },
     {
-      image: "/bb-simbolo.png",
+      image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80",
       title: "Empresário brasileiro que levou sua empresa e sua família para Dubai revela bastidores da internacionalização",
       excerpt: "Conheça a história inspiradora de um empresário brasileiro que transformou sua vida com a internacionalização...",
       date: "28/10/2025",
-      author: "Bezzera borges",
+      author: "Bezerra Borges",
       fullContent: (
         <>
           <p className="mb-4">
-            Em entrevista exclusiva ao podcast da Bezzera borges, o empresário João Silva revela os desafios, conquistas e aprendizados de sua jornada de internacionalização.
+            Em entrevista exclusiva ao podcast da Bezerra Borges, o empresário João Silva revela os desafios, conquistas e aprendizados de sua jornada de internacionalização.
           </p>
           <h2 className="text-2xl font-bold mt-8 mb-4">O Início da Jornada</h2>
           <p className="mb-4">
@@ -219,12 +219,12 @@ export default function BlogCards() {
   ];
 
   return (
-    <div className="min-h-screen bg-linear-to-br bg-backgroud mb-80 mt-40 py-16 px-4 font-serif">
+    <div className="min-h-screen bg-linear-to-br bg-background py-16 px-13 mt-40 mb-24 font-serif">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-5xl font-bold text-center mb-4 text-foreground">
           Últimos Posts
         </h1>
-        <p className="text-center bg-foregroud mb-12 max-w-2xl mx-auto text-chart-03">
+        <p className="text-center text-chart-2 mb-12 max-w-2xl mx-auto">
           Fique por dentro das últimas novidades sobre estruturação internacional, offshores e proteção patrimonial
         </p>
 

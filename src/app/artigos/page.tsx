@@ -86,6 +86,36 @@ export default function ArtigosPage() {
       date: "10 de Dezembro, 2024",
       image: "/digital-business-online-education.jpg",
       slug: "legal-growth-infoprodutores",
+    }, 
+
+     // mais paginas carragadas
+
+    {
+      title: "Como abrir empresa no Reino Unido (Inglaterra): rápido, sem burocracia e 100% legal",
+      excerpt:
+        "Tudo sobre abrir empresa na Inglaterra: custos, benefícios fiscais, vistos e processo de abertura bancária no Reino Unido.",
+      category: "Internacionalização",
+      date: "11 de Novembro, 2025",
+      image: "/mapa.jpg",
+      slug: "offshore-dubai-brasileiros",
+    },
+    {
+      title: "Offshore em Dubai: Guia Completo para Brasileiros",
+      excerpt:
+        "Tudo sobre abrir empresa em Dubai: custos, benefícios fiscais, vistos e processo de abertura bancária nos Emirados Árabes.",
+      category: "Internacionalização",
+      date: "15 de Dezembro, 2024",
+      image: "/dubai-business-skyline-uae.jpg",
+      slug: "offshore-dubai-brasileiros",
+    },
+    {
+      title: "Offshore em Dubai: Guia Completo para Brasileiros",
+      excerpt:
+        "Tudo sobre abrir empresa em Dubai: custos, benefícios fiscais, vistos e processo de abertura bancária nos Emirados Árabes.",
+      category: "Internacionalização",
+      date: "15 de Dezembro, 2024",
+      image: "/dubai-business-skyline-uae.jpg",
+      slug: "offshore-dubai-brasileiros",
     },
   ];
 

@@ -96,25 +96,25 @@ export default function ArtigosPage() {
         "Tudo sobre abrir empresa na Inglaterra: custos, benefícios fiscais, vistos e processo de abertura bancária no Reino Unido.",
       category: "Internacionalização",
       date: "11 de Novembro, 2025",
+      image: "/big-ben.jpg",
+      slug: "offshore-dubai-brasileiros",
+    },
+    {
+      title: "Singapura: por que essa é uma das jurisdições offshore mais eficientes para empresas com foco na Ásia",
+      excerpt:
+        "Singapura não é apenas um polo financeiro, mas um hub global de comércio, tecnologia e inovação. Sua posição estratégica entre China, Índia e Sudeste Asiático torna o país um ponto de conexão essencial para operações que envolvem importação, exportação, licenciamento ou gestão de ativos intangíveis.",
+      category: "Internacionalização",
+      date: "09 de Outubro, 2025",
+      image: "/singapura.jpg",
+      slug: "offshore-dubai-brasileiros",
+    },
+    {
+      title: "Offshore em Dubai: Guia Completo para Brasileiros",
+      excerpt:
+        "Tudo sobre abrir empresa em Dubai: custos, benefícios fiscais, vistos e processo de abertura bancária nos Emirados Árabes.",
+      category: "Internacionalização",
+      date: "22 de março, 2025",
       image: "/mapa.jpg",
-      slug: "offshore-dubai-brasileiros",
-    },
-    {
-      title: "Offshore em Dubai: Guia Completo para Brasileiros",
-      excerpt:
-        "Tudo sobre abrir empresa em Dubai: custos, benefícios fiscais, vistos e processo de abertura bancária nos Emirados Árabes.",
-      category: "Internacionalização",
-      date: "15 de Dezembro, 2024",
-      image: "/dubai-business-skyline-uae.jpg",
-      slug: "offshore-dubai-brasileiros",
-    },
-    {
-      title: "Offshore em Dubai: Guia Completo para Brasileiros",
-      excerpt:
-        "Tudo sobre abrir empresa em Dubai: custos, benefícios fiscais, vistos e processo de abertura bancária nos Emirados Árabes.",
-      category: "Internacionalização",
-      date: "15 de Dezembro, 2024",
-      image: "/dubai-business-skyline-uae.jpg",
       slug: "offshore-dubai-brasileiros",
     },
   ];

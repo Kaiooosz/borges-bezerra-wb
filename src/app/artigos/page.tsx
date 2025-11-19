@@ -109,12 +109,12 @@ export default function ArtigosPage() {
       slug: "offshore-dubai-brasileiros",
     },
     {
-      title: "Offshore em Dubai: Guia Completo para Brasileiros",
+      title: "Como abrir empresa na Irlanda: Do visto ao imposto de 12,5% – Guia Completo",
       excerpt:
-        "Tudo sobre abrir empresa em Dubai: custos, benefícios fiscais, vistos e processo de abertura bancária nos Emirados Árabes.",
+        "A Irlanda não é apenas um destino turístico na Europa Ocidental, ela tem um papel central no cenário econômico global. Com um dos impostos corporativos mais baixos da União Europeia, políticas de incentivo à inovação e uma posição estratégica pós-Brexit, o país atrai desde grandes multinacionais e até startups em busca de crescimento internacional. Além disso, a reputação sólida como centro financeiro e tecnológico faz da Irlanda um ponto de entrada confiável para quem deseja expandir negócios e acessar capital europeu.",
       category: "Internacionalização",
       date: "22 de março, 2025",
-      image: "/mapa.jpg",
+      image: "/irlanda.jpg",
       slug: "offshore-dubai-brasileiros",
     },
   ];

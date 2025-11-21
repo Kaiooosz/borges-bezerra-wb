@@ -51,7 +51,7 @@ export default function GuiaOffshorePage() {
               'Conclusão'
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-3 p-3 bg-card rounded-lg border border-border hover:border-primary transition-colors">
-                <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                <CheckCircle className="h-5 w-5 text-primary shrink-0" />
                 <span className="text-sm">{item}</span>
               </div>
             ))}
@@ -139,7 +139,7 @@ export default function GuiaOffshorePage() {
               'Dolarização segura do patrimônio'
             ].map((item, index) => (
               <li key={index} className="flex items-start gap-3">
-                <ArrowRight className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                <ArrowRight className="h-5 w-5 text-primary shrink-0 mt-1" />
                 <span className="text-muted-foreground">{item}</span>
               </li>
             ))}
@@ -322,7 +322,7 @@ export default function GuiaOffshorePage() {
           <ul className="space-y-2">
             {jurisdiction.benefits.map((benefit, idx) => (
               <li key={idx} className="flex items-start gap-2 text-muted-foreground">
-                <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <span>{benefit}</span>
               </li>
             ))}
@@ -368,7 +368,7 @@ export default function GuiaOffshorePage() {
             ].map((phase) => (
               <div key={phase.step} className="p-6 bg-card rounded-lg border border-border">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-xl shrink-0">
                     {phase.step}
                   </div>
                   <h3 className="font-bold text-2xl pt-2">{phase.title}</h3>

@@ -7,9 +7,6 @@ export default function GuiaOffshorePage() {
       {/* Hero Section */}
       <section className="relative py-20 px-4 border-b border-border">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-block px-4 py-2 mb-6 text-sm font-semibold bg-primary/10 text-primary rounded-full">
-            GUIA COMPLETO 2025
-          </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             Como Estruturar uma Holding Internacional & Soluções Offshore Avançadas
           </h1>
@@ -65,7 +62,7 @@ export default function GuiaOffshorePage() {
       {/* Introdução */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">1. Introdução</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Introdução</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p>
               Na economia global de 2025, não existe crescimento corporativo ou preservação patrimonial sem uma estratégia internacional. A volatilidade política, o aumento de regulamentações e a elevação da carga tributária tornam a internacionalização um pilar central para negócios digitais, investidores e empresas globais.
@@ -83,7 +80,7 @@ export default function GuiaOffshorePage() {
       {/* O que é Holding */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">2. O que é uma Holding Internacional?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">O que é uma Holding Internacional?</h2>
           <p className="text-lg text-muted-foreground mb-8">
             É uma empresa-mãe sediada em uma jurisdição fiscalmente vantajosa, criada para:
           </p>
@@ -114,7 +111,7 @@ export default function GuiaOffshorePage() {
       {/* O que é Offshore */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">3. O que é uma Empresa Offshore?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">O que é uma Empresa Offshore?</h2>
           <p className="text-lg text-muted-foreground mb-8">
             Uma offshore é uma empresa registrada em país estrangeiro que oferece:
           </p>
@@ -153,7 +150,7 @@ export default function GuiaOffshorePage() {
       {/* Por que 2025 */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">4. Por que 2025 é o Melhor Momento?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Por que 2025 é o Melhor Momento?</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               'Crescimento da economia digital',
@@ -183,150 +180,164 @@ export default function GuiaOffshorePage() {
 
       {/* Benefícios Estratégicos */}
       <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">5. Benefícios Estratégicos de uma Estrutura Offshore</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              { num: '1', title: 'Diversificação Internacional', desc: 'Proteção contra riscos políticos de um único país' },
-              { num: '2', title: 'Proteção Patrimonial Avançada', desc: 'Blindagem jurídica contra litígios e credores' },
-              { num: '3', title: 'Otimização Tributária', desc: 'Redução legal de impostos em âmbito global' },
-              { num: '4', title: 'Confidencialidade', desc: 'Privacidade sobre sócios, ativos e movimentações' },
-              { num: '5', title: 'Acesso a Mercados Globais', desc: 'Plataformas e bancos restritos no Brasil' },
-              { num: '6', title: 'Compliance Simplificado', desc: 'Regulamentação mais leve e clara' },
-              { num: '7', title: 'Eficiência Operacional', desc: 'Processos ágeis e estruturas flexíveis' },
-              { num: '8', title: 'Consolidação Patrimonial', desc: 'Imóveis, cripto, participações em uma holding' },
-              { num: '9', title: 'Planejamento Sucessório', desc: 'Transição rápida, privada e eficiente' },
-              { num: '10', title: 'Flexibilidade Jurídica', desc: 'Regimes contratuais mais favoráveis' }
-            ].map((benefit) => (
-              <div key={benefit.num} className="p-6 bg-card rounded-lg border border-border hover:border-primary transition-colors">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold flex-shrink-0">
-                    {benefit.num}
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg mb-2">{benefit.title}</h3>
-                    <p className="text-sm text-muted-foreground">{benefit.desc}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+      Benefícios Estratégicos de uma Estrutura Offshore
+    </h2>
+
+    <div className="grid md:grid-cols-2 gap-6">
+      {[
+        { title: 'Diversificação Internacional', desc: 'Proteção contra riscos políticos de um único país' },
+        { title: 'Proteção Patrimonial Avançada', desc: 'Blindagem jurídica contra litígios e credores' },
+        { title: 'Otimização Tributária', desc: 'Redução legal de impostos em âmbito global' },
+        { title: 'Confidencialidade', desc: 'Privacidade sobre sócios, ativos e movimentações' },
+        { title: 'Acesso a Mercados Globais', desc: 'Plataformas e bancos restritos no Brasil' },
+        { title: 'Compliance Simplificado', desc: 'Regulamentação mais leve e clara' },
+        { title: 'Eficiência Operacional', desc: 'Processos ágeis e estruturas flexíveis' },
+        { title: 'Consolidação Patrimonial', desc: 'Imóveis, cripto, participações em uma holding' },
+        { title: 'Planejamento Sucessório', desc: 'Transição rápida, privada e eficiente' },
+        { title: 'Flexibilidade Jurídica', desc: 'Regimes contratuais mais favoráveis' }
+      ].map((benefit, idx) => (
+        <div
+          key={idx}
+          className="p-6 bg-card rounded-lg border border-border hover:border-primary transition-colors"
+        >
+          <div className="flex items-start gap-4">
+            <div className="w-2 h-2 bg-primary/10 text-primary rounded-full flex items-center justify-center font-bold shrink-0 mt-3">
+              {/* Ícone opcional ou deixe vazio */}
+            </div>
+            <div>
+              <h3 className="font-bold text-lg mb-2">{benefit.title}</h3>
+              <p className="text-sm text-muted-foreground">{benefit.desc}</p>
+            </div>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Para quem é recomendada */}
       <section className="py-16 px-4 bg-muted/30">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">6. Para Quem é Recomendada uma Offshore?</h2>
-          <div className="p-6 bg-primary/10 rounded-lg border border-primary/20 mb-8">
-            <p className="text-lg font-semibold">
-              Critério inicial: Negócios faturando acima de R$ 500 mil/ano já se beneficiam fortemente.
-            </p>
-          </div>
-          
-          <h3 className="text-2xl font-bold mb-6">Segmentos mais beneficiados:</h3>
-          <div className="space-y-6">
-            {[
-              { 
-                title: '1. Negócios Digitais', 
-                items: ['Ecommerce internacional', 'Agências', 'SaaS', 'Produtos digitais', 'Infoprodutores'] 
-              },
-              { 
-                title: '2. Profissionais Liberais Internacionais', 
-                items: ['Consultores', 'Médicos', 'Advogados', 'Mentores', 'Arquitetos'] 
-              },
-              { 
-                title: '3. Empresas Multinacionais', 
-                items: ['Proteção IP', 'Consolidação fiscal', 'Expansão global'] 
-              },
-              { 
-                title: '4. Investidores & Empresários', 
-                items: ['Diversificação', 'Proteção de portfólios', 'Gestão global de ativos'] 
-              },
-              { 
-                title: '5. Setores Regulados', 
-                items: ['Trading e Forex', 'Derivativos', 'Criptomoedas', 'Apostas e iGaming', 'Cannabis medicinal'] 
-              }
-            ].map((segment) => (
-              <div key={segment.title} className="p-6 bg-card rounded-lg border border-border">
-                <h4 className="font-bold text-xl mb-4 text-primary">{segment.title}</h4>
-                <div className="flex flex-wrap gap-2">
-                  {segment.items.map((item, idx) => (
-                    <span key={idx} className="px-3 py-1 bg-muted text-sm rounded-full">
-                      {item}
-                    </span>
-                  ))}
-                </div>
-              </div>
+  <div className="max-w-4xl mx-auto">
+    
+    <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      Para Quem é Recomendada uma Offshore?
+    </h2>
+
+    <div className="p-6 bg-primary/10 rounded-lg border border-primary/20 mb-8">
+      <p className="text-lg font-semibold">
+        Critério inicial: Negócios faturando acima de R$ 500 mil/ano já se beneficiam fortemente.
+      </p>
+    </div>
+
+    <h3 className="text-2xl font-bold mb-6">Segmentos mais beneficiados:</h3>
+
+    <div className="space-y-6">
+      {[
+        { 
+          title: 'Negócios Digitais', 
+          items: ['Ecommerce internacional', 'Agências', 'SaaS', 'Produtos digitais', 'Infoprodutores'] 
+        },
+        { 
+          title: 'Profissionais Liberais Internacionais', 
+          items: ['Consultores', 'Médicos', 'Advogados', 'Mentores', 'Arquitetos'] 
+        },
+        { 
+          title: 'Empresas Multinacionais', 
+          items: ['Proteção IP', 'Consolidação fiscal', 'Expansão global'] 
+        },
+        { 
+          title: 'Investidores & Empresários', 
+          items: ['Diversificação', 'Proteção de portfólios', 'Gestão global de ativos'] 
+        },
+        { 
+          title: 'Setores Regulados', 
+          items: ['Trading e Forex', 'Derivativos', 'Criptomoedas', 'Apostas e iGaming', 'Cannabis medicinal'] 
+        }
+      ].map((segment, idx) => (
+        <div key={idx} className="p-6 bg-card rounded-lg border border-border">
+          <h4 className="font-bold text-xl mb-4 text-primary">
+            {segment.title}
+          </h4>
+
+          <div className="flex flex-wrap gap-2">
+            {segment.items.map((item, i) => (
+              <span
+                key={i}
+                className="px-3 py-1 bg-muted text-sm rounded-full"
+              >
+                {item}
+              </span>
             ))}
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+  </div>
+</section>
 
       {/* Jurisdições */}
       <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">8. Jurisdições Mais Estratégicas para 2025</h2>
-          <div className="space-y-6">
-            {[
-              { 
-                num: '1', 
-                country: 'Emirados Árabes Unidos (UAE)', 
-                benefits: ['Zero imposto para muitos modelos', 'Ótimo para cripto e holdings'] 
-              },
-              { 
-                num: '2', 
-                country: 'Estônia', 
-                benefits: ['Melhor para empresas digitais', 'Sistema tributário inovador'] 
-              },
-              { 
-                num: '3', 
-                country: 'Malta', 
-                benefits: ['Forte para cripto e Web3', 'Regulamentação clara'] 
-              },
-              { 
-                num: '4', 
-                country: 'Ilhas Virgens Britânicas (BVI)', 
-                benefits: ['Confidencialidade', 'Proteção patrimonial'] 
-              },
-              { 
-                num: '5', 
-                country: 'Ilhas Cayman', 
-                benefits: ['Fundos, cripto e high-net worth'] 
-              },
-              { 
-                num: '6', 
-                country: 'Panamá', 
-                benefits: ['Forte privacidade', 'Excelente para holdings familiares'] 
-              }
-            ].map((jurisdiction) => (
-              <div key={jurisdiction.num} className="p-6 bg-card rounded-lg border border-border hover:border-primary transition-colors">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
-                    {jurisdiction.num}
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-bold text-xl mb-3">{jurisdiction.country}</h3>
-                    <ul className="space-y-2">
-                      {jurisdiction.benefits.map((benefit, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-muted-foreground">
-                          <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                          <span>{benefit}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+      Jurisdições Mais Estratégicas para 2025
+    </h2>
+
+    <div className="space-y-6">
+      {[
+        { 
+          country: 'Emirados Árabes Unidos (UAE)', 
+          benefits: ['Zero imposto para muitos modelos', 'Ótimo para cripto e holdings'] 
+        },
+        { 
+          country: 'Estônia', 
+          benefits: ['Melhor para empresas digitais', 'Sistema tributário inovador'] 
+        },
+        { 
+          country: 'Malta', 
+          benefits: ['Forte para cripto e Web3', 'Regulamentação clara'] 
+        },
+        { 
+          country: 'Ilhas Virgens Britânicas (BVI)', 
+          benefits: ['Confidencialidade', 'Proteção patrimonial'] 
+        },
+        { 
+          country: 'Ilhas Cayman', 
+          benefits: ['Fundos, cripto e high-net worth'] 
+        },
+        { 
+          country: 'Panamá', 
+          benefits: ['Forte privacidade', 'Excelente para holdings familiares'] 
+        }
+      ].map((jurisdiction, index) => (
+        <div 
+          key={index} 
+          className="p-6 bg-card rounded-lg border border-border hover:border-primary transition-colors"
+        >
+          <h3 className="font-bold text-xl mb-3">{jurisdiction.country}</h3>
+
+          <ul className="space-y-2">
+            {jurisdiction.benefits.map((benefit, idx) => (
+              <li key={idx} className="flex items-start gap-2 text-muted-foreground">
+                <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                <span>{benefit}</span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Passo a Passo */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">13. Passo a Passo para Criar sua Offshore/Holding</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Passo a Passo para Criar sua Offshore/Holding</h2>
           <div className="space-y-6">
             {[
               {
@@ -395,7 +406,7 @@ export default function GuiaOffshorePage() {
                 '30 minutos com especialista'
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-3">
-                  <CheckCircle className="h-6 w-6 flex-shrink-0" />
+                  <CheckCircle className="h-6 w-6 shrink-0" />
                   <span>{item}</span>
                 </li>
               ))}

@@ -22,7 +22,7 @@ const BlogCard = ({ image, title, date, author, excerpt, fullContent }: any) => 
           <h3 className="text-xl font-bold text-foreground mb-3 line-clamp-3 hover:text-primary transition-colors">
             {title}
           </h3>
-
+ 
           <p className="text-muted-foreground text-sm mb-4 line-clamp-2 grow">
             {excerpt}
           </p>
@@ -31,7 +31,7 @@ const BlogCard = ({ image, title, date, author, excerpt, fullContent }: any) => 
           <div className="flex items-center justify-between pt-4 border-t border-border">
             <div className="text-xs text-muted-foreground">
               <p>{date}</p>
-              <p className="font-semibold text-gray-700">Por: {author}</p>
+              <p className="font-semibold text-foreground">Por: {author}</p>
             </div>
 
             <button
@@ -58,7 +58,7 @@ const BlogCard = ({ image, title, date, author, excerpt, fullContent }: any) => 
                 onClick={() => setIsOpen(false)}
                 className="p-2 hover:bg-gray-100 rounded-full transition-colors"
               >
-                <X className="h-6 w-6 text-gray-600" />
+                <X className="h-6 w-6 text-foreground" />
               </button>
             </div>
 
@@ -73,11 +73,11 @@ const BlogCard = ({ image, title, date, author, excerpt, fullContent }: any) => 
 
             {/* Conteúdo da Matéria */}
             <div className="px-8 py-8">
-              <h1 className="text-4xl font-bold text-gray-900 mb-6">
+              <h1 className="text-4xl font-bold text-foreground mb-6">
                 {title}
               </h1>
 
-              <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+              <div className="prose prose-lg max-w-none text-chart-3 leading-relaxed">
                 {fullContent}
               </div>
 
@@ -85,7 +85,7 @@ const BlogCard = ({ image, title, date, author, excerpt, fullContent }: any) => 
               <div className="mt-8 pt-6 border-t border-gray-200 flex justify-center">
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="px-8 py-3 bg-gray-800 text-white rounded-full hover:bg-gray-900 transition-all font-semibold"
+                  className="px-8 py-3 bg-chart-4 text-white rounded-full hover:bg-chart-2 transition-all font-semibold"
                 >
                   Fechar Matéria
                 </button>

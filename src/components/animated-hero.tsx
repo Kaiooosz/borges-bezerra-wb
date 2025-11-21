@@ -9,7 +9,7 @@ export function AnimatedHero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated background grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
 
       <div className="container relative z-10 px-4 py-32">
         <div className="flex flex-col items-center text-center space-y-8 md:space-y-12">
@@ -91,15 +91,15 @@ export function AnimatedHero() {
             className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-8 pt-8 text-xs sm:text-sm text-muted-foreground px-4"
           >
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-white rounded-full flex-shrink-0" />
+              <div className="w-2 h-2 bg-white rounded-full shrink-0" />
               <span>Atuação em 12+ países</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-white rounded-full flex-shrink-0" />
+              <div className="w-2 h-2 bg-white rounded-full shrink-0" />
               <span>R$ 122M+ economizados</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-white rounded-full flex-shrink-0" />
+              <div className="w-2 h-2 bg-white rounded-full shrink-0" />
               <span className="text-center sm:text-left">
                 Especialistas em cripto desde 2017
               </span>

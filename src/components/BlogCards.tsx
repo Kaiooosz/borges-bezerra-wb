@@ -128,7 +128,7 @@ const BlogCard = ({ image, title, date, author, excerpt, fullContent }: any) => 
 export default function BlogCards() {
   const posts = [
     {
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+      image: '/irlanda.jpg',
       title: "Onde operar tráfego pago sem o novo imposto de 2026: 6 jurisdições estratégicas",
       excerpt: "Descubra as melhores jurisdições para operar seu negócio digital sem o impacto do novo imposto de 2026...",
       date: "05/11/2025",

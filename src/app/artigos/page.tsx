@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight, Search } from "lucide-react";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
+import BlogCards from "@/components/BlogCards";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -114,7 +115,7 @@ export default function ArtigosPage() {
         "A Irlanda não é apenas um destino turístico na Europa Ocidental, ela tem um papel central no cenário econômico global. Com um dos impostos corporativos mais baixos da União Europeia, políticas de incentivo à inovação e uma posição estratégica pós-Brexit, o país atrai desde grandes multinacionais e até startups em busca de crescimento internacional. Além disso, a reputação sólida como centro financeiro e tecnológico faz da Irlanda um ponto de entrada confiável para quem deseja expandir negócios e acessar capital europeu.",
       category: "Internacionalização",
       date: "22 de março, 2025",
-      image: "/irlanda.jpg",
+      image: "/mapa.jpg",
       slug: "offshore-dubai-brasileiros",
     },
   ];
@@ -221,13 +222,17 @@ export default function ArtigosPage() {
         </div>
       </section>
 
+      <div className="min-h-screen bg-backgroud">
+          <Header />
+          <main>
+          <BlogCards />
+          </main>
+        </div>
+
       {/* Articles Grid */}
       <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-5xl mb-4 text-balance">
-              Últimos artigos
-            </h2>
           </motion.div>
 
           <motion.div
@@ -288,7 +293,8 @@ export default function ArtigosPage() {
             </Button>
           </motion.div>
         </div>
-      </section>
+      </section> 
+
 
       {/* Newsletter CTA */}
       <section className="py-20 md:py-32 border-t border-border">

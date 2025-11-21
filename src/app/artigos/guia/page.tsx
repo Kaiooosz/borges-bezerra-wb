@@ -220,7 +220,7 @@ export default function GuiaOffshorePage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">6. Para Quem é Recomendada uma Offshore?</h2>
           <div className="p-6 bg-primary/10 rounded-lg border border-primary/20 mb-8">
             <p className="text-lg font-semibold">
-              📌 Critério inicial: Negócios faturando acima de R$ 500 mil/ano já se beneficiam fortemente.
+              Critério inicial: Negócios faturando acima de R$ 500 mil/ano já se beneficiam fortemente.
             </p>
           </div>
           

@@ -18,7 +18,7 @@ export default function YoutubeCard({
     e.preventDefault();
 
     const iframe = document.createElement('iframe');
-    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&fs=1&rel=0&modestbranding=1&mute=0`;
+    iframe.src = `https://www.youtube.com/embed/watch?v=w019MzRosmk?autoplay=1&fs=1&rel=0&modestbranding=1&mute=0`;
     iframe.allow = 'autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture';
     iframe.allowFullscreen = true;
     iframe.style.position = 'fixed';
@@ -51,7 +51,7 @@ export default function YoutubeCard({
         className="relative overflow-hidden cursor-pointer group"
       >
         <Image
-          src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+          src={`https://img.youtube.com/vi/watch?v=w019MzRosmk/maxresdefault.jpg`}
           alt="Thumbnail do vídeo"
           width={840}
           height={473}

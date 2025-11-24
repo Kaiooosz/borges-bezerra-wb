@@ -1,22 +1,40 @@
-import { Header } from "@/components/header"
-import { AnimatedHero } from "@/components/animated-hero"
-import { ServicesPreview } from "@/components/services-preview"
-import { LeadMagnet } from "@/components/lead-magnet"
-import { ContactForm } from "@/components/contact-form"
-import { FAQ } from "@/components/faq"
-import { Footer } from "@/components/footer"
+import { Header } from "@/components/header";
+import { AnimatedHero } from "@/components/animated-hero";
+import { ServicesPreview } from "@/components/services-preview";
+import { LeadMagnet } from "@/components/lead-magnet";
+import { ContactForm } from "@/components/contact-form";
+import { FAQ } from "@/components/faq";
+
+
+import YoutubeCard from '@/components/YoutubeCard';
+import TeamCarousel from '@/components/TeamCarousel';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-backgroud">
+    <div className="min-h-screen bg-background font-serif"> {/* ← corrigido aqui */}
       <Header />
       <main>
         <AnimatedHero />
         <ServicesPreview />
         <LeadMagnet />
-        <ContactForm />
         <FAQ />
+        
+        {/* Seção do Vídeo */}
+        <section className="py-24 bg-black">
+          <div className="text-center mb-16 px-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              Vídeo Exclusivo
+            </h2>
+            <p className="text-xl text-chart-5 max-w-3xl mx-auto">
+              Assista agora o guia completo que já transformou a vida de centenas de empresários
+            </p>
+          </div>
+
+          <YoutubeCard videoId="SEU_ID_DO_VIDEO_AQUI" /> {/* ← troque pelo ID real */}
+        </section>
+        <ContactForm />
+        <TeamCarousel />
       </main>
     </div>
-  )
+  );
 }

@@ -38,11 +38,11 @@ export default function HoldingPage() {
     {
       icon: Shield,
       title: "Proteção Patrimonial Efetiva",
-      description: "Blindagem lícita contra processos judiciais, credores e instabilidades econômicas através de estruturas societárias seguras."
+      description: "Proteção patrimonial lícita e preventiva contra riscos jurídicos e econômicos."
     },
     {
       icon: TrendingUp,
-      title: "Redução Tributária Legal",
+      title: "Planejamento tributário em conformidade com a legislação.",
       description: "Planejamento fiscal estratégico que pode reduzir significativamente a carga tributária sobre patrimônio e lucros empresariais."
     },
     {

@@ -301,7 +301,7 @@ export default function LegalGrowthPage() {
               className="max-w-4xl mx-auto text-center"
             >
               <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-6">
-                Até 90% menos impostos e muito mais segurança jurídica
+              Eficiência fiscal por meio de planejamento tributário em conformidade.
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
                 Clique no botão abaixo para que nosso time de advogados possa te

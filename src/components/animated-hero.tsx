@@ -51,8 +51,7 @@ export function AnimatedHero() {
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty px-4">
-              Proteção patrimonial, internacionalização e estruturação de
-              negócios com estratégia jurídica inteligente
+            Proteção patrimonial lícita e planejamento sucessório.
             </p>
           </motion.div>
 

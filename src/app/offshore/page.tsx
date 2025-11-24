@@ -99,7 +99,7 @@ export default function OffshoreExpertPage() {
       objection: "Offshore é ilegal ou imoral",
       icon: Scale,
       answer: "Estruturas offshore são 100% legais e utilizadas por empresas globais, investidores e empreendedores há décadas.",
-      detail: "Empresas como Apple, Google e Amazon utilizam estruturas internacionais para otimização fiscal. A diferença está em fazer com compliance total, documentação adequada e declaração correta às autoridades. A BBLAW garante que cada estrutura seja totalmente transparente perante a Receita Federal e órgãos reguladores."
+      detail: "Grandes grupos utilizam estruturas internacionais com transparência e compliance, utilizam estruturas internacionais para otimização fiscal. A diferença está em fazer com compliance total, documentação adequada e declaração correta às autoridades. A BBLAW garante que cada estrutura seja totalmente transparente perante a Receita Federal e órgãos reguladores."
     },
     {
       objection: "É muito caro e complexo",
@@ -328,8 +328,8 @@ export default function OffshoreExpertPage() {
 
           <p className="text-xl md:text-2xl text-zinc-400 max-w-4xl mx-auto leading-relaxed">
             Proteja seu patrimônio, otimize impostos e opere globalmente com segurança jurídica total. 
-            <span className="text-foregroung font-semibold"> Estruturas profissionais desde $3.500</span> — 
-            do planejamento à execução completa.
+            <span className="text-foregroung font-semibold"> Estruturas profissionais Consultoria </span> — 
+            com orçamento conforme escopo e normas da OAB.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
@@ -383,7 +383,7 @@ export default function OffshoreExpertPage() {
               <span className="italic text-zinc-400">Uma Estrutura Offshore</span>
             </h2>
             <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
-              Não é sobre sonegação. É sobre inteligência patrimonial e liberdade financeira global.
+            Planejamento patrimonial legítimo com conformidade internacional.
             </p>
           </div>
 
@@ -415,13 +415,12 @@ export default function OffshoreExpertPage() {
               <TrendingUp className="h-12 w-12 mb-6 text-foregroung" />
               <h3 className="text-2xl font-bold mb-4">Otimização Tributária</h3>
               <p className="text-zinc-400 leading-relaxed mb-6">
-                Reduza legalmente sua carga tributária de 34% para 10-15% através de 
-                planejamento fiscal inteligente e jurisdições estratégicas.
+              Otimize sua carga tributária de forma legal e transparente, conforme normas aplicáveis.
               </p>
               <ul className="space-y-3 text-sm text-zinc-400">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-foregroung shrink-0 mt-0.5" />
-                  <span>Economia de 40-60% em impostos de forma legal</span>
+                  <span>Potencial de eficiência tributária avaliado caso a caso, em conformidade.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-foregroung shrink-0 mt-0.5" />
@@ -465,9 +464,6 @@ export default function OffshoreExpertPage() {
               <br />
               <span className="italic text-zinc-400">obertura Global</span>
             </h2>
-            {/* <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
-              Não é sobre sonegação. É sobre inteligência patrimonial e liberdade financeira global.
-            </p> */}
           </div>
 
 {/* <Link href="/" className="flex items-center gap-3">
@@ -568,7 +564,7 @@ export default function OffshoreExpertPage() {
 
           <div className="mt-16 p-10 bg-linear-to-br from-white/10 to-white/5 border border-white/20 rounded-2xl text-center">
             <Award className="h-16 w-16 mx-auto mb-6 text-foregroung" />
-            <h3 className="text-3xl font-bold mb-4">Garantia de Compliance Total</h3>
+            <h3 className="text-3xl font-bold mb-4">Adoção de políticas e controles de compliance, com auditoria e atualização contínuas.</h3>
             <p className="text-xl --ring mb-6 max-w-3xl mx-auto">
               Todas as nossas estruturas são 100% declaradas e em conformidade com a legislação brasileira e internacional. 
               <span className="text-foregroung font-bold">Você não assume riscos legais - apenas otimiza o que é seu por direito.</span>

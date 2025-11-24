@@ -83,7 +83,7 @@ const services = [
     features: [
       "Litígios empresariais e societários",
       "Defesa em crimes econômicos",
-      "Bloqueios de ativos",
+      "Atuação em medidas cautelares e defesa patrimonial.",
       "Arbitragem internacional",
       "Causas envolvendo cripto",
     ],

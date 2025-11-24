@@ -129,7 +129,7 @@ export default function BlogCards() {
   const posts = [
     {
       image: '/irlanda.jpg',
-      title: "Onde operar tráfego pago sem o novo imposto de 2026: 6 jurisdições estratégicas",
+      title: "Estratégias legais de estruturação internacional diante do novo imposto de 2026.",
       excerpt: "Descubra as melhores jurisdições para operar seu negócio digital sem o impacto do novo imposto de 2026...",
       date: "05/11/2025",
       author: "Bezerra Borges",
@@ -161,7 +161,7 @@ export default function BlogCards() {
     },
     {
       image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&q=80",
-      title: "Como abrir empresa no Reino Unido (Inglaterra): rápido, sem burocracia e 100% legal",
+      title: "Como abrir empresa no Reino Unido (Inglaterra): com segurança jurídica e conformidade regulatória.",
       excerpt: "Guia completo para estabelecer sua empresa no Reino Unido de forma rápida e totalmente legal...",
       date: "30/10/2025",
       author: "Bezerra Borges",

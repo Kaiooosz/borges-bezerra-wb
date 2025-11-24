@@ -69,7 +69,7 @@ export default function SobreNosPage() {
     {
       title: "Contencioso e Defesa Patrimonial",
       description:
-        "Defesa em litígios empresariais, bloqueios de ativos e investigações financeiras — no Brasil e no exterior.",
+        "Atuação em litígios empresariais e financeiros com foco em conformidade e cooperação internacional.",
       icon: Lock,
     },
   ];

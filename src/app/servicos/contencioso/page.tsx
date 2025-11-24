@@ -85,7 +85,7 @@ export default function ContenciosoPage() {
       <main>
         {/* Hero Section */}
         <section className="pt-32 pb-16 relative overflow-hidden">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
 
           <div className=" relative z-10 px-4">
             <motion.div
@@ -170,7 +170,7 @@ export default function ContenciosoPage() {
                     transition={{ duration: 0.4, delay: index * 0.05 }}
                     className="flex items-start gap-3 p-4 bg-card rounded-lg border border-border"
                   >
-                    <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-6 h-6 text-green-400 shrink-0 mt-0.5" />
                     <span className="text-foregroung">{item}</span>
                   </motion.div>
                 ))}

@@ -406,7 +406,7 @@ export default function OffshoreExpertPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-foregroung shrink-0 mt-0.5" />
-                  <span>Dificuldade de penhora por credores</span>
+                  <span>Mitigação de riscos jurídicos mediante segregação patrimonial lícita e governança.</span>
                 </li>
               </ul>
             </div>

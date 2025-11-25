@@ -20,14 +20,14 @@ export default function TeamCarousel() {
   };
 
   const team = [
-    { name: 'Dr. Vinicius', role: 'Sócio Fundador', image: 'public/Team/vinicius.jpg' },
-    { name: 'Dra. Alice ', role: 'Head de Offshore', image: 'public/Team/alice.jpg' },
-    { name: 'Dr. Lucas', role: 'Especialista em Holdings', image: 'public/Team/Lucas.jpg' },
-    { name: 'Dra. Micaelle ', role: 'Consultora Internacional', image: 'public/Team/micaelle.jpg' },
-    { name: 'Dra. Victoria ', role: 'Advogado Tributarista', image: 'public/Team/victoria.jpg' },
-    { name: 'Dr. Roberto ', role: 'Gestão Patrimonial', image: 'public/Team/roberto.jpg' },
-    { name: 'Dra. Mariana', role: 'Planejamento Sucessório', image: 'public/Team/mariana.jpg' },
-    { name: 'Dr. Allan ', role: 'Planejamento Sucessório', image: 'public/Team/allan.jpg' },
+    { name: 'Dr. Vinicius', role: 'Sócio Fundador', image: '/vinicius.jpg' },
+    { name: 'Dra. Alice ', role: 'Head de Offshore', image: '/alice.jpg' },
+    { name: 'Dr. Lucas', role: 'Especialista em Holdings', image: '/Lucas.jpg' },
+    { name: 'Dra. Micaelle ', role: 'Consultora Internacional', image: '/micaelle.jpg' },
+    { name: 'Dra. Victoria ', role: 'Advogado Tributarista', image: '/victoria.jpg' },
+    { name: 'Dr. Roberto ', role: 'Gestão Patrimonial', image: '/roberto.jpg' },
+    { name: 'Dra. Mariana', role: 'Planejamento Sucessório', image: '/mariana.jpg' },
+    { name: 'Dr. Allan ', role: 'Planejamento Sucessório', image: '/allan.jpg' },
   ];
 
   return (

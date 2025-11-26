@@ -92,7 +92,7 @@ export default function ArtigosPage() {
      // mais paginas carragadas
 
     {
-      title: "Como abrir empresa no Reino Unido (Inglaterra): rápido, sem burocracia e 100% legal",
+      title: "Como abrir empresa no Reino Unido (Inglaterra): rápido, sem burocracia e legal",
       excerpt:
         "Tudo sobre abrir empresa na Inglaterra: custos, benefícios fiscais, vistos e processo de abertura bancária no Reino Unido.",
       category: "Internacionalização",

@@ -2,14 +2,13 @@
 
 import React, { useState, useEffect } from "react";
 import { 
-  Shield, Globe, TrendingUp, Lock, Scale, DollarSign,
-  CheckCircle2, AlertTriangle, Clock, Users, Building2,
-  ArrowRight, ChevronDown, Eye, FileText, Briefcase,
-  Zap, Target, Award, Phone, Mail, Calendar, MapPin,
-  Plus, Minus, Star, BarChart3, Landmark, ShieldCheck,
-  Wallet, PiggyBank, GraduationCap, Search, ChevronRight
+  Shield, Globe, TrendingUp, Scale, DollarSign,
+  CheckCircle2, AlertTriangle, Building2,
+  ArrowRight, ChevronDown, Award, ShieldCheck,
+  PiggyBank 
 } from "lucide-react";
 import Image from "next/image";
+import OffshoreComplianceCard from "@/components/compliceoffshorecard";
 
 export default function OffshoreExpertPage() {
   const [openFaq, setOpenFaq] = useState(null);
@@ -98,7 +97,7 @@ export default function OffshoreExpertPage() {
     {
       objection: "Offshore é ilegal ou imoral",
       icon: Scale,
-      answer: "Estruturas offshore são 100% legais e utilizadas por empresas globais, investidores e empreendedores há décadas.",
+      answer: "Estruturas offshore são legais e utilizadas por empresas globais, investidores e empreendedores há décadas.",
       detail: "Grandes grupos utilizam estruturas internacionais com transparência e compliance, utilizam estruturas internacionais para otimização fiscal. A diferença está em fazer com compliance total, documentação adequada e declaração correta às autoridades. A BBLAW garante que cada estrutura seja totalmente transparente perante a Receita Federal e órgãos reguladores."
     },
     {
@@ -586,6 +585,8 @@ export default function OffshoreExpertPage() {
           </div>
         </div>
       </section>
+
+      <OffshoreComplianceCard />
 
       {/* Footer */}
       <footer className="border-t border-border py-16">

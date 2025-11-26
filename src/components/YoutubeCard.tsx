@@ -52,7 +52,7 @@ export default function YoutubeCard({
       >
         <Image
           src={`https://img.youtube.com/vi/watch?v=w019MzRosmk/maxresdefault.jpg`}
-          alt="Thumbnail do vídeo"
+          alt="Símbolo fundo preto.png"
           width={840}
           height={473}
           className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"

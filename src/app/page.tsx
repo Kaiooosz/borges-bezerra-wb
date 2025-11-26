@@ -23,10 +23,10 @@ export default function Home() {
         <section className="py-24 bg-black">
           <div className="text-center mb-16 px-6">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Vídeo Exclusivo
+            Processo por Trás das Soluções que Transformam Negócios
             </h2>
             <p className="text-xl text-chart-5 max-w-3xl mx-auto">
-              Assista agora o guia completo que já transformou a vida de centenas de empresários
+              Assista agora o video completo que já transformou a vida de centenas de empresários
             </p>
           </div>
 

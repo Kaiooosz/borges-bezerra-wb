@@ -134,7 +134,7 @@ export function ContactForm() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="bg-backgroud/50 border-border text-foregroung placeholder:text-zinc-600 focus:border-white/30"
+                      className="bg-backgroud/50 border-border text-foregroung placeholder:text-zinc-600 focus:border-white/30 resize-none"
                       placeholder="seu@email.com"
                     />
                   </div>
@@ -154,7 +154,7 @@ export function ContactForm() {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="bg-backgroud/50 border-border text-foregroung placeholder:text-zinc-600 focus:border-white/30"
+                    className="bg-backgroud/50 border-border text-foregroung placeholder:text-zinc-600 focus:border-white/30 resize-none"
                     placeholder="(11) 99999-9999"
                   />
                 </div>

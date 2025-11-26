@@ -69,7 +69,13 @@ export default function OffshoreComplianceCard({
               <Button
                 className="rounded-xl px-5 py-2 text-sm font-semibold bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 dark:bg-chart-3 dark:text-background dark:border-slate-800"
               >
-                {ctaText}
+                <a
+                      href="https://wa.me/5511943665367"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Agendar consultoria ($125)
+                    </a>
               </Button>
             </div>
           </div>

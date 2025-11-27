@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useEffect } from "react";
+import TeamCarousel from "@/components/TeamCarousel";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -291,6 +292,8 @@ export default function SobreNosPage() {
         </div>
       </section>
 
+      
+
       {/* Philosophy Section */}
       <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
@@ -321,6 +324,9 @@ export default function SobreNosPage() {
             </Button>
           </motion.div>
         </div>
+        <TeamCarousel />
+
+        
       </section>
     </div>
   );

@@ -79,7 +79,7 @@ export function ContactForm() {
             <div className="inline-flex p-4 rounded-lg bg--background mb-6">
               <MessageSquare className="h-8 w-8 text-foregroung" />
             </div>
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-foregroung mb-4 tracking-tight">
+            <h2 className="font-source-serif-pro text-3xl sm:text-4xl md:text-5xl font-light text-foregroung mb-4 tracking-tight">
               Comece sua jornada sem fronteiras
             </h2>
             <p className="text-base sm:text-lg text-zinc-600 leading-relaxed">
@@ -88,7 +88,7 @@ export function ContactForm() {
           </div>
 
           {/* Form */}
-          <Card className="bg--chart-4 border-border p-6 md:p-8 lg:p-12">
+          <Card className="bg--chart-4 border-chart-1 p-6 md:p-8 lg:p-12">
             {submitted ? (
               <div className="text-center py-12">
                 <div className="inline-flex p-4 rounded-full bg-green-500/10 mb-4">
@@ -181,7 +181,7 @@ export function ContactForm() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button
                     type="submit"
-                    className="flex-1 bg-chart-4 text-black hover:bg-zinc-200"
+                    className="flex-1 bg-chart-1 text-background hover:bg-chart-4"
                     size="lg"
                     disabled={loading}
                   >

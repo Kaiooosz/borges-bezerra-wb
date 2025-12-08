@@ -8,15 +8,22 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <div className="shrink-0 w-full h-full">
-              <img 
-                src="/LogoBranco.svg" 
-                alt="BB Logo" 
-                className="h-14 w-14 md:h-16 md:w-16"
-              />
-            </div> 
-          </Link>
+          <a href="/" className="flex items-center gap-3 z-50">
+      <div className="shrink-0">
+        {/* Logo preta para tema claro */}
+        <img 
+          src="/Logo preto.svg" 
+          alt="BB Logo" 
+          className="h-14 w-14 md:h-20 md:w-20 dark:hidden"
+        />
+        {/* Logo branca para tema escuro */}
+        <img 
+          src="/LogoBranco.svg" 
+          alt="BB Logo" 
+          className="h-14 w-14 md:h-20 md:w-20 hidden dark:block"
+        />
+      </div> 
+    </a>
 
           {/* Navegação */}
           <div className="p-6 border border-border rounded-2xl shadow-md hover:shadow-lg transition">

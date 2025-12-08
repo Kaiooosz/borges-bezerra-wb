@@ -16,7 +16,7 @@ const services = [
     description: "Proteção inteligente do seu patrimônio com estruturas jurídicas sólidas",
     features: [
       "Holdings familiares e empresariais",
-      "Blindagem patrimonial lícita",
+      "Proteção patrimonial lícita",
       "Trusts e foundations internacionais",
       "Proteção de ativos digitais e PI",
       "Estratégias de sucessão",
@@ -107,7 +107,7 @@ export default function ServicesPage() {
               transition={{ duration: 0.6 }}
               className="text-center max-w-4xl mx-auto"
             >
-              <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-foregroung mb-4 md:mb-6 text-balance">
+              <h1 className="font-source-serif-pro text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-foregroung mb-4 md:mb-6 text-balance">
                 Soluções Jurídicas para <span className="italic text-muted-foreground">Proteger</span>,{" "}
                 <span className="font-bold">Escalar</span> e{" "}
                 <span className="italic text-muted-foreground">Libertar</span>
@@ -141,7 +141,7 @@ export default function ServicesPage() {
                         <service.icon className="w-8 h-8 text-foregroung" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-serif text-xl sm:text-2xl md:text-3xl text-foregroung mb-2 md:mb-3">{service.title}</h3>
+                        <h3 className="font-source-serif-pro text-xl sm:text-2xl md:text-3xl text-foregroung mb-2 md:mb-3">{service.title}</h3>
                         <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{service.description}</p>
                       </div>
                     </div>
@@ -186,7 +186,7 @@ export default function ServicesPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <h2 className="font-serif text-2xl sm:text-3xl md:text-5xl text-foregroung mb-4 md:mb-6 px-2">Pronto para Proteger seu Patrimônio?</h2>
+              <h2 className="font-source-serif-pro text-2xl sm:text-3xl md:text-5xl text-foregroung mb-4 md:mb-6 px-2">Pronto para Proteger seu Patrimônio?</h2>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 px-2">
                 Agende um diagnóstico estratégico gratuito e descubra como podemos ajudar
               </p>

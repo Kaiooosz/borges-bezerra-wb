@@ -47,7 +47,7 @@ export function FAQ() {
         <div className="max-w-3xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-foregroung mb-4 tracking-tight">
+            <h2 className="font-source-serif-pro text-3xl sm:text-4xl md:text-5xl font-light text-foregroung mb-4 tracking-tight">
               Perguntas frequentes
             </h2>
             <p className="text-base sm:text-lg text--chart-1 leading-relaxed">
@@ -62,7 +62,7 @@ export function FAQ() {
                 key={index}
                 value={`item-${index}`}
                 className="bg-chart-5 border border-border rounded-lg px-6 data-[state=open]:bg-backgroud">
-                <AccordionTrigger className="text-left text-foregroung hover:--ring py-6 text-base md:text-lg font-serif">
+                <AccordionTrigger className="text-left text-foregroung hover:--ring py-6 text-base md:text-lg font-source-serif-pro">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text--chart-2 leading-relaxed pb-6">

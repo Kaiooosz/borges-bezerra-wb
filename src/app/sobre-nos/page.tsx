@@ -132,7 +132,7 @@ export default function SobreNosPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-backgroud text-foregroung font-serif">
+    <div className="min-h-screen bg-backgroud text-foregroung font-source-serif-pro">
       <Header />
 
       {/* Hero Section - Aparece imediatamente fixo no topo */}
@@ -141,7 +141,7 @@ export default function SobreNosPage() {
 
         <div className="relative z-10 px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl leading-tight text-balance">
+            <h1 className="font-source-serif-pro text-4xl md:text-6xl lg:text-7xl leading-tight text-balance">
               Liberdade real exige{" "}
               <span className="italic text-zinc-400">estratégia</span>
             </h1>
@@ -159,7 +159,7 @@ export default function SobreNosPage() {
       <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
           <motion.div {...fadeInUp} className="max-w-4xl mx-auto space-y-8">
-            <h2 className="font-serif text-3xl md:text-5xl text-center text-balance">
+            <h2 className="font-source-serif-pro text-3xl md:text-5xl text-center text-balance">
               Mais do que um escritório, somos um{" "}
               <span className="italic text-zinc-400">ecossistema</span>
             </h2>
@@ -169,7 +169,7 @@ export default function SobreNosPage() {
                 {...fadeInUp}
                 className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors"
               >
-                <h3 className="font-serif text-xl mb-4">O que fazemos</h3>
+                <h3 className="font-source-serif-pro text-xl mb-4">O que fazemos</h3>
                 <p className="text-zinc-400 leading-relaxed">
                   Transformamos complexidades legais em estruturas estratégicas.
                   Ajudamos pessoas e empresas a operar globalmente com
@@ -181,7 +181,7 @@ export default function SobreNosPage() {
                 {...fadeInUp}
                 className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors"
               >
-                <h3 className="font-serif text-xl mb-4">Nossa missão</h3>
+                <h3 className="font-source-serif-pro text-xl mb-4">Nossa missão</h3>
                 <p className="text-zinc-400 leading-relaxed">
                   Proteger, escalar e libertar o patrimônio e as operações de
                   nossos clientes, utilizando engenharia jurídica inteligente,
@@ -197,7 +197,7 @@ export default function SobreNosPage() {
       <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-5xl mb-4 text-balance">
+            <h2 className="font-source-serif-pro text-3xl md:text-5xl mb-4 text-balance">
               Nossas linhas de atuação
             </h2>
             <p className="text-zinc-400 text-lg max-w-2xl mx-auto text-pretty">
@@ -217,7 +217,7 @@ export default function SobreNosPage() {
                 className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all group"
               >
                 <service.icon className="h-10 w-10 mb-4 text-foregroung group-hover:scale-110 transition-transform" />
-                <h3 className="font-serif text-xl mb-3">{service.title}</h3>
+                <h3 className="font-source-serif-pro text-xl mb-3">{service.title}</h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">
                   {service.description}
                 </p>
@@ -231,7 +231,7 @@ export default function SobreNosPage() {
       <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-5xl mb-4 text-balance">
+            <h2 className="font-source-serif-pro text-3xl md:text-5xl mb-4 text-balance">
               Por que escolher o BBLAW
             </h2>
           </motion.div>
@@ -247,7 +247,7 @@ export default function SobreNosPage() {
                 className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors text-center"
               >
                 <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="font-serif text-lg mb-2">{item.title}</h3>
+                <h3 className="font-source-serif-pro text-lg mb-2">{item.title}</h3>
                 <p className="text-zinc-400 text-sm">{item.description}</p>
               </motion.div>
             ))}
@@ -260,7 +260,7 @@ export default function SobreNosPage() {
         <div className=" px-4">
           <motion.div {...fadeInUp} className="max-w-4xl mx-auto space-y-12">
             <div className="text-center space-y-4">
-              <h2 className="font-serif text-3xl md:text-5xl text-balance">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-balance">
                 Ecossistema BBLAW
               </h2>
               <p className="text-zinc-400 text-lg text-pretty">
@@ -276,7 +276,7 @@ export default function SobreNosPage() {
                   {...fadeInUp}
                   className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors"
                 >
-                  <h3 className="font-serif text-lg mb-2">{company.name}</h3>
+                  <h3 className="font-source-serif-pro text-lg mb-2">{company.name}</h3>
                   <p className="text-zinc-400 text-sm">{company.description}</p>
                 </motion.div>
               ))}
@@ -301,10 +301,10 @@ export default function SobreNosPage() {
             {...fadeInUp}
             className="max-w-3xl mx-auto text-center space-y-8"
           >
-            <h2 className="font-serif text-3xl md:text-5xl text-balance">
+            <h2 className="font-source-serif-pro text-3xl md:text-5xl text-balance">
               Nossa filosofia
             </h2>
-            <blockquote className="text-2xl md:text-3xl font-serif italic --ring text-balance">
+            <blockquote className="text-2xl md:text-3xl font-source-serif-pro italic --ring text-balance">
               "O BBLAW não vende documentos — entrega caminhos."
             </blockquote>
             <p className="text-lg text-zinc-400 text-pretty">
@@ -325,9 +325,7 @@ export default function SobreNosPage() {
           </motion.div>
         </div>
         <TeamCarousel />
-
-        
-      </section>
+        </section>
     </div>
   );
 }

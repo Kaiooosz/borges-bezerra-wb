@@ -26,16 +26,16 @@ export function LeadMagnet() {
   };
 
   return (
-    <section className="py-24 px-4 bg--chart-1">
+    <section className="py-24 px-4 bg-background">
       <div className="container mx-auto">
-        <Card className="max-w-4xl mx-auto bg-linear-to-br from-zinc-900 border-border p-6 md:p-8 lg:p-12">
+        <Card className="max-w-4xl mx-auto bg-linear-to-br from-background border-border p-6 md:p-8 lg:p-12">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Left side - Content */}
             <div>
               <div className="inline-flex p-4 rounded-lg bg-white/5 mb-6">
                 <BookOpen className="h-8 w-8 text--chart-1" />
               </div>
-              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-light text--chart-1 mb-4 tracking-tight">
+              <h2 className="font-source-serif-pro text-2xl sm:text-3xl md:text-4xl font-light text--chart-1 mb-4 tracking-tight">
                 Guia essencial de estruturas empresariais internacionais
               </h2>
               <ul className="space-y-2 text-sm text--chart-1">
@@ -75,7 +75,7 @@ export function LeadMagnet() {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       required
-                      className="bg-backgroud/50 border-border text--chart-1 placeholder:text-zinc-800 focus:border-white/30"
+                      className="bg-backgroud/50 border-border text--chart-1 placeholder:text--chart-1 focus:border-white/30"
                     />
                   </div>
                   <div>
@@ -85,7 +85,7 @@ export function LeadMagnet() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
-                      className="bg-backgroud/50 border-border text--chart-1 placeholder:text-zinc-800 focus:border-white/30"
+                      className="bg-backgroud/50 border-border text--chart-1 placeholder:text--chart-1 focus:border-white/30"
                     />
                   </div>
                   {/* <Button
@@ -96,7 +96,7 @@ export function LeadMagnet() {
                     Baixar ebook gratuito
                     <Download className="ml-2 h-4 w-4" />
                   </Button> */}
-                  <p className="text-xs text-zinc-800 text-center">
+                  <p className="text-xs text--chart-1 text-center">
                     Seus dados estão protegidos e não serão compartilhados
                   </p>
                 </form>

@@ -3,7 +3,7 @@ import { Shield, Globe, TrendingUp, Lock, Users, CheckCircle, ArrowRight, Calend
 
 export default function GuiaOffshorePage() {
   return (
-    <div className="min-h-screen bg-background text-foreground font-serif md-16 mt-20">
+    <div className="min-h-screen bg-background text-foreground font-source-serif-pro md-16 mt-20">
       {/* Hero Section */}
       <section className="relative py-20 px-4 border-b border-border">
         <div className="max-w-4xl mx-auto text-center">
@@ -117,7 +117,7 @@ export default function GuiaOffshorePage() {
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              'Baixa ou zero tributação',
+              'Impostos reduzidos',
               'Privacidade corporativa',
               'Processos simplificados',
               'Estabilidade política/financeira',
@@ -188,7 +188,7 @@ export default function GuiaOffshorePage() {
     <div className="grid md:grid-cols-2 gap-6">
       {[
         { title: 'Diversificação Internacional', desc: 'Proteção contra riscos políticos de um único país' },
-        { title: 'Proteção Patrimonial Avançada', desc: 'Blindagem jurídica contra litígios e credores' },
+        { title: 'Proteção Patrimonial Avançada', desc: 'Estrutra legal para proteção contra riscos sistêmicos e empresarias' },
         { title: 'Otimização Tributária', desc: 'Redução legal de impostos em âmbito global' },
         { title: 'Confidencialidade', desc: 'Privacidade sobre sócios, ativos e movimentações' },
         { title: 'Acesso a Mercados Globais', desc: 'Plataformas e bancos restritos no Brasil' },
@@ -393,7 +393,7 @@ export default function GuiaOffshorePage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Agende sua Chamada Estratégica Offshore
           </h2>
-          <div className="text-5xl font-bold mb-6">$125</div>
+          {/* <div className="text-5xl font-bold mb-6">$125</div> */}
           <div className="max-w-2xl mx-auto mb-8">
             <h3 className="text-xl font-semibold mb-4">Inclui:</h3>
             <ul className="space-y-3 text-left">

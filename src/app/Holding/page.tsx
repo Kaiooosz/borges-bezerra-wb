@@ -114,7 +114,7 @@ export default function HoldingPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-backgroud text-foregroung font-serif">
+    <div className="min-h-screen bg-backgroud text-foregroung font-source-serif-pro">
       <div
         className="fixed top-0 left-0 h-1 --muted-foregroun z-50 transition-all duration-300"
         style={{ width: `${scrollProgress}%` }}
@@ -133,21 +133,25 @@ export default function HoldingPage() {
         </div>
 
         <div className="relative z-10 px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <div className="mb-12 flex justify-center">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="h-48 w-auto opacity-90 drop-shadow-2xl"
-              >
-                <source
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Animac%CC%A7a%CC%83o%20logo-fj6CGOTzhzrRYqVrNCXk6nZpFllLH3.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
+  <div className="max-w-4xl mx-auto text-center space-y-6">
+    <div className="mb-12 flex justify-center">
+      <div className="w-full max-w-[100px] sm:max-w-140px md:max-w-[180px]">
+        <div className="rounded-3xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover rounded-3xl"
+          >
+            <source
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Animac%CC%A7a%CC%83o%20logo-fj6CGOTzhzrRYqVrNCXk6nZpFllLH3.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance">
               Holdings Patrimoniais e Empresariais: <span className="italic text-zinc-400">Proteja e Multiplique</span>

@@ -24,7 +24,7 @@ const features = [
   },
   {
     icon: Shield,
-    title: "Blindagem Patrimonial Lícita",
+    title: "Proteção Lícita",
     description:
       "Estratégias legais de proteção contra riscos empresariais e sucessórios",
   },
@@ -99,12 +99,12 @@ export default function PlanejamentoPatrimonialPage() {
                 <Shield className="w-4 h-4" />
                 <span>Planejamento Patrimonial e Estrutural</span>
               </div>
-              <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-foregroung mb-6 text-balance">
+              <h1 className="font-source-serif-pro text-4xl md:text-6xl lg:text-7xl text-foregroung mb-6 text-balance">
                 Proteja seu patrimônio com{" "}
                 <span className="font-bold">inteligência jurídica</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 text-pretty">
-                Estruturas sólidas e estratégicas para blindagem patrimonial,
+                Estruturas sólidas e estratégicas para proteção patrimonial,
                 sucessão familiar e eficiência tributária
               </p>
               <Button
@@ -135,7 +135,7 @@ export default function PlanejamentoPatrimonialPage() {
                 >
                   <Card className="p-8 bg-card border-border hover:border-white/30 transition-all duration-300 h-full">
                     <feature.icon className="w-12 h-12 text-foregroung mb-6" />
-                    <h3 className="font-serif text-2xl text-foregroung mb-3">
+                    <h3 className="font-source-serif-pro text-2xl text-foregroung mb-3">
                       {feature.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -158,7 +158,7 @@ export default function PlanejamentoPatrimonialPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-12 text-center">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-12 text-center">
                 Benefícios do Planejamento Patrimonial
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
@@ -190,7 +190,7 @@ export default function PlanejamentoPatrimonialPage() {
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-4">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-4">
                 Como Funciona
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -208,10 +208,10 @@ export default function PlanejamentoPatrimonialPage() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <Card className="p-6 bg-card border-border h-full">
-                    <div className="text-5xl font-serif text-foregroung/20 mb-4">
+                    <div className="text-5xl font-source-serif-pro text-foregroung/20 mb-4">
                       {item.step}
                     </div>
-                    <h3 className="font-serif text-xl text-foregroung mb-3">
+                    <h3 className="font-source-serif-pro text-xl text-foregroung mb-3">
                       {item.title}
                     </h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">
@@ -234,7 +234,7 @@ export default function PlanejamentoPatrimonialPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-6">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-6">
                 Proteja seu patrimônio hoje
               </h2>
               <p className="text-xl text-muted-foreground mb-8">

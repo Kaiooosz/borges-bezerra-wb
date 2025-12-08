@@ -64,7 +64,7 @@ export function ServicesPreview() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-16"
         >
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foregroung mb-4 px-2">
+          <h2 className="font-source-serif-pro text-3xl sm:text-4xl md:text-5xl text-foregroung mb-4 px-2">
             Nossas Especialidades
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
@@ -85,7 +85,7 @@ export function ServicesPreview() {
               <Link href={service.href}>
                 <Card className="group p-6 md:p-8 bg-card border-border hover:border-white/30 transition-all duration-300 h-full cursor-pointer">
                   <service.icon className="w-10 h-10 md:w-12 md:h-12 text-foregroung mb-4 md:mb-6 group-hover:scale-110 transition-transform" />
-                  <h3 className="font-serif text-xl md:text-2xl text-foregroung mb-2 md:mb-3 group-hover:text-foregroung/90">
+                  <h3 className="font-source-serif-pro text-xl md:text-2xl text-foregroung mb-2 md:mb-3 group-hover:text-foregroung/90">
                     {service.title}
                   </h3>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed">

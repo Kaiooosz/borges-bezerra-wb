@@ -36,7 +36,7 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background backdrop-blur-sm border-b border-border font-serif">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background backdrop-blur-sm border-b border-border font-source-serif-pro">
         <div
           className="fixed top-0 left-0 h-1 bg-muted-foreground z-50 transition-all duration-300"
           style={{ width: `${scrollProgress}%` }}
@@ -61,19 +61,26 @@ export function Header() {
           </div>
         </div>
 
-        {/* Main navigation */}
-        <div className="mx-auto px-6 md:px-8">
-          <div className="flex items-center justify-between h-16 md:h-20">
-            {/* Logo */}
-            <a href="/" className="flex items-center gap-3 z-50">
-              <div className="shrink-0">
-                <img 
-                  src="/LogoBranco.svg" 
-                  alt="BB Logo" 
-                  className="h-14 w-14 md:h-20 md:w-20"
-                />
-              </div> 
-            </a>
+       {/* Main navigation */}
+<div className="mx-auto px-6 md:px-8">
+  <div className="flex items-center justify-between h-16 md:h-20">
+    {/* Logo */}
+    <a href="/" className="flex items-center gap-3 z-50">
+      <div className="shrink-0">
+        {/* Logo preta para tema claro */}
+        <img 
+          src="/Logo preto.svg" 
+          alt="BB Logo" 
+          className="h-14 w-14 md:h-20 md:w-20 dark:hidden"
+        />
+        {/* Logo branca para tema escuro */}
+        <img 
+          src="/LogoBranco.svg" 
+          alt="BB Logo" 
+          className="h-14 w-14 md:h-20 md:w-20 hidden dark:block"
+        />
+      </div> 
+    </a>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8">
@@ -160,7 +167,7 @@ export function Header() {
           />
 
           {/* Mobile Menu Content */}
-          <div className="md:hidden fixed inset-0 top-[105px] z-40 overflow-y-auto bg-popover font-serif">
+          <div className="md:hidden fixed inset-0 top-[105px] z-40 overflow-y-auto bg-popover font-source-serif-pro">
             <nav className="flex flex-col items-center justify-start min-h-full gap-5 px-4 py-8 pb-20">
               <a 
                 href="/" 

@@ -95,7 +95,7 @@ export default function InternacionalizacaoPage() {
                 <Globe className="w-4 h-4" />
                 <span>Internacionalização e Offshore</span>
               </div>
-              <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-foregroung mb-6 text-balance">
+              <h1 className="font-source-serif-pro text-4xl md:text-6xl lg:text-7xl text-foregroung mb-6 text-balance">
                 Expanda seus negócios{" "}
                 <span className="font-bold">globalmente</span>
               </h1>
@@ -127,7 +127,7 @@ export default function InternacionalizacaoPage() {
               transition={{ duration: 0.6 }}
               className="text-center mb-12"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-4">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-4">
                 Jurisdições Estratégicas
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -146,7 +146,7 @@ export default function InternacionalizacaoPage() {
                 >
                   <Card className="p-6 bg-card border-border hover:border-white/30 transition-all duration-300 h-full">
                     <div className="text-4xl mb-4">{jurisdiction.flag}</div>
-                    <h3 className="font-serif text-xl text-foregroung mb-2">
+                    <h3 className="font-source-serif-pro text-xl text-foregroung mb-2">
                       {jurisdiction.name}
                     </h3>
                     <p className="text-muted-foreground text-sm">
@@ -173,7 +173,7 @@ export default function InternacionalizacaoPage() {
                 >
                   <Card className="p-8 bg-card border-border h-full">
                     <feature.icon className="w-12 h-12 text-foregroung mb-6" />
-                    <h3 className="font-serif text-2xl text-foregroung mb-3">
+                    <h3 className="font-source-serif-pro text-2xl text-foregroung mb-3">
                       {feature.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -196,7 +196,7 @@ export default function InternacionalizacaoPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-12 text-center">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-12 text-center">
                 Vantagens da Internacionalização
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
@@ -228,7 +228,7 @@ export default function InternacionalizacaoPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-6">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-6">
                 Pronto para se internacionalizar?
               </h2>
               <p className="text-xl text-muted-foreground mb-8">

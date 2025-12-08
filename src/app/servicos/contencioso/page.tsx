@@ -98,7 +98,7 @@ export default function ContenciosoPage() {
                 <TrendingUp className="w-4 h-4" />
                 <span>Contencioso Estratégico</span>
               </div>
-              <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-foregroung mb-6 text-balance">
+              <h1 className="font-source-serif-pro text-4xl md:text-6xl lg:text-7xl text-foregroung mb-6 text-balance">
                 Defesa patrimonial{" "}
                 <span className="font-bold">agressiva e estratégica</span>
               </h1>
@@ -134,7 +134,7 @@ export default function ContenciosoPage() {
                 >
                   <Card className="p-8 bg-card border-border hover:border-white/30 transition-all duration-300 h-full">
                     <service.icon className="w-12 h-12 text-foregroung mb-6" />
-                    <h3 className="font-serif text-2xl text-foregroung mb-3">
+                    <h3 className="font-source-serif-pro text-2xl text-foregroung mb-3">
                       {service.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -157,7 +157,7 @@ export default function ContenciosoPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-12 text-center">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-12 text-center">
                 Nossa Expertise em Contencioso
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
@@ -189,7 +189,7 @@ export default function ContenciosoPage() {
               transition={{ duration: 0.6 }}
               className="text-center mb-12"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-4">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-4">
                 Nossa Abordagem
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -207,10 +207,10 @@ export default function ContenciosoPage() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <Card className="p-6 bg-card border-border h-full">
-                    <div className="text-4xl font-serif text-foregroung/20 mb-4">
+                    <div className="text-4xl font-source-serif-pro text-foregroung/20 mb-4">
                       0{index + 1}
                     </div>
-                    <h3 className="font-serif text-xl text-foregroung mb-3">
+                    <h3 className="font-source-serif-pro text-xl text-foregroung mb-3">
                       {item.title}
                     </h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">
@@ -233,7 +233,7 @@ export default function ContenciosoPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-6">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-6">
                 Proteja seu patrimônio agora
               </h2>
               <p className="text-xl text-muted-foreground mb-8">

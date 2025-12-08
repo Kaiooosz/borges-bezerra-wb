@@ -84,7 +84,7 @@ export default function JuridicoEstrategicoPage() {
                 <Scale className="w-4 h-4" />
                 <span>Jurídico Estratégico Empresarial</span>
               </div>
-              <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-foregroung mb-6 text-balance">
+              <h1 className="font-source-serif-pro text-4xl md:text-6xl lg:text-7xl text-foregroung mb-6 text-balance">
                 Consultoria jurídica para{" "}
                 <span className="font-bold">crescimento sustentável</span>
               </h1>
@@ -120,7 +120,7 @@ export default function JuridicoEstrategicoPage() {
                 >
                   <Card className="p-8 bg-card border-border hover:border-white/30 transition-all duration-300 h-full">
                     <service.icon className="w-12 h-12 text-foregroung mb-6" />
-                    <h3 className="font-serif text-2xl text-foregroung mb-3">
+                    <h3 className="font-source-serif-pro text-2xl text-foregroung mb-3">
                       {service.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -143,7 +143,7 @@ export default function JuridicoEstrategicoPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-12 text-center">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-12 text-center">
                 Soluções Jurídicas Empresariais
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
@@ -175,7 +175,7 @@ export default function JuridicoEstrategicoPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-12 text-center">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-12 text-center">
                 Por que escolher nosso jurídico estratégico?
               </h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -207,7 +207,7 @@ export default function JuridicoEstrategicoPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-6">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-6">
                 Escale seu negócio com segurança jurídica
               </h2>
               <p className="text-xl text-muted-foreground mb-8">

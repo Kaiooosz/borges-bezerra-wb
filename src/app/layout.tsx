@@ -9,7 +9,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
-  variable: "--font-serif",
+  variable: "--font-source-serif-pro",
   display: "swap",
 });
 

@@ -44,7 +44,7 @@ export default function YoutubeCard({
   };
 
   return (
-    <div className="relative max-w-md mx-auto my-12 bg-[#111] rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-3xl hover:-translate-y-3">
+    <div className="relative max-w-md mx-auto my-12 bg-background rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-3xl hover:-translate-y-3">
       {/* Thumbnail com Play */}
       <div
         onClick={openFullscreenVideo}
@@ -62,7 +62,7 @@ export default function YoutubeCard({
         {/* Botão Play grande e bonito */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-20 h-20 bg-black/60 rounded-full flex items-center justify-center backdrop-blur-sm transition-all group-hover:scale-125 group-hover:bg-black/70">
-            <svg className="w-12 h-12 text-white ml-1" viewBox="0 0 68 68" fill="none">
+            <svg className="w-12 h-12 text-foreground ml-1" viewBox="0 0 68 68" fill="none">
               <path d="M26 22 L26 46 L48 34 Z" fill="currentColor" />
             </svg>
           </div>
@@ -70,11 +70,11 @@ export default function YoutubeCard({
       </div>
 
       {/* Texto abaixo */}
-      <div className="p-6 text-white">
+      <div className="p-6 text-foreground">
         <h3 className="text-2xl font-semibold leading-tight mb-3">
           {title}
         </h3>
-        <p className="text-gray-300 text-base leading-relaxed">
+        <p className="text-chart-3 text-base leading-relaxed">
           {description}
         </p>
       </div>

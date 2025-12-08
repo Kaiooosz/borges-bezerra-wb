@@ -98,7 +98,7 @@ export default function LegalGrowthPage() {
               <div className="inline-block px-4 py-2 bg-white/10 rounded-full text-sm text-foregroung mb-6">
                 Exclusivo para Infoprodutores e Lançadores
               </div>
-              <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-foregroung mb-6 text-balance">
+              <h1 className="font-source-serif-pro text-4xl md:text-6xl lg:text-7xl text-foregroung mb-6 text-balance">
                 Do que adianta faturar{" "}
                 <span className="font-bold">7 dígitos</span> se você está
                 pagando{" "}
@@ -140,7 +140,7 @@ export default function LegalGrowthPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-8 text-center">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-8 text-center">
                 O Problema Real
               </h2>
 
@@ -220,7 +220,7 @@ export default function LegalGrowthPage() {
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-4">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-4">
                 Os 5 Pilares do Legal Growth
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -240,7 +240,7 @@ export default function LegalGrowthPage() {
                 >
                   <Card className="p-8 h-full bg-card border-border hover:border-white/30 transition-all duration-300">
                     <pillar.icon className="w-12 h-12 text-foregroung mb-6" />
-                    <h3 className="font-serif text-xl text-foregroung mb-2">
+                    <h3 className="font-source-serif-pro text-xl text-foregroung mb-2">
                       {pillar.title}
                     </h3>
                     <p className="text-sm text-green-400 mb-4 font-semibold">
@@ -267,7 +267,7 @@ export default function LegalGrowthPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-12 text-center">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-12 text-center">
                 O que você vai receber
               </h2>
 
@@ -300,7 +300,7 @@ export default function LegalGrowthPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <h2 className="font-serif text-3xl md:text-5xl text-foregroung mb-6">
+              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foregroung mb-6">
               Eficiência fiscal por meio de planejamento tributário em conformidade.
               </h2>
               <p className="text-xl text-muted-foreground mb-8">

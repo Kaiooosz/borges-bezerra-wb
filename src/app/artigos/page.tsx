@@ -142,7 +142,7 @@ export default function ArtigosPage() {
             {...fadeInUp}
             className="max-w-4xl mx-auto text-center space-y-6"
           >
-            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl leading-tight text-balance">
+            <h1 className="font-source-serif-pro text-4xl md:text-6xl lg:text-7xl leading-tight text-balance">
               Artigos e <span className="italic text-zinc-400">Insights</span>
             </h1>
             <p className="text-lg md:text-xl text-zinc-400 max-w-3xl mx-auto text-pretty">
@@ -198,7 +198,7 @@ export default function ArtigosPage() {
                   </div>
                 </div>
 
-                <h2 className="font-serif text-3xl md:text-4xl leading-tight text-balance">
+                <h2 className="font-source-serif-pro text-3xl md:text-4xl leading-tight text-balance">
                   {featuredArticle.title}
                 </h2>
 
@@ -264,7 +264,7 @@ export default function ArtigosPage() {
                       </div>
                     </div>
 
-                    <h3 className="font-serif text-xl leading-tight group-hover:--ring transition-colors text-balance">
+                    <h3 className="font-source-serif-pro text-xl leading-tight group-hover:--ring transition-colors text-balance">
                       {article.title}
                     </h3>
 
@@ -303,7 +303,7 @@ export default function ArtigosPage() {
             {...fadeInUp}
             className="max-w-3xl mx-auto text-center space-y-8"
           >
-            <h2 className="font-serif text-3xl md:text-5xl text-balance">
+            <h2 className="font-source-serif-pro text-3xl md:text-5xl text-balance">
               Receba insights{" "}
               <span className="italic text-zinc-400">estratégicos</span>
             </h2>

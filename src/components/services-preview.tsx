@@ -18,7 +18,7 @@ const services = [
   {
     icon: Shield,
     title: "Planejamento Patrimonial",
-    description: "Holdings familiares, trusts e blindagem patrimonial lícita",
+    description: "Holdings familiares, trusts e protec patrimonial lícita",
     href: "/servicos/planejamento-patrimonial",
   },
   {

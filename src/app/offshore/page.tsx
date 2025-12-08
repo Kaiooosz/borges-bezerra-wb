@@ -288,7 +288,7 @@ export default function OffshoreExpertPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-backgroud text-foregroung font-serif">
+    <div className="min-h-screen bg-backgroud text-foregroung font-">
       {/* Progress Bar */}
       <div 
         className="fixed top-0 left-0 h-1 bg-linear-to-r from-white via-zinc-300 to-white z-50 transition-all duration-300"

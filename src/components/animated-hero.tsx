@@ -104,7 +104,7 @@ Com operações em mais de 12 países, desenvolvemos estruturas legais de alto r
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-white rounded-full shrink-0" />
               <span className="text-center sm:text-left text-chart-2">
-                Especialistas em cripto desde 2017
+                Especialistas em ativos digitais desde 2017
               </span>
             </div>
           </motion.div>

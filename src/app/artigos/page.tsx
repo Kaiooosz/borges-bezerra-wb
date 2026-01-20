@@ -8,6 +8,7 @@ import { Calendar, Clock, ArrowRight, Search } from "lucide-react";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import BlogCards from "@/components/BlogCards";
+import MaduroArticle from "@/components/MaduroArticle";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -295,6 +296,8 @@ export default function ArtigosPage() {
         </div>
       </section> 
 
+      <MaduroArticle />  
+
 
       {/* Newsletter CTA */}
       <section className="py-20 md:py-32 border-t border-border">
@@ -310,7 +313,7 @@ export default function ArtigosPage() {
             <p className="text-lg text-zinc-400 text-pretty">
               Assine nossa newsletter e receba conteúdo exclusivo sobre proteção
               patrimonial, internacionalização e estratégias jurídicas
-            </p>
+            </p> 
 
             <div className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto pt-4">
               <Input

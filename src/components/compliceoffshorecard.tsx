@@ -70,12 +70,12 @@ export default function OffshoreComplianceCard({
                 className="rounded-xl px-5 py-2 text-sm font-semibold bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 dark:bg-chart-3 dark:text-background dark:border-slate-800"
               >
                 <a
-                      href="https://wa.me/5511943665367"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Agendar consultoria ($125)
-                    </a>
+                  href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Agendar consultoria ($125)
+                </a>
               </Button>
             </div>
           </div>

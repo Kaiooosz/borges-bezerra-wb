@@ -196,7 +196,7 @@ export function ContactForm() {
                     size="lg"
                   >
                     <a
-                      href="https://wa.me/5511943665367"
+                      href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

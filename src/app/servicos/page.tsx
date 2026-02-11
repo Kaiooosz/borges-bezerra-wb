@@ -132,9 +132,8 @@ export default function ServicesPage() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <Card
-                    className={`group p-6 md:p-8 lg:p-10 h-full border-border hover:border-white/30 transition-all duration-300 ${
-                      service.highlight ? "bg-white/5" : "bg-card"
-                    }`}
+                    className={`group p-6 md:p-8 lg:p-10 h-full border-border hover:border-white/30 transition-all duration-300 ${service.highlight ? "bg-white/5" : "bg-card"
+                      }`}
                   >
                     <div className="flex flex-col sm:flex-row items-start gap-4 md:gap-6 mb-4 md:mb-6">
                       <div className="p-3 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors">
@@ -191,10 +190,10 @@ export default function ServicesPage() {
                 Agende um diagnóstico estratégico gratuito e descubra como podemos ajudar
               </p>
               <Button asChild size="lg" className="bg-white text-black hover:bg-white/90">
-                <Link href="/#contato">
+                <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados" target="_blank" rel="noopener noreferrer">
                   Agendar Diagnóstico Gratuito
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                </a>
               </Button>
             </motion.div>
           </div>

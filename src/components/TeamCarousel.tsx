@@ -21,13 +21,18 @@ export default function TeamCarousel() {
 
   const team = [
     { name: 'Dr. Vinicius', role: 'Sócio Fundador', image: '/vinicius.jpg' },
+    { name: 'Dr. Boaz', role: 'Sócio Fundador', image: '/boaz.jpg' },
+    { name: 'Dr. Kaio', role: 'CRO', image: '/kaio.jpg' },
     { name: 'Dra. Alice ', role: 'Head de Offshore', image: '/alice.jpg' },
+    { name: 'Dra. Clara', role: 'Business Partner', image: '/clara.jpg' },
     { name: 'Dr. Lucas', role: 'Especialista em Holdings', image: '/Lucas.jpg' },
     { name: 'Dra. Micaelle ', role: 'Consultora Internacional', image: '/micaelle.jpg' },
-    { name: 'Dra. Victoria ', role: 'Advogado Tributarista', image: '/victoria.jpg' },
-    { name: 'Dr. Roberto ', role: 'Gestão Patrimonial', image: '/roberto.jpg' },
+    { name: 'Dr. Roberto ', role: 'Gestão Patrimonial', image: '/Roberto.jpg' },
     { name: 'Dra. Mariana', role: 'Planejamento Sucessório', image: '/mariana.jpg' },
     { name: 'Dr. Allan ', role: 'Planejamento Sucessório', image: '/allan.jpg' },
+    { name: 'Dr. Fabiano', role: 'Closer Sênior e Advogado', image: '/fabiano.jpg' },
+    { name: 'Dr. Renato', role: 'Contábil', image: '/renato.jpg' },
+    { name: 'Dr. Tomas', role: 'RP e Closer Sênior', image: '/tomas.jpg' },
   ];
 
   return (

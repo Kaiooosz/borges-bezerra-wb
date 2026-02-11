@@ -47,7 +47,7 @@ export function ConsultoriaPricing() {
                 <h3 className="font-source-serif-pro text-3xl md:text-4xl font-bold text-foreground mb-4">
                   HOLDING
                 </h3>
-                
+
                 <p className="text-chart-01 mb-8 leading-relaxed">
                   Sessão de 2h para planejamento e estruturação de holding familiar e empresarial.
                 </p>
@@ -61,10 +61,13 @@ export function ConsultoriaPricing() {
                 </div>
 
                 <Button
+                  asChild
                   size="lg"
                   className="w-full bg-foreground hover:bg-chart-2 text-background font-medium text-lg h-14 rounded-xl transition-all duration-300"
                 >
-                  Contratar Agora
+                  <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados" target="_blank" rel="noopener noreferrer">
+                    Contratar Agora
+                  </a>
                 </Button>
 
                 <div className="mt-8 pt-8 border-t border-white/10 space-y-3">
@@ -110,7 +113,7 @@ export function ConsultoriaPricing() {
                 <h3 className="font-source-serif-pro text-3xl md:text-4xl font-bold text-foreground mb-4">
                   OFFSHORE
                 </h3>
-                
+
                 <p className="text-chart-01 mb-8 leading-relaxed">
                   Sessão de 2h para criação e otimização de estruturas offshore internacionais.
                 </p>
@@ -124,10 +127,13 @@ export function ConsultoriaPricing() {
                 </div>
 
                 <Button
+                  asChild
                   size="lg"
                   className="w-full bg-foreground hover:bg-chart-2 text-background font-medium text-lg h-14 rounded-xl transition-all duration-300 shadow-lg shadow-foreground/20"
                 >
-                  Contratar Agora
+                  <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados" target="_blank" rel="noopener noreferrer">
+                    Contratar Agora
+                  </a>
                 </Button>
 
                 <div className="mt-8 pt-8 border-t border-white/10 space-y-3">

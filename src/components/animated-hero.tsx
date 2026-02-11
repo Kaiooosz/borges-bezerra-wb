@@ -13,9 +13,9 @@ export function AnimatedHero() {
 
       <div className="container relative z-10 px-4 py-32">
         <div className="flex flex-col items-center text-center space-y-8 md:space-y-12">
-          
-            {/* Animated Logo */}
-            <motion.div
+
+          {/* Animated Logo */}
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
@@ -54,8 +54,8 @@ export function AnimatedHero() {
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty px-4">
-            Atuamos como seu aliado na proteção e no crescimento patrimonial.
-Com operações em mais de 12 países, desenvolvemos estruturas legais de alto rendimento em planejamento patrimonial, unindo segurança jurídica, otimização tributária e planejamento estratégico.
+              Atuamos como seu aliado na proteção e no crescimento patrimonial.
+              Com operações em mais de 12 países, desenvolvemos estruturas legais de alto rendimento em planejamento patrimonial, unindo segurança jurídica, otimização tributária e planejamento estratégico.
             </p>
           </motion.div>
 
@@ -71,10 +71,10 @@ Com operações em mais de 12 países, desenvolvemos estruturas legais de alto r
               size="lg"
               className="bg-foreground text-background hover:bg-white/90 text-base w-full sm:w-auto"
             >
-              <Link href="#contato">
+              <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados" target="_blank" rel="noopener noreferrer">
                 Agendar Diagnóstico
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </a>
             </Button>
             <Button
               asChild

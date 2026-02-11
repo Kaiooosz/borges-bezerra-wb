@@ -14,8 +14,8 @@ export default function GuiaOffshorePage() {
             Proteção Patrimonial • Otimização Fiscal • Cripto • Cidadania • Estruturas Corporativas Globais
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a 
-              href="https://wa.me/5511943665367" 
+            <a
+              href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-all hover:scale-105"
@@ -180,158 +180,158 @@ export default function GuiaOffshorePage() {
 
       {/* Benefícios Estratégicos */}
       <section className="py-16 px-4">
-  <div className="max-w-4xl mx-auto">
-    <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-      Benefícios Estratégicos de uma Estrutura Offshore
-    </h2>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+            Benefícios Estratégicos de uma Estrutura Offshore
+          </h2>
 
-    <div className="grid md:grid-cols-2 gap-6">
-      {[
-        { title: 'Diversificação Internacional', desc: 'Proteção contra riscos políticos de um único país' },
-        { title: 'Proteção Patrimonial Avançada', desc: 'Estrutra legal para proteção contra riscos sistêmicos e empresarias' },
-        { title: 'Otimização Tributária', desc: 'Redução legal de impostos em âmbito global' },
-        { title: 'Confidencialidade', desc: 'Privacidade sobre sócios, ativos e movimentações' },
-        { title: 'Acesso a Mercados Globais', desc: 'Plataformas e bancos restritos no Brasil' },
-        { title: 'Compliance Simplificado', desc: 'Regulamentação mais leve e clara' },
-        { title: 'Eficiência Operacional', desc: 'Processos ágeis e estruturas flexíveis' },
-        { title: 'Consolidação Patrimonial', desc: 'Imóveis, cripto, participações em uma holding' },
-        { title: 'Planejamento Sucessório', desc: 'Transição rápida, privada e eficiente' },
-        { title: 'Flexibilidade Jurídica', desc: 'Regimes contratuais mais favoráveis' }
-      ].map((benefit, idx) => (
-        <div
-          key={idx}
-          className="p-6 bg-card rounded-lg border border-border hover:border-primary transition-colors"
-        >
-          <div className="flex items-start gap-4">
-            <div className="w-2 h-2 bg-primary/10 text-primary rounded-full flex items-center justify-center font-bold shrink-0 mt-3">
-              {/* Ícone opcional ou deixe vazio */}
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-2">{benefit.title}</h3>
-              <p className="text-sm text-muted-foreground">{benefit.desc}</p>
-            </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              { title: 'Diversificação Internacional', desc: 'Proteção contra riscos políticos de um único país' },
+              { title: 'Proteção Patrimonial Avançada', desc: 'Estrutra legal para proteção contra riscos sistêmicos e empresarias' },
+              { title: 'Otimização Tributária', desc: 'Redução legal de impostos em âmbito global' },
+              { title: 'Confidencialidade', desc: 'Privacidade sobre sócios, ativos e movimentações' },
+              { title: 'Acesso a Mercados Globais', desc: 'Plataformas e bancos restritos no Brasil' },
+              { title: 'Compliance Simplificado', desc: 'Regulamentação mais leve e clara' },
+              { title: 'Eficiência Operacional', desc: 'Processos ágeis e estruturas flexíveis' },
+              { title: 'Consolidação Patrimonial', desc: 'Imóveis, cripto, participações em uma holding' },
+              { title: 'Planejamento Sucessório', desc: 'Transição rápida, privada e eficiente' },
+              { title: 'Flexibilidade Jurídica', desc: 'Regimes contratuais mais favoráveis' }
+            ].map((benefit, idx) => (
+              <div
+                key={idx}
+                className="p-6 bg-card rounded-lg border border-border hover:border-primary transition-colors"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-primary/10 text-primary rounded-full flex items-center justify-center font-bold shrink-0 mt-3">
+                    {/* Ícone opcional ou deixe vazio */}
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-2">{benefit.title}</h3>
+                    <p className="text-sm text-muted-foreground">{benefit.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
 
       {/* Para quem é recomendada */}
       <section className="py-16 px-4 bg-muted/30">
-  <div className="max-w-4xl mx-auto">
-    
-    <h2 className="text-3xl md:text-4xl font-bold mb-6">
-      Para Quem é Recomendada uma Offshore?
-    </h2>
+        <div className="max-w-4xl mx-auto">
 
-    <div className="p-6 bg-primary/10 rounded-lg border border-primary/20 mb-8">
-      <p className="text-lg font-semibold">
-        Critério inicial: Negócios faturando acima de R$ 500 mil/ano já se beneficiam fortemente.
-      </p>
-    </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Para Quem é Recomendada uma Offshore?
+          </h2>
 
-    <h3 className="text-2xl font-bold mb-6">Segmentos mais beneficiados:</h3>
+          <div className="p-6 bg-primary/10 rounded-lg border border-primary/20 mb-8">
+            <p className="text-lg font-semibold">
+              Critério inicial: Negócios faturando acima de R$ 500 mil/ano já se beneficiam fortemente.
+            </p>
+          </div>
 
-    <div className="space-y-6">
-      {[
-        { 
-          title: 'Negócios Digitais', 
-          items: ['Ecommerce internacional', 'Agências', 'SaaS', 'Produtos digitais', 'Infoprodutores'] 
-        },
-        { 
-          title: 'Profissionais Liberais Internacionais', 
-          items: ['Consultores', 'Médicos', 'Advogados', 'Mentores', 'Arquitetos'] 
-        },
-        { 
-          title: 'Empresas Multinacionais', 
-          items: ['Proteção IP', 'Consolidação fiscal', 'Expansão global'] 
-        },
-        { 
-          title: 'Investidores & Empresários', 
-          items: ['Diversificação', 'Proteção de portfólios', 'Gestão global de ativos'] 
-        },
-        { 
-          title: 'Setores Regulados', 
-          items: ['Trading e Forex', 'Derivativos', 'Criptomoedas', 'Apostas e iGaming', 'Cannabis medicinal'] 
-        }
-      ].map((segment, idx) => (
-        <div key={idx} className="p-6 bg-card rounded-lg border border-border">
-          <h4 className="font-bold text-xl mb-4 text-primary">
-            {segment.title}
-          </h4>
+          <h3 className="text-2xl font-bold mb-6">Segmentos mais beneficiados:</h3>
 
-          <div className="flex flex-wrap gap-2">
-            {segment.items.map((item, i) => (
-              <span
-                key={i}
-                className="px-3 py-1 bg-muted text-sm rounded-full"
-              >
-                {item}
-              </span>
+          <div className="space-y-6">
+            {[
+              {
+                title: 'Negócios Digitais',
+                items: ['Ecommerce internacional', 'Agências', 'SaaS', 'Produtos digitais', 'Infoprodutores']
+              },
+              {
+                title: 'Profissionais Liberais Internacionais',
+                items: ['Consultores', 'Médicos', 'Advogados', 'Mentores', 'Arquitetos']
+              },
+              {
+                title: 'Empresas Multinacionais',
+                items: ['Proteção IP', 'Consolidação fiscal', 'Expansão global']
+              },
+              {
+                title: 'Investidores & Empresários',
+                items: ['Diversificação', 'Proteção de portfólios', 'Gestão global de ativos']
+              },
+              {
+                title: 'Setores Regulados',
+                items: ['Trading e Forex', 'Derivativos', 'Criptomoedas', 'Apostas e iGaming', 'Cannabis medicinal']
+              }
+            ].map((segment, idx) => (
+              <div key={idx} className="p-6 bg-card rounded-lg border border-border">
+                <h4 className="font-bold text-xl mb-4 text-primary">
+                  {segment.title}
+                </h4>
+
+                <div className="flex flex-wrap gap-2">
+                  {segment.items.map((item, i) => (
+                    <span
+                      key={i}
+                      className="px-3 py-1 bg-muted text-sm rounded-full"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
-        </div>
-      ))}
-    </div>
 
-  </div>
-</section>
+        </div>
+      </section>
 
       {/* Jurisdições */}
       <section className="py-16 px-4">
-  <div className="max-w-4xl mx-auto">
-    <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-      Jurisdições Mais Estratégicas para 2025
-    </h2>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+            Jurisdições Mais Estratégicas para 2025
+          </h2>
 
-    <div className="space-y-6">
-      {[
-        { 
-          country: 'Emirados Árabes Unidos (UAE)', 
-          benefits: ['Zero imposto para muitos modelos', 'Ótimo para cripto e holdings'] 
-        },
-        { 
-          country: 'Estônia', 
-          benefits: ['Melhor para empresas digitais', 'Sistema tributário inovador'] 
-        },
-        { 
-          country: 'Malta', 
-          benefits: ['Forte para cripto e Web3', 'Regulamentação clara'] 
-        },
-        { 
-          country: 'Ilhas Virgens Britânicas (BVI)', 
-          benefits: ['Confidencialidade', 'Proteção patrimonial'] 
-        },
-        { 
-          country: 'Ilhas Cayman', 
-          benefits: ['Fundos, cripto e high-net worth'] 
-        },
-        { 
-          country: 'Panamá', 
-          benefits: ['Forte privacidade', 'Excelente para holdings familiares'] 
-        }
-      ].map((jurisdiction, index) => (
-        <div 
-          key={index} 
-          className="p-6 bg-card rounded-lg border border-border hover:border-primary transition-colors"
-        >
-          <h3 className="font-bold text-xl mb-3">{jurisdiction.country}</h3>
+          <div className="space-y-6">
+            {[
+              {
+                country: 'Emirados Árabes Unidos (UAE)',
+                benefits: ['Zero imposto para muitos modelos', 'Ótimo para cripto e holdings']
+              },
+              {
+                country: 'Estônia',
+                benefits: ['Melhor para empresas digitais', 'Sistema tributário inovador']
+              },
+              {
+                country: 'Malta',
+                benefits: ['Forte para cripto e Web3', 'Regulamentação clara']
+              },
+              {
+                country: 'Ilhas Virgens Britânicas (BVI)',
+                benefits: ['Confidencialidade', 'Proteção patrimonial']
+              },
+              {
+                country: 'Ilhas Cayman',
+                benefits: ['Fundos, cripto e high-net worth']
+              },
+              {
+                country: 'Panamá',
+                benefits: ['Forte privacidade', 'Excelente para holdings familiares']
+              }
+            ].map((jurisdiction, index) => (
+              <div
+                key={index}
+                className="p-6 bg-card rounded-lg border border-border hover:border-primary transition-colors"
+              >
+                <h3 className="font-bold text-xl mb-3">{jurisdiction.country}</h3>
 
-          <ul className="space-y-2">
-            {jurisdiction.benefits.map((benefit, idx) => (
-              <li key={idx} className="flex items-start gap-2 text-muted-foreground">
-                <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                <span>{benefit}</span>
-              </li>
+                <ul className="space-y-2">
+                  {jurisdiction.benefits.map((benefit, idx) => (
+                    <li key={idx} className="flex items-start gap-2 text-muted-foreground">
+                      <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
 
       {/* Passo a Passo */}
@@ -412,8 +412,8 @@ export default function GuiaOffshorePage() {
               ))}
             </ul>
           </div>
-          <a 
-            href="https://wa.me/5511943665367" 
+          <a
+            href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-10 py-5 bg-primary-foreground text-primary rounded-full font-bold text-lg hover:scale-105 transition-all shadow-lg"

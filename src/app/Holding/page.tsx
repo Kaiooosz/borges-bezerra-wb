@@ -133,25 +133,25 @@ export default function HoldingPage() {
         </div>
 
         <div className="relative z-10 px-4">
-  <div className="max-w-4xl mx-auto text-center space-y-6">
-    <div className="mb-12 flex justify-center">
-      <div className="w-full max-w-[100px] sm:max-w-140px md:max-w-[180px]">
-        <div className="rounded-3xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover rounded-3xl"
-          >
-            <source
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Animac%CC%A7a%CC%83o%20logo-fj6CGOTzhzrRYqVrNCXk6nZpFllLH3.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-      </div>
-    </div>
+          <div className="max-w-4xl mx-auto text-center space-y-6">
+            <div className="mb-12 flex justify-center">
+              <div className="w-full max-w-[100px] sm:max-w-140px md:max-w-[180px]">
+                <div className="rounded-3xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover rounded-3xl"
+                  >
+                    <source
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Animac%CC%A7a%CC%83o%20logo-fj6CGOTzhzrRYqVrNCXk6nZpFllLH3.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+            </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance">
               Holdings Patrimoniais e Empresariais: <span className="italic text-zinc-400">Proteja e Multiplique</span>
@@ -161,17 +161,22 @@ export default function HoldingPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <button className="group px-8 py-4 bg-white text-black rounded-full hover:bg-gray-200 transition-all font-semibold flex items-center justify-center gap-2 hover:scale-105 hover:shadow-xl duration-300">
+              <a
+                href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group px-8 py-4 bg-white text-black rounded-full hover:bg-gray-200 transition-all font-semibold flex items-center justify-center gap-2 hover:scale-105 hover:shadow-xl duration-300"
+              >
                 Agendar Consultoria Paga ($125)
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </a>
+              <button
+                onClick={handleDownload}
+                className="px-8 py-4 border-2 border-white text-foreground rounded-full hover:bg-white/10 transition-all font-semibold hover:scale-105 duration-300 flex items-center justify-center gap-2"
+              >
+                Baixar Guia Completo
+                <Download className="h-5 w-5" />
               </button>
-              <button 
-    onClick={handleDownload}
-    className="px-8 py-4 border-2 border-white text-foreground rounded-full hover:bg-white/10 transition-all font-semibold hover:scale-105 duration-300 flex items-center justify-center gap-2"
-  >
-    Baixar Guia Completo
-    <Download className="h-5 w-5" />
-  </button>
             </div>
           </div>
         </div>
@@ -301,19 +306,26 @@ export default function HoldingPage() {
               </a>
 
               <a
-                href="tel:+551194366-5367"
+                href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:scale-105"
               >
                 <Phone className="w-6 h-6 text-foregroung mx-auto mb-3" />
-                <h3 className="font-bold text-foregroung mb-2">Telefone</h3>
-                <p className="text-zinc-400 text-sm">+55 (11) 94366-5367</p>
+                <h3 className="font-bold text-foregroung mb-2">WhatsApp</h3>
+                <p className="text-zinc-400 text-sm py-1">+55 11 98271-2025</p>
               </a>
             </div>
 
-            <button className="inline-flex items-center gap-2 px-10 py-4 bg-white text-black rounded-full hover:bg-gray-200 transition-all font-semibold hover:scale-110 hover:shadow-xl">
+            <a
+              href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-10 py-4 bg-white text-black rounded-full hover:bg-gray-200 transition-all font-semibold hover:scale-110 hover:shadow-xl"
+            >
               Agendar Consultoria Paga ($125)
               <ArrowRight className="h-5 w-5" />
-            </button>
+            </a>
           </div>
         </div>
       </section>

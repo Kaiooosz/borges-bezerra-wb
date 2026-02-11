@@ -25,19 +25,26 @@ export function Cta() {
             </a>
 
             <a
-              href="tel:+5511943665367"
+              href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:scale-105"
             >
               <Phone className="w-6 h-6 text-foregroung mx-auto mb-3" />
-              <h3 className="font-bold text-foregroung mb-2">Telefone</h3>
-              <p className="text--chart-4 text-sm">+55 (11) 94366-5367</p>
+              <h3 className="font-bold text-foregroung mb-2">WhatsApp</h3>
+              <p className="text--chart-4 text-sm">+55 11 98271-2025</p>
             </a>
           </div>
 
-          <button className="inline-flex items-center gap-2 px-10 py-4 bg-white text-black rounded-full hover:bg-gray-200 transition-all font-semibold hover:scale-110 hover:shadow-xl">
+          <a
+            href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-10 py-4 bg-white text-black rounded-full hover:bg-gray-200 transition-all font-semibold hover:scale-110 hover:shadow-xl"
+          >
             Agendar Consultoria Paga ($125)
             <ArrowRight className="h-5 w-5" />
-          </button>
+          </a>
         </div>
       </div>
     </section>

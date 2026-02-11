@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { 
+import {
   Shield, Globe, TrendingUp, Scale, DollarSign,
   CheckCircle2, AlertTriangle, Building2,
   ArrowRight, ChevronDown, Award, ShieldCheck,
-  PiggyBank 
+  PiggyBank
 } from "lucide-react";
 import Image from "next/image";
 import OffshoreComplianceCard from "@/components/compliceoffshorecard";
@@ -290,7 +290,7 @@ export default function OffshoreExpertPage() {
   return (
     <div className="min-h-screen bg-backgroud text-foregroung font-">
       {/* Progress Bar */}
-      <div 
+      <div
         className="fixed top-0 left-0 h-1 bg-linear-to-r from-white via-zinc-300 to-white z-50 transition-all duration-300"
         style={{ width: `${scrollProgress}%` }}
       />
@@ -304,44 +304,46 @@ export default function OffshoreExpertPage() {
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 text-center space-y-8 mt-20">
-  <div className="mb-12 flex justify-center">
-    <div className="w-full max-w-[100px] sm:max-w-140px md:max-w-[180px]">
-      <div className="rounded-3xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover rounded-3xl"
-        >
-          <source
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Animac%CC%A7a%CC%83o%20logo-fj6CGOTzhzrRYqVrNCXk6nZpFllLH3.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </div>
-    </div>
-  </div>
+          <div className="mb-12 flex justify-center">
+            <div className="w-full max-w-[100px] sm:max-w-140px md:max-w-[180px]">
+              <div className="rounded-3xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover rounded-3xl"
+                >
+                  <source
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Animac%CC%A7a%CC%83o%20logo-fj6CGOTzhzrRYqVrNCXk6nZpFllLH3.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+          </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance">
-              Estrutura Offshore <span className="italic text-zinc-400">que realmente funcionam.</span>
-            </h1>
+            Estrutura Offshore <span className="italic text-zinc-400">que realmente funcionam.</span>
+          </h1>
 
           <p className="text-xl md:text-2xl text-zinc-400 max-w-4xl mx-auto leading-relaxed">
-          Nossa atuação em Estruturas Offshore oferece o acesso a jurisdições estáveis e moedas fortes, 
-          funcionando como um pilar fundamental para a proteção patrimonial e diversificação de investimentos 
-          seguindo o mais alto nível de conformidade internacional.
+            Nossa atuação em Estruturas Offshore oferece o acesso a jurisdições estáveis e moedas fortes,
+            funcionando como um pilar fundamental para a proteção patrimonial e diversificação de investimentos
+            seguindo o mais alto nível de conformidade internacional.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <a 
-              href="#consultation"
+            <a
+              href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group px-10 py-5 bg-white text-black rounded-full font-bold text-lg hover:bg-zinc-200 transition-all duration-300 hover:scale-105 flex items-center gap-3"
             >
               Agendar Consultoria ($125)
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a 
+            <a
               href="#how-it-works"
               className="px-10 py-5 bg-white/10 border-2 border-white/30 text-foregroung rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300 backdrop-blur-sm"
             >
@@ -384,7 +386,7 @@ export default function OffshoreExpertPage() {
               <span className="italic text-zinc-400">Uma Estrutura Offshore</span>
             </h2>
             <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
-            Planejamento patrimonial legítimo com conformidade internacional.
+              Planejamento patrimonial legítimo com conformidade internacional.
             </p>
           </div>
 
@@ -393,7 +395,7 @@ export default function OffshoreExpertPage() {
               <Shield className="h-12 w-12 mb-6 text-foregroung" />
               <h3 className="text-2xl font-bold mb-4">Proteção Patrimonial</h3>
               <p className="text-zinc-400 leading-relaxed mb-6">
-                Blindagem legal contra processos, bloqueios judiciais e riscos políticos. 
+                Blindagem legal contra processos, bloqueios judiciais e riscos políticos.
                 Seus ativos ficam protegidos em jurisdições com forte rule of law.
               </p>
               <ul className="space-y-3 text-sm text-zinc-400">
@@ -416,7 +418,7 @@ export default function OffshoreExpertPage() {
               <TrendingUp className="h-12 w-12 mb-6 text-foregroung" />
               <h3 className="text-2xl font-bold mb-4">Otimização Tributária</h3>
               <p className="text-zinc-400 leading-relaxed mb-6">
-              Otimize sua carga tributária de forma legal e transparente, conforme normas aplicáveis.
+                Otimize sua carga tributária de forma legal e transparente, conforme normas aplicáveis.
               </p>
               <ul className="space-y-3 text-sm text-zinc-400">
                 <li className="flex items-start gap-2">
@@ -438,7 +440,7 @@ export default function OffshoreExpertPage() {
               <Globe className="h-12 w-12 mb-6 text-foregroung" />
               <h3 className="text-2xl font-bold mb-4">Liberdade Global</h3>
               <p className="text-zinc-400 leading-relaxed mb-6">
-                Opere internacionalmente sem barreiras burocráticas. Receba de qualquer país, 
+                Opere internacionalmente sem barreiras burocráticas. Receba de qualquer país,
                 opere em múltiplas moedas e escale sem fronteiras.
               </p>
               <ul className="space-y-3 text-sm text-zinc-400">
@@ -458,16 +460,16 @@ export default function OffshoreExpertPage() {
             </div>
           </div>
 
-<div className="text-center mb-40 mt-42 ">
+          <div className="text-center mb-40 mt-42 ">
             <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            Jurisdições
-            Exclusivas em
+              Jurisdições
+              Exclusivas em
               <br />
               <span className="italic text-zinc-400">obertura Global</span>
             </h2>
           </div>
 
-{/* <Link href="/" className="flex items-center gap-3">
+          {/* <Link href="/" className="flex items-center gap-3">
             <div className="shrink-0">
               <img 
                 src="/LogoBranco.svg" 
@@ -479,49 +481,49 @@ export default function OffshoreExpertPage() {
 
           <div className="mt-42 h-96 bg-white/5 border border-border rounded-2xl flex items-center justify-center">
             <div className="">
-            <Image
-              src="/image-caribe.jpg"
-              alt="caribe"
-              width={1200}
-              height={600}
-              className="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-500"
-            />
-            </div>
-          </div>
-          
-          <div className="mt-42 h-96 bg-white/5 border border-border rounded-2xl flex items-center justify-center">
-            <div className="">
-            <Image
-              src="/image-europa.jpg"
-              alt="europa"
-              width={1200}
-              height={600}
-              className="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-500"
-            />
+              <Image
+                src="/image-caribe.jpg"
+                alt="caribe"
+                width={1200}
+                height={600}
+                className="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-500"
+              />
             </div>
           </div>
 
           <div className="mt-42 h-96 bg-white/5 border border-border rounded-2xl flex items-center justify-center">
             <div className="">
-            <Image
-              src="/image-asia.jpg"
-              alt="asia"
-              width={1200}
-              height={600}
-              className="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-500"
-            />
+              <Image
+                src="/image-europa.jpg"
+                alt="europa"
+                width={1200}
+                height={600}
+                className="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-500"
+              />
             </div>
           </div>
 
           <div className="mt-42 h-96 bg-white/5 border border-border rounded-2xl flex items-center justify-center">
             <div className="">
-            <Image
-              src="/image-sul-africa.jpg"
-              alt="america do sul e africa"
-              width={1200}
-              height={600}
-              className="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-500"
-            />
+              <Image
+                src="/image-asia.jpg"
+                alt="asia"
+                width={1200}
+                height={600}
+                className="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-500"
+              />
+            </div>
+          </div>
+
+          <div className="mt-42 h-96 bg-white/5 border border-border rounded-2xl flex items-center justify-center">
+            <div className="">
+              <Image
+                src="/image-sul-africa.jpg"
+                alt="america do sul e africa"
+                width={1200}
+                height={600}
+                className="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-500"
+              />
             </div>
           </div>
         </div>
@@ -543,7 +545,7 @@ export default function OffshoreExpertPage() {
 
           <div className="space-y-8 max-w-5xl mx-auto">
             {objections.map((obj, i) => (
-              <div 
+              <div
                 key={i}
                 className="p-8 bg-white/5 border border-border rounded-2xl hover:bg-white/10 transition-all duration-300"
               >
@@ -567,7 +569,7 @@ export default function OffshoreExpertPage() {
             <Award className="h-16 w-16 mx-auto mb-6 text-foregroung" />
             <h3 className="text-3xl font-bold mb-4">Adoção de políticas e controles de compliance, com auditoria e atualização contínuas.</h3>
             <p className="text-xl --ring mb-6 max-w-3xl mx-auto">
-              Todas as nossas estruturas são 100% declaradas e em conformidade com a legislação brasileira e internacional. 
+              Todas as nossas estruturas são 100% declaradas e em conformidade com a legislação brasileira e internacional.
               <span className="text-foregroung font-bold">Você não assume riscos legais - apenas otimiza o que é seu por direito.</span>
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -599,7 +601,7 @@ export default function OffshoreExpertPage() {
             <p className="text-zinc-400 mb-8">Estruturas offshore profissionais desde 2016</p>
             <div className="space-y-2 text-sm text-zinc-400">
               <p>contato@borgesbezerra.com.br</p>
-              <p>+55 (11) 94366-5367</p>
+              <p>+55 11 98271-2025</p>
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-border text-center text-sm text--chart-1">

@@ -14,7 +14,7 @@ export function Header() {
       const progress = (window.scrollY / totalHeight) * 100
       setScrollProgress(progress)
     }
- 
+
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -41,14 +41,14 @@ export function Header() {
           className="fixed top-0 left-0 h-1 bg-muted-foreground z-50 transition-all duration-300"
           style={{ width: `${scrollProgress}%` }}
         />
-        
+
         {/* Top bar with contact info */}
         <div className="border-b border-border">
           <div className="mx-auto px-4 py-2">
             <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground">
-              <a href="tel:+5511943665367" className="flex items-center gap-2 hover:text-foreground transition-colors">
+              <a href="tel:+5511982712025" className="flex items-center gap-2 hover:text-foreground transition-colors">
                 <Phone className="h-3 w-3" />
-                <span>(11) 94366-5367</span>
+                <span>+55 11 98271-2025</span>
               </a>
               <a
                 href="mailto:contato@bezerraborges.com.br"
@@ -61,36 +61,36 @@ export function Header() {
           </div>
         </div>
 
-       {/* Main navigation */}
-<div className="mx-auto px-6 md:px-8">
-  <div className="flex items-center justify-between h-16 md:h-20">
-    {/* Logo */}
-    <a href="/" className="flex items-center gap-3 z-50">
-      <div className="shrink-0">
-        {/* Logo preta para tema claro */}
-        <img 
-          src="/Logo preto.svg" 
-          alt="BB Logo" 
-          className="h-14 w-14 md:h-20 md:w-20 dark:hidden"
-        />
-        {/* Logo branca para tema escuro */}
-        <img 
-          src="/LogoBranco.svg" 
-          alt="BB Logo" 
-          className="h-14 w-14 md:h-20 md:w-20 hidden dark:block"
-        />
-      </div> 
-    </a>
+        {/* Main navigation */}
+        <div className="mx-auto px-6 md:px-8">
+          <div className="flex items-center justify-between h-16 md:h-20">
+            {/* Logo */}
+            <a href="/" className="flex items-center gap-3 z-50">
+              <div className="shrink-0">
+                {/* Logo preta para tema claro */}
+                <img
+                  src="/Logo preto.svg"
+                  alt="BB Logo"
+                  className="h-14 w-14 md:h-20 md:w-20 dark:hidden"
+                />
+                {/* Logo branca para tema escuro */}
+                <img
+                  src="/LogoBranco.svg"
+                  alt="BB Logo"
+                  className="h-14 w-14 md:h-20 md:w-20 hidden dark:block"
+                />
+              </div>
+            </a>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8">
               <a href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Home
               </a>
-              
+
               <a href="/servicos" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Serviços
-              </a> 
+              </a>
 
               <a href="/sobre-nos" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Sobre Nós
@@ -99,7 +99,7 @@ export function Header() {
               <a href="/Holding" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Holding
               </a>
-              
+
               <a href="/offshore" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Offshore
               </a>
@@ -122,10 +122,10 @@ export function Header() {
               >
                 {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
               </button>
-              
-              <a 
-                href="https://wa.me/5511943665367" 
-                target="_blank" 
+
+              <a
+                href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition-all font-semibold text-sm hover:scale-105 duration-300"
               >
@@ -169,32 +169,32 @@ export function Header() {
           {/* Mobile Menu Content */}
           <div className="md:hidden fixed inset-0 top-[105px] z-40 overflow-y-auto bg-popover font-source-serif-pro">
             <nav className="flex flex-col items-center justify-start min-h-full gap-5 px-4 py-8 pb-20">
-              <a 
-                href="/" 
+              <a
+                href="/"
                 className="text-2xl font-bold text-popover-foreground transition-all duration-300 hover:scale-110"
-                style={{ 
+                style={{
                   filter: 'drop-shadow(0 0 15px hsl(var(--popover-foreground) / 0.6)) drop-shadow(0 0 25px hsl(var(--popover-foreground) / 0.4))'
                 }}
                 onClick={closeMenu}
               >
                 Home
               </a>
-              
-              <a 
-                href="/servicos" 
+
+              <a
+                href="/servicos"
                 className="text-2xl font-bold text-popover-foreground transition-all duration-300 hover:scale-110"
-                style={{ 
+                style={{
                   filter: 'drop-shadow(0 0 15px hsl(var(--popover-foreground) / 0.6)) drop-shadow(0 0 25px hsl(var(--popover-foreground) / 0.4))'
                 }}
                 onClick={closeMenu}
               >
                 Serviços
-              </a> 
+              </a>
 
-              <a 
-                href="/sobre-nos" 
+              <a
+                href="/sobre-nos"
                 className="text-2xl font-bold text-popover-foreground transition-all duration-300 hover:scale-110"
-                style={{ 
+                style={{
                   filter: 'drop-shadow(0 0 15px hsl(var(--popover-foreground) / 0.6)) drop-shadow(0 0 25px hsl(var(--popover-foreground) / 0.4))'
                 }}
                 onClick={closeMenu}
@@ -202,21 +202,21 @@ export function Header() {
                 Sobre Nós
               </a>
 
-              <a 
-                href="/Holding" 
+              <a
+                href="/Holding"
                 className="text-2xl font-bold text-popover-foreground transition-all duration-300 hover:scale-110"
-                style={{ 
+                style={{
                   filter: 'drop-shadow(0 0 15px hsl(var(--popover-foreground) / 0.6)) drop-shadow(0 0 25px hsl(var(--popover-foreground) / 0.4))'
                 }}
                 onClick={closeMenu}
               >
                 Holding
               </a>
-              
-              <a 
-                href="/offshore" 
+
+              <a
+                href="/offshore"
                 className="text-2xl font-bold text-popover-foreground transition-all duration-300 hover:scale-110"
-                style={{ 
+                style={{
                   filter: 'drop-shadow(0 0 15px hsl(var(--popover-foreground) / 0.6)) drop-shadow(0 0 25px hsl(var(--popover-foreground) / 0.4))'
                 }}
                 onClick={closeMenu}
@@ -224,10 +224,10 @@ export function Header() {
                 Offshore
               </a>
 
-              <a 
-                href="/artigos" 
+              <a
+                href="/artigos"
                 className="text-2xl font-bold text-popover-foreground transition-all duration-300 hover:scale-110"
-                style={{ 
+                style={{
                   filter: 'drop-shadow(0 0 15px hsl(var(--popover-foreground) / 0.6)) drop-shadow(0 0 25px hsl(var(--popover-foreground) / 0.4))'
                 }}
                 onClick={closeMenu}
@@ -235,10 +235,10 @@ export function Header() {
                 Artigos
               </a>
 
-              <a 
-                href="/contact" 
+              <a
+                href="/contact"
                 className="text-2xl font-bold text-popover-foreground transition-all duration-300 hover:scale-110"
-                style={{ 
+                style={{
                   filter: 'drop-shadow(0 0 15px hsl(var(--popover-foreground) / 0.6)) drop-shadow(0 0 25px hsl(var(--popover-foreground) / 0.4))'
                 }}
                 onClick={closeMenu}
@@ -247,12 +247,12 @@ export function Header() {
               </a>
 
               {/* Mobile CTA Button */}
-              <a 
-                href="https://wa.me/5511943665367" 
-                target="_blank" 
+              <a
+                href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 px-10 py-4 bg-popover-foreground text-popover rounded-full hover:opacity-90 transition-all font-bold text-xl hover:scale-110 duration-300 shadow-lg"
-                style={{ 
+                style={{
                   filter: 'drop-shadow(0 0 20px hsl(var(--popover-foreground) / 0.5))'
                 }}
                 onClick={closeMenu}

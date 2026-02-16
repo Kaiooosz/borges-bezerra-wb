@@ -20,7 +20,7 @@ export default function TeamCarousel() {
   };
 
   const team = [
-    { name: 'Dr. Vinicius', role: 'Sócio Fundador', image: '/vinicius.jpg' },
+    { name: 'Dr. Vinicius', role: 'Sócio Fundador', image: '/vinicius-icone-perfil.jpeg' },
     { name: 'Dr. Boaz', role: 'Sócio Fundador', image: '/boaz.jpg' },
     { name: 'Dr. Fabiano', role: 'Closer Sênior e Advogado', image: '/fabiano.jpg' },
     { name: 'Dra. Alice ', role: 'Head de Offshore', image: '/alice.jpg' },

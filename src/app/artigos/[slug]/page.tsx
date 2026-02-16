@@ -50,15 +50,15 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     return (
         <div className="min-h-screen bg-background text-foreground font-source-serif-pro pt-40 md:pt-48">
             {/* Hero Section with Background Image */}
-            <div className="relative h-[60vh] min-h-[500px] w-full overflow-hidden rounded-b-[3rem] shadow-2xl">
+            <div className="relative min-h-[60vh] md:min-h-[75vh] w-full overflow-hidden rounded-b-[3rem] shadow-2xl flex flex-col">
                 <div
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-110 active:scale-100 transition-transform duration-1000"
+                    className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105 transition-transform duration-1000"
                     style={{ backgroundImage: `url(${article.image || '/placeholder.svg'})` }}
                 />
-                <div className="absolute inset-0 bg-black/50 backdrop-blur-[1px]" />
+                <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" />
 
-                <div className="relative h-full max-w-7xl mx-auto px-4 flex flex-col justify-end pb-12 md:pb-20">
-                    <div className="max-w-4xl space-y-6 animate-fadeInUp">
+                <div className="relative flex-1 max-w-7xl mx-auto px-4 flex flex-col justify-end pb-12 md:pb-24">
+                    <div className="max-w-5xl space-y-6 animate-fadeInUp">
                         <div className="flex flex-wrap items-center gap-4 text-sm md:text-base text-zinc-200">
                             <span className="px-4 py-1.5 bg-foreground text-background font-bold rounded-full backdrop-blur-md">
                                 {article.category}
@@ -73,7 +73,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                             </div>
                         </div>
 
-                        <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-white text-balance drop-shadow-lg">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] text-white text-balance drop-shadow-2xl">
                             {article.title}
                         </h1>
                     </div>

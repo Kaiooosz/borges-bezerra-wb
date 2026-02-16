@@ -463,55 +463,126 @@ export const articles: Article[] = [
   // ARTIGO 19 - Tesouro de Maduro Bitcoin (ÚNICO)
   {
     title: "O Tesouro de Maduro: Como um Ditador Estruturou (ou Tentou Estruturar) a Blindagem de US$ 60 Bilhões utilizando Bitcoin",
-    excerpt: "Uma investigação sobre como o regime venezuelano supostamente converteu bilhões em receitas desviadas em criptomoedas, criando um dos maiores portfólios de Bitcoin do planeta.",
+    excerpt: "Uma investigação técnica detalhada sobre como o regime venezuelano metodicamente converteu bilhões em receitas desviadas em Bitcoin, criando um império digital inviolável.",
     category: "Cripto & Tributação",
     date: "05 de Janeiro, 2026",
     image: "/maduro.jpg",
     slug: "tesouro-maduro-bitcoin-venezuela-60-bilhoes",
     readTime: "15 min",
     content: `
-      <div class="mb-8">
-        <img src="/maduro.jpg" alt="Alex Saab abraça Nicolás Maduro" class="w-full rounded-2xl mb-4 shadow-xl" />
-        <p class="text-sm text-muted-foreground italic text-center">Alex Saab abraça Nicolás Maduro em seu retorno a Caracas em dezembro de 2023.</p>
+      <div class="mb-12">
+        <img src="/maduro.jpg" alt="Alex Saab abraça Nicolás Maduro" class="w-full rounded-[2.5rem] mb-6 shadow-2xl" />
+        <div class="p-6 border-l-4 border-primary bg-muted/30">
+          <p class="text-sm text-foreground italic">"Alex Saab abraça Nicolás Maduro em seu retorno a Caracas em dezembro de 2023. Com Maduro agora sob custódia dos EUA, Saab pode deter as chaves da fortuna oculta da Venezuela."</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 mb-12 pb-8 border-b border-border">
+        <div class="h-14 w-14 rounded-full overflow-hidden bg-zinc-200 ring-2 ring-primary/20">
+          <img src="/vinicius-icone-perfil.jpeg" alt="Vinicius Borges" class="w-full h-full object-cover" />
+        </div>
+        <div>
+          <p class="font-bold text-xl text-foreground">Vinicius Borges</p>
+          <p class="text-sm text-muted-foreground">Bezerra Borges Advocacia</p>
+        </div>
       </div>
 
       <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Introdução: A Captura e a Pergunta de US$ 60 Bilhões</h2>
-      <p class="mb-6 leading-relaxed">Nas primeiras horas de 03 de janeiro de 2026, uma operação sigilosa das forças especiais norte-americanas resultou na captura de Nicolás Maduro em Caracas. Contudo, enquanto Maduro era transportado para Nova York para enfrentar acusações federais, uma pergunta muito mais complexa e urgente ecoava nos corredores da inteligência global: <strong>Onde está o dinheiro?</strong></p>
-      
-      <p class="mb-8 leading-relaxed">Por anos, o regime de Maduro pilhou sistematicamente a Venezuela, desviando bilhões em receitas de petróleo, ouro e outros ativos estatais. A estimativa aponta para um tesouro digital que pode chegar a <strong>US$ 60 bilhões</strong>, o equivalente a cerca de <strong>600.000 BTC</strong> ou <strong>3% de todo o suprimento global</strong> da moeda.</p>
-      
-      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro border-b border-border pb-4">O Esquema de Blindagem Financeira: As 4 Etapas</h2>
-      
-      <div class="grid gap-6 my-10">
-        <div class="bg-card border border-border rounded-2xl p-8 hover:shadow-md transition-shadow">
-          <h3 class="text-xl font-bold mb-4 text-primary">1. Extração Ilegal e Exportação em Massa</h3>
-          <p class="mb-2 text-foreground/80 font-light"><strong>Ação:</strong> O ouro é extraído na região do Arco Minero del Orinoco.</p>
-          <p class="text-[#DAA520] font-bold text-sm">ATRIBUTO: Ativo: Ouro | Local: Venezuela</p>
-        </div>
+      <p class="mb-6 leading-relaxed">Nas primeiras horas de 03 de janeiro de 2026, uma operação sigilosa das forças especiais norte-americanas resultou na captura de Nicolás Maduro em Caracas. Contudo, enquanto Maduro era transportado para Nova York para enfrentar acusações federais, uma pergunta muito mais complexa e urgente ecoava: <strong>Onde está o dinheiro?</strong></p>
 
-        <div class="bg-card border border-border rounded-2xl p-8 hover:shadow-md transition-shadow">
-          <h3 class="text-xl font-bold mb-4 text-primary">2. Refinamento em Mercados Alternativos</h3>
-          <p class="mb-2 text-foreground/80 font-light"><strong>Resultado:</strong> Conversão do metal em moeda forte (Dólares e Euros).</p>
-          <p class="text-[#DAA520] font-bold text-sm">ATRIBUTO: Local: Turquia, Emirados Árabes Unidos, Irã</p>
-        </div>
+      <p class="mb-6 leading-relaxed">Fontes com conhecimento direto da operação afirmam que uma parcela substancial dessa fortuna foi metodicamente convertida em criptomoedas. A estimativa aponta para um tesouro digital que pode chegar a <strong>US$ 60 bilhões</strong>, o equivalente a cerca de 600.000 BTC ou 3% de todo o suprimento global da moeda.</p>
 
-        <div class="bg-card border border-border rounded-2xl p-8 hover:shadow-md transition-shadow">
-          <h3 class="text-xl font-bold mb-4 text-primary">3. Lavagem de Lucros via Criptomoedas</h3>
-          <p class="mb-2 text-foreground/80 font-light"><strong>Ferramenta:</strong> Utilização de brokers Over-the-Counter (OTC).</p>
-          <p class="text-[#DAA520] font-bold text-sm">ATRIBUTO: Ativo: Bitcoin (BTC), Tether (USDT)</p>
-        </div>
+      <h2 class="text-3xl font-bold mt-16 mb-6 font-source-serif-pro text-primary/90">A Arquitetura Jurídica das Sombras</h2>
+      
+      <h3 class="text-2xl font-bold mb-4">O Arquiteto: Alex Saab, o Agente Duplo</h3>
+      <p class="mb-6 leading-relaxed">Alex Saab ascendeu de empresário têxtil a principal facilitador financeiro de Maduro. Documentos judiciais revelaram que Saab atuava como informante da DEA (Drug Enforcement Administration) desde 2016, enquanto orquestrava esquemas de importação e lavagem de dinheiro via Hong Kong, Turquia e Emirados Árabes Unidos. Após ser trocado em 2023, retornou ao centro nevrálgico do regime como Ministro da Indústria.</p>
 
-        <div class="bg-card border border-border rounded-2xl p-8 hover:shadow-md transition-shadow">
-          <h3 class="text-xl font-bold mb-4 text-primary">4. Ocultação e Armazenamento Inviolável</h3>
-          <p class="mb-2 text-foreground/80 font-light"><strong>Segurança:</strong> O capital digital é armazenado em "cold wallets".</p>
-          <p class="text-[#DAA520] font-bold text-sm">ATRIBUTO: Local: Desconhecido</p>
+      <h3 class="text-2xl font-bold mb-4">O Mensageiro: David Nicolas Rubio Gonzalez</h3>
+      <p class="mb-6 leading-relaxed">Se Saab era o cérebro, a operação precisava de mãos. David Nicolas Rubio Gonzalez era o responsável por transportar fisicamente barras de ouro na rota República Dominicana → Turquia → Dubai, recebendo cerca de US$ 1 milhão por viagem para converter metal físico em ativos digitais.</p>
+
+      <h2 class="text-3xl font-bold mt-16 mb-8 font-source-serif-pro">O Esquema de Blindagem Financeira: As 4 Etapas</h2>
+      
+      <div class="grid md:grid-cols-2 gap-6 my-10">
+        <div class="p-8 border border-border rounded-2xl bg-card hover:border-primary/40 transition-colors">
+          <div class="text-primary font-bold text-3xl mb-4">01</div>
+          <h4 class="font-bold text-xl mb-3">Extração e Exportação</h4>
+          <p class="text-sm text-muted-foreground leading-relaxed">O ouro é extraído no Arco Minero e processado pela CVG Minerven. Somente em 2018, 73,2 toneladas (US$ 2,7 bilhões) saíram do país.</p>
+        </div>
+        <div class="p-8 border border-border rounded-2xl bg-card hover:border-primary/40 transition-colors">
+          <div class="text-primary font-bold text-3xl mb-4">02</div>
+          <h4 class="font-bold text-xl mb-3">Refinamento em Mercados Alternativos</h4>
+          <p class="text-sm text-muted-foreground leading-relaxed">O ouro segue para refinarias turcas e dos Emirados, sendo convertido em moeda forte (Dólares e Euros).</p>
+        </div>
+        <div class="p-8 border border-border rounded-2xl bg-card hover:border-primary/40 transition-colors">
+          <div class="text-primary font-bold text-3xl mb-4">03</div>
+          <h4 class="font-bold text-xl mb-3">Lavagem via Criptomoedas</h4>
+          <p class="text-sm text-muted-foreground leading-relaxed">Utilização de brokers Over-the-Counter (OTC) e transações em Tether (USDT). Estima-se o uso de 80% da receita de petróleo em USDT.</p>
+        </div>
+        <div class="p-8 border border-border rounded-2xl bg-card hover:border-primary/40 transition-colors">
+          <div class="text-primary font-bold text-3xl mb-4">04</div>
+          <h4 class="font-bold text-xl mb-3">Ocultação Inviolável</h4>
+          <p class="text-sm text-muted-foreground leading-relaxed">Processamento por "mixers" e armazenamento em "cold wallets" offline, cujas chaves são mantidas por um círculo interno ultrassecreto.</p>
         </div>
       </div>
 
-      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Conclusão: A Nova Fronteira da Soberania e do Risco</h2>
-      <p class="mb-6 leading-relaxed">A captura de Nicolás Maduro pode ter encerrado um capítulo da história venezuelana, mas abriu um novo e complexo debate sobre a natureza do poder e da riqueza no século XXI.</p>
+      <h2 class="text-3xl font-bold mt-16 mb-6 font-source-serif-pro">O Paradoxo Brasileiro: Quando a Justiça Consegue (e Não Consegue)</h2>
+      <p class="mb-6 leading-relaxed">A Operação Lava Jato repatriou bilhões via cooperação suíça, mas o caso do "Faraó dos Bitcoins" expõe a impotência estatal diante da autocustódia. Com R$ 400 milhões em um notebook, a resposta de Glaidson à PF resume o impasse:</p>
       
-      <p class="mb-10 leading-relaxed font-semibold text-lg text-primary">As perguntas que ficam são as mesmas para Washington e para Brasília: Onde está o dinheiro? E, mais importante, quem realmente detém as chaves?</p>
+      <blockquote class="p-8 my-8 border-l-4 border-primary bg-muted italic text-xl">
+        "É a minha aposentadoria, doutor."
+      </blockquote>
+
+      <div class="overflow-x-auto my-12">
+        <table class="w-full text-sm text-left border border-border rounded-xl overflow-hidden">
+          <thead class="bg-muted">
+            <tr>
+              <th class="p-4 border-b border-border font-bold text-foreground">Cenário de Ativos</th>
+              <th class="p-4 border-b border-border font-bold text-foreground">Eficácia da Justiça</th>
+              <th class="p-4 border-b border-border font-bold text-foreground">Exemplo Real</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-muted/50">
+              <td class="p-4 border-b border-border font-medium">Bancos (Exterior)</td>
+              <td class="p-4 border-b border-border text-green-600 font-bold">Alta</td>
+              <td class="p-4 border-b border-border">Lava Jato (Suíça)</td>
+            </tr>
+            <tr class="hover:bg-muted/50">
+              <td class="p-4 border-b border-border font-medium">Cripto em Exchanges (Brasil)</td>
+              <td class="p-4 border-b border-border text-orange-600 font-bold">Média a Alta</td>
+              <td class="p-4 border-b border-border">Operação Cripto Car (2025)</td>
+            </tr>
+            <tr class="hover:bg-muted/50">
+              <td class="p-4 border-b border-border font-medium">Cripto em Autocustódia</td>
+              <td class="p-4 border-b border-border text-red-600 font-bold">Inexistente</td>
+              <td class="p-4 border-b border-border">Faraó dos Bitcoins (Notebook)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-16 mb-6 font-source-serif-pro">Conclusão: A Nova Fronteira da Soberania</h2>
+      <p class="mb-6 leading-relaxed text-muted-foreground italic">Para indivíduos e empresas com patrimônio lícito, esta história serve como lição. A ferramenta que um ditador usa para fins nefastos pode, em um contexto de insegurança jurídica, representar proteção legítima. A autocustódia oferece soberania sem precedentes, mas exige responsabilidade absoluta.</p>
+
+      <div class="mt-20 p-10 bg-foreground text-background rounded-[2.5rem] shadow-2xl group overflow-hidden relative">
+        <div class="relative z-10">
+          <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Proteção e Estruturação Digital</h3>
+          <p class="max-w-2xl mx-auto text-lg mb-8 opacity-90 font-light text-background/90 text-pretty">
+            Atuamos na estruturação jurídica estratégica de ativos digitais e proteção patrimonial internacional com foco em conformidade rigorosa.
+          </p>
+          <a 
+            href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20proteção%20e%20tributação%20de%20ativos%20digitais." 
+            class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+          >
+            Consultar Especialista
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-16 pt-8 border-t border-border opacity-60 text-xs text-muted-foreground space-y-3 leading-relaxed">
+        <p><strong>Aviso Legal:</strong> Este artigo tem caráter informativo e não constitui aconselhamento jurídico. A estruturação de ativos digitais exige análise individualizada por profissionais qualificados.</p>
+        <p><strong>Referências:</strong> Hope, B., & Preve, C. (2026). Whale Hunting / ZeroHedge; U.S. Treasury (2019); Reuters (2023); G1 (2019); O Globo (2023); STJ (2025); MJSP (2025).</p>
+      </div>
     `
   },
 

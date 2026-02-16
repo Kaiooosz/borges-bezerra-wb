@@ -904,6 +904,16 @@ export const articles: Article[] = [
         </p>
       </div>
 
+      <div class="flex items-center gap-4 mb-10 pb-6 border-b border-border">
+        <div class="h-14 w-14 rounded-full overflow-hidden bg-zinc-200 ring-2 ring-primary/20">
+          <img src="/vinicius-icone-perfil.jpeg" alt="Vinicius Borges" class="w-full h-full object-cover" />
+        </div>
+        <div>
+          <p class="font-bold text-xl text-foreground">Vinicius Borges</p>
+          <p class="text-sm text-muted-foreground">Bezerra Borges Advocacia</p>
+        </div>
+      </div>
+
       <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">1. Consolidação do Marco Legal</h2>
       <p class="mb-6">O amadurecimento do Marco Legal dos Criptoativos (Lei nº 14.478/2022) trouxe uma maior integração entre a Receita Federal e as exchanges, com a padronização de reportes obrigatórios e um aumento significativo na fiscalização de operações realizadas no exterior.</p>
 
@@ -953,6 +963,16 @@ export const articles: Article[] = [
         <p class="text-xl text-muted-foreground font-light leading-relaxed">
           A expansão para os Estados Unidos tornou-se um movimento fundamental para fintechs de pagamentos, câmbio e criptoativos. Entretanto, atuar no mercado americano exige conformidade rigorosa com a figura do MSB (Money Services Business).
         </p>
+      </div>
+
+      <div class="flex items-center gap-4 mb-10 pb-6 border-b border-border">
+        <div class="h-14 w-14 rounded-full overflow-hidden bg-zinc-200 ring-2 ring-primary/20">
+          <img src="/vinicius-icone-perfil.jpeg" alt="Vinicius Borges" class="w-full h-full object-cover" />
+        </div>
+        <div>
+          <p class="font-bold text-xl text-foreground">Vinicius Borges</p>
+          <p class="text-sm text-muted-foreground">Bezerra Borges Advocacia</p>
+        </div>
       </div>
 
       <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O que é um MSB?</h2>
@@ -1011,6 +1031,16 @@ export const articles: Article[] = [
         <p class="text-xl text-muted-foreground font-light leading-relaxed">
           A utilização de estruturas offshore deixou de ser um tema restrito a grandes conglomerados e passou a integrar o planejamento patrimonial de empresários, investidores e famílias de alta renda. Dubai consolidou-se como o centro global de negócios e proteção patrimonial.
         </p>
+      </div>
+
+      <div class="flex items-center gap-4 mb-10 pb-6 border-b border-border">
+        <div class="h-14 w-14 rounded-full overflow-hidden bg-zinc-200 ring-2 ring-primary/20">
+          <img src="/vinicius-icone-perfil.jpeg" alt="Vinicius Borges" class="w-full h-full object-cover" />
+        </div>
+        <div>
+          <p class="font-bold text-xl text-foreground">Vinicius Borges</p>
+          <p class="text-sm text-muted-foreground">Bezerra Borges Advocacia</p>
+        </div>
       </div>
 
       <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O que é uma Offshore em Dubai?</h2>
@@ -1095,6 +1125,16 @@ export const articles: Article[] = [
         </p>
       </div>
 
+      <div class="flex items-center gap-4 mb-10 pb-6 border-b border-border">
+        <div class="h-14 w-14 rounded-full overflow-hidden bg-zinc-200 ring-2 ring-primary/20">
+          <img src="/vinicius-icone-perfil.jpeg" alt="Vinicius Borges" class="w-full h-full object-cover" />
+        </div>
+        <div>
+          <p class="font-bold text-xl text-foreground">Vinicius Borges</p>
+          <p class="text-sm text-muted-foreground">Bezerra Borges Advocacia</p>
+        </div>
+      </div>
+
       <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O que é Legal Growth?</h2>
       <p class="mb-6 leading-relaxed">Legal Growth é a utilização estratégica do direito para proteger ativos digitais, reduzir riscos operacionais e otimizar a carga tributária, garantindo uma estrutura societária que suporte o crescimento escalável sem vulnerabilidades.</p>
 
@@ -1143,6 +1183,16 @@ export const articles: Article[] = [
         <p class="text-xl text-muted-foreground font-light leading-relaxed">
           O Reino Unido — especialmente a Inglaterra — é reconhecido pelo processo 100% digital, baixa burocracia e custo acessível. É a porta de entrada ideal para acessar o mercado europeu e operar em moeda forte com alta credibilidade institucional.
         </p>
+      </div>
+
+      <div class="flex items-center gap-4 mb-10 pb-6 border-b border-border">
+        <div class="h-14 w-14 rounded-full overflow-hidden bg-zinc-200 ring-2 ring-primary/20">
+          <img src="/vinicius-icone-perfil.jpeg" alt="Vinicius Borges" class="w-full h-full object-cover" />
+        </div>
+        <div>
+          <p class="font-bold text-xl text-foreground">Vinicius Borges</p>
+          <p class="text-sm text-muted-foreground">Bezerra Borges Advocacia</p>
+        </div>
       </div>
 
       <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Por Que Escolher o Reino Unido?</h2>
@@ -1201,6 +1251,16 @@ export const articles: Article[] = [
         <p class="text-xl text-muted-foreground font-light leading-relaxed">
           Singapura ocupa uma posição estratégica quando o objetivo é operar ou investir na Ásia com eficiência tributária, previsibilidade jurídica e acesso a mercados desenvolvidos. Diferente de jurisdições puramente "offshore clássicas", Singapura combina credibilidade institucional com infraestrutura financeira sofisticada.
         </p>
+      </div>
+
+      <div class="flex items-center gap-4 mb-10 pb-6 border-b border-border">
+        <div class="h-14 w-14 rounded-full overflow-hidden bg-zinc-200 ring-2 ring-primary/20">
+          <img src="/vinicius-icone-perfil.jpeg" alt="Vinicius Borges" class="w-full h-full object-cover" />
+        </div>
+        <div>
+          <p class="font-bold text-xl text-foreground">Vinicius Borges</p>
+          <p class="text-sm text-muted-foreground">Bezerra Borges Advocacia</p>
+        </div>
       </div>
 
       <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Singapura Não é um "Paraíso Fiscal Tradicional"</h2>
@@ -1289,6 +1349,16 @@ export const articles: Article[] = [
         <p class="text-xl text-muted-foreground font-light leading-relaxed">
           A Irlanda consolidou-se como uma das jurisdições mais estratégicas da Europa para empresas de tecnologia, serviços digitais e holdings internacionais. Com ambiente regulatório estável e imposto corporativo competitivo (12,5%), o país é a porta de entrada para o mercado europeu.
         </p>
+      </div>
+
+      <div class="flex items-center gap-4 mb-10 pb-6 border-b border-border">
+        <div class="h-14 w-14 rounded-full overflow-hidden bg-zinc-200 ring-2 ring-primary/20">
+          <img src="/vinicius-icone-perfil.jpeg" alt="Vinicius Borges" class="w-full h-full object-cover" />
+        </div>
+        <div>
+          <p class="font-bold text-xl text-foreground">Vinicius Borges</p>
+          <p class="text-sm text-muted-foreground">Bezerra Borges Advocacia</p>
+        </div>
       </div>
 
       <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Por Que a Irlanda se Tornou um Hub Europeu?</h2>

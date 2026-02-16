@@ -30,7 +30,6 @@ export default function TeamCarousel() {
     { name: 'Dr. Roberto ', role: 'Gestão Patrimonial', image: '/Roberto.jpg' },
     { name: 'Dra. Mariana', role: 'Planejamento Sucessório', image: '/mariana.jpg' },
     { name: 'Dr. Allan ', role: 'Planejamento Sucessório', image: '/allan.jpg' },
-    { name: 'Dr. Renato', role: 'Contábil', image: '/renato.jpg' },
     { name: 'Dr. Kaio', role: 'CRO', image: '/kaio.jpg' },
     { name: 'Dr. Tomas', role: 'RP e Closer Sênior', image: '/tomas.jpg' },
   ];

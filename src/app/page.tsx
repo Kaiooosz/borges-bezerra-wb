@@ -18,7 +18,6 @@ export default function Home() {
         <AnimatedHero />
         <ServicesPreview />
         <LeadMagnet />
-        <FAQ />
 
         {/* Seção do Vídeo */}
         {/* <section className="py-24 bg-background">
@@ -36,6 +35,7 @@ export default function Home() {
         <ContactForm />
         <TeamCarousel />
         <ConsultoriaPricing />
+        <FAQ />
       </main>
     </div>
   );

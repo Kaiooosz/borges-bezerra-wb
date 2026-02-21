@@ -16,7 +16,7 @@ function TeamCard({ member }: { member: { name: string; role: string; image: str
       <div className="relative h-80 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 group-hover:-translate-y-3 group-hover:shadow-[0_24px_48px_rgba(0,0,0,0.4)]">
         {/* Imagem ou fallback */}
         {imgError ? (
-          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-zinc-800 to-zinc-900">
+          <div className="absolute inset-0 flex items-center justify-center bg-linear-to-b from-zinc-800 to-zinc-900">
             <div className="w-20 h-20 rounded-full bg-zinc-700 flex items-center justify-center">
               <User className="w-10 h-10 text-zinc-400" />
             </div>
@@ -33,7 +33,7 @@ function TeamCard({ member }: { member: { name: string; role: string; image: str
         )}
 
         {/* Gradiente sempre escuro no fundo — garante legibilidade em qualquer tema */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent" />
 
         {/* Texto fixo sobre a foto */}
         <div className="absolute bottom-0 left-0 right-0 p-5">
@@ -72,7 +72,6 @@ export default function TeamCarousel() {
     { name: 'Clara', role: 'Business Partner', image: '/clara.jpg' },
     { name: 'Micaelle', role: 'Consultora Internacional', image: '/micaelle.jpg' },
     { name: 'Roberto', role: 'Gestão Patrimonial', image: '/roberto.jpg' },
-    { name: 'Mariana', role: 'Planejamento Sucessório', image: '/mariana.jpg' },
     { name: 'Allan', role: 'Planejamento Sucessório', image: '/allan.jpg' },
     { name: 'Kaio', role: 'CRO', image: '/kaio.jpg' },
     { name: 'Tomas', role: 'RP e Closer Sênior', image: '/tomas.jpg' },

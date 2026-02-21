@@ -38,7 +38,6 @@ export default function PrivacyPolicyPage() {
                             </div>
                             <div className="space-y-1">
                                 <p>Micaelle Sampaio Bezerra</p>
-                                <p>Mariana Messias da Fonseca</p>
                                 <p>Roberto Bezerra</p>
                             </div>
                         </div>

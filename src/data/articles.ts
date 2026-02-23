@@ -204,10 +204,10 @@ export const articles: Article[] = [
   },
   {
     title: "O Guia Definitivo do Planejamento Patrimonial em 2026: Proteção Além das Fronteiras Brasileiras",
-    excerpt: "Com as novas regras tributárias de 2026, proteger o que foi construído exige uma estratégia de jurisdição global. Entenda como blindar sua liberdade financeira.",
+    excerpt: "Com a consolidação das novas regras tributárias e o cenário de maior fiscalização em 2026, entenda por que a antecipação tornou-se a ferramenta mais eficaz de economia.",
     category: "Planejamento Patrimonial",
     date: "20 de Janeiro, 2026",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop",
+    image: "https://investidorsardinha.r7.com/wp-content/uploads/2021/08/planejamento-patrimonial-importancia-e-como-fazer-2.jpg",
     slug: "guia-definitivo-planejamento-patrimonial-2026",
     readTime: "12 min",
     content: `
@@ -219,242 +219,359 @@ export const articles: Article[] = [
 
       <p class="mb-8 leading-relaxed">Na Bezerra Borges, acreditamos que o planejamento patrimonial não é apenas sobre herança, mas sobre a perenidade da sua liberdade financeira.</p>
 
-      <h2 class="text-2xl font-bold mt-12 mb-6 font-source-serif-pro">1. O Fim da Era da Reatividade</h2>
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">1. O Fim da Era da Reatividade</h2>
       <p class="mb-6 leading-relaxed">Até pouco tempo, muitos investidores buscavam o planejamento apenas diante de uma crise ou de um processo de sucessão iminente. Em 2026, a realidade mudou. Com o aumento progressivo das alíquotas de impostos sobre transmissão (ITCMD) e a maior transparência fiscal internacional, a antecipação tornou-se a ferramenta mais eficaz de economia.</p>
-      <p class="mb-6 leading-relaxed text-muted-foreground italic">Estruturar o patrimônio hoje significa garantir que a carga tributária não consuma décadas de trabalho em um único evento sucessório.</p>
-
-      <h2 class="text-2xl font-bold mt-12 mb-6 font-source-serif-pro">2. A Holding Internacional como Escudo de Proteção</h2>
-      <p class="mb-4">Para quem possui ativos digitais, investimentos em moeda estrangeira ou operações globais, a Holding Internacional (Offshore) continua sendo o "padrão ouro".</p>
-      
-      <div class="space-y-6 my-10">
-        <div class="p-6 border-l-4 border-primary bg-card/50">
-          <p><strong>Segregação de Riscos:</strong> Isola o seu patrimônio pessoal de eventuais instabilidades jurídicas ou econômicas no Brasil.</p>
-        </div>
-        <div class="p-6 border-l-4 border-primary bg-card/50">
-          <p><strong>Diferimento Tributário:</strong> Permite que os ganhos de capital sejam reinvestidos dentro da própria estrutura, otimizando o crescimento composto sem a mordida imediata do fisco.</p>
-        </div>
-        <div class="p-6 border-l-4 border-primary bg-card/50">
-          <p><strong>Flexibilidade:</strong> Jurisdições como Dubai, Delaware ou Ilhas Virgens Britânicas oferecem ambientes regulatórios que respeitam a vontade do titular, facilitando a sucessão sem a burocracia do inventário brasileiro.</p>
-        </div>
+      <div class="p-6 bg-zinc-100 dark:bg-white/5 rounded-2xl mb-8 border-l-4 border-primary">
+        <p class="italic">Estruturar o patrimônio hoje significa garantir que a carga tributária não consuma décadas de trabalho em um único evento sucessório.</p>
       </div>
 
-      <h2 class="text-2xl font-bold mt-12 mb-6 font-source-serif-pro">3. Planejamento Sucessório: Evitando o Inventário</h2>
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">2. A Holding Internacional como Escudo de Proteção</h2>
+      <p class="mb-6 leading-relaxed">Para quem possui ativos digitais, investimentos em moeda estrangeira ou operações globais, a Holding Internacional (Offshore) continua sendo o "padrão ouro".</p>
+      
+      <div class="space-y-6 my-10 font-light">
+        <p><strong>Segregação de Riscos:</strong> Isola o seu patrimônio pessoal de eventuais instabilidades jurídicas ou econômicas no Brasil.</p>
+        <p><strong>Diferimento Tributário:</strong> Permite que os ganhos de capital sejam reinvestidos dentro da própria estrutura, otimizando o crescimento composto sem a mordida imediata do fisco.</p>
+        <p><strong>Flexibilidade:</strong> Jurisdições como Dubai, Delaware ou Ilhas Virgens Britânicas oferecem ambientes regulatórios que respeitam a vontade do titular, facilitando a sucessão sem a burocracia do inventário brasileiro.</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">3. Planejamento Sucessório: Evitando o Inventário</h2>
       <p class="mb-6 leading-relaxed">O inventário judicial no Brasil é lento, caro e emocionalmente desgastante. Um planejamento patrimonial bem executado utiliza instrumentos como:</p>
       
-      <ul class="space-y-4 mb-10 font-light text-muted-foreground">
+      <ul class="space-y-4 mb-10 font-light text-muted-foreground list-disc pl-5">
         <li><strong>Doação com Reserva de Usufruto:</strong> Mantém o controle dos bens com os patriarcas enquanto transfere a nua-propriedade.</li>
         <li><strong>Cláusulas de Inalienabilidade e Incomunicabilidade:</strong> Garantem que o patrimônio não saia da linhagem familiar em caso de divórcios ou dívidas dos herdeiros.</li>
         <li><strong>Acordos de Sócios:</strong> Definem regras claras de gestão para empresas familiares, evitando que disputas pessoais destruam o negócio.</li>
       </ul>
 
-      <h2 class="text-2xl font-bold mt-12 mb-6 font-source-serif-pro">4. O Papel dos Ativos Digitais e Criptoativos</h2>
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">4. O Papel dos Ativos Digitais e Criptoativos</h2>
       <p class="mb-6 leading-relaxed">Em 2026, não se pode falar de patrimônio sem mencionar a custódia de criptoativos. A integração desses ativos ao planejamento sucessório é um dos maiores desafios jurídicos atuais. Como garantir que seus herdeiros tenham acesso às chaves privadas de forma legal e segura? A estruturação correta evita que esses ativos fiquem em "limbo" jurídico e tecnológico.</p>
 
-      <h2 class="text-2xl font-bold mt-12 mb-6 font-source-serif-pro">Conclusão: O Patrimônio é seu, a estratégia é nossa.</h2>
-      <p class="mb-10 leading-relaxed">O planejamento patrimonial moderno é multidisciplinar. Ele une o direito de família, o direito tributário e a visão de negócios internacionais. Na Bezerra Borges, nossa missão é desenhar a estrutura que permita a você focar no crescimento, sabendo que a base está protegida.</p>
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro text-primary/90">Conclusão: O Patrimônio é seu, a estratégia é nossa.</h2>
+      <p class="mb-10 leading-relaxed text-muted-foreground">O planejamento patrimonial moderno é multidisciplinar. Ele une o direito de família, o direito tributário e a visão de negócios internacionais. Na Bezerra Borges, nossa missão é desenhar a estrutura que permita a você focar no crescimento, sabendo que a base está protegida.</p>
+      
       <div class="mt-20 p-10 bg-card border border-border rounded-[2.5rem] text-center shadow-xl">
         <h3 class="text-3xl font-bold mb-6 font-source-serif-pro">Proteja seu Legado em 2026</h3>
         <p class="text-muted-foreground max-w-2xl mx-auto text-lg mb-8 font-light">
-          Não deixe sua liberdade financeira ao acaso. Inicie hoje seu planejamento patrimonial global com quem entende de complexidade tributária.
+          Não deixe sua segurança jurídica ao acaso. O planejamento profissional é seu maior ativo.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20iniciar%20meu%20planejamento%20patrimonial%20para%202026." 
+          href="https://wa.me/5511982712025" 
           class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
-          Agendar Análise Estratégica
+          Consultar Especialista
         </a>
       </div>
     `
   },
   {
     title: "Criptoativos e Sucessão: Como Proteger sua Riqueza Digital em 2026",
-    excerpt: "Em 2026, as criptomoedas deixaram de ser investimentos alternativos para se tornarem pilares centrais do patrimônio de empresários globais.",
+    excerpt: "Em 2026, as criptomoedas deixaram de ser investimentos alternativos para se tornarem pilares centrais do patrimônio de empresários globais. Saiba como proteger seu legado digital.",
     category: "Cripto & Tributação",
     date: "18 de Janeiro, 2026",
     image: "https://www.contabeis.com.br/assets/img/news/a_6266_bffa67e3385cb95c2bd8c0a76d82c150.jpg",
     slug: "criptoativos-sucessao-protecao-riqueza-digital-2026",
     readTime: "10 min",
     content: `
-      <p class="mb-4">Em 2026, as criptomoedas e os ativos tokenizados deixaram de ser "investimentos alternativos" para se tornarem pilares centrais do patrimônio de empresários e investidores globais. No entanto, a mesma descentralização que oferece liberdade traz um desafio jurídico crítico: como garantir que sua riqueza digital não se perca no caso de uma sucessão ou disputa judicial?</p>
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Em 2026, as criptomoedas e os ativos tokenizados deixaram de ser "investimentos alternativos" para se tornarem pilares centrais do patrimônio de empresários e investidores globais. No entanto, a mesma descentralização que oferece liberdade traz um desafio jurídico crítico: como garantir que sua riqueza digital não se perca no caso de uma sucessão ou disputa judicial?
+        </p>
+      </div>
+
+      <p class="mb-8 leading-relaxed">Na Bezerra Borges, estruturamos soluções que integram o universo cripto ao planejamento patrimonial clássico, garantindo segurança jurídica sem abrir mão da soberania financeira.</p>
       
-      <p class="mb-4">Na Bezerra Borges, estruturamos soluções que integram o universo cripto ao planejamento patrimonial clássico, garantindo segurança jurídica sem abrir mão da soberania financeira.</p>
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">1. O Dilema das Chaves Privadas: Herança ou Perda?</h2>
+      <p class="mb-6 leading-relaxed">O maior risco do investidor de cripto não é a volatilidade, mas a perda de acesso. Sem um planejamento adequado, seus ativos podem ficar inacessíveis para seus herdeiros para sempre.</p>
       
-      <h2 class="text-2xl font-bold mt-8 mb-4">1. O Dilema das Chaves Privadas: Herança ou Perda?</h2>
-      <p class="mb-4">O maior risco do investidor de cripto não é a volatilidade, mas a perda de acesso. Sem um planejamento adequado, seus ativos podem ficar inacessíveis para seus herdeiros para sempre.</p>
+      <div class="space-y-6 my-10">
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <p><strong>Protocolos de Acesso:</strong> Não basta deixar as chaves anotadas; é necessário criar um protocolo de custódia que combine segurança técnica (multi-sig ou dispositivos de backup) com validade jurídica.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <p><strong>Testamento Digital:</strong> Como inserir as seed phrases ou o acesso a cold wallets em um inventário de forma que não exponha a segurança dos ativos enquanto você estiver vivo?</p>
+        </div>
+      </div>
       
-      <p class="mb-4"><strong>Protocolos de Acesso:</strong> Não basta deixar as chaves anotadas; é necessário criar um protocolo de custódia que combine segurança técnica (multi-sig ou dispositivos de backup) com validade jurídica.</p>
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">2. A Tributação de Cripto em 2026: Brasil vs. Exterior</h2>
+      <p class="mb-6 leading-relaxed">Com a consolidação da legislação que equiparou ativos digitais no exterior a investimentos financeiros tradicionais para fins de tributação, a estratégia de "buy and hold" na pessoa física tornou-se mais onerosa.</p>
       
-      <p class="mb-4"><strong>Testamento Digital:</strong> Como inserir as seed phrases ou o acesso a cold wallets em um inventário de forma que não exponha a segurança dos ativos enquanto você estiver vivo?</p>
+      <div class="bg-zinc-100 dark:bg-white/5 p-8 rounded-2xl my-8">
+        <p><strong>Offshores para Cripto:</strong> Estruturar a custódia de seus ativos digitais por meio de uma empresa em jurisdições favoráveis (como Ilhas Cayman ou Bahamas) pode oferecer um diferimento tributário significativo, permitindo que o rebalanceamento de portfólio ocorra sem a incidência imediata de imposto de renda sobre cada ganho de capital.</p>
+      </div>
       
-      <h2 class="text-2xl font-bold mt-8 mb-4">2. A Tributação de Cripto em 2026: Brasil vs. Exterior</h2>
-      <p class="mb-4">Com a consolidação da legislação que equiparou ativos digitais no exterior a investimentos financeiros tradicionais para fins de tributação, a estratégia de "buy and hold" na pessoa física tornou-se mais onerosa.</p>
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">3. Proteção Patrimonial e Blindagem Digital</h2>
+      <p class="mb-6 leading-relaxed">Criptoativos são frequentemente vistos como "impensáveis" para penhora, mas a realidade em 2026 é de maior rastreabilidade pelas autoridades.</p>
       
-      <p class="mb-4"><strong>Offshores para Cripto:</strong> Estruturar a custódia de seus ativos digitais por meio de uma empresa em jurisdições favoráveis (como Ilhas Cayman ou Bahamas) pode oferecer um diferimento tributário significativo, permitindo que o rebalanceamento de portfólio ocorra sem a incidência imediata de imposto de renda sobre cada ganho de capital.</p>
+      <p class="mb-6 leading-relaxed"><strong>Segregação Jurídica:</strong> Integrar suas criptomoedas a uma Holding Patrimonial ou a um Trust internacional oferece uma camada adicional de proteção contra bloqueios judiciais locais e garante que o patrimônio esteja blindado contra riscos operacionais de suas empresas no Brasil.</p>
       
-      <h2 class="text-2xl font-bold mt-8 mb-4">3. Proteção Patrimonial e Blindagem Digital</h2>
-      <p class="mb-4">Criptoativos são frequentemente vistos como "impenhoráveis" para penhora, mas a realidade em 2026 é de maior rastreabilidade pelas autoridades.</p>
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">4. Tokenização de Ativos Reais (RWA)</h2>
+      <p class="mb-6 leading-relaxed">O planejamento patrimonial moderno agora inclui imóveis e participações societárias tokenizadas. Gerir esses ativos exige uma visão híbrida: o conhecimento do registro de imóveis tradicional somado à expertise em contratos inteligentes (smart contracts).</p>
+
+      <div class="my-12 p-8 border-l-4 border-primary bg-muted/30">
+        <h3 class="text-xl font-bold mb-4">O Desafio da Conformidade (Compliance)</h3>
+        <p class="text-muted-foreground leading-relaxed">
+          A Receita Federal e os órgãos internacionais intensificaram o cruzamento de dados. O planejamento patrimonial eficaz em 2026 não se baseia em ocultar ativos, mas em estruturá-los de forma inteligente. Ter um portfólio cripto declarado e organizado dentro de uma estrutura internacional não apenas reduz sua carga tributária legalmente, mas também facilita processos de saída definitiva do país ou obtenção de vistos de investidor (como nos EUA ou Emirados Árabes).
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Conclusão: O Futuro do seu Legado é Digital</h2>
+      <p class="mb-10 leading-relaxed text-muted-foreground">Se você possui uma parcela relevante do seu patrimônio em Bitcoin, Ethereum ou Stablecoins, o momento de formalizar sua sucessão e proteção é agora. A tecnologia avança rápido, mas as leis de sucessão e tributação estão alcançando o mundo digital.</p>
       
-      <p class="mb-4"><strong>Segregação Jurídica:</strong> Integrar suas criptomoedas a uma Holding Patrimonial ou a um Trust internacional oferece uma camada adicional de proteção contra bloqueios judiciais locais e garante que o patrimônio esteja blindado contra riscos operacionais de suas empresas no Brasil.</p>
-      
-      <h2 class="text-2xl font-bold mt-8 mb-4">Conclusão: O Futuro do seu Legado é Digital</h2>
-      <p class="mb-4">Se você possui uma parcela relevante do seu patrimônio em Bitcoin, Ethereum ou Stablecoins, o momento de formalizar sua sucessão e proteção é agora. A tecnologia avança rápido, mas as leis de sucessão e tributação estão alcançando o mundo digital.</p>
-      
-      <p class="mb-4">Sua estratégia de proteção patrimonial está atualizada para a era Web3?</p>
+      <div class="mt-20 p-10 bg-card border border-border rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro">Sua estratégia Web3 está pronta?</h3>
+        <p class="text-muted-foreground max-w-2xl mx-auto text-lg mb-8 font-light">
+          Proteja sua riqueza digital com protocolos de custódia e validade jurídica.
+        </p>
+        <a 
+          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20planejamento%20sucessório%20de%20criptoativos." 
+          class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Consultar Especialista Cripto
+        </a>
+      </div>
     `
   },
 
   // ARTIGO 03 - Recorde Holdings Internacionais
   {
     title: "Janeiro de 2026 registra recorde na abertura de holdings internacionais por brasileiros",
-    excerpt: "O primeiro mês de 2026 começou com uma movimentação atípica nos escritórios de advocacia focados em planejamento patrimonial e internacionalização.",
+    excerpt: "O cenário de 2026 impõe uma cobrança escalonada do ITCMD. Entenda por que famílias de alto patrimônio estão liderando uma corrida para o exterior.",
     category: "Internacionalização",
     date: "15 de Janeiro, 2026",
     image: "https://mckadvogados.adv.br/wp-content/uploads/2021/03/holding-familiar-2.jpg",
     slug: "recorde-abertura-holdings-internacionais-brasileiros-2026",
     readTime: "10 min",
     content: `
-      <p class="mb-4">O primeiro mês de 2026 começou com uma movimentação atípica nos escritórios de advocacia focados em planejamento patrimonial e internacionalização. O motivo é a entrada em vigor das novas leis estaduais que regulamentaram a progressividade do ITCMD (Imposto sobre Transmissão Causa Mortis e Doação), aprovada na esteira da Reforma Tributária.</p>
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          O primeiro mês de 2026 começou com uma movimentação atípica nos escritórios de advocacia focados em planejamento patrimonial e internacionalização. O motivo é a entrada em vigor das novas leis estaduais que regulamentaram a progressividade do ITCMD (Imposto sobre Transmissão Causa Mortis e Doação).
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">Com alíquotas que agora podem chegar a 12% ou 16% em estados que antes mantinham patamares fixos de 4%, famílias de alto patrimônio e empresários do setor digital estão liderando uma "corrida de saída" para jurisdições como Dubai, Paraguai e Ilhas Cayman.</p>
       
-      <p class="mb-4">Com alíquotas que agora podem chegar a 12% ou 16% em estados que antes mantinham patamares fixos de 4%, famílias de alto patrimônio e empresários do setor digital estão liderando uma "corrida de saída" para jurisdições como Dubai, Paraguai e Ilhas Cayman.</p>
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O Fim da Alíquota Fixa e o Impacto no Caixa das Famílias</h2>
+      <p class="mb-6 leading-relaxed">Até 2025, muitos estados brasileiros operavam com taxas moderadas e lineares. No entanto, o cenário de 2026 impõe uma cobrança escalonada: quanto maior o patrimônio, maior a fatia abocanhada pelo Estado.</p>
       
-      <h2 class="text-2xl font-bold mt-8 mb-4">O Fim da Alíquota Fixa e o Impacto no Caixa das Famílias</h2>
-      <p class="mb-4">Até 2025, muitos estados brasileiros operavam com taxas moderadas e lineares. No entanto, o cenário de 2026 impõe uma cobrança escalonada: quanto maior o patrimônio, maior a fatia abocanhada pelo Estado.</p>
+      <div class="p-8 bg-zinc-100 dark:bg-white/5 rounded-2xl my-8">
+        <p class="italic text-lg">"O que estamos observando não é apenas uma tentativa de pagar menos imposto, mas uma busca por sobrevivência patrimonial", afirma o corpo jurídico da Bezerra Borges. "Em um inventário de uma família com R$ 50 milhões em ativos, a diferença entre a regra antiga e a nova pode significar uma perda imediata de milhões de reais em liquidez."</p>
+      </div>
       
-      <p class="mb-4">"O que estamos observando não é apenas uma tentativa de pagar menos imposto, mas uma busca por sobrevivência patrimonial", afirma o corpo jurídico da Bezerra Borges.</p>
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Criptoativos no Radar da Receita</h2>
+      <p class="mb-6 leading-relaxed">Outro fator que impulsionou o noticiário econômico neste início de ano foi a integração total dos sistemas da Receita Federal com o protocolo CARF (Crypto-Asset Reporting Framework) da OCDE. A rastreabilidade tornou-se instantânea, transformando a estruturação de Holdings Offshore na única via legal e eficiente para manter privacidade e diferimento tributário.</p>
       
-      <h2 class="text-2xl font-bold mt-8 mb-4">Criptoativos no Radar da Receita</h2>
-      <p class="mb-4">Outro fator que impulsionou o noticiário econômico neste início de ano foi a integração total dos sistemas da Receita Federal com o protocolo CARF (Crypto-Asset Reporting Framework) da OCDE.</p>
-      
-      <h2 class="text-2xl font-bold mt-8 mb-4">A Ascensão de Dubai e Paraguai</h2>
-      <p class="mb-4">Os dados de janeiro mostram que o fluxo de capitais brasileiros não está indo apenas para os EUA.</p>
-      
-      <p class="mb-4"><strong>Dubai</strong> consolidou-se como o hub preferencial para nômades digitais e infoprodutores, devido à isenção de imposto de renda para indivíduos e empresas que operam fora dos Emirados.</p>
-      
-      <p class="mb-4"><strong>Paraguai</strong> tem atraído produtores rurais e empresários do setor de serviços que buscam a residência fiscal estratégica para reduzir a carga tributária sobre dividendos globais.</p>
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">A Ascensão de Dubai e Paraguai</h2>
+      <div class="grid md:grid-cols-2 gap-6 my-10">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-3">Dubai</h4>
+          <p class="text-sm text-muted-foreground">Consolidou-se como o hub preferencial para nômades digitais e infoprodutores, devido à isenção de imposto de renda para indivíduos e empresas que operam fora dos Emirados.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-3">Paraguai</h4>
+          <p class="text-sm text-muted-foreground">Tem atraído produtores rurais e empresários do setor de serviços que buscam a residência fiscal estratégica para reduzir a carga tributária sobre dividendos globais.</p>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O que esperar para o restante de 2026?</h2>
+      <p class="mb-6 leading-relaxed">Analistas preveem que o volume de processos de Saída Definitiva do País atinja o pico no primeiro semestre. A tendência é que o Planejamento Patrimonial deixe de ser visto como um "luxo de bilionários" e passe a ser uma necessidade básica para qualquer empresário com patrimônio superior a R$ 5 milhões.</p>
+
+      <div class="mt-20 p-10 bg-card border border-border rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro">Não deixe seu legado ao acaso</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">
+          O custo da inércia em 2026 nunca foi tão alto. Proteja-se contra a progressividade do ITCMD.
+        </p>
+        <a 
+          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20estruturação%20de%20holding%20internacional%20em%202026." 
+          class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Agendar Consultoria
+        </a>
+      </div>
     `
   },
 
   // ARTIGO 04 - Reorganização Societária
   {
     title: "Empresários buscam reorganização societária após fim da isenção de dividendos em 2026",
-    excerpt: "O cenário empresarial brasileiro enfrenta uma das maiores transformações tributárias das últimas décadas com a nova alíquota de 10% sobre dividendos.",
+    excerpt: "Com a nova alíquota de 10% sobre lucros e dividendos, o planejamento amador chegou ao fim. Veja como evitar perdas imediatas no seu caixa pessoal.",
     category: "Planejamento Tributário",
     date: "12 de Janeiro, 2026",
     image: "https://www.pontotel.com.br/local/wp-content/uploads/2024/12/impostos-cobrados-no-brasil.webp",
     slug: "empresarios-reorganizacao-societaria-fim-isencao-dividendos-2026",
     readTime: "11 min",
     content: `
-      <p class="mb-4">O cenário empresarial brasileiro enfrenta, neste início de 2026, uma das maiores transformações tributárias das últimas décadas. Com a entrada em vigor da Lei 15.270/2025, o Brasil encerrou oficialmente a era da isenção total sobre a distribuição de lucros e dividendos, estabelecendo uma nova alíquota de 10% para retiradas que superem os limites estabelecidos pela nova tabela progressiva.</p>
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          O cenário empresarial brasileiro enfrenta, neste início de 2026, uma das maiores transformações tributárias das últimas décadas. Com a entrada em vigor da Lei 15.270/2025, o Brasil encerrou oficialmente a era da isenção total sobre a distribuição de lucros e dividendos.
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O "Pedágio" nos Dividendos</h2>
+      <p class="mb-6 leading-relaxed">Diferente do modelo anterior, onde o lucro já tributado na empresa chegava limpo ao sócio, a nova regra impõe uma retenção na fonte. Para empresários que recebem mais de R$ 50 mil mensais em dividendos de uma única fonte, a mordida de 10% passou a ser automática desde 1º de janeiro.</p>
       
-      <h2 class="text-2xl font-bold mt-8 mb-4">O "Pedágio" nos Dividendos</h2>
-      <p class="mb-4">Diferente do modelo anterior, onde o lucro já tributado na empresa chegava limpo ao sócio, a nova regra impõe uma retenção na fonte. Para empresários que recebem mais de R$ 50 mil mensais em dividendos de uma única fonte, a mordida de 10% passou a ser automática desde 1º de janeiro.</p>
-      
-      <h2 class="text-2xl font-bold mt-8 mb-4">A Fuga para a Internacionalização</h2>
-      <p class="mb-4">A mudança na tributação doméstica acionou um sinal de alerta para quem possui excedente de capital. Em 2026, a busca por estruturas offshore e holdings internacionais deixou de ser uma estratégia de nicho para se tornar uma necessidade de eficiência.</p>
-      
-      <h2 class="text-2xl font-bold mt-8 mb-4">O Papel do Planejamento em 2026</h2>
-      <p class="mb-4">Para especialistas, o ano de 2026 marca o fim do "planejamento amador". Estruturas societárias que funcionavam bem até 2024 agora são consideradas ineficientes ou até perigosas sob o novo rigor fiscal.</p>
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="leading-relaxed">"O impacto é imediato no fluxo de caixa pessoal do empresário. Muitos que utilizavam a distribuição de lucros como principal forma de remuneração agora estão tendo que recalcular o custo da sua estrutura", afirma a equipe de estratégia jurídica da Bezerra Borges.</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">A Fuga para a Internacionalização</h2>
+      <p class="mb-6 leading-relaxed">A mudança na tributação doméstica acionou um sinal de alerta. Em 2026, a busca por estruturas offshore e holdings internacionais deixou de ser uma estratégia de nicho para se tornar uma necessidade de eficiência corporativa.</p>
+      <p class="mb-6 leading-relaxed">Ao manter lucros em jurisdições estratégicas, investidores buscam o diferimento tributário: a capacidade de reinvestir o lucro global sem a incidência imediata dos 10% brasileiros, tributando apenas o que é efetivamente repatriado.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Reajuste do IRPF e a "Nova Pejotização"</h2>
+      <p class="mb-6 leading-relaxed">Embora a Lei 15.270 tenha ampliado a isenção para quem ganha até R$ 5 mil, a pressão sobre os profissionais de alta renda aumentou significativamente. Além dos dividendos, a progressividade obrigatória do ITCMD nos estados já atinge o teto de 8% em diversas regiões, encarecendo a sucessão.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O Papel do Planejamento em 2026</h2>
+      <p class="mb-6 leading-relaxed">Para especialistas, o ano de 2026 marca o fim do "planejamento amador". Estruturas societárias que funcionavam bem até 2024 agora são consideradas ineficientes ou perigosas sob o novo rigor fiscal. O empresário que não revisou seu contrato social está perdendo dinheiro a cada fechamento de mês.</p>
+
+      <div class="mt-20 p-10 bg-card border border-border rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro">Recalcule sua Estrutura Societária</h3>
+        <p class="text-muted-foreground max-w-2xl mx-auto text-lg mb-8 font-light">
+          Evite a bitributação e garanta o diferimento inteligente dos seus lucros.
+        </p>
+        <a 
+          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20revisar%20minha%20estrutura%20societária%20devido%20à%20tributação%20de%20dividendos." 
+          class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Consultar Especialistas
+        </a>
+      </div>
     `
   },
 
   // ARTIGO 05 - Grande Migração Patrimonial
   {
-    title: "A \"Grande Migração Patrimonial\" de 2026 e o Fim da Invisibilidade Digital",
-    excerpt: "O mercado financeiro e os principais escritórios de advocacia de elite do Brasil registram em janeiro de 2026 um movimento sem precedentes.",
+    title: "A “Grande Migração Patrimonial” de 2026 e o Fim da Invisibilidade Digital",
+    excerpt: "Janeiro de 2026 registra movimento sem precedentes de famílias de alto patrimônio em resposta ao novo cenário de heranças e ativos digitais.",
     category: "Planejamento Patrimonial",
     date: "10 de Janeiro, 2026",
-    image: "/great-migration.jpg",
+    image: "https://especialistaemsi.com.br/wp-content/uploads/2025/12/a-arte-da-invisibilidade-de-digital-proteja-seus-dados-com-estrategias-imprescindiveis.jpeg",
     slug: "grande-migracao-patrimonial-2026-fim-invisibilidade-digital",
     readTime: "13 min",
     content: `
-      <p class="mb-4">O mercado financeiro e os principais escritórios de advocacia de elite do Brasil, como o Bezerra Borges, registram em janeiro de 2026 um movimento sem precedentes na história econômica recente do país. O fenômeno, apelidado por especialistas como a "Grande Migração Patrimonial", é a resposta direta à entrada em vigor do novo arcabouço tributário que redefine as regras para heranças, dividendos e ativos digitais.</p>
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          O mercado financeiro e os principais escritórios de advocacia de elite do Brasil registram em janeiro de 2026 um movimento sem precedentes. Fenômeno apelidado como a "Grande Migração Patrimonial", é a resposta direta ao novo arcabouço tributário.
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">1. O “Tsunami” do ITCMD: Estados abandonam alíquotas fixas</h2>
+      <p class="mb-6 leading-relaxed">A mudança mais sentida é a progressividade obrigatória do ITCMD. "O Fisco não aceita mais o valor histórico. A regra agora é o valor de mercado", explica a Bezerra Borges. Um imóvel comprado há 20 anos que hoje vale R$ 10 milhões será tributado sobre o valor atual, o que pode inviabilizar a liquidez dos herdeiros.</p>
       
-      <h2 class="text-2xl font-bold mt-8 mb-4">1. O "Tsunami" do ITCMD: Estados abandonam alíquotas fixas</h2>
-      <p class="mb-4">A mudança mais sentida pelas famílias de alto patrimônio neste mês é a progressividade obrigatória do ITCMD (Imposto sobre Herança e Doações). Até o final de 2025, muitos estados brasileiros mantinham alíquotas lineares de 4%. Em 2026, a realidade é outra: o imposto agora escala conforme o valor do patrimônio, atingindo o teto de 8%.</p>
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">2. Dividendos: A mordida de 10% no topo da pirâmide</h2>
+      <p class="mb-6 leading-relaxed">A distribuição de lucros acima de R$ 50 mil mensais passou a ser tributada em 10% na fonte. Essa mudança está impulsionando a revisão de acordos de sócios e a criação de estruturas de diferimento tributário fora do Brasil.</p>
       
-      <h2 class="text-2xl font-bold mt-8 mb-4">2. Dividendos: A mordida de 10% no topo da pirâmide</h2>
-      <p class="mb-4">A partir de 1º de janeiro de 2026, a distribuição de lucros e dividendos acima de R$ 50 mil mensais por CNPJ passou a ser tributada em 10% na fonte. Para empresários que utilizam a empresa como veículo de acúmulo de riqueza, o impacto é severo.</p>
-      
-      <h2 class="text-2xl font-bold mt-8 mb-4">Conclusão: O Custo da Inércia</h2>
-      <p class="mb-4">O relatório de tendências da Bezerra Borges para 2026 aponta que o atraso em tomar uma decisão de planejamento pode custar caro. O cenário é de transparência total e tributação progressiva.</p>
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">3. Criptoativos: O fim da era do "radar desligado"</h2>
+      <p class="mb-6 leading-relaxed">Em 2026, a Receita Federal recebe informações automáticas de mais de 100 jurisdições via CARF. A estratégia de manter cripto "escondido" acabou. O investidor inteligente agora busca o compliance preventivo e a estruturação em holdings offshore para eficiência legal.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">4. O Triângulo de Ouro: Dubai, Paraguai e Reino Unido</h2>
+      <div class="space-y-4 my-8 font-light">
+        <p><strong>Dubai:</strong> Favorito para abertura de holdings devido à burocracia zero.</p>
+        <p><strong>Reino Unido:</strong> Atrativo pela segurança jurídica e acesso ao sistema bancário europeu.</p>
+        <p><strong>Paraguai:</strong> Principal opção para Saída Definitiva com sistema tributário leve.</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Conclusão: O Custo da Inércia</h2>
+      <p class="mb-10 leading-relaxed text-muted-foreground">Em 2026, o planejamento patrimonial não é sobre sonegar, é sobre escolher em qual sistema jurídico você quer que seu patrimônio viva. Aqueles que permanecem exclusivamente no sistema brasileiro estão vendo seu legado ser diluído pela inflação tributária.</p>
+
+      <div class="mt-20 p-10 bg-card border border-border rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro">Seu patrimônio está em governança?</h3>
+        <p class="text-muted-foreground max-w-2xl mx-auto text-lg mb-8 font-light">
+          A segurança patrimonial hoje não está em "esconder", mas em governança profissional.
+        </p>
+        <a 
+          href="https://wa.me/5511982712025?text=Olá,%20vi%20o%20artigo%20sobre%20a%20grande%20migração%20patrimonial%20e%20quero%20revisar%20minha%20estratégia." 
+          class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Agendar Diagnóstico
+        </a>
+      </div>
     `
   },
 
-  // ARTIGO 06 - Paraguai Hub da Riqueza
   {
     title: "Por que o Paraguai se tornou o 'Hub' da Riqueza Brasileira em 2026?",
-    excerpt: "Enquanto o Brasil aprofunda a reforma tributária, o Paraguai consolida sua posição como jurisdição estratégica para reorganização patrimonial e eficiência fiscal.",
+    excerpt: "Recorde histórico: solicitações de residência fiscal no Paraguai crescem 40% em Janeiro de 2026. Entenda o fenômeno do 'Tigre Guarani'.",
     category: "Internacionalização",
-    date: "08 de Janeiro, 2026",
-    image: "/paraguay-asuncion-skyline.jpg.png",
+    date: "20 de Fevereiro, 2026",
+    image: "/paraguai.jpg",
     slug: "paraguai-hub-riqueza-brasileira-2026",
     readTime: "12 min",
     content: `
       <div class="mb-12">
+        <img src="/paraguai.jpg" alt="Skyline de Assunção, Paraguai" class="w-full h-[400px] object-cover rounded-[2.5rem] mb-6 shadow-2xl" />
         <p class="text-xl text-muted-foreground font-light leading-relaxed">
-          Se você pesquisa por residência fiscal no Paraguai ou planejamento tributário internacional hoje, perceberá um padrão: o país entrou definitivamente no radar do empresário brasileiro. Enquanto o Brasil amplia o debate sobre a tributação de dividendos e heranças em 2026, o Paraguai consolida sua posição como uma jurisdição estratégica para a reorganização patrimonial.
+          Enquanto as capitais brasileiras ainda processam os impactos da nova tributação sobre dividendos e as alíquotas progressivas do ITCMD, a capital paraguaia vive um cenário de euforia econômica. Janeiro de 2026 marca um recorde histórico: o número de brasileiros que solicitaram a Residência Fiscal no Paraguai cresceu 40%, consolidando o país vizinho como o principal refúgio estratégico para o empresariado nacional.
         </p>
       </div>
 
-      <p class="mb-6 leading-relaxed">Janeiro de 2026 marcou um ponto de inflexão: o número de brasileiros solicitando residência fiscal no país cresceu significativamente em relação ao ano anterior. Este movimento é a resposta direta a um cenário de aumento do custo estrutural da permanência fiscal no Brasil.</p>
+      <div class="flex items-center gap-4 mb-10 pb-6 border-b border-border">
+        <div class="h-14 w-14 rounded-full overflow-hidden bg-zinc-200 ring-2 ring-primary/20">
+          <img src="/vinicius-icone-perfil.jpeg" alt="Vinicius Borges" class="w-full h-full object-cover" />
+        </div>
+        <div>
+          <p class="font-bold text-xl text-foreground">Vinicius Borges</p>
+          <p class="text-sm text-muted-foreground">Bezerra Borges Advocacia</p>
+        </div>
+      </div>
 
-      <h2 id="cenario-brasil" class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O Novo Cenário Tributário Brasileiro em 2026</h2>
-      <p class="mb-6">O Brasil vive um momento de transição estrutural que inclui o debate sobre a tributação de dividendos, a implementação do ITCMD com alíquotas progressivas e uma maior transparência via cruzamento de dados fiscais. Para investidores sofisticados, isso representa instabilidade regulatória e imprevisibilidade de médio prazo.</p>
+      <p class="mb-6 leading-relaxed">O fenômeno, apelidado de "O Despertar do Tigre Guarani", é impulsionado por uma combinação rara de estabilidade macroeconômica e agressividade fiscal. Para os especialistas da Bezerra Borges, o Paraguai deixou de ser uma alternativa secundária para se tornar o pilar central de muitos planejamentos patrimoniais de alta renda.</p>
 
-      <h2 id="modelo-10-10-10" class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">A Estrutura Tributária Paraguaia: O Modelo 10-10-10</h2>
-      <p class="mb-6">O Paraguai consolidou um sistema tributário baseado em três pilares fundamentais que atraem capital global:</p>
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">A Regra dos "10-10-10": O Contraste com o Custo Brasil</h2>
+      <p class="mb-8 leading-relaxed">O grande motor dessa migração é a simplicidade do sistema tributário paraguaio. Enquanto o Brasil discute novas camadas de impostos sobre consumo e renda, o Paraguai mantém sua famosa estrutura baseada em três pilares:</p>
       
-      <div class="grid md:grid-cols-3 gap-6 my-10">
-        <div class="p-6 border border-border rounded-2xl bg-card/50 text-center">
-          <span class="text-4xl font-black text-primary/20 block mb-2">10%</span>
-          <h4 class="font-bold mb-1">IRP / IRE</h4>
-          <p class="text-xs text-muted-foreground">Imposto de Renda</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-10 font-bold text-center uppercase tracking-tighter">
+        <div class="p-8 border border-border rounded-2xl bg-card shadow-sm group hover:border-primary transition-all">
+          <div class="text-4xl text-primary mb-2">10%</div>
+          <div class="text-xs opacity-60">Imposto de Renda (IRE/IRP)</div>
         </div>
-        <div class="p-6 border border-border rounded-2xl bg-card/50 text-center">
-          <span class="text-4xl font-black text-primary/20 block mb-2">10%</span>
-          <h4 class="font-bold mb-1">IVA</h4>
-          <p class="text-xs text-muted-foreground">Imposto sobre Consumo</p>
+        <div class="p-8 border border-border rounded-2xl bg-card shadow-sm group hover:border-primary transition-all">
+          <div class="text-4xl text-primary mb-2">10%</div>
+          <div class="text-xs opacity-60">IVA (Valor Agregado)</div>
         </div>
-        <div class="p-6 border border-border rounded-2xl bg-card/50 text-center">
-          <span class="text-4xl font-black text-primary/20 block mb-2">10%</span>
-          <h4 class="font-bold mb-1">IDU</h4>
-          <p class="text-xs text-muted-foreground">Sobre Dividendos</p>
+        <div class="p-8 border border-border rounded-2xl bg-card shadow-sm group hover:border-primary transition-all">
+          <div class="text-4xl text-primary mb-2">10%</div>
+          <div class="text-xs opacity-60">Imposto sobre Dividendos</div>
         </div>
       </div>
 
-      <p class="mb-6 leading-relaxed">Diferentemente do modelo brasileiro, onde mudanças legislativas são frequentes, o Paraguai mantém essa estrutura estável há décadas. Em planejamento patrimonial, essa previsibilidade é frequentemente mais valiosa que o benefício fiscal momentâneo.</p>
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p><strong>Princípio da Territorialidade:</strong> No Paraguai, rendimentos obtidos fora do país são, via de regra, isentos ou subtributados para residentes fiscais. Isso significa que um empresário digital ou um investidor de criptoativos pode gerir sua riqueza global a partir de Assunção com uma eficiência financeira impossível de ser replicada em solo brasileiro sob as novas regras de 2026.</p>
+      </div>
 
-      <h2 id="assuncao-hub" class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Assunção: De Capital Regional a Plataforma Internacional</h2>
-      <p class="mb-6">Assunção tornou-se um centro estratégico para holdings patrimoniais, family offices e empresas de tecnologia com receita dolarizada. O país oferece baixo custo operacional, sistema bancário funcional e um regime de maquila altamente competitivo para a indústria.</p>
+      <h2 class="text-3xl font-bold mt-16 mb-6 font-source-serif-pro">A “Lei da Maquila” e a Expansão Industrial</h2>
+      <p class="mb-6 leading-relaxed">Não são apenas indivíduos que estão cruzando a fronteira. O setor industrial brasileiro registrou em 2025 o maior volume de abertura de filiais no Paraguai via Lei de Maquila. Este regime permite que empresas brasileiras importem máquinas e insumos com isenção de impostos, processem os produtos no Paraguai pagando apenas 1% de tributo sobre o valor agregado e reexportem para o Brasil ou para o mundo.</p>
 
-      <h2 id="residencia-fiscal" class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Residência Fiscal: O Que É e Como Funciona</h2>
-      <p class="mb-6">Do ponto de vista técnico, a residência fiscal no Paraguai exige a obtenção da residência permanente, o cumprimento de requisitos de permanência física e o registro tributário local. É fundamental realizar um planejamento adequado de saída fiscal do Brasil para evitar o risco de dupla residência fiscal.</p>
+      <div class="p-8 bg-zinc-100 dark:bg-white/5 rounded-2xl my-10 font-light flex items-start gap-4 italic leading-relaxed">
+        <p>"A fundação da Cebras-PY (Câmara de Empresários Brasileiros no Paraguai) em dezembro de 2025 é o símbolo máximo dessa integração. A entidade já nasce com centenas de membros buscando segurança jurídica e logística para fugir do 'Custo Brasil'."</p>
+      </div>
 
-      <h2 id="objecoes" class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Quebrando Objeções: Planejamento vs. Evasão</h2>
-      <div class="space-y-8 my-10">
-        <div>
-          <h4 class="font-bold mb-2">Isso é evasão fiscal?</h4>
-          <p class="text-muted-foreground leading-relaxed">Não. Planejamento tributário internacional é uma prática legítima quando baseada na legislação vigente e com substância econômica real. Evasão é ocultação; planejamento é estruturação profissional.</p>
+      <h2 class="text-3xl font-bold mt-16 mb-6 font-source-serif-pro text-primary/90">O Boom Imobiliário e a Soberania em Dólar</h2>
+      <p class="mb-6 leading-relaxed">Quem caminha pelo eixo corporativo da Avenida Santa Teresa, em Assunção, sente o impacto direto desse fluxo de capitais. O mercado imobiliário paraguaio, precificado em dólar, tornou-se o destino preferencial para a diversificação de portfólio.</p>
+      
+      <div class="grid md:grid-cols-2 gap-6 my-10">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-3">Rentabilidade</h4>
+          <p class="text-sm text-muted-foreground font-light">Aluguéis residenciais de alto padrão em bairros como Villa Morra e Recoleta oferecem yields superiores aos das capitais brasileiras, com vacância mínima.</p>
         </div>
-        <div>
-          <h4 class="font-bold mb-2">O Paraguai é seguro juridicamente?</h4>
-          <p class="text-muted-foreground leading-relaxed">O país mantém uma política fiscal conservadora e baixa dívida pública. A estabilidade tributária histórica e a proximidade geográfica com o Brasil reduzem significativamente o risco operacional.</p>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-3">Soberania Cambial</h4>
+          <p class="text-sm text-muted-foreground font-light">A economia paraguaia é bimoeda, permitindo contratos e poupança em dólar de forma nativa e sem restrições bancárias.</p>
         </div>
       </div>
 
-      <h2 id="conclusao" class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Conclusão: Estratégia é Diferente de Emoção</h2>
-      <p class="mb-6 leading-relaxed">O Paraguai em 2026 não representa uma fuga, mas sim uma estratégia. O capital sofisticado escolhe jurisdições previsíveis e custos estruturais eficientes. Sua estrutura patrimonial está preparada para o ambiente fiscal agressivo que se consolida no Brasil?</p>
+      <h2 class="text-3xl font-bold mt-16 mb-6 font-source-serif-pro">Conclusão: Estratégia, não Distância</h2>
+      <p class="mb-6 leading-relaxed text-muted-foreground italic">O Paraguai em 2026 oferece o que o capital mais valoriza: previsibilidade. O empresário que ainda enxerga o país sob o prisma da década de 90 está perdendo a maior janela de oportunidade de proteção patrimonial da América do Sul. A Bezerra Borges atua em todas as pontas: da Saída Definitiva do Brasil à estruturação da sua nova vida fiscal paraguaia.</p>
 
       <div class="mt-20 p-10 bg-card border border-border rounded-[2.5rem] text-center shadow-xl">
-        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro">Revisão Estratégica Personalizada</h3>
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro">Sua internacionalização começa aqui</h3>
         <p class="text-muted-foreground max-w-2xl mx-auto text-lg mb-8 font-light">
-          Se você fatura acima de R$ 1M por ano, distribui dividendos relevantes ou possui renda internacional, talvez não seja hora de mudar de país, mas certamente é hora de revisar sua estrutura.
+          Cuidamos de todo o processo de Residência Fiscal, NIF Paraguaio e estruturação de Holdings.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20uma%20análise%20estratégica%20de%20residência%20fiscal%20e%20reorganização%20no%20Paraguai." 
+          href="https://wa.me/5511982712025?text=Olá,%20li%20o%20artigo%20sobre%20o%20Paraguai%20e%20gostaria%20de%20iniciar%20meu%20planejamento." 
           class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
-          Agendar Análise Estratégica
+          Consultar Especialista Paraguai
         </a>
       </div>
     `
@@ -1417,6 +1534,72 @@ export const articles: Article[] = [
           class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Agendar Consultoria Especializada
+        </a>
+      </div>
+    `
+  },
+  {
+    title: "Abertura de Empresa em Portugal: O Guia para Empresários Brasileiros em 2026",
+    excerpt: "Com laços históricos e benefícios fiscais específicos, Portugal continua sendo a principal porta de entrada para brasileiros na Europa. Conheça as mudanças e oportunidades para 2026.",
+    category: "Internacionalização",
+    date: "25 de Fevereiro, 2026",
+    image: "/portugal.jpg",
+    slug: "abertura-empresa-portugal-guia-brasileiros-2026",
+    readTime: "13 min",
+    content: `
+      <div class="mb-12">
+        <img src="/portugal.jpg" alt="Vista aérea de Lisboa, Portugal" class="w-full h-[400px] object-cover rounded-[2.5rem] mb-6 shadow-2xl" />
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Portugal consolidou-se em 2026 como o principal destino estratégico para empresários brasileiros que buscam expandir suas operações para a Europa sem as barreiras linguísticas e culturais de outras jurisdições. Com a evolução do regime de Residentes Não Habituais (RNH) e novos incentivos à tecnologia, o país oferece um ambiente fértil para a internacionalização.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-4 mb-10 pb-6 border-b border-border">
+        <div class="h-14 w-14 rounded-full overflow-hidden bg-zinc-200 ring-2 ring-primary/20">
+          <img src="/vinicius-icone-perfil.jpeg" alt="Vinicius Borges" class="w-full h-full object-cover" />
+        </div>
+        <div>
+          <p class="font-bold text-xl text-foreground">Vinicius Borges</p>
+          <p class="text-sm text-muted-foreground">Bezerra Borges Advocacia</p>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Por Que Portugal em 2026?</h2>
+      <p class="mb-6 leading-relaxed">Diferente de décadas passadas, a Portugal de 2026 é um hub tecnológico vibrante. O país oferece segurança jurídica, acesso ao mercado único europeu e tratados de bitributação extremamente favoráveis com o Brasil.</p>
+
+      <div class="my-10 p-8 border border-border rounded-2xl bg-card shadow-sm">
+        <h3 class="text-xl font-bold mb-4">A Estrutura Lda. (Sociedade por Quotas)</h3>
+        <p class="text-muted-foreground mb-4 leading-relaxed">A Sociedade por Quotas (Lda.) é a ferramenta mais comum para brasileiros. Pode ser constituída com apenas um sócio (Unipessoal Lda.) e exige um capital social simbólico, embora recomendemos uma capitalização mínima para facilitar a abertura de contas bancárias.</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-16 mb-6 font-source-serif-pro">O Regime Tributário das Empresas</h2>
+      <p class="mb-6">As empresas em Portugal continental pagam, via de regra, uma taxa de IRC (Imposto sobre o Rendimento das Pessoas Coletivas) de 21%. No entanto, para empresas instaladas em regiões como a <strong>Madeira (Centro Internacional de Negócios)</strong>, a taxa pode cair para 5%, tornando-a uma das mais eficientes da Europa.</p>
+
+      <div class="bg-zinc-100 dark:bg-white/5 p-8 rounded-2xl my-10">
+        <h4 class="font-bold mb-4">Vantagens para Infoprodutores e Nômades Digitais:</h4>
+        <ul class="space-y-3 text-muted-foreground font-light">
+          <li>• IVA simplificado para serviços intracomunitários.</li>
+          <li>• Reconhecimento mútuo de diplomas e competências.</li>
+          <li>• Acesso facilitado ao visto D2 (Empreendedor) ou Visto D8 (Nômade Digital).</li>
+        </ul>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-16 mb-6 font-source-serif-pro">O Acordo de Bitributação Brasil-Portugal</h2>
+      <p class="mb-6">Este é o grande diferencial. O acordo permite que lucros e dividendos sejam distribuídos de forma a mitigar a carga tributária em ambos os países, desde que haja um planejamento correto sob a supervisão de especialistas em direito internacional.</p>
+
+      <h2 class="text-3xl font-bold mt-16 mb-6 font-source-serif-pro">Conclusão: O Momento de Internacionalizar é Agora</h2>
+      <p class="mb-10 leading-relaxed text-muted-foreground">Portugal não é apenas um refúgio de qualidade de vida, é um trampolim para o mundo. Se sua empresa fatura em reais no Brasil e você busca diversificar sua receita em euros, a estruturação portuguesa é o passo lógico.</p>
+
+      <div class="mt-20 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Inicie sua Jornada Europeia</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">
+          Cuidamos da constituição da empresa, NIF, abertura de conta e planejamento tributário transfronteiriço.
+        </p>
+        <a 
+          href="https://wa.me/5511982712025" 
+          class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Falar com Especialista Portugal
         </a>
       </div>
     `

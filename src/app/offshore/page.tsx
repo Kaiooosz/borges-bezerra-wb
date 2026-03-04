@@ -288,7 +288,7 @@ export default function OffshoreExpertPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-backgroud text-foregroung font-">
+    <div className="min-h-screen bg-background text-foreground font-">
       {/* Progress Bar */}
       <div
         className="fixed top-0 left-0 h-1 bg-linear-to-r from-white via-zinc-300 to-white z-50 transition-all duration-300"
@@ -345,7 +345,7 @@ export default function OffshoreExpertPage() {
             </a>
             <a
               href="#how-it-works"
-              className="px-10 py-5 bg-white/10 border-2 border-white/30 text-foregroung rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300 backdrop-blur-sm"
+              className="px-10 py-5 bg-white/10 border-2 border-white/30 text-foreground rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300 backdrop-blur-sm"
             >
               Ver Como Funciona
             </a>
@@ -372,7 +372,7 @@ export default function OffshoreExpertPage() {
         </div>
 
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <ChevronDown className="h-8 w-8 text-foregroung/50" />
+          <ChevronDown className="h-8 w-8 text-foreground/50" />
         </div>
       </section>
 
@@ -392,7 +392,7 @@ export default function OffshoreExpertPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-10 bg-white/5 border border-border rounded-2xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
-              <Shield className="h-12 w-12 mb-6 text-foregroung" />
+              <Shield className="h-12 w-12 mb-6 text-foreground" />
               <h3 className="text-2xl font-bold mb-4">Proteção Patrimonial</h3>
               <p className="text-zinc-400 leading-relaxed mb-6">
                 Blindagem legal contra processos, bloqueios judiciais e riscos políticos.
@@ -400,44 +400,44 @@ export default function OffshoreExpertPage() {
               </p>
               <ul className="space-y-3 text-sm text-zinc-400">
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foregroung shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
                   <span>Separação patrimonial pessoa física vs empresa</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foregroung shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
                   <span>Proteção contra instabilidade política/econômica</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foregroung shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
                   <span>Mitigação de riscos jurídicos mediante segregação patrimonial lícita e governança.</span>
                 </li>
               </ul>
             </div>
 
             <div className="p-10 bg-white/5 border border-border rounded-2xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
-              <TrendingUp className="h-12 w-12 mb-6 text-foregroung" />
+              <TrendingUp className="h-12 w-12 mb-6 text-foreground" />
               <h3 className="text-2xl font-bold mb-4">Otimização Tributária</h3>
               <p className="text-zinc-400 leading-relaxed mb-6">
                 Otimize sua carga tributária de forma legal e transparente, conforme normas aplicáveis.
               </p>
               <ul className="space-y-3 text-sm text-zinc-400">
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foregroung shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
                   <span>Potencial de eficiência tributária avaliado caso a caso, em conformidade.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foregroung shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
                   <span>Diferimento de lucros e reinvestimento eficiente</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foregroung shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
                   <span>Tratados internacionais para evitar dupla tributação</span>
                 </li>
               </ul>
             </div>
 
             <div className="p-10 bg-white/5 border border-border rounded-2xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
-              <Globe className="h-12 w-12 mb-6 text-foregroung" />
+              <Globe className="h-12 w-12 mb-6 text-foreground" />
               <h3 className="text-2xl font-bold mb-4">Liberdade Global</h3>
               <p className="text-zinc-400 leading-relaxed mb-6">
                 Opere internacionalmente sem barreiras burocráticas. Receba de qualquer país,
@@ -445,15 +445,15 @@ export default function OffshoreExpertPage() {
               </p>
               <ul className="space-y-3 text-sm text-zinc-400">
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foregroung shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
                   <span>Contas bancárias em USD, EUR, GBP, CHF</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foregroung shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
                   <span>Facilidade para contratos e parcerias internacionais</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foregroung shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
                   <span>Planejamento de residência fiscal estratégica</span>
                 </li>
               </ul>
@@ -552,11 +552,11 @@ export default function OffshoreExpertPage() {
                 <div className="flex items-start gap-6">
                   <div className="shrink-0">
                     <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center">
-                      <obj.icon className="h-8 w-8 text-foregroung" />
+                      <obj.icon className="h-8 w-8 text-foreground" />
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-3 text-foregroung">{obj.objection}</h3>
+                    <h3 className="text-2xl font-bold mb-3 text-foreground">{obj.objection}</h3>
                     <p className="text-lg --ring mb-4 font-semibold">{obj.answer}</p>
                     <p className="text-zinc-400 leading-relaxed">{obj.detail}</p>
                   </div>
@@ -566,11 +566,11 @@ export default function OffshoreExpertPage() {
           </div>
 
           <div className="mt-16 p-10 bg-linear-to-br from-white/10 to-white/5 border border-white/20 rounded-2xl text-center">
-            <Award className="h-16 w-16 mx-auto mb-6 text-foregroung" />
+            <Award className="h-16 w-16 mx-auto mb-6 text-foreground" />
             <h3 className="text-3xl font-bold mb-4">Adoção de políticas e controles de compliance, com auditoria e atualização contínuas.</h3>
             <p className="text-xl --ring mb-6 max-w-3xl mx-auto">
               Todas as nossas estruturas são 100% declaradas e em conformidade com a legislação brasileira e internacional.
-              <span className="text-foregroung font-bold">Você não assume riscos legais - apenas otimiza o que é seu por direito.</span>
+              <span className="text-foreground font-bold">Você não assume riscos legais - apenas otimiza o que é seu por direito.</span>
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <div className="px-6 py-3 bg-white/10 rounded-full border border-white/20 backdrop-blur-sm">
@@ -596,7 +596,7 @@ export default function OffshoreExpertPage() {
       <footer className="border-t border-border py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center">
-            <Building2 className="h-12 w-12 mx-auto mb-4 text-foregroung" />
+            <Building2 className="h-12 w-12 mx-auto mb-4 text-foreground" />
             <h3 className="text-2xl font-bold mb-2">BBLAW - Bezerra Borges Advocacia</h3>
             <p className="text-zinc-400 mb-8">Estruturas offshore profissionais desde 2016</p>
             <div className="space-y-2 text-sm text-zinc-400">

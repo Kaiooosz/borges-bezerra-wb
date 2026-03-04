@@ -19,8 +19,8 @@ export function Cta() {
               href="mailto:contato@bezerraborges.com.br"
               className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:scale-105"
             >
-              <Mail className="w-6 h-6 text-foregroung mx-auto mb-3" />
-              <h3 className="font-bold text-foregroung mb-2">Email</h3>
+              <Mail className="w-6 h-6 text-foreground mx-auto mb-3" />
+              <h3 className="font-bold text-foreground mb-2">Email</h3>
               <p className="text--chart-4 text-sm">contato@bezerraborges.com.br</p>
             </a>
 
@@ -30,8 +30,8 @@ export function Cta() {
               rel="noopener noreferrer"
               className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:scale-105"
             >
-              <Phone className="w-6 h-6 text-foregroung mx-auto mb-3" />
-              <h3 className="font-bold text-foregroung mb-2">WhatsApp</h3>
+              <Phone className="w-6 h-6 text-foreground mx-auto mb-3" />
+              <h3 className="font-bold text-foreground mb-2">WhatsApp</h3>
               <p className="text--chart-4 text-sm">+55 11 98271-2025</p>
             </a>
           </div>

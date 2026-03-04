@@ -40,7 +40,7 @@ export function ProcessSteps() {
               key={index}
               className="relative p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
             >
-              <div className="text-5xl font-bold text-foregroung/10 mb-4">{step.number}</div>
+              <div className="text-5xl font-bold text-foreground/10 mb-4">{step.number}</div>
               <h3 className="text-xl font-bold mb-3">{step.title}</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">{step.description}</p>
             </div>

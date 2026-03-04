@@ -42,11 +42,11 @@ export function Footer() {
           <div className="p-6 border border-border rounded-2xl shadow-md hover:shadow-lg transition">
             <h3 className="text-foreground font-semibold mb-4 text-sm uppercase tracking-wider">Especialidades</h3>
             <nav className="flex flex-col gap-3">
-              <Link href="/servicos/empresas-offshore" className="text-sm text-zinc-400 hover:text-foreground transition-colors">Empresas Offshore</Link>
-              <Link href="/servicos/planejamento-tributario" className="text-sm text-zinc-400 hover:text-foreground transition-colors">Planejamento Tributário</Link>
-              <Link href="/servicos/contas-internacionais" className="text-sm text-zinc-400 hover:text-foreground transition-colors">Contas Internacionais</Link>
-              <Link href="/servicos/criptomoedas-web3" className="text-sm text-zinc-400 hover:text-foreground transition-colors">Criptomoedas & Web3</Link>
-              <Link href="/servicos/holdings-patrimoniais" className="text-sm text-zinc-400 hover:text-foreground transition-colors">Holdings Patrimoniais</Link>
+              <Link href="/servicos/internacionalizacao" className="text-sm text-zinc-400 hover:text-foreground transition-colors">Empresas Offshore</Link>
+              <Link href="/servicos/juridico-estrategico" className="text-sm text-zinc-400 hover:text-foreground transition-colors">Planejamento Tributário</Link>
+              <Link href="/servicos/internacionalizacao" className="text-sm text-zinc-400 hover:text-foreground transition-colors">Contas Internacionais</Link>
+              <Link href="/servicos/cripto-fintechs" className="text-sm text-zinc-400 hover:text-foreground transition-colors">Criptomoedas & Web3</Link>
+              <Link href="/servicos/planejamento-patrimonial" className="text-sm text-zinc-400 hover:text-foreground transition-colors">Holdings Patrimoniais</Link>
             </nav>
           </div>
 
@@ -107,7 +107,7 @@ export function Footer() {
               <Link href="/politica-de-privacidade" className="text-sm text-zinc-600 hover:text-foreground transition-colors">
                 Política de Privacidade
               </Link>
-              <Link href="/termos" className="text-sm text-zinc-600 hover:text-foreground transition-colors">
+              <Link href="#" className="text-sm text-zinc-600 hover:text-foreground transition-colors">
                 Termos de Uso
               </Link>
               <Link href="/politica-de-cookies" className="text-sm text-zinc-600 hover:text-foreground transition-colors">

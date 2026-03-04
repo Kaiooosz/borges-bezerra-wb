@@ -8,7 +8,7 @@ function stripTitle(name: string) {
   return name.replace(/^Dr[a]?\.\s*/i, '').trim();
 }
 
-function TeamCard({ member }: { member: { name: string; role: string; image: string } }) {
+function TeamCard({ member, index }: { member: { name: string; role: string; image: string }; index: number }) {
   const [imgError, setImgError] = useState(false);
 
   return (
@@ -27,20 +27,21 @@ function TeamCard({ member }: { member: { name: string; role: string; image: str
             alt={stripTitle(member.name)}
             fill
             className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
-            unoptimized
+            priority={index < 4}
+            sizes="(max-width: 768px) 100vw, 256px"
             onError={() => setImgError(true)}
           />
         )}
 
-        {/* Gradiente sempre escuro no fundo — garante legibilidade em qualquer tema */}
-        <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent" />
+        {/* Gradiente refinado — garante legibilidade e profundidade */}
+        <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/40 to-transparent" />
 
-        {/* Texto fixo sobre a foto */}
-        <div className="absolute bottom-0 left-0 right-0 p-5">
-          <h3 className="text-lg font-bold text-white leading-tight">
+        {/* Texto fitado sobre a foto com tipografia premium */}
+        <div className="absolute bottom-0 left-0 right-0 p-6">
+          <h3 className="text-xl font-bold text-white tracking-tight leading-none mb-1">
             {stripTitle(member.name)}
           </h3>
-          <p className="text-xs text-white/70 mt-0.5 font-medium tracking-wide uppercase">
+          <p className="text-[10px] text-white/60 font-semibold tracking-[0.1em] uppercase">
             {member.role}
           </p>
         </div>
@@ -67,7 +68,7 @@ export default function TeamCarousel() {
   const team = [
     { name: 'Vinicius', role: 'Sócio Fundador', image: '/vinicius.jpg' },
     { name: 'Boaz', role: 'Sócio Fundador', image: '/boaz.jpg' },
-    { name: 'Fabiano', role: 'Closer Sênior e Advogado', image: '/fabiano.jpg' },
+    { name: 'Fabiano', role: 'Closer Sênior e Advogado', image: '/fabiano.png' },
     { name: 'Alice', role: 'Head de Offshore', image: '/alice.jpg' },
     { name: 'Clara', role: 'Business Partner', image: '/clara.jpg' },
     { name: 'Micaelle', role: 'Consultora Internacional', image: '/micaelle.jpg' },
@@ -78,7 +79,7 @@ export default function TeamCarousel() {
   ];
 
   return (
-    <section className="py-24 bg-background overflow-hidden">
+    <section className="py-24 bg-background overflow-hidden border-t border-border">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -94,14 +95,14 @@ export default function TeamCarousel() {
           <button
             onClick={scrollLeft}
             aria-label="Anterior"
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black/40 backdrop-blur-md hover:bg-black/60 text-white p-3 rounded-full transition-all hidden md:flex items-center justify-center border border-white/10"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -left-4 z-10 bg-black/40 backdrop-blur-md hover:bg-black/60 text-white p-3 rounded-full transition-all hidden md:flex items-center justify-center border border-white/10"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
           <button
             onClick={scrollRight}
             aria-label="Próximo"
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black/40 backdrop-blur-md hover:bg-black/60 text-white p-3 rounded-full transition-all hidden md:flex items-center justify-center border border-white/10"
+            className="absolute right-0 top-1/2 -translate-y-1/2 -right-4 z-10 bg-black/40 backdrop-blur-md hover:bg-black/60 text-white p-3 rounded-full transition-all hidden md:flex items-center justify-center border border-white/10"
           >
             <ChevronRight className="w-6 h-6" />
           </button>
@@ -109,11 +110,11 @@ export default function TeamCarousel() {
           {/* Carrossel */}
           <div
             ref={scrollRef}
-            className="flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory px-4 pb-2"
+            className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory px-4 pb-6"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {[...team, ...team].map((member, index) => (
-              <TeamCard key={`${member.name}-${index}`} member={member} />
+              <TeamCard key={`${member.name}-${index}`} member={member} index={index % team.length} />
             ))}
           </div>
         </div>

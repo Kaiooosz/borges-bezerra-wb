@@ -132,7 +132,7 @@ export default function SobreNosPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-backgroud text-foregroung font-source-serif-pro">
+    <div className="min-h-screen bg-background text-foreground font-source-serif-pro">
       <Header />
 
       {/* Hero Section - Aparece imediatamente fixo no topo */}
@@ -216,7 +216,7 @@ export default function SobreNosPage() {
                 {...fadeInUp}
                 className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all group"
               >
-                <service.icon className="h-10 w-10 mb-4 text-foregroung group-hover:scale-110 transition-transform" />
+                <service.icon className="h-10 w-10 mb-4 text-foreground group-hover:scale-110 transition-transform" />
                 <h3 className="font-source-serif-pro text-xl mb-3">{service.title}</h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">
                   {service.description}
@@ -292,7 +292,7 @@ export default function SobreNosPage() {
         </div>
       </section>
 
-      
+
 
       {/* Philosophy Section */}
       <section className="py-20 md:py-32 border-t border-border">
@@ -325,7 +325,7 @@ export default function SobreNosPage() {
           </motion.div>
         </div>
         <TeamCarousel />
-        </section>
+      </section>
     </div>
   );
 }

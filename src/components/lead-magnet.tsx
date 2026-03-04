@@ -75,7 +75,7 @@ export function LeadMagnet() {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       required
-                      className="bg-backgroud/50 border-border text--chart-1 placeholder:text--chart-1 focus:border-white/30"
+                      className="bg-background/50 border-border text--chart-1 placeholder:text--chart-1 focus:border-white/30"
                     />
                   </div>
                   <div>
@@ -85,7 +85,7 @@ export function LeadMagnet() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
-                      className="bg-backgroud/50 border-border text--chart-1 placeholder:text--chart-1 focus:border-white/30"
+                      className="bg-background/50 border-border text--chart-1 placeholder:text--chart-1 focus:border-white/30"
                     />
                   </div>
                   {/* <Button

@@ -114,7 +114,7 @@ export default function HoldingPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-backgroud text-foregroung font-source-serif-pro">
+    <div className="min-h-screen bg-background text-foreground font-source-serif-pro">
       <div
         className="fixed top-0 left-0 h-1 --muted-foregroun z-50 transition-all duration-300"
         style={{ width: `${scrollProgress}%` }}
@@ -198,7 +198,7 @@ export default function HoldingPage() {
                 key={index}
                 className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 group hover:shadow-xl hover:scale-105"
               >
-                <benefit.icon className="h-10 w-10 mb-4 text-foregroung group-hover:scale-110 transition-transform" />
+                <benefit.icon className="h-10 w-10 mb-4 text-foreground group-hover:scale-110 transition-transform" />
                 <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">{benefit.description}</p>
               </div>
@@ -255,7 +255,7 @@ export default function HoldingPage() {
                 key={index}
                 className="relative p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
               >
-                <div className="text-5xl font-bold text-foregroung/10 mb-4">{step.number}</div>
+                <div className="text-5xl font-bold text-foreground/10 mb-4">{step.number}</div>
                 <h3 className="text-xl font-bold mb-3">{step.title}</h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">{step.description}</p>
               </div>
@@ -269,15 +269,15 @@ export default function HoldingPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
-              <div className="text-5xl font-bold text-foregroung mb-3">10+</div>
+              <div className="text-5xl font-bold text-foreground mb-3">10+</div>
               <p className="text-zinc-400">Anos de Experiência</p>
             </div>
             <div className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
-              <div className="text-5xl font-bold text-foregroung mb-3">500+</div>
+              <div className="text-5xl font-bold text-foreground mb-3">500+</div>
               <p className="text-zinc-400">Holdings Estruturadas</p>
             </div>
             <div className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
-              <div className="text-5xl font-bold text-foregroung mb-3">R$ 2B+</div>
+              <div className="text-5xl font-bold text-foreground mb-3">R$ 2B+</div>
               <p className="text-zinc-400">em Patrimônio Protegido</p>
             </div>
           </div>
@@ -300,8 +300,8 @@ export default function HoldingPage() {
                 href="mailto:contato@borgesbezerra.com.br"
                 className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:scale-105"
               >
-                <Mail className="w-6 h-6 text-foregroung mx-auto mb-3" />
-                <h3 className="font-bold text-foregroung mb-2">Email</h3>
+                <Mail className="w-6 h-6 text-foreground mx-auto mb-3" />
+                <h3 className="font-bold text-foreground mb-2">Email</h3>
                 <p className="text-zinc-400 text-sm">contato@borgesbezerra.com.br</p>
               </a>
 
@@ -311,8 +311,8 @@ export default function HoldingPage() {
                 rel="noopener noreferrer"
                 className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:scale-105"
               >
-                <Phone className="w-6 h-6 text-foregroung mx-auto mb-3" />
-                <h3 className="font-bold text-foregroung mb-2">WhatsApp</h3>
+                <Phone className="w-6 h-6 text-foreground mx-auto mb-3" />
+                <h3 className="font-bold text-foreground mb-2">WhatsApp</h3>
                 <p className="text-zinc-400 text-sm py-1">+55 11 98271-2025</p>
               </a>
             </div>

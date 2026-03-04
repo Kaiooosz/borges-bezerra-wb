@@ -77,9 +77,9 @@ export function ContactForm() {
           {/* Section header */}
           <div className="text-center mb-12">
             <div className="inline-flex p-4 rounded-lg bg--background mb-6">
-              <MessageSquare className="h-8 w-8 text-foregroung" />
+              <MessageSquare className="h-8 w-8 text-foreground" />
             </div>
-            <h2 className="font-source-serif-pro text-3xl sm:text-4xl md:text-5xl font-light text-foregroung mb-4 tracking-tight">
+            <h2 className="font-source-serif-pro text-3xl sm:text-4xl md:text-5xl font-light text-foreground mb-4 tracking-tight">
               Comece sua jornada sem fronteiras
             </h2>
             <p className="text-base sm:text-lg text-zinc-600 leading-relaxed">
@@ -94,7 +94,7 @@ export function ContactForm() {
                 <div className="inline-flex p-4 rounded-full bg-green-500/10 mb-4">
                   <Send className="h-8 w-8 text-green-500" />
                 </div>
-                <h3 className="text-2xl text-foregroung mb-2">
+                <h3 className="text-2xl text-foreground mb-2">
                   Mensagem enviada!
                 </h3>
                 <p className="text--chart-4">Entraremos em contato em breve.</p>
@@ -116,7 +116,7 @@ export function ContactForm() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="bg-backgroud/50 border-border text-foregroung placeholder:text-zinc-600 focus:border-white/30"
+                      className="bg-background/50 border-border text-foreground placeholder:text-zinc-600 focus:border-white/30"
                       placeholder="Seu nome"
                     />
                   </div>
@@ -134,7 +134,7 @@ export function ContactForm() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="bg-backgroud/50 border-border text-foregroung placeholder:text-zinc-600 focus:border-white/30 resize-none"
+                      className="bg-background/50 border-border text-foreground placeholder:text-zinc-600 focus:border-white/30 resize-none"
                       placeholder="seu@email.com"
                     />
                   </div>
@@ -154,7 +154,7 @@ export function ContactForm() {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="bg-backgroud/50 border-border text-foregroung placeholder:text-zinc-600 focus:border-white/30 resize-none"
+                    className="bg-background/50 border-border text-foreground placeholder:text-zinc-600 focus:border-white/30 resize-none"
                     placeholder="(11) 99999-9999"
                   />
                 </div>
@@ -173,7 +173,7 @@ export function ContactForm() {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="bg-backgroud/50 border-border text-foregroung placeholder:text-zinc-600 focus:border-white/30 resize-none"
+                    className="bg-background/50 border-border text-foreground placeholder:text-zinc-600 focus:border-white/30 resize-none"
                     placeholder="Conte-nos sobre seu caso, objetivos e como podemos ajudar..."
                   />
                 </div>
@@ -192,7 +192,7 @@ export function ContactForm() {
                     type="button"
                     asChild
                     variant="outline"
-                    className="flex-1 border-white/20 text-foregroung hover:bg-white/10 bg-chart-5"
+                    className="flex-1 border-white/20 text-foreground hover:bg-white/10 bg-chart-5"
                     size="lg"
                   >
                     <a

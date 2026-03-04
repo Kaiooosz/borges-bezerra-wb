@@ -52,7 +52,7 @@ export function Benefits() {
               key={index}
               className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 group hover:shadow-xl hover:scale-105"
             >
-              <benefit.icon className="h-10 w-10 mb-4 text-foregroung group-hover:scale-110 transition-transform" />
+              <benefit.icon className="h-10 w-10 mb-4 text-foreground group-hover:scale-110 transition-transform" />
               <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">{benefit.description}</p>
             </div>

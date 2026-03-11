@@ -32,7 +32,6 @@ export default function PrivacyPolicyPage() {
                         <p className="font-semibold">Políticas Internas - BBLaw</p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto pt-4">
                             <div className="space-y-1">
-                                <p>Wellingthon Boaz Bezerra</p>
                                 <p>Vinicius Borges de Albuquerque</p>
                                 <p>Renata Dorta Bezerra</p>
                             </div>
@@ -324,7 +323,7 @@ export default function PrivacyPolicyPage() {
 
                     <footer className="pt-12 text-center text-sm text-muted-foreground border-t">
                         <p>São Paulo: Avenida Paulista, 1636, Conjunto 4, 15 andar - Cerqueira César, São Paulo - SP, 01310-200</p>
-                        <p>www.boazbezerra.com.br</p>
+                        <p>www.bezerraborges.com.br</p>
                     </footer>
                 </div>
             </main>

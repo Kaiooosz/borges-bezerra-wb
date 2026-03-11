@@ -81,7 +81,7 @@ export default function CookiePolicyPage() {
 
                     <footer className="pt-12 text-center text-sm text-muted-foreground border-t">
                         <p>São Paulo: Avenida Paulista, 1636, Conjunto 4, 15 andar - Cerqueira César, São Paulo - SP, 01310-200</p>
-                        <p>www.boazbezerra.com.br</p>
+                        <p>www.bezerraborges.com.br</p>
                     </footer>
                 </div>
             </main>

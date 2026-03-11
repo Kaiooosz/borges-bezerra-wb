@@ -67,7 +67,6 @@ export default function TeamCarousel() {
 
   const team = [
     { name: 'Vinicius', role: 'Sócio Fundador', image: '/vinicius.jpg' },
-    { name: 'Boaz', role: 'Sócio Fundador', image: '/boaz.jpg' },
     { name: 'Fabiano', role: 'Closer Sênior e Advogado', image: '/fabiano.png' },
     { name: 'Alice', role: 'Head de Offshore', image: '/alice.jpg' },
     { name: 'Clara', role: 'Business Partner', image: '/clara.jpg' },
@@ -75,7 +74,6 @@ export default function TeamCarousel() {
     { name: 'Roberto', role: 'Gestão Patrimonial', image: '/roberto.jpg' },
     { name: 'Allan', role: 'Planejamento Sucessório', image: '/allan.jpg' },
     { name: 'Kaio', role: 'CRO', image: '/kaio.jpg' },
-    { name: 'Tomas', role: 'RP e Closer Sênior', image: '/tomas.jpg' },
   ];
 
   return (

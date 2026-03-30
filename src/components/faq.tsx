@@ -1,10 +1,8 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { HelpCircle } from "lucide-react";
+"use client";
+
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
@@ -18,15 +16,14 @@ const faqs = [
       "A internacionalização oferece diversificação de riscos, acesso a mercados globais, otimização tributária legal, proteção cambial e maior credibilidade internacional. Permite também estruturar operações em jurisdições com ambiente regulatório mais favorável e custos operacionais reduzidos.",
   },
   {
-    question:
-      "Como funciona o cumprimento de obrigações fiscais em estruturas internacionais?",
+    question: "Como funciona o cumprimento de obrigações fiscais em estruturas internacionais?",
     answer:
       "Mantemos total conformidade com as legislações brasileiras e internacionais. Todas as estruturas são declaradas conforme exigências da Receita Federal, incluindo Declaração de Capitais Brasileiros no Exterior (CBE) e Imposto de Renda. Nosso planejamento tributário é 100% legal e transparente.",
   },
   {
     question: "Quanto tempo leva para abrir uma empresa offshore?",
     answer:
-      "O prazo varia conforme a jurisdição escolhida, mas geralmente leva de 2 a 4 semanas. Jurisdições como Ilhas Virgens Britânicas e Panamá podem ser mais rápidas (7-10 dias), enquanto outras como Suíça ou Singapura podem levar até 6 semanas. Cuidamos de todo o processo para você.",
+      "O prazo varia conforme a jurisdição escolhida, mas geralmente leva de 2 a 4 semanas. Jurisdições como Ilhas Virgens Britânicas e Panamá podem ser mais rápidas (7–10 dias), enquanto outras como Suíça ou Singapura podem levar até 6 semanas. Cuidamos de todo o processo para você.",
   },
   {
     question: "Quais são os custos envolvidos?",
@@ -40,37 +37,88 @@ const faqs = [
   },
 ];
 
+function FAQItem({ faq, index }: { faq: { question: string; answer: string }; index: number }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 12 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, delay: index * 0.06 }}
+      className="border-b border-border last:border-0"
+    >
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between gap-4 py-6 text-left group"
+        aria-expanded={open}
+      >
+        <span className="font-sans text-base md:text-lg text-foreground font-light group-hover:text-foreground/80 transition-colors duration-200 leading-snug">
+          {faq.question}
+        </span>
+        <span className="shrink-0 w-6 h-6 flex items-center justify-center rounded-full border border-border text-muted-foreground group-hover:border-foreground/40 transition-all duration-200">
+          {open ? <Minus className="w-3 h-3" /> : <Plus className="w-3 h-3" />}
+        </span>
+      </button>
+
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+            className="overflow-hidden"
+          >
+            <p className="pb-6 text-[15px] text-muted-foreground font-light leading-relaxed">
+              {faq.answer}
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
+  );
+}
+
 export function FAQ() {
   return (
-    <section className="py-24 px-4 bg-background">
+    <section className="py-24 md:py-32 px-4 bg-background">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto">
-          {/* Section header */}
-          <div className="text-center mb-12">
-            <h2 className="font-source-serif-pro text-3xl sm:text-4xl md:text-5xl font-light text-foreground mb-4 tracking-tight">
-              Perguntas frequentes
-            </h2>
-            <p className="text-base sm:text-lg text--chart-1 leading-relaxed">
-              Respostas para as dúvidas mais comuns sobre nossos serviços
-            </p>
-          </div>
 
-          {/* FAQ Accordion */}
-          <Accordion type="single" collapsible className="space-y-4">
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-14"
+          >
+            <span className="block text-[11px] font-medium uppercase tracking-[0.25em] text-muted-foreground mb-5">
+              Dúvidas
+            </span>
+            <div>
+              <h2
+                className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+                style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
+              >
+                Perguntas
+              </h2>
+              <h2
+                className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+                style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
+              >
+                Frequentes.
+              </h2>
+            </div>
+          </motion.div>
+
+          {/* Custom accordion */}
+          <div>
             {faqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="bg-chart-5 border border-border rounded-lg px-6 data-[state=open]:bg-background">
-                <AccordionTrigger className="text-left text-foreground hover:--ring py-6 text-base md:text-lg font-source-serif-pro">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text--chart-2 leading-relaxed pb-6">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
+              <FAQItem key={index} faq={faq} index={index} />
             ))}
-          </Accordion>
+          </div>
         </div>
       </div>
     </section>

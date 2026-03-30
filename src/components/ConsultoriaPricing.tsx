@@ -1,178 +1,169 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+
+const plans = [
+  {
+    id: "introdutorio",
+    badge: "INTRODUTÓRIO",
+    title: "Consulta com Contador",
+    price: "US$ 100",
+    description: "Sessão de 30 min para tirar dúvidas com o especialista contábil offshore.",
+    features: [
+      "Tire dúvidas pontuais",
+      "Análise rápida de viabilidade",
+      "Valor 100% reembolsável ao fechar plano de abertura",
+    ],
+    featured: false,
+  },
+  {
+    id: "estrategico",
+    badge: "ESTRATÉGICO",
+    title: "Estratégia Offshore",
+    price: "US$ 119",
+    description: "Sessão de 2h para a criação e execução de estratégia offshore personalizada.",
+    features: [
+      "Planejamento jurisdicional completo",
+      "Estruturação societária avançada",
+      "Definição de fluxos financeiros",
+      "Valor 100% reembolsável ao fechar plano de abertura",
+    ],
+    featured: false,
+  },
+  {
+    id: "brasil",
+    badge: "MAIS VENDIDO",
+    title: "Estratégia Brasil",
+    price: "US$ 149",
+    description: "Sessão de 2h para elaborar estratégia de otimização tributária e proteção jurídica no Brasil.",
+    features: [
+      "Planejamento Proteção Patrimonial no Brasil",
+      "Otimização fiscal nacional",
+      "Integração com offshore",
+      "Valor 100% reembolsável ao fechar plano de abertura",
+    ],
+    featured: true,
+  },
+];
 
 export function ConsultoriaPricing() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-20">
-      {/* Animated background grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
+    <section className="py-24 md:py-32 bg-background border-t border-border">
+      <div className="container px-4 max-w-6xl mx-auto">
 
-      <div className="container relative z-10 px-4">
-        <div className="max-w-6xl mx-auto">
-          {/* Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16 space-y-4"
-          >
-            <div className="inline-block">
-              <span className="text-sm font-medium text-chart-1 uppercase tracking-wider px-4 py-2 rounded-full border border-white/10 bg-white/5">
-                Consultoria
-              </span>
-            </div>
-            <h2 className="font-source-serif-pro text-4xl sm:text-5xl md:text-6xl text-foreground leading-tight">
-              Agende uma Consultoria
-              <br />
-              <span className="font-bold">Agora Mesmo!</span>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-16"
+        >
+          <span className="block text-[11px] font-light uppercase tracking-[0.25em] text-muted-foreground mb-6">
+            Consultoria
+          </span>
+          <div>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
+            >
+              Agende Agora
             </h2>
-          </motion.div>
-
-          {/* Pricing Cards */}
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-            {/* Holding Card */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative group"
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
             >
-              <div className="absolute inset-0 bg-linear-to-br from-white/10 to-white/5 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-              <div className="relative bg-background backdrop-blur-sm border-2 border-foreground/30 rounded-3xl p-8 md:p-10 hover:border-foreground/50 transition-all duration-300">
-                <h3 className="font-source-serif-pro text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  HOLDING
-                </h3>
-
-                <p className="text-chart-01 mb-8 leading-relaxed">
-                  Sessão de 2h para planejamento e estruturação de holding familiar e empresarial.
-                </p>
-
-                <div className="mb-8">
-                  <div className="flex items-baseline gap-2">
-                    <span className="font-source-serif-pro text-5xl md:text-6xl font-bold text-foreground">
-                      US$ 125
-                    </span>
-                  </div>
-                </div>
-
-                <Button
-                  asChild
-                  size="lg"
-                  className="w-full bg-foreground hover:bg-chart-2 text-background font-medium text-lg h-14 rounded-xl transition-all duration-300"
-                >
-                  <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados" target="_blank" rel="noopener noreferrer">
-                    Contratar Agora
-                  </a>
-                </Button>
-
-                <div className="mt-8 pt-8 border-t border-white/10 space-y-3">
-                  <div className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-foreground shrink-0 mt-0.5" />
-                    <span className="text-sm text-chart-1">
-                      Análise completa da estrutura atual
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-foreground shrink-0 mt-0.5" />
-                    <span className="text-sm text-chart-1">
-                      Recomendações personalizadas
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-foreground shrink-0 mt-0.5" />
-                    <span className="text-sm text-chart-1">
-                      Planejamento tributário inicial
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Offshore Card - Mais Vendido */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="relative group"
-            >
-              {/* Badge Mais Vendido */}
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
-                <span className="inline-block bg-foreground text-background text-xs font-bold uppercase tracking-wider px-6 py-2 rounded-full">
-                  Mais Vendido
-                </span>
-              </div>
-
-              <div className="absolute inset-0 bg-linear-to-br from-foreground/20 to-foreground/5 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-              <div className="relative bg-background backdrop-blur-sm border-2 border-foreground/30 rounded-3xl p-8 md:p-10 hover:border-foreground/50 transition-all duration-300">
-                <h3 className="font-source-serif-pro text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  OFFSHORE
-                </h3>
-
-                <p className="text-chart-01 mb-8 leading-relaxed">
-                  Sessão de 2h para criação e otimização de estruturas offshore internacionais.
-                </p>
-
-                <div className="mb-8">
-                  <div className="flex items-baseline gap-2">
-                    <span className="font-source-serif-pro text-5xl md:text-6xl font-bold text-foreground">
-                      US$ 149
-                    </span>
-                  </div>
-                </div>
-
-                <Button
-                  asChild
-                  size="lg"
-                  className="w-full bg-foreground hover:bg-chart-2 text-background font-medium text-lg h-14 rounded-xl transition-all duration-300 shadow-lg shadow-foreground/20"
-                >
-                  <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados" target="_blank" rel="noopener noreferrer">
-                    Contratar Agora
-                  </a>
-                </Button>
-
-                <div className="mt-8 pt-8 border-t border-white/10 space-y-3">
-                  <div className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-foreground shrink-0 mt-0.5" />
-                    <span className="text-sm text-chart-1">
-                      Análise de jurisdições ideais
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-foreground shrink-0 mt-0.5" />
-                    <span className="text-sm text-chart-1">
-                      Estruturação internacional completa
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-foreground shrink-0 mt-0.5" />
-                    <span className="text-sm text-chart-1">
-                      Compliance e otimização fiscal
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+              Sua Consultoria.
+            </h2>
           </div>
+        </motion.div>
 
-          {/* Bottom Note */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="text-center mt-12"
-          >
-            <p className="text-sm text-chart-1">
-              * Valores em dólares americanos. Consultorias realizadas de forma remota ou presencial.
-            </p>
-          </motion.div>
+        <div className="grid md:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
+          {plans.map((plan, i) => (
+            <motion.div
+              key={plan.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+            >
+              <div
+                className="p-8 h-full flex flex-col bg-card"
+                style={plan.featured ? { boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.1)" } : undefined}
+              >
+
+                <div className="flex items-center justify-between mb-4">
+                  <span className="block text-[9px] font-light uppercase tracking-[0.25em] text-muted-foreground">
+                    {plan.badge}
+                  </span>
+                  {plan.featured && (
+                    <span className="text-[8px] font-light uppercase tracking-widest px-3 py-1 rounded-full"
+                      style={{ border: "1px solid rgba(255,255,255,0.18)", color: "rgba(255,255,255,0.7)" }}>
+                      Recomendado
+                    </span>
+                  )}
+                </div>
+
+                <h3 className="font-sans font-light text-foreground text-xl mb-4 leading-snug">
+                  {plan.title}
+                </h3>
+
+                <div className="mb-4">
+                  <span className="block text-[9px] font-light uppercase tracking-[0.2em] text-muted-foreground mb-1">
+                    A partir de
+                  </span>
+                  <span className="font-sans text-4xl md:text-5xl font-light text-foreground tabular" style={{ letterSpacing: "-0.02em" }}>
+                    {plan.price}
+                  </span>
+                </div>
+
+                <p className="text-sm text-muted-foreground font-light leading-relaxed mb-6">
+                  {plan.description}
+                </p>
+
+                <div className="space-y-2.5 mb-8 flex-1">
+                  {plan.features.map((feature) => (
+                    <div key={feature} className="flex items-start gap-3">
+                      <Check className="w-3.5 h-3.5 text-foreground/50 shrink-0 mt-0.5" />
+                      <span className="text-[13px] text-muted-foreground font-light leading-snug">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div>
+                  <a
+                    href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20uma%20consultoria%20com%20a%20Bezerra%20Borges%20Advogados"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex w-full items-center justify-center py-3.5 font-light text-[10px] uppercase tracking-[0.22em] rounded-full transition-all duration-300 hover:scale-[1.02]"
+                    style={
+                      plan.featured
+                        ? { background: "rgba(255,255,255,0.92)", color: "#0a0a0a", border: "1px solid rgba(255,255,255,0.9)" }
+                        : { background: "rgba(255,255,255,0.06)", color: "white", border: "1px solid rgba(255,255,255,0.14)", backdropFilter: "blur(12px)" }
+                    }
+                  >
+                    Contratar Agora
+                  </a>
+                  <p className="text-[9px] text-muted-foreground text-center font-light mt-3 uppercase tracking-[0.15em]">
+                    Valor 100% reembolsável no serviço final
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-8"
+        >
+          <p className="text-xs text-muted-foreground font-light">
+            * Valores em dólares americanos. Consultorias realizadas de forma remota ou presencial.
+          </p>
+        </motion.div>
       </div>
     </section>
   );

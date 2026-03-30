@@ -3,17 +3,16 @@
 import { motion } from "framer-motion"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Shield, Globe, Bitcoin, Scale, Building2, TrendingUp, ArrowRight, CheckCircle2 } from "lucide-react"
+import { Shield, Globe, Bitcoin, Scale, Building2, TrendingUp, ArrowRight } from "lucide-react"
 
 const services = [
   {
     icon: Shield,
-    title: "Planejamento Patrimonial e Estrutural",
+    title: "Planejamento Patrimonial",
+    subtitle: "e Estrutural",
     slug: "planejamento-patrimonial",
-    description: "Proteção inteligente do seu patrimônio com estruturas jurídicas sólidas",
+    description: "Proteção inteligente do seu patrimônio com estruturas jurídicas sólidas e estratégias sob medida.",
     features: [
       "Holdings familiares e empresariais",
       "Proteção patrimonial lícita",
@@ -24,11 +23,12 @@ const services = [
   },
   {
     icon: Globe,
-    title: "Internacionalização e Offshore",
+    title: "Internacionalização",
+    subtitle: "e Offshore",
     slug: "internacionalizacao",
-    description: "Expanda seus negócios globalmente com segurança jurídica",
+    description: "Expanda seus negócios globalmente com segurança jurídica em mais de 15 jurisdições.",
     features: [
-      "Empresas offshore (EUA, Uruguai, Dubai, Estônia)",
+      "Empresas offshore — EUA, Dubai, Estônia",
       "Estruturas multilayer integradas",
       "Residência fiscal internacional",
       "Segunda cidadania",
@@ -37,9 +37,10 @@ const services = [
   },
   {
     icon: Bitcoin,
-    title: "Cripto, Fintechs e Regulação",
+    title: "Cripto, Fintechs",
+    subtitle: "e Regulação",
     slug: "cripto-fintechs",
-    description: "Compliance e estruturação para o mercado cripto e fintech",
+    description: "Compliance e estruturação completa para o mercado cripto, fintech e blockchain.",
     features: [
       "Licenças MSB, VASP e pagamentos",
       "Estruturação de exchanges e wallets",
@@ -50,9 +51,10 @@ const services = [
   },
   {
     icon: Scale,
-    title: "Jurídico Estratégico Empresarial",
+    title: "Jurídico Estratégico",
+    subtitle: "Empresarial",
     slug: "juridico-estrategico",
-    description: "Consultoria jurídica integrada para crescimento sustentável",
+    description: "Consultoria jurídica integrada para crescimento sustentável e expansão segura.",
     features: [
       "Contratos nacionais e internacionais",
       "Acordos societários",
@@ -63,9 +65,10 @@ const services = [
   },
   {
     icon: Building2,
-    title: "Legal Growth para Infoprodutores",
+    title: "Legal Growth",
+    subtitle: "para Infoprodutores",
     slug: "legal-growth",
-    description: "Solução jurídica completa para negócios digitais e lançamentos",
+    description: "Solução jurídica completa para negócios digitais, infoprodutores e grandes lançamentos.",
     features: [
       "Redução de até 90% em impostos",
       "Blindagem trabalhista completa",
@@ -77,13 +80,14 @@ const services = [
   },
   {
     icon: TrendingUp,
-    title: "Contencioso Estratégico",
+    title: "Contencioso",
+    subtitle: "Estratégico",
     slug: "contencioso",
-    description: "Defesa patrimonial e resolução de litígios complexos",
+    description: "Defesa patrimonial e resolução de litígios complexos nacionais e internacionais.",
     features: [
       "Litígios empresariais e societários",
       "Defesa em crimes econômicos",
-      "Atuação em medidas cautelares e defesa patrimonial.",
+      "Medidas cautelares e defesa patrimonial",
       "Arbitragem internacional",
       "Causas envolvendo cripto",
     ],
@@ -96,105 +100,166 @@ export default function ServicesPage() {
       <Header />
 
       <main>
-        {/* Hero Section */}
-        <section className="pt-24 md:pt-32 pb-12 md:pb-16 relative overflow-hidden px-4">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
+        {/* Hero */}
+        <section className="pt-32 md:pt-40 pb-16 md:pb-20 relative overflow-hidden px-4">
+          {/* Fundo atmosférico — sem grade */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(15,35,25,0.5) 0%, transparent 70%)",
+            }}
+          />
 
           <div className="max-w-7xl mx-auto relative z-10">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-center max-w-4xl mx-auto"
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              className="max-w-4xl"
             >
-              <h1 className="font-source-serif-pro text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-foreground mb-4 md:mb-6 text-balance">
-                Soluções Jurídicas para <span className="italic text-muted-foreground">Proteger</span>,{" "}
-                <span className="font-bold">Escalar</span> e{" "}
-                <span className="italic text-muted-foreground">Libertar</span>
+              <span className="block text-[11px] font-medium uppercase tracking-[0.25em] text-muted-foreground mb-8">
+                Especialidades
+              </span>
+              <h1
+                className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight block"
+                style={{
+                  fontSize: "clamp(3rem, 9vw, 8rem)",
+                  
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                Soluções
               </h1>
-              <p className="text-lg sm:text-xl text-muted-foreground text-pretty px-2">
+              <h1
+                className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight block mb-8"
+                style={{
+                  fontSize: "clamp(3rem, 9vw, 8rem)",
+                  
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                Jurídicas.
+              </h1>
+              <p className="text-[15px] text-muted-foreground font-light max-w-md leading-relaxed">
                 Engenharia jurídica inteligente, segura e ética — dentro e fora do Brasil
               </p>
             </motion.div>
           </div>
         </section>
 
-        {/* Services Grid */}
-        <section className="py-12 md:py-16 lg:py-24">
+        {/* Grid de serviços */}
+        <section className="pb-24 md:pb-32">
           <div className="max-w-7xl mx-auto px-4">
-            <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid lg:grid-cols-2 gap-px bg-border rounded-2xl overflow-hidden">
               {services.map((service, index) => (
                 <motion.div
                   key={service.slug}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  transition={{ duration: 0.5, delay: index * 0.07 }}
                 >
-                  <Card
-                    className={`group p-6 md:p-8 lg:p-10 h-full border-border hover:border-white/30 transition-all duration-300 ${service.highlight ? "bg-white/5" : "bg-card"
-                      }`}
-                  >
-                    <div className="flex flex-col sm:flex-row items-start gap-4 md:gap-6 mb-4 md:mb-6">
-                      <div className="p-3 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors">
-                        <service.icon className="w-8 h-8 text-foreground" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="font-source-serif-pro text-xl sm:text-2xl md:text-3xl text-foreground mb-2 md:mb-3">{service.title}</h3>
-                        <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{service.description}</p>
-                      </div>
+                  <div className="group p-8 md:p-10 h-full bg-card transition-all duration-300 hover:bg-white/[0.03]">
+                    {/* Ícone + título */}
+                    <div className="mb-7">
+                      <service.icon className="w-5 h-5 text-white/50 mb-5" />
+                      <h3
+                        className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+                        style={{
+                          fontSize: "clamp(1.6rem, 3.5vw, 2.4rem)",
+                         
+                          letterSpacing: "-0.01em",
+                        }}
+                      >
+                        {service.title}
+                      </h3>
+                      <h3
+                        className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+                        style={{
+                          fontSize: "clamp(1.6rem, 3.5vw, 2.4rem)",
+                         
+                          letterSpacing: "-0.01em",
+                        }}
+                      >
+                        {service.subtitle}
+                      </h3>
                     </div>
 
-                    <ul className="space-y-2 md:space-y-3 mb-6 md:mb-8">
+                    {/* Descrição */}
+                    <p className="text-sm text-muted-foreground font-light leading-relaxed mb-6">
+                      {service.description}
+                    </p>
+
+                    {/* Features */}
+                    <ul className="space-y-2 mb-8">
                       {service.features.map((feature) => (
-                        <li key={feature} className="flex items-start gap-3 text-sm md:text-base text-muted-foreground">
-                          <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-foreground shrink-0 mt-0.5" />
-                          <span>{feature}</span>
+                        <li key={feature} className="flex items-start gap-2.5 text-[13px] text-muted-foreground font-light">
+                          <span className="mt-2 shrink-0 w-1 h-1 rounded-full bg-muted-foreground/40 inline-block" />
+                          {feature}
                         </li>
                       ))}
                     </ul>
 
-                    <Button
-                      asChild
-                      variant={service.highlight ? "default" : "outline"}
-                      className={
-                        service.highlight
-                          ? "bg-white text-black hover:bg-white/90 w-full"
-                          : "border-white text-foreground hover:bg-white/10 w-full"
-                      }
+                    {/* CTA pill */}
+                    <Link
+                      href={`/servicos/${service.slug}`}
+                      className="inline-flex items-center gap-2 px-6 py-3 font-light text-[10px] uppercase tracking-[0.22em] border border-foreground bg-foreground text-background rounded-full transition-all duration-300 hover:scale-[1.02]"
                     >
-                      <Link href={`/servicos/${service.slug}`}>
-                        Saiba Mais
-                        <ArrowRight className="ml-2 h-5 w-5" />
-                      </Link>
-                    </Button>
-                  </Card>
+                      Saiba Mais
+                      <ArrowRight className="h-3 w-3" />
+                    </Link>
+                  </div>
                 </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-16 md:py-24 lg:py-32">
-          <div className="px-4">
+        {/* CTA final */}
+        <section className="py-24 md:py-32 px-4 border-t border-border">
+          <div className="max-w-4xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto text-center"
+              transition={{ duration: 0.7 }}
             >
-              <h2 className="font-source-serif-pro text-2xl sm:text-3xl md:text-5xl text-foreground mb-4 md:mb-6 px-2">Pronto para Proteger seu Patrimônio?</h2>
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 px-2">
-                Agende um diagnóstico estratégico gratuito e descubra como podemos ajudar
+              <span className="block text-[11px] font-medium uppercase tracking-[0.25em] text-muted-foreground mb-8">
+                Próximo Passo
+              </span>
+              <h2
+                className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight block"
+                style={{
+                  fontSize: "clamp(2.5rem, 7vw, 6rem)",
+                  
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                Proteja Seu
+              </h2>
+              <h2
+                className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight block mb-8"
+                style={{
+                  fontSize: "clamp(2.5rem, 7vw, 6rem)",
+                  
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                Patrimônio.
+              </h2>
+              <p className="text-[15px] text-muted-foreground font-light max-w-sm mx-auto leading-relaxed mb-10">
+                Diagnóstico estratégico com nossos especialistas
               </p>
-              <Button asChild size="lg" className="bg-white text-black hover:bg-white/90">
-                <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados" target="_blank" rel="noopener noreferrer">
-                  Agendar Diagnóstico Gratuito
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
+              <a
+                href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-12 py-4 font-light text-[11px] uppercase tracking-[0.22em] border border-foreground bg-foreground text-background rounded-full transition-all duration-300 hover:scale-[1.03]"
+              >
+                Agendar Diagnóstico Estratégico
+                <ArrowRight className="h-3.5 w-3.5" />
+              </a>
             </motion.div>
           </div>
         </section>

@@ -7,7 +7,7 @@ const BlogCard = ({ image, title, date, author, excerpt, fullContent }: any) => 
   return (
     <>
       {/* Card */}
-      <div className="bg-background rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col h-full font-source-serif-pro">
+      <div className="bg-background rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col h-full font-sans">
         {/* Imagem */}
         <div className="relative h-64 overflow-hidden">
           <img 
@@ -566,7 +566,7 @@ export default function BlogCards() {
   ];
 
   return (
-    <div className="min-h-screen bg-linear-to-br bg-background py-16 px-13 mt-40 mb-24 font-source-serif-pro">
+    <div className="min-h-screen bg-linear-to-br bg-background py-16 px-13 mt-40 mb-24 font-sans">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-5xl font-bold text-center mb-4 text-foreground">
           Últimos Posts

@@ -661,17 +661,17 @@ export const articles: Article[] = [
           <tbody>
             <tr class="hover:bg-muted/50">
               <td class="p-4 border-b border-border font-medium">Bancos (Exterior)</td>
-              <td class="p-4 border-b border-border text-green-600 font-bold">Alta</td>
+              <td class="p-4 border-b border-border text-foreground font-light">Alta</td>
               <td class="p-4 border-b border-border">Lava Jato (Suíça)</td>
             </tr>
             <tr class="hover:bg-muted/50">
               <td class="p-4 border-b border-border font-medium">Cripto em Exchanges (Brasil)</td>
-              <td class="p-4 border-b border-border text-orange-600 font-bold">Média a Alta</td>
+              <td class="p-4 border-b border-border text-foreground font-light">Média a Alta</td>
               <td class="p-4 border-b border-border">Operação Cripto Car (2025)</td>
             </tr>
             <tr class="hover:bg-muted/50">
               <td class="p-4 border-b border-border font-medium">Cripto em Autocustódia</td>
-              <td class="p-4 border-b border-border text-red-600 font-bold">Inexistente</td>
+              <td class="p-4 border-b border-border text-foreground font-light">Inexistente</td>
               <td class="p-4 border-b border-border">Faraó dos Bitcoins (Notebook)</td>
             </tr>
           </tbody>
@@ -681,19 +681,17 @@ export const articles: Article[] = [
       <h2 class="text-3xl font-bold mt-16 mb-6 font-source-serif-pro">Conclusão: A Nova Fronteira da Soberania</h2>
       <p class="mb-6 leading-relaxed text-muted-foreground italic">Para indivíduos e empresas com patrimônio lícito, esta história serve como lição. A ferramenta que um ditador usa para fins nefastos pode, em um contexto de insegurança jurídica, representar proteção legítima. A autocustódia oferece soberania sem precedentes, mas exige responsabilidade absoluta.</p>
 
-      <div class="mt-20 p-10 bg-foreground text-background rounded-[2.5rem] shadow-2xl group overflow-hidden relative">
-        <div class="relative z-10">
-          <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Proteção e Estruturação Digital</h3>
-          <p class="max-w-2xl mx-auto text-lg mb-8 opacity-90 font-light text-background/90 text-pretty">
-            Atuamos na estruturação jurídica estratégica de ativos digitais e proteção patrimonial internacional com foco em conformidade rigorosa.
-          </p>
-          <a 
-            href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20proteção%20e%20tributação%20de%20ativos%20digitais." 
-            class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
-          >
-            Consultar Especialista
-          </a>
-        </div>
+      <div class="text-center mt-16">
+        <h3 class="font-sans font-light uppercase tracking-tight mb-3" style="font-size: clamp(1.4rem, 3vw, 2rem); letter-spacing: -0.02em;">Proteção e Estruturação Digital</h3>
+        <p class="font-light leading-relaxed mb-8" style="font-size: 0.9rem; max-width: 36rem; margin-left: auto; margin-right: auto;">
+          Atuamos na estruturação jurídica estratégica de ativos digitais e proteção patrimonial internacional com foco em conformidade rigorosa.
+        </p>
+        <a
+          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20proteção%20e%20tributação%20de%20ativos%20digitais."
+          class="inline-flex items-center justify-center px-10 py-3.5 rounded-full font-light text-[10px] uppercase tracking-[0.22em]"
+        >
+          Consultar Especialista
+        </a>
       </div>
 
       <div class="mt-16 pt-8 border-t border-border opacity-60 text-xs text-muted-foreground space-y-3 leading-relaxed">

@@ -3,266 +3,333 @@
 import { motion } from "framer-motion";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import {
-  TrendingUp,
-  CheckCircle2,
-  ArrowRight,
-  Shield,
-  Gavel,
-  AlertTriangle,
-  FileText,
-} from "lucide-react";
+import { Scale, Shield, Globe, Bitcoin, ArrowRight } from "lucide-react";
 
-const services = [
+const features = [
   {
-    icon: Gavel,
-    title: "Litígios Empresariais",
-    description:
-      "Defesa em disputas societárias, bancárias e contratuais com estratégia agressiva",
-  },
-  {
-    icon: AlertTriangle,
-    title: "Crimes Econômicos",
-    description:
-      "Defesa em inquéritos e investigações financeiras, lavagem de dinheiro e evasão fiscal",
+    icon: Scale,
+    title: "Litígios",
+    subtitle: "Empresariais e Societários",
+    description: "Defesa estratégica em disputas complexas entre sócios, empresas e terceiros.",
   },
   {
     icon: Shield,
-    title: "Bloqueios de Ativos",
-    description:
-      "Desbloqueio de contas, criptomoedas e ativos judicialmente bloqueados",
+    title: "Defesa",
+    subtitle: "em Crimes Econômicos",
+    description: "Representação especializada em processos criminais de natureza econômica e financeira.",
   },
   {
-    icon: FileText,
-    title: "Arbitragem Internacional",
-    description:
-      "Resolução de conflitos internacionais através de arbitragem e mediação",
+    icon: Globe,
+    title: "Arbitragem",
+    subtitle: "Internacional",
+    description: "Resolução de litígios internacionais através de câmaras arbitrais especializadas.",
+  },
+  {
+    icon: Bitcoin,
+    title: "Causas",
+    subtitle: "Envolvendo Cripto",
+    description: "Defesa e recuperação de ativos digitais em disputas regulatórias e civis.",
   },
 ];
 
-const expertise = [
-  "Defesa em processos criminais econômicos",
-  "Desbloqueio de ativos digitais e cripto",
-  "Litígios societários e contratuais",
-  "Defesa em investigações da Receita Federal",
-  "Processos envolvendo exchanges e fintechs",
-  "Arbitragem comercial internacional",
-  "Recuperação de ativos no exterior",
-  "Defesa preventiva e estratégica",
+const benefits = [
+  "Litígios empresariais e societários",
+  "Defesa em crimes econômicos",
+  "Medidas cautelares urgentes",
+  "Defesa patrimonial preventiva",
+  "Arbitragem nacional e internacional",
+  "Causas envolvendo criptoativos",
 ];
 
-const approach = [
+const process = [
   {
-    title: "Análise Estratégica",
-    description:
-      "Avaliação completa do caso e identificação da melhor estratégia de defesa",
+    step: "01",
+    title: "Análise do Caso",
+    description: "Avaliação completa do litígio, riscos e estratégias disponíveis.",
   },
   {
-    title: "Defesa Agressiva",
-    description:
-      "Atuação proativa e combativa para proteger seus direitos e patrimônio",
+    step: "02",
+    title: "Estratégia de Defesa",
+    description: "Elaboração da melhor estratégia processual e extrajudicial.",
   },
   {
-    title: "Soluções Criativas",
-    description:
-      "Uso de teses inovadoras e precedentes favoráveis para reverter situações adversas",
+    step: "03",
+    title: "Execução",
+    description: "Condução ativa do processo com acompanhamento em todas as instâncias.",
   },
   {
-    title: "Acompanhamento Total",
-    description:
-      "Suporte completo em todas as instâncias até a resolução definitiva",
+    step: "04",
+    title: "Resolução",
+    description: "Busca pelo melhor resultado com mínimo de exposição e máxima proteção.",
   },
 ];
 
 export default function ContenciosoPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background text-foreground font-sans">
       <Header />
 
-      <main>
-        {/* Hero Section */}
-        <section className="pt-32 pb-16 relative overflow-hidden">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
-
-          <div className=" relative z-10 px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto text-center"
+      {/* Hero */}
+      <section className="pt-32 md:pt-40 pb-16 md:pb-24 px-4 relative overflow-hidden">
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(15,35,25,0.5) 0%, transparent 70%)" }}
+        />
+        <div className="max-w-7xl mx-auto relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <span className="block text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-8">
+              Contencioso Estratégico
+            </span>
+            <h1
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight block"
+              style={{
+                fontSize: "clamp(3rem, 9vw, 8rem)",
+                
+                letterSpacing: "-0.02em",
+              }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-sm text-foreground mb-6">
-                <TrendingUp className="w-4 h-4" />
-                <span>Contencioso Estratégico</span>
-              </div>
-              <h1 className="font-source-serif-pro text-4xl md:text-6xl lg:text-7xl text-foreground mb-6 text-balance">
-                Defesa patrimonial{" "}
-                <span className="font-bold">agressiva e estratégica</span>
-              </h1>
-              <p className="text-xl text-muted-foreground mb-8 text-pretty">
-                Atuação especializada em litígios empresariais, crimes
-                econômicos e defesa de ativos digitais
-              </p>
-              <Button
-                asChild
-                size="lg"
-                className="bg-white text-black hover:bg-white/90"
+              Defenda Seu
+            </h1>
+            <h1
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight block mb-8"
+              style={{
+                fontSize: "clamp(3rem, 9vw, 8rem)",
+                
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Patrimônio.
+            </h1>
+            <p className="text-[15px] text-muted-foreground font-light max-w-md leading-relaxed mb-10">
+              Defesa patrimonial e resolução de litígios complexos nacionais e internacionais.
+            </p>
+            <a
+              href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-10 py-4 font-light text-[11px] uppercase tracking-[0.22em] border border-foreground bg-foreground text-background rounded-full transition-all duration-300 hover:scale-[1.02]"
+            >
+              Agendar Diagnóstico
+              <ArrowRight className="h-3.5 w-3.5" />
+            </a>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="pb-24 md:pb-32 px-4 border-t border-border">
+        <div className="max-w-7xl mx-auto pt-24">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16"
+          >
+            <span className="block text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-6">
+              Especialidades
+            </span>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
+            >
+              Áreas de
+            </h2>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
+            >
+              Atuação.
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-px bg-border rounded-2xl overflow-hidden">
+            {features.map((feature, index) => (
+              <motion.div
+                key={feature.title}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                className="bg-card p-8 md:p-10 hover:bg-white/[0.03] transition-all duration-300"
               >
-                <Link href="/#contato">
-                  Solicitar Defesa Urgente
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Services Section */}
-        <section className="py-16 md:py-24">
-          <div className=" px-4">
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              {services.map((service, index) => (
-                <motion.div
-                  key={service.title}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                <feature.icon className="w-5 h-5 text-white/50 mb-5" />
+                <h3
+                  className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+                  style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", letterSpacing: "-0.01em" }}
                 >
-                  <Card className="p-8 bg-card border-border hover:border-white/30 transition-all duration-300 h-full">
-                    <service.icon className="w-12 h-12 text-foreground mb-6" />
-                    <h3 className="font-source-serif-pro text-2xl text-foreground mb-3">
-                      {service.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {service.description}
-                    </p>
-                  </Card>
-                </motion.div>
-              ))}
+                  {feature.title}
+                </h3>
+                <h3
+                  className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight mb-4"
+                  style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", letterSpacing: "-0.01em" }}
+                >
+                  {feature.subtitle}
+                </h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                  {feature.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits */}
+      <section className="pb-24 md:pb-32 px-4 border-t border-border">
+        <div className="max-w-7xl mx-auto pt-24">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16"
+          >
+            <span className="block text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-6">
+              Cobertura
+            </span>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
+            >
+              Atuação
+            </h2>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
+            >
+              Estratégica.
+            </h2>
+          </motion.div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
+            {benefits.map((benefit, i) => (
+              <motion.div
+                key={benefit}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.06 }}
+                className="bg-card p-8 hover:bg-white/[0.03] transition-all duration-300 flex items-start gap-3"
+              >
+                <span className="mt-2 shrink-0 w-1 h-1 rounded-full bg-white/35 inline-block" />
+                <span className="text-[13px] text-muted-foreground font-light leading-relaxed">{benefit}</span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process */}
+      <section className="pb-24 md:pb-32 px-4 border-t border-border">
+        <div className="max-w-7xl mx-auto pt-24">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16"
+          >
+            <span className="block text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-6">
+              Processo
+            </span>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
+            >
+              Como
+            </h2>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
+            >
+              Atuamos.
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-2xl overflow-hidden">
+            {process.map((item, index) => (
+              <motion.div
+                key={item.step}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.08 }}
+                className="bg-card p-8 hover:bg-white/[0.03] transition-all duration-300"
+              >
+                <span
+                  className="block font-sans font-light text-foreground/15 mb-5"
+                  style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)", letterSpacing: "-0.02em" }}
+                >
+                  {item.step}
+                </span>
+                <h3
+                  className="font-sans font-light uppercase text-foreground mb-3"
+                  style={{ fontSize: "clamp(0.9rem, 1.8vw, 1.15rem)", letterSpacing: "-0.01em" }}
+                >
+                  {item.title}
+                </h3>
+                <p className="text-[13px] text-muted-foreground font-light leading-relaxed">{item.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-24 md:py-32 px-4 border-t border-border">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            <span className="block text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-8">
+              Próximo Passo
+            </span>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight block"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.02em" }}
+            >
+              Fale com
+            </h2>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight block mb-8"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.02em" }}
+            >
+              Um Especialista.
+            </h2>
+            <p className="text-[15px] text-muted-foreground font-light max-w-sm mx-auto leading-relaxed mb-10">
+              Análise estratégica do seu caso com nossos especialistas em contencioso
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-12 py-4 font-light text-[11px] uppercase tracking-[0.22em] border border-foreground bg-foreground text-background rounded-full transition-all duration-300 hover:scale-[1.03]"
+              >
+                Agendar Diagnóstico
+                <ArrowRight className="h-3.5 w-3.5" />
+              </a>
+              <Link
+                href="/servicos"
+                className="inline-flex items-center justify-center gap-2 px-10 py-4 font-light text-[11px] uppercase tracking-[0.22em] text-muted-foreground border border-border hover:border-foreground/30 rounded-full transition-all duration-300 hover:text-foreground"
+              >
+                Ver Outros Serviços
+              </Link>
             </div>
-          </div>
-        </section>
+          </motion.div>
+        </div>
+      </section>
 
-        {/* Expertise Section */}
-        <section className="py-16 md:py-24 bg-white/5">
-          <div className=" px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto"
-            >
-              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foreground mb-12 text-center">
-                Nossa Expertise em Contencioso
-              </h2>
-              <div className="grid md:grid-cols-2 gap-4">
-                {expertise.map((item, index) => (
-                  <motion.div
-                    key={item}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: index * 0.05 }}
-                    className="flex items-start gap-3 p-4 bg-card rounded-lg border border-border"
-                  >
-                    <CheckCircle2 className="w-6 h-6 text-green-400 shrink-0 mt-0.5" />
-                    <span className="text-foreground">{item}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Approach Section */}
-        <section className="py-16 md:py-24">
-          <div className=" px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-12"
-            >
-              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foreground mb-4">
-                Nossa Abordagem
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                Estratégia comprovada para defesa patrimonial
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {approach.map((item, index) => (
-                <motion.div
-                  key={item.title}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                >
-                  <Card className="p-6 bg-card border-border h-full">
-                    <div className="text-4xl font-source-serif-pro text-foreground/20 mb-4">
-                      0{index + 1}
-                    </div>
-                    <h3 className="font-source-serif-pro text-xl text-foreground mb-3">
-                      {item.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {item.description}
-                    </p>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-24 md:py-32 bg-white/5">
-          <div className=" px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto text-center"
-            >
-              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-foreground mb-6">
-                Proteja seu patrimônio agora
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Entre em contato para uma análise estratégica do seu caso
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-white text-black hover:bg-white/90"
-                >
-                  <Link href="/#contato">
-                    Solicitar Atendimento Urgente
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-foreground hover:bg-white/10 bg-transparent"
-                >
-                  <Link href="/servicos">Ver Outros Serviços</Link>
-                </Button>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-      </main>
+      <Footer />
     </div>
   );
 }

@@ -3,76 +3,77 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Updated theme to match Bezerra Borges black and white sophisticated identity */
+/* Bezerra Borges — Identidade sofisticada preto e branco */
 :root {
   --background: oklch(0.98 0 0);
-  --foreground: oklch(0.15 0 0);
-  --card: oklch(0.98 0 0);
-  --card-foreground: oklch(0.15 0 0);
+  --foreground: oklch(0.1 0 0);
+  --card: oklch(0.96 0 0);
+  --card-foreground: oklch(0.1 0 0);
   --popover: oklch(0.98 0 0);
-  --popover-foreground: oklch(0.15 0 0);
-  --primary: oklch(0.15 0 0);
+  --popover-foreground: oklch(0.1 0 0);
+  --primary: oklch(0.1 0 0);
   --primary-foreground: oklch(0.98 0 0);
   --secondary: oklch(0.92 0 0);
-  --secondary-foreground: oklch(0.15 0 0);
+  --secondary-foreground: oklch(0.1 0 0);
   --muted: oklch(0.92 0 0);
-  --muted-foreground: oklch(0.5 0 0);
+  --muted-foreground: oklch(0.44 0 0);
   --accent: oklch(0.92 0 0);
-  --accent-foreground: oklch(0.15 0 0);
+  --accent-foreground: oklch(0.1 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.88 0 0);
-  --input: oklch(0.88 0 0);
-  --ring: oklch(0.65 0 0);
+  --border: oklch(0.87 0 0);
+  --input: oklch(0.87 0 0);
+  --ring: oklch(0.1 0 0);
   --chart-1: oklch(0.35 0 0);
   --chart-2: oklch(0.5 0 0);
   --chart-3: oklch(0.65 0 0);
   --chart-4: oklch(0.8 0 0);
-  --chart-5: oklch(0.9 0 0);
-  --radius: 0.5rem;
+  --chart-5: oklch(0.92 0 0);
+  --radius: 0.625rem;
   --sidebar: oklch(0.98 0 0);
-  --sidebar-foreground: oklch(0.15 0 0);
-  --sidebar-primary: oklch(0.15 0 0);
+  --sidebar-foreground: oklch(0.1 0 0);
+  --sidebar-primary: oklch(0.1 0 0);
   --sidebar-primary-foreground: oklch(0.98 0 0);
   --sidebar-accent: oklch(0.92 0 0);
-  --sidebar-accent-foreground: oklch(0.15 0 0);
-  --sidebar-border: oklch(0.88 0 0);
-  --sidebar-ring: oklch(0.65 0 0);
+  --sidebar-accent-foreground: oklch(0.1 0 0);
+  --sidebar-border: oklch(0.87 0 0);
+  --sidebar-ring: oklch(0.1 0 0);
 }
 
 .dark {
-  --background: oklch(0.1 0 0);
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.12 0 0);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.1 0 0);
-  --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(0.98 0 0);
-  --primary-foreground: oklch(0.1 0 0);
-  --secondary: oklch(0.2 0 0);
-  --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.2 0 0);
-  --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(0.2 0 0);
-  --accent-foreground: oklch(0.98 0 0);
+  /* Ultra dark — inspirado na sofisticação do branding do escritório */
+  --background: oklch(0.07 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.1 0 0);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.08 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.95 0 0);
+  --primary-foreground: oklch(0.07 0 0);
+  --secondary: oklch(0.14 0 0);
+  --secondary-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.15 0 0);
+  --muted-foreground: oklch(0.52 0 0);
+  --accent: oklch(0.15 0 0);
+  --accent-foreground: oklch(0.95 0 0);
   --destructive: oklch(0.5 0.2 27.325);
-  --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.2 0 0);
-  --input: oklch(0.2 0 0);
-  --ring: oklch(0.4 0 0);
-  --chart-1: oklch(0.9 0 0);
-  --chart-2: oklch(0.75 0 0);
-  --chart-3: oklch(0.6 0 0);
-  --chart-4: oklch(0.45 0 0);
-  --chart-5: oklch(0.3 0 0);
-  --sidebar: oklch(0.1 0 0);
-  --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(0.98 0 0);
-  --sidebar-primary-foreground: oklch(0.1 0 0);
-  --sidebar-accent: oklch(0.2 0 0);
-  --sidebar-accent-foreground: oklch(0.98 0 0);
-  --sidebar-border: oklch(0.2 0 0);
-  --sidebar-ring: oklch(0.4 0 0);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.19 0 0);
+  --input: oklch(0.16 0 0);
+  --ring: oklch(0.95 0 0);
+  --chart-1: oklch(0.88 0 0);
+  --chart-2: oklch(0.72 0 0);
+  --chart-3: oklch(0.56 0 0);
+  --chart-4: oklch(0.38 0 0);
+  --chart-5: oklch(0.22 0 0);
+  --sidebar: oklch(0.08 0 0);
+  --sidebar-foreground: oklch(0.95 0 0);
+  --sidebar-primary: oklch(0.95 0 0);
+  --sidebar-primary-foreground: oklch(0.07 0 0);
+  --sidebar-accent: oklch(0.15 0 0);
+  --sidebar-accent-foreground: oklch(0.95 0 0);
+  --sidebar-border: oklch(0.19 0 0);
+  --sidebar-ring: oklch(0.95 0 0);
 }
 
 @theme inline {
@@ -122,10 +123,180 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Smooth scrolling for anchor links */
   html {
     scroll-behavior: smooth;
   }
+
+  /* Tabular numbers para preços e stats */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+}
+
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  }
+  .text-shadow {
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.4);
+  }
+  .text-shadow-lg {
+    text-shadow: 0 2px 40px rgba(0, 0, 0, 0.6);
+  }
+  .text-shadow-none {
+    text-shadow: none;
+  }
+
+  /* Gradient metallic title effect — adaptive dark/light */
+  .heading-gradient {
+    /* Dark mode: white → silver metallic */
+    background: linear-gradient(to bottom, #ffffff 0%, #d8d8d8 60%, #b4b4b4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.07));
+  }
+
+  /* Light mode: plain foreground color — no gradient clip (avoids dark-block artifact at large sizes) */
+  html:not(.dark) .heading-gradient {
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    -webkit-text-fill-color: var(--foreground);
+    filter: none;
+  }
+
+  /* Light mode + always-dark section (hero, offshore, etc.): force white gradient */
+  html:not(.dark) .dark-section .heading-gradient {
+    background: linear-gradient(to bottom, #ffffff 0%, #d8d8d8 60%, #b4b4b4 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.07));
+  }
+
+  /* Dark mode + always-dark section: same white gradient */
+  .dark .dark-section .heading-gradient,
+  .dark-section .heading-gradient {
+    background: linear-gradient(to bottom, #ffffff 0%, #d8d8d8 60%, #b4b4b4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.07));
+  }
+}
+
+/* Article prose content - theme adaptation */
+.article-prose h1, .article-prose h2, .article-prose h3, .article-prose h4 {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+}
+
+.article-prose p {
+  color: var(--muted-foreground);
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.article-prose strong {
+  color: var(--foreground);
+  font-weight: 400;
+}
+
+/* ── Article CTA block — elegant thin lines + shadow ── */
+.article-prose div.text-center,
+.article-prose .cta-section,
+.article-prose [class*="cta"],
+.article-prose section {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 3.5rem 1.5rem !important;
+  margin-top: 3rem !important;
+  margin-bottom: 0 !important;
+  position: relative !important;
+  overflow: visible !important;
+  text-align: center !important;
+  /* Top hairline */
+  border-top: 1px solid var(--border) !important;
+}
+
+/* Bottom hairline + downward glow */
+.article-prose div.text-center::after,
+.article-prose .cta-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(to right, transparent 0%, var(--border) 30%, var(--border) 70%, transparent 100%);
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.18);
+}
+
+/* Dark mode: subtle glow on bottom line */
+.dark .article-prose div.text-center::after,
+.dark .article-prose .cta-section::after {
+  background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.08) 30%, rgba(255,255,255,0.08) 70%, transparent 100%);
+  box-shadow: 0 6px 32px 2px rgba(255, 255, 255, 0.04), 0 2px 12px 0 rgba(0,0,0,0.4);
+}
+
+/* CTA headings */
+.article-prose div.text-center h3,
+.article-prose div.text-center h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem) !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.02em !important;
+  color: var(--foreground) !important;
+  text-transform: uppercase !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* CTA paragraph */
+.article-prose div.text-center > p {
+  font-size: 0.9rem !important;
+  font-weight: 300 !important;
+  color: var(--muted-foreground) !important;
+  max-width: 36rem !important;
+  margin: 0 auto 2rem auto !important;
+  line-height: 1.7 !important;
+}
+
+/* CTA button / link — glass pill */
+.article-prose a[href*="wa.me"],
+.article-prose button,
+.article-prose .btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: var(--foreground) !important;
+  color: var(--background) !important;
+  border-radius: 9999px !important;
+  font-family: var(--font-sans) !important;
+  font-weight: 300 !important;
+  font-size: 10px !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+  padding: 0.9rem 2.5rem !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: opacity 0.2s ease !important;
+  text-decoration: none !important;
+}
+
+.article-prose a[href*="wa.me"]:hover,
+.article-prose button:hover {
+  opacity: 0.8 !important;
+  transform: none !important;
 }

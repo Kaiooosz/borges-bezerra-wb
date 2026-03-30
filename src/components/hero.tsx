@@ -33,7 +33,7 @@ export function Hero() {
             Holdings Patrimoniais e Empresariais: <span className="italic text-zinc-400">Proteja e Multiplique</span>
           </h1>
           <p className="text-lg md:text-xl text-zinc-400 max-w-3xl mx-auto text-pretty">
-            Estruture seu patrimônio e empresas com segurança jurídica, eficiência tributária e planejamento sucessório inteligente. A BBLAW transforma complexidade em estratégia.
+            Estruture seu patrimônio e empresas com segurança jurídica, eficiência tributária e planejamento sucessório inteligente. A Bezerra Borges transforma complexidade em estratégia.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">

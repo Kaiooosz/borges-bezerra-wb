@@ -79,11 +79,25 @@ export default function TeamCarousel() {
   return (
     <section className="py-24 bg-background overflow-hidden border-t border-border">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Nosso Time de Especialistas
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        <div className="mb-16">
+          <span className="block text-[11px] font-medium uppercase tracking-[0.25em] text-muted-foreground mb-6">
+            Equipe
+          </span>
+          <div className="mb-4">
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
+            >
+              Nosso Time
+            </h2>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
+            >
+              De Especialistas.
+            </h2>
+          </div>
+          <p className="text-[15px] text-muted-foreground font-light max-w-sm mt-4">
             Mais de 15 anos de experiência combinada em estruturas jurídicas internacionais
           </p>
         </div>

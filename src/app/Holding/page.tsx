@@ -1,235 +1,265 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
-import { Shield, Building2, TrendingUp, ArrowRight, Mail, Phone, Users, Lock, FileText } from "lucide-react"
+import { useEffect } from "react"
+import { motion } from "framer-motion"
+import { Shield, Building2, TrendingUp, Users, Lock, FileText } from "lucide-react"
 import { Header } from "@/components/header"
-import { Download } from 'lucide-react';
+import { Footer } from "@/components/footer"
+
+const WHATSAPP_URL =
+  "https://wa.me/5511982712025?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consultoria%20sobre%20Holding%20Patrimonial%20com%20a%20Bezerra%20Borges%20Advogados"
+
+const titleStyle = {
+  
+  letterSpacing: "-0.025em",
+  fontSize: "clamp(3rem, 9vw, 8rem)",
+}
+
+const secondLineTitleStyle = {
+  ...titleStyle,
+}
+
+const sectionTitleStyle = {
+  
+  letterSpacing: "-0.025em",
+  fontSize: "clamp(2.5rem, 7vw, 6rem)",
+}
+
+const sectionSecondLineStyle = {
+  ...sectionTitleStyle,
+}
+
+const sectionSeparator = {
+  background:
+    "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(15,35,25,0.5) 0%, transparent 70%)",
+}
+
+const benefits = [
+  {
+    icon: Shield,
+    title: "Proteção Patrimonial",
+    description:
+      "Proteção patrimonial lícita e preventiva contra riscos jurídicos e econômicos.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Planejamento Tributário",
+    description:
+      "Planejamento fiscal estratégico que pode reduzir significativamente a carga tributária sobre patrimônio e lucros empresariais.",
+  },
+  {
+    icon: Users,
+    title: "Sucessão Familiar",
+    description:
+      "Transferência patrimonial estruturada que evita conflitos familiares, custos com inventário e problemas de sucessão.",
+  },
+  {
+    icon: Building2,
+    title: "Governança Corporativa",
+    description:
+      "Estrutura profissional de gestão com separação clara entre patrimônio pessoal e empresarial, facilitando a administração.",
+  },
+  {
+    icon: Lock,
+    title: "Privacidade",
+    description:
+      "Maior discrição sobre o patrimônio familiar através de estruturas societárias adequadas e legalmente constituídas.",
+  },
+  {
+    icon: FileText,
+    title: "Flexibilidade Operacional",
+    description:
+      "Facilita operações internacionais, aquisições e reorganizações societárias com estrutura ágil e bem planejada.",
+  },
+]
+
+const holdingTypes = [
+  {
+    title: "Holding Patrimonial",
+    description:
+      "Focada na gestão e proteção de bens imóveis, investimentos e ativos da família.",
+    features: ["Gestão de imóveis", "Proteção de ativos", "Planejamento sucessório"],
+  },
+  {
+    title: "Holding Empresarial",
+    description:
+      "Controla participações societárias e coordena operações de múltiplas empresas do grupo.",
+    features: ["Controle societário", "Governança corporativa", "Estratégia de grupo"],
+  },
+  {
+    title: "Holding Mista",
+    description:
+      "Combina gestão patrimonial e empresarial em uma única estrutura integrada.",
+    features: ["Gestão completa", "Eficiência tributária", "Flexibilidade máxima"],
+  },
+  {
+    title: "Holding Internacional",
+    description:
+      "Estrutura offshore para proteção e internacionalização do patrimônio familiar.",
+    features: ["Jurisdições seguras", "Otimização fiscal", "Privacidade ampliada"],
+  },
+]
+
+const processSteps = [
+  {
+    number: "01",
+    title: "Diagnóstico Patrimonial",
+    description:
+      "Análise completa do patrimônio familiar, estrutura atual e objetivos de proteção.",
+  },
+  {
+    number: "02",
+    title: "Planejamento Estratégico",
+    description:
+      "Desenvolvimento da estrutura ideal de holding considerando aspectos fiscais, sucessórios e de proteção.",
+  },
+  {
+    number: "03",
+    title: "Implementação",
+    description:
+      "Constituição da holding, transferência de ativos e formalização de toda documentação necessária.",
+  },
+  {
+    number: "04",
+    title: "Gestão Contínua",
+    description:
+      "Suporte permanente para governança, compliance fiscal e ajustes estratégicos conforme necessidade.",
+  },
+]
+
+const stats = [
+  { value: "10+", label: "Anos de Experiência" },
+  { value: "500+", label: "Holdings Estruturadas" },
+  { value: "R$2B+", label: "em Patrimônio Protegido" },
+]
 
 export default function HoldingPage() {
-  const [scrollProgress, setScrollProgress] = useState(0)
-
-  // Garantir que a página sempre comece no topo
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const totalHeight = document.documentElement.scrollHeight - window.innerHeight
-      const progress = (window.scrollY / totalHeight) * 100
-      setScrollProgress(progress)
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+    window.scrollTo(0, 0)
   }, [])
 
-  const handleDownload = () => {
-    // Cria um link temporário
-    const link = document.createElement('a');
-    link.href = 'public/BBLAW_AP.pdf';
-    link.download = 'Guia_Completo_Offshore.pdf'; // Nome do arquivo ao baixar
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
-  const benefits = [
-    {
-      icon: Shield,
-      title: "Proteção Patrimonial Efetiva",
-      description: "Proteção patrimonial lícita e preventiva contra riscos jurídicos e econômicos."
-    },
-    {
-      icon: TrendingUp,
-      title: "Planejamento tributário em conformidade com a legislação.",
-      description: "Planejamento fiscal estratégico que pode reduzir significativamente a carga tributária sobre patrimônio e lucros empresariais."
-    },
-    {
-      icon: Users,
-      title: "Sucessão Familiar Planejada",
-      description: "Transferência patrimonial estruturada que evita conflitos familiares, custos com inventário e problemas de sucessão."
-    },
-    {
-      icon: Building2,
-      title: "Governança Corporativa",
-      description: "Estrutura profissional de gestão com separação clara entre patrimônio pessoal e empresarial, facilitando a administração."
-    },
-    {
-      icon: Lock,
-      title: "Privacidade e Confidencialidade",
-      description: "Maior discrição sobre o patrimônio familiar através de estruturas societárias adequadas e legalmente constituídas."
-    },
-    {
-      icon: FileText,
-      title: "Flexibilidade Operacional",
-      description: "Facilita operações internacionais, aquisições e reorganizações societárias com estrutura ágil e bem planejada."
-    }
-  ]
-
-  const holdingTypes = [
-    {
-      title: "Holding Patrimonial",
-      description: "Focada na gestão e proteção de bens imóveis, investimentos e ativos da família.",
-      features: ["Gestão de imóveis", "Proteção de ativos", "Planejamento sucessório"]
-    },
-    {
-      title: "Holding Empresarial",
-      description: "Controla participações societárias e coordena operações de múltiplas empresas do grupo.",
-      features: ["Controle societário", "Governança corporativa", "Estratégia de grupo"]
-    },
-    {
-      title: "Holding Mista",
-      description: "Combina gestão patrimonial e empresarial em uma única estrutura integrada.",
-      features: ["Gestão completa", "Eficiência tributária", "Flexibilidade máxima"]
-    },
-    {
-      title: "Holding Internacional",
-      description: "Estrutura offshore para proteção e internacionalização do patrimônio familiar.",
-      features: ["Jurisdições seguras", "Otimização fiscal", "Privacidade ampliada"]
-    }
-  ]
-
-  const processSteps = [
-    {
-      number: "01",
-      title: "Diagnóstico Patrimonial",
-      description: "Análise completa do patrimônio familiar, estrutura atual e objetivos de proteção."
-    },
-    {
-      number: "02",
-      title: "Planejamento Estratégico",
-      description: "Desenvolvimento da estrutura ideal de holding considerando aspectos fiscais, sucessórios e de proteção."
-    },
-    {
-      number: "03",
-      title: "Implementação",
-      description: "Constituição da holding, transferência de ativos e formalização de toda documentação necessária."
-    },
-    {
-      number: "04",
-      title: "Gestão Contínua",
-      description: "Suporte permanente para governança, compliance fiscal e ajustes estratégicos conforme necessidade."
-    }
-  ]
-
   return (
-    <div className="min-h-screen bg-background text-foreground font-source-serif-pro">
-      <div
-        className="fixed top-0 left-0 h-1 --muted-foregroun z-50 transition-all duration-300"
-        style={{ width: `${scrollProgress}%` }}
-      />
-
-      {/* HEADER */}
+    <div className="min-h-screen bg-background text-foreground font-sans">
       <Header />
 
-      {/* HERO SECTION */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
-
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" />
-        </div>
-
-        <div className="relative z-10 px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <div className="mb-12 flex justify-center">
-              <div className="w-full max-w-[100px] sm:max-w-140px md:max-w-[180px]">
-                <div className="rounded-3xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover rounded-3xl"
-                  >
-                    <source
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Animac%CC%A7a%CC%83o%20logo-fj6CGOTzhzrRYqVrNCXk6nZpFllLH3.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                </div>
-              </div>
-            </div>
-
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance">
-              Holdings Patrimoniais e Empresariais: <span className="italic text-zinc-400">Proteja e Multiplique</span>
-            </h1>
-            <p className="text-lg md:text-xl text-zinc-400 max-w-3xl mx-auto text-pretty">
-              Estruture seu patrimônio e empresas com segurança jurídica, eficiência tributária e planejamento sucessório inteligente. A BBLAW transforma complexidade em estratégia.
+      {/* HERO */}
+      <section className="relative pt-36 pb-28 md:pt-48 md:pb-40 overflow-hidden">
+        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            <p className="text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-10">
+              Bezerra Borges Advogados
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+            <h1 className="font-sans font-light uppercase leading-none heading-gradient">
+              <span className="block" style={titleStyle}>
+                Holding
+              </span>
+              <span className="block" style={secondLineTitleStyle}>
+                Patrimonial.
+              </span>
+            </h1>
+
+            <p className="mt-10 text-base font-light text-muted-foreground max-w-xl mx-auto leading-relaxed">
+              Estruture seu patrimônio com segurança jurídica, eficiência tributária e
+              planejamento sucessório inteligente. Transformamos complexidade em estratégia.
+            </p>
+
+            <div className="mt-12">
               <a
-                href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+                href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group px-8 py-4 bg-white text-black rounded-full hover:bg-gray-200 transition-all font-semibold flex items-center justify-center gap-2 hover:scale-105 hover:shadow-xl duration-300"
+                className="inline-flex items-center justify-center gap-2 px-12 py-4 font-light text-[11px] uppercase tracking-[0.22em] rounded-full border border-foreground bg-foreground text-background transition-all duration-300 hover:opacity-80"
               >
-                Agendar Consultoria Paga ($125)
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                Agendar Consultoria
               </a>
-              <button
-                onClick={handleDownload}
-                className="px-8 py-4 border-2 border-white text-foreground rounded-full hover:bg-white/10 transition-all font-semibold hover:scale-105 duration-300 flex items-center justify-center gap-2"
-              >
-                Baixar Guia Completo
-                <Download className="h-5 w-5" />
-              </button>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* BENEFITS SECTION */}
-      <section id="benefits" className="py-20 md:py-32 border-t border-border">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Por que criar uma holding?</h2>
-            <p className="text-zinc-400 text-lg max-w-2xl mx-auto text-pretty">
-              Vantagens estratégicas que transformam a gestão do seu patrimônio
+      {/* BENEFITS */}
+      <section className="relative py-28 md:py-40">
+        <div className="absolute inset-0 pointer-events-none" style={sectionSeparator} />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-6">
+              Vantagens
             </p>
-          </div>
+            <h2 className="font-sans font-light uppercase leading-none heading-gradient">
+              <span className="block" style={sectionTitleStyle}>
+                Por que criar
+              </span>
+              <span className="block" style={sectionSecondLineStyle}>
+                uma holding?
+              </span>
+            </h2>
+          </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
             {benefits.map((benefit, index) => (
-              <div
-                key={index}
-                className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 group hover:shadow-xl hover:scale-105"
-              >
-                <benefit.icon className="h-10 w-10 mb-4 text-foreground group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">{benefit.description}</p>
+              <div key={index} className="bg-card p-8">
+                <benefit.icon className="w-5 h-5 text-muted-foreground mb-5" />
+                <h3 className="text-sm font-light uppercase tracking-[0.12em] text-foreground mb-3">
+                  {benefit.title}
+                </h3>
+                <p className="text-[13px] font-light text-muted-foreground leading-relaxed">
+                  {benefit.description}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* TYPES SECTION */}
-      <section id="types" className="py-20 md:py-32 border-t border-border">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Tipos de Holdings</h2>
-            <p className="text-zinc-400 text-lg max-w-2xl mx-auto text-pretty">
-              Estruturas personalizadas para cada necessidade patrimonial e empresarial
+      {/* TYPES */}
+      <section className="relative py-28 md:py-40">
+        <div className="absolute inset-0 pointer-events-none" style={sectionSeparator} />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-6">
+              Estruturas
             </p>
-          </div>
+            <h2 className="font-sans font-light uppercase leading-none heading-gradient">
+              <span className="block" style={sectionTitleStyle}>
+                Tipos de
+              </span>
+              <span className="block" style={sectionSecondLineStyle}>
+                Holdings.
+              </span>
+            </h2>
+          </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-2xl overflow-hidden">
             {holdingTypes.map((type, index) => (
-              <div
-                key={index}
-                className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
-              >
-                <h3 className="text-2xl font-bold mb-3">{type.title}</h3>
-                <p className="text-zinc-400 mb-6 leading-relaxed">{type.description}</p>
-                <ul className="space-y-2">
+              <div key={index} className="bg-card p-10">
+                <h3 className="text-sm font-light uppercase tracking-[0.12em] text-foreground mb-4">
+                  {type.title}
+                </h3>
+                <p className="text-[13px] font-light text-muted-foreground leading-relaxed mb-6">
+                  {type.description}
+                </p>
+                <ul className="space-y-3">
                   {type.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3 --ring text-sm">
-                      <div className="w-2 h-2 rounded-full bg-white mt-2 shrink-0" />
-                      <span>{feature}</span>
+                    <li key={idx} className="flex items-start gap-3 text-[13px] font-light text-muted-foreground">
+                      <span className="mt-2 shrink-0 w-1 h-1 rounded-full bg-muted-foreground/40 inline-block" />
+                      {feature}
                     </li>
                   ))}
                 </ul>
@@ -239,97 +269,120 @@ export default function HoldingPage() {
         </div>
       </section>
 
-      {/* PROCESS SECTION */}
-      <section id="process" className="py-20 md:py-32 border-t border-border">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Nosso processo de implementação</h2>
-            <p className="text-zinc-400 text-lg max-w-2xl mx-auto text-pretty">
-              Do planejamento à execução, cuidamos de cada detalhe
+      {/* PROCESS */}
+      <section className="relative py-28 md:py-40">
+        <div className="absolute inset-0 pointer-events-none" style={sectionSeparator} />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-6">
+              Metodologia
             </p>
-          </div>
+            <h2 className="font-sans font-light uppercase leading-none heading-gradient">
+              <span className="block" style={sectionTitleStyle}>
+                Processo de
+              </span>
+              <span className="block" style={sectionSecondLineStyle}>
+                Implementação.
+              </span>
+            </h2>
+          </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-2xl overflow-hidden">
             {processSteps.map((step, index) => (
-              <div
-                key={index}
-                className="relative p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
-              >
-                <div className="text-5xl font-bold text-foreground/10 mb-4">{step.number}</div>
-                <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">{step.description}</p>
+              <div key={index} className="bg-card p-8">
+                <span
+                  className="block font-sans font-light text-foreground/15 mb-6"
+                  style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)", letterSpacing: "-0.03em" }}
+                >
+                  {step.number}
+                </span>
+                <h3 className="text-sm font-light uppercase tracking-[0.12em] text-foreground mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-[13px] font-light text-muted-foreground leading-relaxed">
+                  {step.description}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* STATS SECTION */}
-      <section className="py-20 md:py-32 border-t border-border">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
-              <div className="text-5xl font-bold text-foreground mb-3">10+</div>
-              <p className="text-zinc-400">Anos de Experiência</p>
+      {/* STATS */}
+      <section className="relative py-20 md:py-28">
+        <div className="absolute inset-0 pointer-events-none" style={sectionSeparator} />
+        <div className="relative z-10 max-w-4xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="grid grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
+              {stats.map((stat, index) => (
+                <div key={index} className="bg-card py-8 px-6 text-center">
+                  <span
+                    className="font-sans font-light text-foreground text-3xl md:text-4xl"
+                    style={{ letterSpacing: "-0.02em" }}
+                  >
+                    {stat.value}
+                  </span>
+                  <span className="block text-[10px] font-light uppercase tracking-[0.2em] text-muted-foreground mt-1">
+                    {stat.label}
+                  </span>
+                </div>
+              ))}
             </div>
-            <div className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
-              <div className="text-5xl font-bold text-foreground mb-3">500+</div>
-              <p className="text-zinc-400">Holdings Estruturadas</p>
-            </div>
-            <div className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
-              <div className="text-5xl font-bold text-foreground mb-3">R$ 2B+</div>
-              <p className="text-zinc-400">em Patrimônio Protegido</p>
-            </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* CTA SECTION */}
-      <section id="contact" className="py-20 md:py-32 border-t border-border">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center space-y-8">
-            <h2 className="text-3xl md:text-5xl font-bold text-balance">
-              Pronto para Estruturar Sua Holding?
-            </h2>
-            <p className="text-lg text-zinc-400 max-w-2xl mx-auto text-pretty">
-              Agende uma consultoria estratégica e descubra como uma holding pode transformar a gestão do seu patrimônio.
+      {/* FINAL CTA */}
+      <section className="relative py-28 md:py-40 border-t border-border">
+        <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-8">
+              Próximo Passo
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <a
-                href="mailto:contato@borgesbezerra.com.br"
-                className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:scale-105"
-              >
-                <Mail className="w-6 h-6 text-foreground mx-auto mb-3" />
-                <h3 className="font-bold text-foreground mb-2">Email</h3>
-                <p className="text-zinc-400 text-sm">contato@borgesbezerra.com.br</p>
-              </a>
+            <h2 className="font-sans font-light uppercase leading-none heading-gradient mb-8">
+              <span className="block" style={sectionTitleStyle}>
+                Estruture
+              </span>
+              <span className="block" style={sectionSecondLineStyle}>
+                seu patrimônio.
+              </span>
+            </h2>
 
-              <a
-                href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:scale-105"
-              >
-                <Phone className="w-6 h-6 text-foreground mx-auto mb-3" />
-                <h3 className="font-bold text-foreground mb-2">WhatsApp</h3>
-                <p className="text-zinc-400 text-sm py-1">+55 11 98271-2025</p>
-              </a>
-            </div>
+            <p className="text-[13px] font-light text-muted-foreground max-w-md mx-auto leading-relaxed mb-12">
+              Agende uma consultoria estratégica e descubra como uma holding pode transformar
+              a gestão e proteção do seu patrimônio.
+            </p>
 
             <a
-              href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-10 py-4 bg-white text-black rounded-full hover:bg-gray-200 transition-all font-semibold hover:scale-110 hover:shadow-xl"
+              className="inline-flex items-center justify-center gap-2 px-12 py-4 font-light text-[11px] uppercase tracking-[0.22em] rounded-full border border-foreground bg-foreground text-background transition-all duration-300 hover:opacity-80"
             >
-              Agendar Consultoria Paga ($125)
-              <ArrowRight className="h-5 w-5" />
+              Falar pelo WhatsApp
             </a>
-          </div>
+          </motion.div>
         </div>
       </section>
+
+      <Footer />
     </div>
   )
 }
-

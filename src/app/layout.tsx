@@ -2,8 +2,6 @@ import type React from "react";
 import type { Metadata } from "next";
 import { Source_Serif_4, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 import "@/styles/global.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Script from "next/script";
@@ -42,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="dark" suppressHydrationWarning>
       <body
-        className={`${sourceSerif.variable} ${inter.variable} font-sans antialiased`}
+        className={`${sourceSerif.variable} ${inter.variable} font-sans antialiased relative`}
       >
         <ThemeProvider
           attribute="class"
@@ -50,9 +48,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
           {children}
-          <Footer />
         </ThemeProvider>
         <Script
           async

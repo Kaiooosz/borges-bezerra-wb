@@ -67,7 +67,7 @@ export function Services() {
       <div className="mx-auto px-4 sm:px-6">
         {/* Section header */}
         <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
-          <h2 className="font-source-serif-pro text-3xl sm:text-4xl md:text-5xl text-foreground mb-4">
+          <h2 className="font-sans text-3xl sm:text-4xl md:text-5xl text-foreground mb-4">
             Nossas especialidades
           </h2>
           <p className="text-base sm:text-lg text-zinc-400">
@@ -89,7 +89,7 @@ export function Services() {
                   <div className="mb-4">
                     <Icon className="w-10 h-10 text-foreground group-hover:scale-110 transition-transform" />
                   </div>
-                  <h3 className="font-source-serif-pro text-xl text-foreground mb-3 leading-tight">
+                  <h3 className="font-sans text-xl text-foreground mb-3 leading-tight">
                     {service.title}
                   </h3>
                   <p className="text-sm text-zinc-400 leading-relaxed grow">

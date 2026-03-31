@@ -1,327 +1,279 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  Shield,
-  Globe,
-  Puzzle,
-  Briefcase,
-  Lock,
-} from "lucide-react";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 import Link from "next/link";
-import { useEffect } from "react";
+import { ArrowRight } from "lucide-react";
 import TeamCarousel from "@/components/TeamCarousel";
 
-const fadeInUp = {
-  initial: { opacity: 0, y: 30 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.6 },
-};
+const differentials = [
+  { title: "Integração real", description: "Entre jurídico, contábil, bancário e tecnológico" },
+  { title: "Presença internacional", description: "Atuação em mais de 12 países" },
+  { title: "Soluções modulares", description: "Adaptáveis ao momento de cada cliente" },
+  { title: "Equipe multidisciplinar", description: "Experiência em estruturas globais" },
+  { title: "Linguagem clara", description: "Sem juridiquês, apenas estratégia" },
+  { title: "Sigilo e compliance", description: "Em todos os níveis de operação" },
+];
 
-// Hero aparece imediatamente sem animação de viewport
-const heroFadeIn = {
-  initial: { opacity: 1, y: 0 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.3 },
-};
-
-const stagger = {
-  initial: {},
-  whileInView: { transition: { staggerChildren: 0.1 } },
-  viewport: { once: true },
-};
+const ecosystem = [
+  { name: "Legal Growth", description: "Estratégia jurídica e tributária para empresas digitais" },
+  { name: "BCont", description: "Contabilidade internacional com foco em cripto e offshore" },
+  { name: "SatSails, PagueBit, Crypix e Yuny", description: "Infraestrutura para pagamentos e custódia cripto" },
+  { name: "Educação Real", description: "Educação em liberdade, patrimônio e finanças" },
+  { name: "Delta Broker", description: "Operações financeiras e cambiais internacionais" },
+];
 
 export default function SobreNosPage() {
-  // Garantir que a página sempre comece no topo
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  const services = [
-    {
-      title: "Planejamento Patrimonial e Holdings",
-      description:
-        "Blindagem lícita, sucessão familiar e redução tributária por meio de holdings nacionais e internacionais.",
-      icon: Shield,
-    },
-    {
-      title: "Internacionalização e Estruturas Offshore",
-      description:
-        "Criação e gestão de empresas em jurisdições seguras (EUA, Paraguai, Uruguai, Nevis, Estônia, Dubai), com abertura bancária e integração fiscal completa.",
-      icon: Globe,
-    },
-    {
-      title: "Cripto, Fintechs e Regulação",
-      description:
-        "Estruturação de corretoras, wallets e fintechs com licenças MSB (EUA), VASP (Europa) e autorizações LATAM, garantindo conformidade regulatória (KYC/AML).",
-      icon: Puzzle,
-    },
-    {
-      title: "Jurídico e Tributário Estratégico",
-      description:
-        "Consultoria fiscal e societária para empresas de crescimento acelerado, com foco em eficiência e governança.",
-      icon: Briefcase,
-    },
-    {
-      title: "Contencioso e Defesa Patrimonial",
-      description:
-        "Atuação em litígios empresariais e financeiros com foco em conformidade e cooperação internacional.",
-      icon: Lock,
-    },
-  ];
-
-  const differentials = [
-    {
-      icon: "",
-      title: "Integração real",
-      description: "Entre jurídico, contábil, bancário e tecnológico",
-    },
-    {
-      icon: "",
-      title: "Presença internacional",
-      description: "Atuação em mais de 12 países",
-    },
-    {
-      icon: "",
-      title: "Soluções modulares",
-      description: "Adaptáveis ao momento de cada cliente",
-    },
-    {
-      icon: "",
-      title: "Equipe multidisciplinar",
-      description: "Experiência em estruturas globais",
-    },
-    {
-      icon: "",
-      title: "Linguagem clara",
-      description: "Sem juridiquês, apenas estratégia",
-    },
-    {
-      icon: "",
-      title: "Sigilo e compliance",
-      description: "Em todos os níveis de operação",
-    },
-  ];
-
-  const ecosystem = [
-    {
-      name: "Legal Growth",
-      description: "Estratégia jurídica e tributária para empresas digitais",
-    },
-    {
-      name: "BCont",
-      description: "Contabilidade internacional com foco em cripto e offshore",
-    },
-    {
-      name: "SatSails, PagueBit, Crypix e Yuny",
-      description: "Infraestrutura para pagamentos e custódia cripto",
-    },
-    {
-      name: "Educação Real",
-      description: "Educação em liberdade, patrimônio e finanças",
-    },
-    {
-      name: "Delta Broker",
-      description: "Operações financeiras e cambiais internacionais",
-    },
-  ];
-
   return (
-    <div className="min-h-screen bg-background text-foreground tracking-tight">
+    <div className="min-h-screen bg-background text-foreground font-sans">
+      <Header />
 
-      {/* Hero Section - Aparece imediatamente fixo no topo */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-        {/* Grid background responsivo ao tema */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-30 pointer-events-none" />
-
-        <div className="relative z-10 px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="font-source-serif-pro font-light text-4xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1.1] tracking-tight text-white text-balance mb-8">
-              Liberdade real exige <br />
-              <span className="italic">estratégia</span>
+      {/* Hero */}
+      <section className="pt-32 md:pt-40 pb-16 md:pb-24 px-4 relative overflow-hidden">
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(15,35,25,0.5) 0%, transparent 70%)" }}
+        />
+        <div className="max-w-7xl mx-auto relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <span className="block text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-8">
+              Sobre o Escritório
+            </span>
+            <h1
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight block"
+              style={{
+                fontSize: "clamp(3rem, 9vw, 8rem)",
+                
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Bezerra
             </h1>
-            <p className="text-base md:text-xl text-white/50 max-w-3xl mx-auto text-pretty leading-relaxed font-light tracking-tight">
-              A BBLAW (Bezerra Borges Advocacia) é uma firma de advocacia e
-              estratégia internacional especializada em proteção patrimonial,
-              internacionalização e estruturação de negócios globais, com forte
-              atuação nos ecossistemas cripto, offshore e financeiro digital.
+            <h1
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight block mb-8"
+              style={{
+                fontSize: "clamp(3rem, 9vw, 8rem)",
+                
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Borges.
+            </h1>
+            <p className="text-[15px] text-muted-foreground font-light max-w-md leading-relaxed">
+              Firma de advocacia e estratégia internacional especializada em proteção patrimonial, internacionalização e estruturação de negócios globais.
             </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Missão */}
+      <section className="border-t border-border py-24 md:py-32 px-4">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16"
+          >
+            <span className="block text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-6">
+              Nossa Missão
+            </span>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
+            >
+              Mais do que
+            </h2>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
+            >
+              Um Escritório.
+            </h2>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-2 gap-px bg-border rounded-2xl overflow-hidden">
+            {[
+              {
+                title: "O que fazemos",
+                body: "Transformamos complexidades legais em estruturas estratégicas. Ajudamos pessoas e empresas a operar globalmente com segurança, eficiência e liberdade.",
+              },
+              {
+                title: "Nossa missão",
+                body: "Proteger, escalar e libertar o patrimônio e as operações de nossos clientes, utilizando engenharia jurídica inteligente, segura e ética — dentro e fora do Brasil.",
+              },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="bg-card p-8 md:p-12"
+              >
+                <h3
+                  className="font-sans font-light uppercase text-foreground mb-4"
+                  style={{ fontSize: "clamp(1.2rem, 2.5vw, 1.8rem)", letterSpacing: "-0.01em" }}
+                >
+                  {item.title}
+                </h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed">{item.body}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Mission Section */}
-      <section className="py-20 md:py-32 border-t border-border">
-        <div className=" px-4">
-          <motion.div {...fadeInUp} className="max-w-4xl mx-auto space-y-8">
-            <h2 className="font-source-serif-pro font-light text-3xl md:text-5xl lg:text-6xl text-center text-white text-balance leading-tight">
-              Mais do que um escritório, <br />
-              somos um <span className="italic">ecossistema</span>
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-6 pt-8">
-              <motion.div
-                {...fadeInUp}
-                className="p-10 bg-muted/20 border border-white/5 hover:bg-white/[0.02] transition-colors flex flex-col"
-              >
-                <h3 className="font-source-serif-pro text-2xl md:text-3xl text-white mb-6 tracking-tight">O que fazemos</h3>
-                <p className="text-base text-white/50 leading-relaxed font-light tracking-tight">
-                  Transformamos complexidades legais em estruturas estratégicas.
-                  Ajudamos pessoas e empresas a operar globalmente com
-                  segurança, eficiência e liberdade.
-                </p>
-              </motion.div>
-
-              <motion.div
-                {...fadeInUp}
-                className="p-10 bg-muted/20 border border-white/5 hover:bg-white/[0.02] transition-colors flex flex-col"
-              >
-                <h3 className="font-source-serif-pro text-2xl md:text-3xl text-white mb-6 tracking-tight">Nossa missão</h3>
-                <p className="text-base text-white/50 leading-relaxed font-light tracking-tight">
-                  Proteger, escalar e libertar o patrimônio e as operações de
-                  nossos clientes, utilizando engenharia jurídica inteligente,
-                  segura e ética — dentro e fora do Brasil.
-                </p>
-              </motion.div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-20 md:py-32 border-t border-border">
-        <div className=" px-4">
-          <motion.div {...fadeInUp} className="text-center mb-16 md:mb-24">
-            <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-6 tracking-tight">
-              Nossas linhas de atuação
-            </h2>
-            <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto font-light tracking-tight">
-              Soluções completas para proteção patrimonial e crescimento
-              internacional
-            </p>
-          </motion.div>
-
+      {/* Diferenciais */}
+      <section className="border-t border-border py-24 md:py-32 px-4">
+        <div className="max-w-7xl mx-auto">
           <motion.div
-            {...stagger}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16"
           >
-            {services.map((service, index) => (
-              <motion.div
-                key={index}
-                {...fadeInUp}
-                className="p-10 bg-muted/20 border border-white/5 hover:bg-white/[0.02] transition-all flex flex-col"
-              >
-                <service.icon className="w-10 h-10 text-white mb-8 stroke-[1.5px]" />
-                <h3 className="font-source-serif-pro text-2xl md:text-3xl text-white mb-4 tracking-tight">{service.title}</h3>
-                <p className="text-base text-white/50 leading-relaxed font-light tracking-tight">
-                  {service.description}
-                </p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Differentials Section */}
-      <section className="py-20 md:py-32 border-t border-border">
-        <div className=" px-4">
-          <motion.div {...fadeInUp} className="text-center mb-16 md:mb-24">
-            <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-6 tracking-tight">
-              Por que escolher o BBLAW
+            <span className="block text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-6">
+              Diferenciais
+            </span>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
+            >
+              Por que Escolher
+            </h2>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
+            >
+              Bezerra Borges.
             </h2>
           </motion.div>
 
-          <motion.div
-            {...stagger}
-            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
-          >
-            {differentials.map((item, index) => (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
+            {differentials.map((item, i) => (
               <motion.div
-                key={index}
-                {...fadeInUp}
-                className="p-6 bg-muted/30 border border-border rounded-sm hover:bg-muted/30 transition-colors text-center"
+                key={i}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.06 }}
+                className="bg-card p-8 hover:bg-white/[0.03] transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="font-source-serif-pro text-lg mb-2">{item.title}</h3>
-                <p className="text-muted-foreground text-sm">{item.description}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Ecosystem Section */}
-      <section className="py-20 md:py-32 border-t border-border">
-        <div className=" px-4">
-          <motion.div {...fadeInUp} className="max-w-4xl mx-auto space-y-12">
-            <div className="text-center space-y-6">
-              <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-6 tracking-tight">
-                Ecossistema BBLAW
-              </h2>
-              <p className="text-lg md:text-xl text-white/50 max-w-3xl mx-auto font-light tracking-tight">
-                Fazemos parte de um grupo de empresas criadas e assessoradas por
-                Vinícius Borges, voltadas à liberdade patrimonial e financeira
-              </p>
-            </div>
-
-            <motion.div {...stagger} className="grid sm:grid-cols-2 gap-6 lg:gap-8 pt-12">
-              {ecosystem.map((company, index) => (
-                <motion.div
-                  key={index}
-                  {...fadeInUp}
-                  className="p-10 bg-muted/20 border border-white/5 hover:bg-white/[0.02] transition-colors flex flex-col"
+                <h3
+                  className="font-sans font-light uppercase text-foreground mb-2"
+                  style={{ fontSize: "clamp(1rem, 2vw, 1.3rem)", letterSpacing: "-0.01em" }}
                 >
-                  <h3 className="font-source-serif-pro text-2xl text-white mb-4 tracking-tight">{company.name}</h3>
-                  <p className="text-base text-white/50 font-light tracking-tight">{company.description}</p>
-                </motion.div>
-              ))}
-            </motion.div>
-
-            <motion.div {...fadeInUp} className="text-center pt-8">
-              <p className="text-muted-foreground italic">
-                Tudo integrado. Tudo pensado para quem quer crescer e se
-                proteger com inteligência.
-              </p>
-            </motion.div>
-          </motion.div>
+                  {item.title}
+                </h3>
+                <p className="text-[13px] text-muted-foreground font-light leading-relaxed">{item.description}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
-
-
-      {/* Philosophy Section */}
-      <section className="py-20 md:py-32 border-t border-border">
-        <div className=" px-4">
+      {/* Ecossistema */}
+      <section className="border-t border-border py-24 md:py-32 px-4">
+        <div className="max-w-7xl mx-auto">
           <motion.div
-            {...fadeInUp}
-            className="max-w-4xl mx-auto text-center space-y-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16"
           >
-            <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-6 tracking-tight">
-              Nossa filosofia
+            <span className="block text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-6">
+              Grupo Bezerra Borges
+            </span>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
+            >
+              Ecossistema
             </h2>
-            <blockquote className="text-3xl md:text-5xl font-source-serif-pro italic text-white/80 text-balance leading-tight">
-              "O BBLAW não vende documentos — entrega caminhos."
-            </blockquote>
-            <p className="text-lg md:text-xl text-white/50 max-w-3xl mx-auto text-pretty font-light tracking-tight">
-              Cada cliente recebe uma engenharia jurídica feita para durar,
-              resistir e escalar. Acreditamos que liberdade patrimonial é um
-              direito de quem se planeja — e nós entregamos o mapa para isso.
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
+            >
+              Integrado.
+            </h2>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-2 gap-px bg-border rounded-2xl overflow-hidden">
+            {ecosystem.map((company, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.06 }}
+                className="bg-card p-8 hover:bg-white/[0.03] transition-all duration-300"
+              >
+                <h3
+                  className="font-sans font-light uppercase text-foreground mb-2"
+                  style={{ fontSize: "clamp(1rem, 2vw, 1.4rem)", letterSpacing: "-0.01em" }}
+                >
+                  {company.name}
+                </h3>
+                <p className="text-[13px] text-muted-foreground font-light leading-relaxed">{company.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Equipe */}
+      <TeamCarousel />
+
+      {/* CTA */}
+      <section className="py-24 md:py-32 px-4 border-t border-border">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            <span className="block text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-8">
+              Próximo Passo
+            </span>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight block"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.02em" }}
+            >
+              Comece Sua
+            </h2>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight block mb-8"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.02em" }}
+            >
+              Jornada.
+            </h2>
+            <p className="text-[15px] text-muted-foreground font-light max-w-sm mx-auto leading-relaxed mb-10">
+              Diagnóstico estratégico gratuito com nossos especialistas
             </p>
             <a
-              href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+              href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary mt-8"
+              className="inline-flex items-center justify-center gap-2 px-12 py-4 font-light text-[11px] uppercase tracking-[0.22em] border border-foreground bg-foreground text-background rounded-full transition-all duration-300 hover:scale-[1.03]"
             >
-              Agendar Diagnóstico Estratégico
-              <ArrowRight className="h-4 w-4" />
+              Agendar Diagnóstico Gratuito
+              <ArrowRight className="h-3.5 w-3.5" />
             </a>
           </motion.div>
         </div>
-        <TeamCarousel />
       </section>
+
+      <Footer />
     </div>
   );
 }

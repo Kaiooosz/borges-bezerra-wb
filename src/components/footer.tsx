@@ -4,86 +4,117 @@ import { MapPin, Phone, Mail, Clock, Instagram } from "lucide-react"
 export function Footer() {
   return (
     <footer className="bg-background border-t border-border">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div className="container mx-auto px-6 pt-16 pb-10 max-w-7xl">
 
-          {/* Logo */}
-          <div className="flex items-start justify-start">
-            <a href="/" className="inline-block z-50">
+        {/* Top row */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
+
+          {/* Logo + tagline */}
+          <div className="flex flex-col gap-5">
+            <a href="/" className="inline-block">
               <img
                 src="/Logo preto.svg"
-                alt="BB Logo"
-                className="h-14 w-14 md:h-20 md:w-20 dark:hidden"
+                alt="Bezerra Borges Advogados"
+                className="h-12 w-auto dark:hidden"
               />
               <img
                 src="/LogoBranco.svg"
-                alt="BB Logo"
-                className="h-14 w-14 md:h-20 md:w-20 hidden dark:block"
+                alt="Bezerra Borges Advogados"
+                className="h-12 w-auto hidden dark:block"
               />
             </a>
+            <p className="text-sm text-muted-foreground italic leading-relaxed max-w-[200px]">
+              Transformamos complexidades em oportunidades
+            </p>
           </div>
 
           {/* Navegação */}
-          <div className="">
-            <h3 className="font-source-serif-pro text-lg text-white mb-6 uppercase tracking-widest">Navegação</h3>
-            <nav className="flex flex-col gap-4">
-              <Link href="/" className="text-sm text-white/50 hover:text-white transition-colors font-light tracking-tight">Home</Link>
-              <Link href="/servicos" className="text-sm text-white/50 hover:text-white transition-colors font-light tracking-tight">Serviços</Link>
-              <Link href="/offshore" className="text-sm text-white/50 hover:text-white transition-colors font-light tracking-tight">Offshore</Link>
-              <Link href="/sobre-nos" className="text-sm text-white/50 hover:text-white transition-colors font-light tracking-tight">Sobre Nós</Link>
-              <Link href="/artigos" className="text-sm text-white/50 hover:text-white transition-colors font-light tracking-tight">Artigos</Link>
-              <Link href="/contact" className="text-sm text-white/50 hover:text-white transition-colors font-light tracking-tight">Contato</Link>
+          <div>
+            <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-foreground mb-5">
+              Navegação
+            </h3>
+            <nav className="flex flex-col gap-3">
+              {[
+                { href: "/", label: "Home" },
+                { href: "/servicos", label: "Serviços" },
+                { href: "/offshore", label: "Offshore" },
+                { href: "/sobre-nos", label: "Sobre Nós" },
+                { href: "/artigos", label: "Artigos" },
+                { href: "/contact", label: "Contato" },
+              ].map((link) => (
+                <Link
+                  key={link.href + link.label}
+                  href={link.href}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+                >
+                  {link.label}
+                </Link>
+              ))}
             </nav>
           </div>
 
           {/* Especialidades */}
-          <div className="">
-            <h3 className="font-source-serif-pro text-lg text-white mb-6 uppercase tracking-widest">Especialidades</h3>
-            <nav className="flex flex-col gap-4">
-              <Link href="/servicos/internacionalizacao" className="text-sm text-white/50 hover:text-white transition-colors font-light tracking-tight">Empresas Offshore</Link>
-              <Link href="/servicos/juridico-estrategico" className="text-sm text-white/50 hover:text-white transition-colors font-light tracking-tight">Planejamento Tributário</Link>
-              <Link href="/servicos/internacionalizacao" className="text-sm text-white/50 hover:text-white transition-colors font-light tracking-tight">Contas Internacionais</Link>
-              <Link href="/servicos/cripto-fintechs" className="text-sm text-white/50 hover:text-white transition-colors font-light tracking-tight">Criptomoedas & Web3</Link>
-              <Link href="/servicos/planejamento-patrimonial" className="text-sm text-white/50 hover:text-white transition-colors font-light tracking-tight">Holdings Patrimoniais</Link>
+          <div>
+            <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-foreground mb-5">
+              Especialidades
+            </h3>
+            <nav className="flex flex-col gap-3">
+              {[
+                { href: "/servicos/internacionalizacao", label: "Empresas Offshore" },
+                { href: "/servicos/juridico-estrategico", label: "Planejamento Tributário" },
+                { href: "/servicos/internacionalizacao", label: "Contas Internacionais" },
+                { href: "/servicos/cripto-fintechs", label: "Criptomoedas & Web3" },
+                { href: "/servicos/planejamento-patrimonial", label: "Holdings Patrimoniais" },
+              ].map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+                >
+                  {link.label}
+                </Link>
+              ))}
             </nav>
           </div>
 
           {/* Contato */}
-          <div className="">
-            <h3 className="font-source-serif-pro text-lg text-white mb-6 uppercase tracking-widest">Contato</h3>
-            <div className="flex flex-col gap-4">
+          <div>
+            <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-foreground mb-5">
+              Contato
+            </h3>
+            <div className="flex flex-col gap-3.5">
               <div className="flex items-start gap-3">
-                <MapPin className="h-4 w-4 text-foreground mt-1 shrink-0" />
+                <MapPin className="h-4 w-4 text-muted-foreground mt-0.5 shrink-0" />
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Av. Paulista, 1636 Conj 4, 15º andar<br />
                   Cerqueira César, São Paulo-SP
                 </p>
               </div>
               <a
-                href="tel:+5521979901686"
-                className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                href="tel:+5511982712025"
+                className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
               >
-                <Phone className="h-4 w-4 text-foreground" />
-                <span>+55 21 97990-1686</span>
+                <Phone className="h-4 w-4 shrink-0" />
+                <span>+55 11 98271-2025</span>
               </a>
               <a
                 href="mailto:contato@bezerraborges.com.br"
-                className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
               >
-                <Mail className="h-4 w-4 text-foreground" />
+                <Mail className="h-4 w-4 shrink-0" />
                 <span>contato@bezerraborges.com.br</span>
               </a>
-              <div className="flex items-center gap-3 text-sm text-muted-foreground border-t border-border/50 pt-2 mt-2">
-                <Clock className="h-4 w-4 text-foreground" />
-                <span>Seg-Sex 9h-18h</span>
+              <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                <Clock className="h-4 w-4 shrink-0" />
+                <span>Seg–Sex, 9h–18h</span>
               </div>
               <a
                 href="https://www.instagram.com/bezerraeborges?igsh=MXFucGVpMG56bXZqYg=="
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
               >
-                <Instagram className="h-4 w-4 text-foreground" />
+                <Instagram className="h-4 w-4 shrink-0" />
                 <span>@bezerraeborges</span>
               </a>
             </div>
@@ -91,29 +122,20 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-border">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-              <p className="text-sm text-muted-foreground">
-                © 2025 Bezerra Borges Advogados.
-              </p>
-              <div className="hidden sm:block w-px h-4 bg-border"></div>
-              <p className="text-sm text-white/30 italic font-light">
-                Transformando complexidades em oportunidades
-              </p>
-            </div>
-            
-            <div className="flex flex-wrap justify-center gap-6">
-              <Link href="/politica-de-privacidade" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Privacidade
-              </Link>
-              <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Termos
-              </Link>
-              <Link href="/politica-de-cookies" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Cookies
-              </Link>
-            </div>
+        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-xs text-muted-foreground">
+            © 2025 Bezerra Borges Advogados. Todos os direitos reservados.
+          </p>
+          <div className="flex gap-6">
+            <Link href="/politica-de-privacidade" className="text-xs text-muted-foreground hover:text-foreground transition-colors duration-200">
+              Política de Privacidade
+            </Link>
+            <Link href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors duration-200">
+              Termos de Uso
+            </Link>
+            <Link href="/politica-de-cookies" className="text-xs text-muted-foreground hover:text-foreground transition-colors duration-200">
+              Cookies
+            </Link>
           </div>
         </div>
       </div>

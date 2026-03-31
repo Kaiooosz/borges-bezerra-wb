@@ -33,7 +33,7 @@ export default function MaduroArticle() {
           </div>
 
           {/* Title */}
-          <h1 className="font-source-serif-pro text-3xl md:text-5xl lg:text-6xl font-normal mb-6 md:mb-8 leading-tight text-balance">
+          <h1 className="font-sans text-3xl md:text-5xl lg:text-6xl font-normal mb-6 md:mb-8 leading-tight text-balance">
             O Tesouro de Maduro: Como um Ditador Estruturou (ou Tentou Estruturar) a Blindagem de US$ 60 Bilhões utilizando Bitcoin
           </h1>
 
@@ -75,7 +75,7 @@ export default function MaduroArticle() {
       <article className="max-w-3xl mx-auto px-4 pb-20">
         {/* Introduction */}
         <section className="mb-12 md:mb-16">
-          <h2 className="font-source-serif-pro text-2xl md:text-4xl font-normal mb-6 md:mb-8">
+          <h2 className="font-sans text-2xl md:text-4xl font-normal mb-6 md:mb-8">
             Introdução: A Captura e a Pergunta de US$ 60 Bilhões
           </h2>
           <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg">
@@ -93,11 +93,11 @@ export default function MaduroArticle() {
 
         {/* Architecture Section */}
         <section className="mb-12 md:mb-16">
-          <h2 className="font-source-serif-pro text-2xl md:text-4xl font-normal mb-6 md:mb-8">
+          <h2 className="font-sans text-2xl md:text-4xl font-normal mb-6 md:mb-8">
             A Arquitetura Jurídica das Sombras
           </h2>
           
-          <h3 className="font-source-serif-pro text-xl md:text-2xl font-normal mb-4 md:mb-6">
+          <h3 className="font-sans text-xl md:text-2xl font-normal mb-4 md:mb-6">
             O Arquiteto: Alex Saab, o Agente Duplo
           </h3>
           <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg mb-10 md:mb-12">
@@ -112,7 +112,7 @@ export default function MaduroArticle() {
             </p>
           </div>
 
-          <h3 className="font-source-serif-pro text-xl md:text-2xl font-normal mb-4 md:mb-6">
+          <h3 className="font-sans text-xl md:text-2xl font-normal mb-4 md:mb-6">
             O Mensageiro: David Nicolas Rubio Gonzalez
           </h3>
           <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg">
@@ -127,7 +127,7 @@ export default function MaduroArticle() {
 
         {/* The 4-Step Scheme */}
         <section className="mb-12 md:mb-16">
-          <h2 className="font-source-serif-pro text-2xl md:text-4xl font-normal mb-6 md:mb-8">
+          <h2 className="font-sans text-2xl md:text-4xl font-normal mb-6 md:mb-8">
             O Esquema de Blindagem Financeira: As 4 Etapas
           </h2>
           
@@ -211,11 +211,11 @@ export default function MaduroArticle() {
 
         {/* Brazilian Paradox */}
         <section className="mb-12 md:mb-16">
-          <h2 className="font-source-serif-pro text-2xl md:text-4xl font-normal mb-6 md:mb-8">
+          <h2 className="font-sans text-2xl md:text-4xl font-normal mb-6 md:mb-8">
             O Paradoxo Brasileiro: Quando a Justiça Consegue (e Não Consegue)
           </h2>
           
-          <h3 className="font-source-serif-pro text-xl md:text-2xl font-normal mb-4 md:mb-6">
+          <h3 className="font-sans text-xl md:text-2xl font-normal mb-4 md:mb-6">
             Sucesso no Sistema Tradicional
           </h3>
           <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg mb-10 md:mb-12">
@@ -227,7 +227,7 @@ export default function MaduroArticle() {
             </p>
           </div>
 
-          <h3 className="font-source-serif-pro text-xl md:text-2xl font-normal mb-4 md:mb-6">
+          <h3 className="font-sans text-xl md:text-2xl font-normal mb-4 md:mb-6">
             Fracasso na Autocustódia
           </h3>
           <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg mb-8 md:mb-10">
@@ -285,7 +285,7 @@ export default function MaduroArticle() {
 
         {/* Conclusion */}
         <section className="mb-12 md:mb-16">
-          <h2 className="font-source-serif-pro text-2xl md:text-4xl font-normal mb-6 md:mb-8">
+          <h2 className="font-sans text-2xl md:text-4xl font-normal mb-6 md:mb-8">
             Conclusão: A Nova Fronteira da Soberania e do Risco
           </h2>
           <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg">

@@ -53,44 +53,61 @@ const services = [
 
 export function ServicesPreview() {
   return (
-    <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-background border-t border-border">
+    <section className="py-24 md:py-32 bg-background relative">
       <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-16 md:mb-24"
+          className="mb-16 md:mb-20"
         >
-          <h2 className="font-source-serif-pro text-4xl sm:text-5xl md:text-6xl font-extralight text-foreground mb-6 tracking-tight">
-            Nossas Especialidades
-          </h2>
-          <p className="text-lg sm:text-xl text-white/50 max-w-2xl font-light tracking-tight">
-            Soluções jurídicas integradas para proteção, crescimento e liberdade.
-          </p>
+          <span className="block text-[11px] font-medium uppercase tracking-[0.25em] text-muted-foreground mb-6">
+            Especialidades
+          </span>
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+            <div>
+              <h2
+                className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+                style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
+              >
+                Nossas Áreas
+              </h2>
+              <h2
+                className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+                style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
+              >
+                De Atuação.
+              </h2>
+            </div>
+            <p className="text-[15px] text-muted-foreground font-light max-w-xs leading-relaxed md:pb-2">
+              Soluções jurídicas integradas para proteção, crescimento e liberdade patrimonial
+            </p>
+          </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden mb-12">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
+              transition={{ duration: 0.4, delay: index * 0.06 }}
             >
-              <Link href={service.href} className="block group h-full">
-                <div className="p-10 bg-background hover:bg-white/[0.02] border-border transition-all duration-300 h-full flex flex-col">
-                  <service.icon className="w-8 h-8 text-white mb-8 stroke-[1.5px]" />
-                  <h3 className="font-sans font-semibold text-lg md:text-xl text-white mb-3 tracking-tight">
+              <Link href={service.href} className="block h-full">
+                <div className="group p-8 md:p-10 bg-card hover:bg-muted/30 transition-all duration-300 h-full cursor-pointer">
+                  <service.icon className="w-7 h-7 text-muted-foreground mb-6 group-hover:text-foreground transition-colors duration-300" />
+                  <h3 className="font-sans font-light uppercase text-foreground text-base md:text-lg mb-2.5 tracking-wide leading-snug">
                     {service.title}
                   </h3>
-                  <p className="text-sm md:text-base text-white/50 leading-relaxed mb-6 font-light">
+                  <p className="text-sm text-muted-foreground font-light leading-relaxed mb-6">
                     {service.description}
                   </p>
-                  <div className="mt-auto flex items-center text-white/40 text-sm font-light group-hover:text-white transition-colors duration-200">
+                  <div className="flex items-center text-foreground/40 group-hover:text-foreground text-[11px] font-light uppercase tracking-[0.18em] group-hover:translate-x-1.5 transition-all duration-300">
                     <span>Saiba mais</span>
-                    <ArrowRight className="ml-1.5 h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="ml-1.5 h-3 w-3" />
                   </div>
                 </div>
               </Link>
@@ -103,13 +120,14 @@ export function ServicesPreview() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
+          className="flex justify-start"
         >
           <Link
             href="/servicos"
-            className="btn-outline"
+            className="inline-flex items-center gap-2 px-7 py-3 font-light text-[10px] uppercase tracking-[0.22em] rounded-full border border-border transition-all duration-300 hover:scale-[1.02] text-foreground hover:border-foreground/30"
           >
             Ver Todos os Serviços
-            <ArrowRight className="h-4 w-4" />
+            <ArrowRight className="h-3 w-3" />
           </Link>
         </motion.div>
       </div>

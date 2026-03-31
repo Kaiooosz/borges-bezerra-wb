@@ -13,12 +13,12 @@ function TeamCard({ member, index }: { member: { name: string; role: string; ima
 
   return (
     <div className="flex-none w-64 snap-center group cursor-pointer">
-      <div className="relative h-80 rounded-sm overflow-hidden shadow-2xl transition-all duration-300 group-hover:-translate-y-3 group-hover:shadow-[0_24px_48px_rgba(0,0,0,0.4)]">
+      <div className="relative h-80 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 group-hover:-translate-y-3 group-hover:shadow-[0_24px_48px_rgba(0,0,0,0.4)]">
         {/* Imagem ou fallback */}
         {imgError ? (
-          <div className="absolute inset-0 flex items-center justify-center ">
-            <div className="w-20 h-20 rounded-none bg-zinc-700 flex items-center justify-center">
-              <User className="w-10 h-10 text-muted-foreground" />
+          <div className="absolute inset-0 flex items-center justify-center bg-linear-to-b from-zinc-800 to-zinc-900">
+            <div className="w-20 h-20 rounded-full bg-zinc-700 flex items-center justify-center">
+              <User className="w-10 h-10 text-zinc-400" />
             </div>
           </div>
         ) : (
@@ -34,11 +34,11 @@ function TeamCard({ member, index }: { member: { name: string; role: string; ima
         )}
 
         {/* Gradiente refinado — garante legibilidade e profundidade */}
-        <div className="absolute inset-0 bg-linear-to-t from-background/90 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/40 to-transparent" />
 
         {/* Texto fitado sobre a foto com tipografia premium */}
         <div className="absolute bottom-0 left-0 right-0 p-6">
-          <h3 className="text-xl md:text-2xl font-source-serif-pro text-white tracking-tight leading-none mb-2">
+          <h3 className="text-xl font-bold text-white tracking-tight leading-none mb-1">
             {stripTitle(member.name)}
           </h3>
           <p className="text-[10px] text-white/60 font-semibold tracking-[0.1em] uppercase">
@@ -79,11 +79,25 @@ export default function TeamCarousel() {
   return (
     <section className="py-24 bg-background overflow-hidden border-t border-border">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-source-serif-pro font-extralight text-4xl md:text-6xl tracking-tight text-white mb-6">
-            Nosso Time de Especialistas
-          </h2>
-          <p className="text-lg md:text-xl text-white/50 max-w-3xl mx-auto font-light tracking-tight">
+        <div className="mb-16">
+          <span className="block text-[11px] font-medium uppercase tracking-[0.25em] text-muted-foreground mb-6">
+            Equipe
+          </span>
+          <div className="mb-4">
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
+            >
+              Nosso Time
+            </h2>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
+            >
+              De Especialistas.
+            </h2>
+          </div>
+          <p className="text-[15px] text-muted-foreground font-light max-w-sm mt-4">
             Mais de 15 anos de experiência combinada em estruturas jurídicas internacionais
           </p>
         </div>
@@ -93,14 +107,14 @@ export default function TeamCarousel() {
           <button
             onClick={scrollLeft}
             aria-label="Anterior"
-            className="absolute left-0 top-1/2 -translate-y-1/2 -left-4 z-10 bg-black/40 backdrop-blur-md hover:bg-black/60 text-white p-3 rounded-none transition-all hidden md:flex items-center justify-center border border-white/10"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -left-4 z-10 bg-black/40 backdrop-blur-md hover:bg-black/60 text-white p-3 rounded-full transition-all hidden md:flex items-center justify-center border border-white/10"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
           <button
             onClick={scrollRight}
             aria-label="Próximo"
-            className="absolute right-0 top-1/2 -translate-y-1/2 -right-4 z-10 bg-black/40 backdrop-blur-md hover:bg-black/60 text-white p-3 rounded-none transition-all hidden md:flex items-center justify-center border border-white/10"
+            className="absolute right-0 top-1/2 -translate-y-1/2 -right-4 z-10 bg-black/40 backdrop-blur-md hover:bg-black/60 text-white p-3 rounded-full transition-all hidden md:flex items-center justify-center border border-white/10"
           >
             <ChevronRight className="w-6 h-6" />
           </button>

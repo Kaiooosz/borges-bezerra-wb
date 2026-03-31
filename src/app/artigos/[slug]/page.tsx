@@ -3,10 +3,9 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { articles } from '@/data/articles';
 import { Header } from '@/components/header';
-import { Calendar, Clock, Share2, Facebook, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Footer } from '@/components/footer';
+import { Calendar, Clock, Share2, Linkedin, Twitter, Mail, ArrowLeft, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 
 export async function generateStaticParams() {
     return articles.map((article) => ({
@@ -30,8 +29,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
 }
 
-// ... (imports remain)
-
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const article = articles.find((a) => a.slug === slug);
@@ -41,120 +38,139 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     }
 
     const shareUrl = `https://www.bezerraborges.com.br/artigos/${article.slug}`;
-    const shareText = `Artigo interessante: ${article.title}`;
+    const shareText = `${article.title}`;
 
-    const relatedArticles = articles
-        .filter((a) => a.category === article.category && a.slug !== article.slug)
-        .slice(0, 3);
+    // Always fill exactly 3 cards: same category first, then fill from other categories
+    const sameCategory = articles.filter(
+        (a) => a.category === article.category && a.slug !== article.slug
+    );
+    const otherCategory = articles.filter(
+        (a) => a.category !== article.category && a.slug !== article.slug
+    );
+    const relatedArticles = [
+        ...sameCategory,
+        ...otherCategory,
+    ].slice(0, 3);
 
     return (
-        <div className="min-h-screen bg-background text-foreground font-source-serif-pro pt-40 md:pt-48">
-            {/* Hero Section with Background Image */}
-            <div className="relative min-h-[60vh] md:min-h-[75vh] w-full overflow-hidden rounded-b-[3rem] shadow-2xl flex flex-col">
+        <div className="min-h-screen bg-background text-foreground font-sans">
+            <Header />
+
+            {/* Hero */}
+            <div className="relative min-h-[70vh] w-full overflow-hidden flex flex-col">
                 <div
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105 transition-transform duration-1000"
+                    className="absolute inset-0 bg-cover bg-center"
                     style={{ backgroundImage: `url(${article.image || '/placeholder.svg'})` }}
                 />
-                <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" />
+                <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(5,5,5,0.5) 0%, rgba(5,5,5,0.85) 100%)" }} />
 
-                <div className="relative flex-1 max-w-7xl mx-auto px-4 flex flex-col justify-end pb-12 md:pb-24">
-                    <div className="max-w-5xl space-y-6 animate-fadeInUp">
-                        <div className="flex flex-wrap items-center gap-4 text-sm md:text-base text-muted-foreground">
-                            <span className="px-4 py-1.5 bg-foreground text-background font-medium rounded-none backdrop-blur-md">
+                <div className="relative flex-1 max-w-5xl mx-auto px-6 flex flex-col justify-end pb-16 md:pb-24 w-full">
+                    <div className="space-y-5">
+                        <div className="flex flex-wrap items-center gap-3">
+                            <span className="text-[9px] font-light uppercase tracking-[0.22em] px-3 py-1.5 rounded-full"
+                                style={{ background: "rgba(255,255,255,0.12)", border: "1px solid rgba(255,255,255,0.2)", color: "rgba(255,255,255,0.85)" }}>
                                 {article.category}
                             </span>
-                            <div className="flex items-center gap-2 bg-black/30 px-3 py-1 rounded-none backdrop-blur-sm border border-white/10">
-                                <Calendar className="h-4 w-4" />
+                            <div className="flex items-center gap-1.5 text-[11px] font-light text-white/50">
+                                <Calendar className="h-3 w-3" />
                                 <span>{article.date}</span>
                             </div>
-                            <div className="flex items-center gap-2 bg-black/30 px-3 py-1 rounded-none backdrop-blur-sm border border-white/10">
-                                <Clock className="h-4 w-4" />
+                            <div className="flex items-center gap-1.5 text-[11px] font-light text-white/50">
+                                <Clock className="h-3 w-3" />
                                 <span>{article.readTime}</span>
                             </div>
                         </div>
 
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.15] text-white text-balance drop-shadow-2xl">
+                        <h1 className="font-sans font-light text-white leading-tight max-w-3xl"
+                            style={{ fontSize: "clamp(1.8rem, 4vw, 3.2rem)", letterSpacing: "-0.02em", textShadow: "0 2px 20px rgba(0,0,0,0.4)" }}>
                             {article.title}
                         </h1>
+
+                        {article.excerpt && (
+                            <p className="text-[15px] font-light text-white/50 max-w-2xl leading-relaxed">
+                                {article.excerpt}
+                            </p>
+                        )}
                     </div>
                 </div>
             </div>
 
-            <article className="max-w-4xl mx-auto px-4 py-16 md:py-24">
-                {/* Content */}
+            {/* Back link */}
+            <div className="max-w-5xl mx-auto px-6 pt-10">
+                <Link href="/artigos"
+                    className="inline-flex items-center gap-2 text-[11px] font-light uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground transition-colors duration-200">
+                    <ArrowLeft className="h-3 w-3" />
+                    Todos os artigos
+                </Link>
+            </div>
+
+            {/* Article Body */}
+            <section className="bg-background">
+            <article className="max-w-3xl mx-auto px-6 py-12 md:py-16">
                 <div
-                    className="prose prose-lg dark:prose-invert max-w-none 
-                    prose-headings:font-source-serif-pro prose-headings:font-medium prose-p:text-muted-foreground dark:prose-p:text-muted-foreground prose-p:leading-relaxed
-                    prose-strong:text-muted-foreground dark:prose-strong:text-white prose-a:text-primary prose-a:no-underline hover:prose-a:underline
-                    prose-blockquote:border-l-primary prose-blockquote:bg-zinc-100 dark:prose-blockquote:bg-muted/30 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg"
+                    className="article-prose prose prose-lg max-w-none
+                    prose-headings:font-sans prose-headings:font-light prose-headings:uppercase prose-headings:tracking-tight
+                    prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:font-light
+                    prose-strong:text-foreground prose-strong:font-light
+                    prose-a:text-foreground prose-a:no-underline hover:prose-a:opacity-70
+                    prose-blockquote:border-l-border prose-blockquote:text-muted-foreground prose-blockquote:font-light prose-blockquote:not-italic
+                    prose-li:text-muted-foreground prose-li:font-light
+                    dark:prose-headings:text-white dark:prose-p:text-white/60 dark:prose-strong:text-white dark:prose-li:text-white/60"
                     dangerouslySetInnerHTML={{ __html: article.content || '<p>Conteúdo não disponível.</p>' }}
                 />
 
-                {/* Share Section */}
-                <div className="border-t border-border pt-10 mt-10">
-                    <h3 className="text-lg font-semibold mb-6 text-center text-muted-foreground uppercase tracking-widest text-sm">Compartilhe este artigo</h3>
-                    <div className="flex justify-center gap-6">
-                        <a
-                            href={`https://wa.me/?text=${encodeURIComponent(shareText + ' ' + shareUrl)}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-4 bg-muted/30 rounded-none hover:bg-[#25D366] hover:text-white transition-all duration-300 hover:-translate-y-1"
-                            aria-label="Compartilhar no WhatsApp"
-                        >
-                            <Share2 className="h-6 w-6" />
-                        </a>
-                        <a
-                            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-4 bg-muted/30 rounded-none hover:bg-[#0077b5] hover:text-white transition-all duration-300 hover:-translate-y-1"
-                            aria-label="Compartilhar no LinkedIn"
-                        >
-                            <Linkedin className="h-6 w-6" />
-                        </a>
-                        <a
-                            href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareText)}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-4 bg-muted/30 rounded-none hover:bg-[#1DA1F2] hover:text-white transition-all duration-300 hover:-translate-y-1"
-                            aria-label="Compartilhar no Twitter"
-                        >
-                            <Twitter className="h-6 w-6" />
-                        </a>
-                        <a
-                            href={`mailto:?subject=${encodeURIComponent(shareText)}&body=${encodeURIComponent(shareUrl)}`}
-                            className="p-4 bg-muted/30 rounded-none hover:bg-zinc-200 hover:text-black transition-all duration-300 hover:-translate-y-1"
-                            aria-label="Compartilhar por Email"
-                        >
-                            <Mail className="h-6 w-6" />
-                        </a>
+                {/* Share */}
+                <div className="border-t border-border pt-10 mt-12">
+                    <span className="block text-[11px] font-light uppercase tracking-[0.22em] text-muted-foreground mb-6 text-center">
+                        Compartilhe
+                    </span>
+                    <div className="flex justify-center gap-3">
+                        {[
+                            { href: `https://wa.me/?text=${encodeURIComponent(shareText + ' ' + shareUrl)}`, label: "WhatsApp", icon: Share2 },
+                            { href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`, label: "LinkedIn", icon: Linkedin },
+                            { href: `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareText)}`, label: "Twitter", icon: Twitter },
+                            { href: `mailto:?subject=${encodeURIComponent(shareText)}&body=${encodeURIComponent(shareUrl)}`, label: "Email", icon: Mail },
+                        ].map(({ href, label, icon: Icon }) => (
+                            <a key={label} href={href} target="_blank" rel="noopener noreferrer"
+                                className="p-3 rounded-full transition-all duration-200 hover:scale-[1.05]"
+                                style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.12)" }}
+                                aria-label={`Compartilhar no ${label}`}>
+                                <Icon className="h-4 w-4 text-muted-foreground" />
+                            </a>
+                        ))}
                     </div>
                 </div>
             </article>
+            </section>
 
             {/* Related Articles */}
             {relatedArticles.length > 0 && (
-                <section className="py-24 border-t border-border bg-black/20">
-                    <div className="max-w-7xl mx-auto px-4">
-                        <h2 className="text-3xl md:text-4xl font-medium mb-12 text-center font-source-serif-pro">
+                <section className="bg-background py-24 border-t border-border px-4">
+                    <div className="max-w-7xl mx-auto">
+                        <span className="block text-[11px] font-light uppercase tracking-[0.25em] text-muted-foreground mb-6">
                             Continue Lendo
-                        </h2>
-                        <div className="grid md:grid-cols-3 gap-8">
+                        </span>
+                        <div className="grid md:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
                             {relatedArticles.map((related) => (
-                                <Link key={related.slug} href={`/artigos/${related.slug}`} className="group block bg-background rounded-sm overflow-hidden border border-border hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                                    <div className="aspect-video overflow-hidden">
-                                        <img
-                                            src={related.image || "/placeholder.svg"}
-                                            alt={related.title}
-                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                        />
-                                    </div>
-                                    <div className="p-6 space-y-3">
-                                        <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">{related.category}</span>
-                                        <h3 className="text-xl font-medium font-source-serif-pro group-hover:text-muted-foreground transition-colors leading-tight">
+                                <Link key={related.slug} href={`/artigos/${related.slug}`} className="block">
+                                    <div className="group bg-card h-full p-6 transition-colors duration-300 hover:bg-muted/20">
+                                        <div className="aspect-video overflow-hidden rounded-lg mb-5">
+                                            <img
+                                                src={related.image || "/placeholder.svg"}
+                                                alt={related.title}
+                                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                                            />
+                                        </div>
+                                        <span className="text-[9px] font-light uppercase tracking-[0.2em] text-muted-foreground mb-2 block">
+                                            {related.category}
+                                        </span>
+                                        <h3 className="font-sans font-light text-foreground text-base leading-snug mb-3">
                                             {related.title}
                                         </h3>
-                                        <p className="text-muted-foreground text-sm line-clamp-2">{related.excerpt}</p>
+                                        <p className="text-sm text-muted-foreground font-light line-clamp-2 mb-4">{related.excerpt}</p>
+                                        <span className="inline-flex items-center gap-1.5 text-[11px] font-light uppercase tracking-[0.18em] text-foreground/50 group-hover:text-foreground transition-colors duration-200">
+                                            Ler artigo <ArrowRight className="h-3 w-3" />
+                                        </span>
                                     </div>
                                 </Link>
                             ))}
@@ -163,36 +179,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 </section>
             )}
 
-            {/* Newsletter */}
-            <section className="py-24 px-4 bg-linear-to-b from-transparent to-black/40">
-                <div className="max-w-4xl mx-auto text-center space-y-8">
-                    <h2 className="font-source-serif-pro text-3xl md:text-5xl text-balance">
-                        Receba insights <span className="italic text-muted-foreground">estratégicos</span>
-                    </h2>
-                    <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
-                        Assine nossa newsletter e receba conteúdo exclusivo sobre proteção
-                        patrimonial, internacionalização e estratégias jurídicas diretamente no seu e-mail.
-                    </p>
-
-                    <div className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto pt-4 relative">
-                        <Input
-                            type="email"
-                            placeholder="Seu melhor e-mail"
-                            className="h-14 bg-muted/30 border-white/10 text-foreground placeholder:text-muted-foreground focus:border-chart-4 rounded-none px-6"
-                        />
-                        <Button
-                            size="lg"
-                            className="bg-white text-black hover:bg-zinc-200 h-14 px-8 rounded-none font-semibold shadow-lg hover:shadow-xl transition-all"
-                        >
-                            Inscrever-se
-                        </Button>
-                    </div>
-
-                    <p className="text-xs text-muted-foreground">
-                        Enviamos apenas conteúdo de valor. Sem spam. Cancele quando quiser.
-                    </p>
-                </div>
-            </section>
+            <Footer />
         </div>
     );
 }

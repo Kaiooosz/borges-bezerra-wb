@@ -1,9 +1,8 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+"use client";
+
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
@@ -17,58 +16,109 @@ const faqs = [
       "A internacionalização oferece diversificação de riscos, acesso a mercados globais, otimização tributária legal, proteção cambial e maior credibilidade internacional. Permite também estruturar operações em jurisdições com ambiente regulatório mais favorável e custos operacionais reduzidos.",
   },
   {
-    question:
-      "Como funciona o cumprimento de obrigações fiscais em estruturas internacionais?",
+    question: "Como funciona o cumprimento de obrigações fiscais em estruturas internacionais?",
     answer:
       "Mantemos total conformidade com as legislações brasileiras e internacionais. Todas as estruturas são declaradas conforme exigências da Receita Federal, incluindo Declaração de Capitais Brasileiros no Exterior (CBE) e Imposto de Renda. Nosso planejamento tributário é 100% legal e transparente.",
   },
   {
     question: "Quanto tempo leva para abrir uma empresa offshore?",
     answer:
-      "O prazo varia conforme a jurisdição escolhida, mas geralmente leva de 2 a 4 semanas. Jurisdições como Ilhas Virgens Britânicas e Panamá podem ser mais rápidas (7–10 dias), enquanto outras como Suíça ou Singapura podem levar até 6 semanas. Cuidamos de todo o processo.",
+      "O prazo varia conforme a jurisdição escolhida, mas geralmente leva de 2 a 4 semanas. Jurisdições como Ilhas Virgens Britânicas e Panamá podem ser mais rápidas (7–10 dias), enquanto outras como Suíça ou Singapura podem levar até 6 semanas. Cuidamos de todo o processo para você.",
   },
   {
     question: "Quais são os custos envolvidos?",
     answer:
-      "Os custos variam conforme a complexidade da estrutura, jurisdição escolhida e serviços necessários. Incluem taxas de constituição, registro, agente residente, manutenção anual e honorários advocatícios. Fornecemos orçamento detalhado e transparente após análise do seu caso.",
+      "Os custos variam conforme a complexidade da estrutura, jurisdição escolhida e serviços necessários. Incluem taxas de constituição, registro, agente residente, manutenção anual e nossos honorários advocatícios. Fornecemos orçamento detalhado e transparente após análise do seu caso.",
   },
   {
     question: "É legal ter uma empresa offshore?",
     answer:
-      "Sim, é completamente legal. Empresas offshore são utilizadas por milhões de pessoas e empresas no mundo todo para fins legítimos como internacionalização de negócios, proteção patrimonial e planejamento sucessório. O importante é manter total transparência e conformidade com as obrigações fiscais.",
+      "Sim, é completamente legal. Empresas offshore são utilizadas por milhões de pessoas e empresas no mundo todo para fins legítimos como internacionalização de negócios, proteção patrimonial e planejamento sucessório. O importante é manter total transparência e conformidade com as obrigações fiscais brasileiras.",
   },
 ];
 
+function FAQItem({ faq, index }: { faq: { question: string; answer: string }; index: number }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 12 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, delay: index * 0.06 }}
+      className="border-b border-border last:border-0"
+    >
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between gap-4 py-6 text-left group"
+        aria-expanded={open}
+      >
+        <span className="font-sans text-base md:text-lg text-foreground font-light group-hover:text-foreground/80 transition-colors duration-200 leading-snug">
+          {faq.question}
+        </span>
+        <span className="shrink-0 w-6 h-6 flex items-center justify-center rounded-full border border-border text-muted-foreground group-hover:border-foreground/40 transition-all duration-200">
+          {open ? <Minus className="w-3 h-3" /> : <Plus className="w-3 h-3" />}
+        </span>
+      </button>
+
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+            className="overflow-hidden"
+          >
+            <p className="pb-6 text-[15px] text-muted-foreground font-light leading-relaxed">
+              {faq.answer}
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
+  );
+}
+
 export function FAQ() {
   return (
-    <section className="py-24 px-4 bg-background border-t border-border">
+    <section className="py-24 md:py-32 px-4 bg-background">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-6 tracking-tight">
-              Perguntas frequentes
-            </h2>
-            <p className="text-lg md:text-xl text-white/50 font-light tracking-tight max-w-2xl mx-auto">
-              Respostas para as dúvidas mais comuns sobre nossos serviços
-            </p>
-          </div>
 
-          <Accordion type="single" collapsible className="divide-y divide-border border-t border-b border-border">
-            {faqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="border-none"
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-14"
+          >
+            <span className="block text-[11px] font-medium uppercase tracking-[0.25em] text-muted-foreground mb-5">
+              Dúvidas
+            </span>
+            <div>
+              <h2
+                className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+                style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
               >
-                <AccordionTrigger className="text-left text-white py-8 text-lg md:text-xl font-source-serif-pro hover:no-underline tracking-tight">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-white/50 leading-relaxed pb-8 text-base font-light tracking-tight max-w-2xl">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
+                Perguntas
+              </h2>
+              <h2
+                className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+                style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
+              >
+                Frequentes.
+              </h2>
+            </div>
+          </motion.div>
+
+          {/* Custom accordion */}
+          <div>
+            {faqs.map((faq, index) => (
+              <FAQItem key={index} faq={faq} index={index} />
             ))}
-          </Accordion>
+          </div>
         </div>
       </div>
     </section>

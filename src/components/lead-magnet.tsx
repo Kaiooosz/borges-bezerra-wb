@@ -1,94 +1,135 @@
 "use client";
 
-import type React from "react";
-import { useState } from "react";
-import { Input } from "@/components/ui/input";
-import { BookOpen, Check } from "lucide-react";
+import { motion } from "framer-motion";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
+
+const bullets = [
+  "Jurisdições estratégicas para seu negócio",
+  "Planejamento tributário internacional",
+  "Proteção patrimonial e privacidade",
+  "Estruturas offshore e holdings",
+];
 
 export function LeadMagnet() {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setName("");
-      setEmail("");
-    }, 3000);
-  };
-
   return (
-    <section className="py-24 px-4 bg-muted/20 border-t border-border">
-      <div className="container mx-auto">
-        <div className="max-w-4xl mx-auto border border-border">
-          <div className="grid md:grid-cols-2">
-            {/* Left side */}
-            <div className="p-8 md:p-12 border-b md:border-b-0 md:border-r border-border">
-              <BookOpen className="h-7 w-7 text-foreground mb-6 opacity-80" />
-              <h2 className="font-source-serif-pro text-3xl sm:text-4xl font-extralight text-white mb-6 tracking-tight leading-tight">
-                Guia essencial de estruturas empresariais internacionais
-              </h2>
-              <ul className="space-y-4">
-                {[
-                  "Jurisdições estratégicas para seu negócio",
-                  "Planejamento tributário internacional",
-                  "Proteção patrimonial e privacidade",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-4 text-base text-white/50 font-light tracking-tight">
-                    <span className="text-white/20">—</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+    <section className="py-24 md:py-32 px-4 bg-background">
+      <div className="max-w-7xl mx-auto">
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-16"
+        >
+          <span className="block text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-6">
+            Material Gratuito
+          </span>
+          <div>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{
+                fontSize: "clamp(2.5rem, 7vw, 6rem)",
+                
+                letterSpacing: "-0.025em",
+              }}
+            >
+              Guia Estratégico
+            </h2>
+            <h2
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+              style={{
+                fontSize: "clamp(2.5rem, 7vw, 6rem)",
+                
+                letterSpacing: "-0.025em",
+              }}
+            >
+              Internacional.
+            </h2>
+          </div>
+        </motion.div>
+
+        {/* Card grid — mesma estrutura do services */}
+        <div className="grid lg:grid-cols-2 gap-px bg-border rounded-2xl overflow-hidden">
+
+          {/* Left — descrição */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="bg-card p-8 md:p-12"
+          >
+            <p className="text-[15px] text-muted-foreground font-light leading-relaxed mb-10 max-w-sm">
+              Estruturas empresariais internacionais explicadas com clareza — do planejamento à execução.
+            </p>
+            <ul className="space-y-4">
+              {bullets.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground font-light">
+                  <span className="mt-2 shrink-0 w-1 h-1 rounded-full bg-muted-foreground/40 inline-block" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Right — ações */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="bg-card p-8 md:p-12 flex flex-col justify-between gap-8"
+          >
+            <div>
+              <h3
+                className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight mb-2"
+                style={{
+                  fontSize: "clamp(1.4rem, 3vw, 2rem)",
+                 
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                Bezerra Borges
+              </h3>
+              <h3
+                className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
+                style={{
+                  fontSize: "clamp(1.4rem, 3vw, 2rem)",
+                 
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                Advogados.
+              </h3>
             </div>
 
-            {/* Right side - Form */}
-            <div className="p-8 md:p-12 flex flex-col justify-center">
-              {submitted ? (
-                <div className="text-center py-8">
-                  <Check className="h-8 w-8 text-foreground mx-auto mb-4" />
-                  <h3 className="text-xl font-medium text-foreground mb-2">Recebido</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Verifique seu email para baixar o guia.
-                  </p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <p className="text-sm font-medium text-white/80 mb-6 uppercase tracking-widest">
-                    Receba o guia gratuitamente
-                  </p>
-                  <Input
-                    type="text"
-                    placeholder="Nome completo"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                    className="bg-background border-border text-foreground placeholder:text-muted-foreground rounded-none focus-visible:ring-0 focus-visible:border-foreground"
-                  />
-                  <Input
-                    type="email"
-                    placeholder="Seu melhor email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    className="bg-background border-border text-foreground placeholder:text-muted-foreground rounded-none focus-visible:ring-0 focus-visible:border-foreground"
-                  />
-                  <button
-                    type="submit"
-                    className="btn-primary w-full"
-                  >
-                    Receber guia
-                  </button>
-                  <p className="text-xs text-muted-foreground text-center">
-                    Seus dados estão protegidos e não serão compartilhados.
-                  </p>
-                </form>
-              )}
+            <div className="flex flex-col gap-3">
+              <a
+                href="/BBLAW-AP.pdf"
+                download="Bezerra-Borges-Guia-Estrategico.pdf"
+                className="inline-flex items-center justify-center gap-2 w-full py-4 font-light text-[11px] uppercase tracking-[0.22em] rounded-full border border-foreground bg-foreground text-background transition-all duration-300 hover:opacity-80 hover:scale-[1.02]"
+              >
+                Baixar guia gratuito
+                <ArrowRight className="h-3 w-3" />
+              </a>
+
+              <a
+                href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20receber%20o%20guia%20estratégico%20da%20Bezerra%20Borges%20Advogados"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 w-full py-4 font-light text-[11px] uppercase tracking-[0.22em] text-muted-foreground rounded-full border border-border transition-all duration-300 hover:text-foreground hover:border-foreground/30 hover:scale-[1.02]"
+              >
+                Consultar com especialista
+                <ArrowUpRight className="h-3 w-3" />
+              </a>
+
+              <p className="text-[10px] text-muted-foreground text-center font-light pt-1 uppercase tracking-[0.15em]">
+                Conteúdo exclusivo — sem compromisso
+              </p>
             </div>
-          </div>
+          </motion.div>
+
         </div>
       </div>
     </section>

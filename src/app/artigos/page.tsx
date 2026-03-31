@@ -3,183 +3,235 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Calendar, Clock, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ArrowRight, Clock } from "lucide-react";
 import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 import { articles, categories } from "@/data/articles";
-
-// Animation variants
-const fadeInUp = {
-  initial: { opacity: 0, y: 20 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.5 },
-};
 
 export default function ArtigosPage() {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
 
   const featuredArticle = articles.find((a) => a.featured) || articles[0];
-  const filteredArticles = articles.filter((a) => a.slug !== featuredArticle.slug).filter(
-    (a) => selectedCategory === "Todos" || a.category === selectedCategory
-  );
+  const filteredArticles = articles
+    .filter((a) => a.slug !== featuredArticle.slug)
+    .filter((a) => selectedCategory === "Todos" || a.category === selectedCategory);
 
   const [visibleCount, setVisibleCount] = useState(9);
   const visibleArticles = filteredArticles.slice(0, visibleCount);
 
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-zinc-200">
+    <div className="min-h-screen bg-background text-foreground font-sans">
+      <Header />
 
-      {/* Hero Section - Segue o padrão do site */}
-      <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden px-4">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-        <motion.div
-          {...fadeInUp}
-          className="max-w-4xl mx-auto text-center space-y-6 relative z-10"
-        >
-          <h1 className="font-source-serif-pro text-5xl md:text-7xl lg:text-8xl leading-tight tracking-tight text-foreground">
-            Artigos e <span className="italic text-muted-foreground font-light">Insights</span>
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed">
-            Conteúdo estratégico sobre proteção patrimonial, internacionalização e ativos globais.
-          </p>
-        </motion.div>
-      </section>
-
-      {/* Featured Article Section - Premium Card Dinâmico */}
-      <section className="pb-16 px-4">
-        <div className="max-w-7xl mx-auto">
+      {/* Hero */}
+      <section className="dark-section pt-32 md:pt-40 pb-16 md:pb-24 px-4 relative overflow-hidden">
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(15,35,25,0.45) 0%, transparent 70%)" }}
+        />
+        <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <span className="block text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-8">
+              Publicações
+            </span>
+            <h1
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight block"
+              style={{
+                fontSize: "clamp(3rem, 9vw, 8rem)",
+                
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Artigos e
+            </h1>
+            <h1
+              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight block mb-8"
+              style={{
+                fontSize: "clamp(3rem, 9vw, 8rem)",
+                
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Insights.
+            </h1>
+            <p className="text-[15px] text-muted-foreground font-light max-w-md leading-relaxed">
+              Conteúdo estratégico sobre proteção patrimonial, internacionalização e ativos globais.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Featured Article */}
+      <section className="px-4 pb-16">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="group relative bg-card rounded-[2.5rem] overflow-hidden shadow-2xl transition-all duration-700 border border-border"
+            transition={{ duration: 0.6 }}
           >
-            <div className="grid lg:grid-cols-12 gap-0">
-              <div className="lg:col-span-7 relative h-[400px] lg:h-[600px] overflow-hidden">
+            <div className="grid lg:grid-cols-2 gap-px bg-border rounded-2xl overflow-hidden">
+              {/* Image */}
+              <Link href={`/artigos/${featuredArticle.slug}`} className="block relative h-[320px] lg:h-[480px] overflow-hidden bg-card group">
                 <img
                   src={featuredArticle.image || "/placeholder.svg"}
                   alt={featuredArticle.title}
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
-                <div className="absolute inset-0 bg-black/5 dark:bg-black/40" />
-              </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              </Link>
 
-              <div className="lg:col-span-5 p-8 md:p-12 lg:p-16 flex flex-col justify-center bg-card">
-                <div className="space-y-6">
-                  <span className="block text-[10px] font-black uppercase tracking-[0.3em] text-muted-foreground">
+              {/* Content */}
+              <div className="bg-card p-8 md:p-12 flex flex-col justify-between">
+                <div>
+                  <span className="block text-[9px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-6">
                     Artigo em Destaque
                   </span>
-                  <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                    <span className="flex items-center gap-1.5"><Calendar className="h-3 w-3" /> {featuredArticle.date}</span>
-                    <span className="flex items-center gap-1.5"><Clock className="h-3 w-3" /> {featuredArticle.readTime}</span>
+                  <div className="flex items-center gap-4 text-[11px] text-muted-foreground font-light mb-5">
+                    <span>{featuredArticle.date}</span>
+                    <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{featuredArticle.readTime}</span>
                   </div>
-                  <h2 className="font-source-serif-pro text-4xl md:text-5xl leading-[1.1] text-foreground font-medium">
+                  <h2
+                    className="font-sans font-light text-foreground leading-tight mb-5"
+                    style={{
+                      fontSize: "clamp(1.6rem, 3.5vw, 2.8rem)",
+                     
+                      letterSpacing: "-0.02em",
+                    }}
+                  >
                     {featuredArticle.title}
                   </h2>
-                  <p className="text-lg text-muted-foreground font-light leading-relaxed">
+                  <p className="text-sm text-muted-foreground font-light leading-relaxed">
                     {featuredArticle.excerpt}
                   </p>
-                  <Button
-                    asChild
-                    size="lg"
-                    className="rounded-none bg-zinc-900 dark:bg-white text-muted-foreground dark:text-muted-foreground hover:bg-zinc-800 dark:hover:bg-zinc-100 px-10 h-14 text-base font-semibold shadow-xl transition-all hover:scale-105 active:scale-95"
-                  >
-                    <Link href={`/artigos/${featuredArticle.slug}`}>
-                      Ler artigo completo <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
-                  </Button>
                 </div>
+
+                <Link
+                  href={`/artigos/${featuredArticle.slug}`}
+                  className="inline-flex items-center gap-2 mt-8 px-8 py-3.5 font-light text-[10px] uppercase tracking-[0.22em] text-white rounded-full transition-all duration-300 hover:scale-[1.02] self-start"
+                  style={{
+                    background: "rgba(255,255,255,0.08)",
+                    border: "1px solid rgba(255,255,255,0.18)",
+                    backdropFilter: "blur(12px)",
+                  }}
+                >
+                  Ler artigo
+                  <ArrowRight className="h-3 w-3" />
+                </Link>
               </div>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Category Navigation - Segue o padrão dark/light */}
-      <div className="max-w-7xl mx-auto px-4 mb-20 flex flex-wrap gap-3 justify-center">
+      {/* Category Filter */}
+      <div className="max-w-7xl mx-auto px-4 mb-12 flex flex-wrap gap-2">
         {categories.map((cat) => (
           <button
             key={cat}
             onClick={() => setSelectedCategory(cat)}
-            className={`px-8 py-2.5 rounded-none text-[10px] font-medium tracking-widest uppercase transition-all duration-300 border ${selectedCategory === cat
-              ? "bg-zinc-900 dark:bg-zinc-100 border-zinc-900 dark:border-zinc-100 text-muted-foreground dark:text-muted-foreground shadow-lg scale-105"
-              : "bg-card border-border text-muted-foreground hover:border-zinc-400 dark:hover:border-zinc-300 shadow-sm"
-              }`}
+            className="px-5 py-2 font-light text-[10px] uppercase tracking-[0.2em] rounded-full transition-all duration-200"
+            style={
+              selectedCategory === cat
+                ? { background: "rgba(255,255,255,0.12)", border: "1px solid rgba(255,255,255,0.25)", color: "white", backdropFilter: "blur(8px)" }
+                : { background: "transparent", border: "1px solid rgba(255,255,255,0.08)", color: "rgba(255,255,255,0.45)" }
+            }
           >
             {cat}
           </button>
         ))}
       </div>
 
-      {/* Articles Grid - Pattern que você pediu */}
-      <section className="pb-32 px-4 text-center">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
-          {visibleArticles.map((article, index) => (
-            <motion.div
-              key={article.slug}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="group flex flex-col bg-card rounded-[2rem] overflow-hidden transition-all duration-500 border border-border shadow-lg hover:shadow-2xl hover:-translate-y-3"
-            >
-              <Link href={`/artigos/${article.slug}`} className="relative aspect-[16/10] overflow-hidden block">
-                <img
-                  src={article.image || "/placeholder.svg"}
-                  alt={article.title}
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              </Link>
-
-              <div className="p-8 pb-10 flex flex-col flex-grow bg-card">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-[9px] font-black text-muted-foreground uppercase tracking-[0.2em]">{article.category}</span>
-                </div>
-
-                <Link href={`/artigos/${article.slug}`}>
-                  <h3 className="font-source-serif-pro text-2xl font-medium leading-tight text-foreground group-hover:text-primary transition-colors line-clamp-2">
-                    {article.title}
-                  </h3>
-                </Link>
-
-                <p className="mt-4 text-muted-foreground text-sm leading-relaxed line-clamp-3 font-light">
-                  {article.excerpt}
-                </p>
-
-                <div className="mt-8 pt-6 border-t border-border flex items-center justify-between">
-                  <div className="flex flex-col">
-                    <span className="text-[10px] text-muted-foreground font-medium uppercase tracking-wider">{article.date}</span>
-                    <span className="text-[8px] text-muted-foreground dark:text-muted-foreground uppercase tracking-[0.3em] mt-1 font-black">Bezerra Borges</span>
+      {/* Articles Grid */}
+      <section className="pb-32 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
+            {visibleArticles.map((article, index) => (
+              <motion.div
+                key={article.slug}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
+                className="bg-card group hover:bg-white/[0.03] transition-all duration-300"
+              >
+                <Link href={`/artigos/${article.slug}`} className="block">
+                  {/* Image */}
+                  <div className="relative aspect-[16/9] overflow-hidden">
+                    <img
+                      src={article.image || "/placeholder.svg"}
+                      alt={article.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                   </div>
 
-                  <Link
-                    href={`/artigos/${article.slug}`}
-                    className="flex items-center justify-center w-12 h-12 bg-foreground text-background rounded-none transition-all duration-500 group-hover:scale-110 shadow-xl"
-                  >
-                    <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-0.5" />
-                  </Link>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+                  {/* Content */}
+                  <div className="p-6 md:p-8">
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-[9px] font-light uppercase tracking-[0.2em] text-muted-foreground">
+                        {article.category}
+                      </span>
+                      <span className="flex items-center gap-1 text-[9px] font-light text-muted-foreground">
+                        <Clock className="w-2.5 h-2.5" />
+                        {article.readTime}
+                      </span>
+                    </div>
 
-        {visibleCount < filteredArticles.length && (
-          <div className="mt-20">
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={() => setVisibleCount((prev) => prev + 6)}
-              className="rounded-none px-12 h-14 border-border text-muted-foreground hover:bg-foreground hover:text-background transition-all duration-500 shadow-md hover:shadow-xl group"
-            >
-              Carregar mais Insights
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
+                    <h3
+                      className="font-sans font-light text-foreground leading-snug mb-3 line-clamp-2"
+                      style={{
+                        fontSize: "clamp(1rem, 2vw, 1.35rem)",
+                       
+                        letterSpacing: "-0.01em",
+                      }}
+                    >
+                      {article.title}
+                    </h3>
+
+                    <p className="text-[13px] text-muted-foreground font-light leading-relaxed line-clamp-2 mb-5">
+                      {article.excerpt}
+                    </p>
+
+                    <div className="flex items-center justify-between pt-4 border-t border-border/50">
+                      <span className="text-[10px] font-light text-muted-foreground uppercase tracking-[0.15em]">
+                        {article.date}
+                      </span>
+                      <span className="flex items-center gap-1 text-[10px] font-light text-foreground/50 group-hover:text-foreground transition-colors duration-200 uppercase tracking-[0.15em]">
+                        Ler
+                        <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
           </div>
-        )}
+
+          {visibleCount < filteredArticles.length && (
+            <div className="mt-12 text-center">
+              <button
+                onClick={() => setVisibleCount((prev) => prev + 6)}
+                className="inline-flex items-center gap-2 px-10 py-3.5 font-light text-[10px] uppercase tracking-[0.22em] text-foreground rounded-full transition-all duration-300 hover:scale-[1.02]"
+                style={{
+                  background: "rgba(128,128,128,0.08)",
+                  border: "1px solid rgba(128,128,128,0.2)",
+                  backdropFilter: "blur(8px)",
+                }}
+              >
+                Carregar mais
+                <ArrowRight className="h-3 w-3" />
+              </button>
+            </div>
+          )}
+        </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

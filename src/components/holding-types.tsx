@@ -28,24 +28,26 @@ export function HoldingTypes() {
     <section id="types" className="py-20 md:py-32 border-t border-border">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Tipos de Holdings</h2>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto text-pretty">
+          <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-tight bg-gradient-to-r from-foreground via-foreground to-foreground/40 bg-clip-text text-transparent mb-4">
+            Tipos de Holdings
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-pretty">
             Estruturas personalizadas para cada necessidade patrimonial e empresarial
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-px bg-border border border-border max-w-5xl mx-auto">
           {holdingTypes.map((type, index) => (
             <div
               key={index}
-              className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
+              className="p-8 bg-background hover:bg-muted/30 transition-colors duration-300"
             >
-              <h3 className="text-2xl font-bold mb-3">{type.title}</h3>
-              <p className="text-zinc-400 mb-6 leading-relaxed">{type.description}</p>
+              <h3 className="font-source-serif-pro text-xl font-light mb-3 tracking-tight">{type.title}</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed text-sm">{type.description}</p>
               <ul className="space-y-2">
                 {type.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-3 --ring text-sm">
-                    <div className="w-2 h-2 rounded-full bg-white mt-2 flex-shrink-0" />
+                  <li key={idx} className="flex items-start gap-3 text-sm text-foreground">
+                    <span className="text-foreground/40 mt-0.5">—</span>
                     <span>{feature}</span>
                   </li>
                 ))}

@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import {
   Shield,
@@ -18,7 +16,7 @@ const services = [
   {
     icon: Shield,
     title: "Planejamento Patrimonial",
-    description: "Holdings familiares, trusts e protec patrimonial lícita",
+    description: "Holdings familiares, trusts e proteção patrimonial lícita",
     href: "/servicos/planejamento-patrimonial",
   },
   {
@@ -55,47 +53,46 @@ const services = [
 
 export function ServicesPreview() {
   return (
-    <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-background relative">
+    <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-background border-t border-border">
       <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12 md:mb-16"
+          className="mb-16 md:mb-24"
         >
-          <h2 className="font-source-serif-pro text-3xl sm:text-4xl md:text-5xl text-foreground mb-4 px-2">
+          <h2 className="font-source-serif-pro text-4xl sm:text-5xl md:text-6xl font-extralight text-foreground mb-6 tracking-tight">
             Nossas Especialidades
           </h2>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
-            Soluções jurídicas integradas para proteção, crescimento e
-            liberdade!
+          <p className="text-lg sm:text-xl text-white/50 max-w-2xl font-light tracking-tight">
+            Soluções jurídicas integradas para proteção, crescimento e liberdade.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-12 mx-auto max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border mb-12">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
             >
-              <Link href={service.href}>
-                <Card className="group p-6 md:p-8 bg-card border-border hover:border-white/30 transition-all duration-300 h-full cursor-pointer">
-                  <service.icon className="w-10 h-10 md:w-12 md:h-12 text-foreground mb-4 md:mb-6 group-hover:scale-110 transition-transform" />
-                  <h3 className="font-source-serif-pro text-xl md:text-2xl text-foreground mb-2 md:mb-3 group-hover:text-foreground/90">
+              <Link href={service.href} className="block group h-full">
+                <div className="p-10 bg-background hover:bg-white/[0.02] border-border transition-all duration-300 h-full flex flex-col">
+                  <service.icon className="w-8 h-8 text-white mb-8 stroke-[1.5px]" />
+                  <h3 className="font-sans font-semibold text-lg md:text-xl text-white mb-3 tracking-tight">
                     {service.title}
                   </h3>
-                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  <p className="text-sm md:text-base text-white/50 leading-relaxed mb-6 font-light">
                     {service.description}
                   </p>
-                  <div className="mt-4 md:mt-6 flex items-center text-foreground group-hover:translate-x-2 transition-transform">
-                    <span className="text-sm">Saiba mais</span>
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                  <div className="mt-auto flex items-center text-white/40 text-sm font-light group-hover:text-white transition-colors duration-200">
+                    <span>Saiba mais</span>
+                    <ArrowRight className="ml-1.5 h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
                   </div>
-                </Card>
+                </div>
               </Link>
             </motion.div>
           ))}
@@ -106,19 +103,14 @@ export function ServicesPreview() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center"
         >
-          <Button
-            asChild
-            size="lg"
-            variant="outline"
-            className="border-white text-foreground hover:bg-white/10 bg-transparent"
+          <Link
+            href="/servicos"
+            className="btn-outline"
           >
-            <Link href="/servicos">
-              Ver Todos os Serviços
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
+            Ver Todos os Serviços
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </motion.div>
       </div>
     </section>

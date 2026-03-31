@@ -95,13 +95,13 @@ export default function PlanejamentoPatrimonialPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-sm text-foreground mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-none text-sm text-foreground mb-6">
                 <Shield className="w-4 h-4" />
                 <span>Planejamento Patrimonial e Estrutural</span>
               </div>
               <h1 className="font-source-serif-pro text-4xl md:text-6xl lg:text-7xl text-foreground mb-6 text-balance">
                 Proteja seu patrimônio com{" "}
-                <span className="font-bold">inteligência jurídica</span>
+                <span className="font-medium">inteligência jurídica</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 text-pretty">
                 Estruturas sólidas e estratégicas para proteção patrimonial,
@@ -149,7 +149,7 @@ export default function PlanejamentoPatrimonialPage() {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-16 md:py-24 bg-white/5">
+        <section className="py-16 md:py-24 bg-muted/30">
           <div className=" px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -169,9 +169,9 @@ export default function PlanejamentoPatrimonialPage() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: index * 0.05 }}
-                    className="flex items-start gap-3 p-4 bg-card rounded-lg border border-border"
+                    className="flex items-start gap-3 p-4 bg-card rounded-sm border border-border"
                   >
-                    <CheckCircle2 className="w-6 h-6 text-green-400 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-6 h-6 text-foreground shrink-0 mt-0.5" />
                     <span className="text-foreground">{benefit}</span>
                   </motion.div>
                 ))}
@@ -225,7 +225,7 @@ export default function PlanejamentoPatrimonialPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 md:py-32 bg-white/5">
+        <section className="py-24 md:py-32 bg-muted/30">
           <div className=" px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -256,7 +256,7 @@ export default function PlanejamentoPatrimonialPage() {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="border-white text-foreground hover:bg-white/10 bg-transparent"
+                  className="border-white text-foreground hover:bg-muted/30 bg-transparent"
                 >
                   <Link href="/servicos">Ver Outros Serviços</Link>
                 </Button>

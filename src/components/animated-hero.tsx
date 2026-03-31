@@ -1,130 +1,104 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export function AnimatedHero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated background grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+      {/* Grid background — extremamente sutil como no print */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:4.5rem_4.5rem] pointer-events-none" />
 
-      <div className="container relative z-10 px-4 py-32">
-        <div className="flex flex-col items-center text-center space-y-8 md:space-y-12">
+      <div className="container relative z-10 px-6 py-20 md:py-32">
+        <div className="flex flex-col items-center text-center gap-10 md:gap-14">
 
-          {/* Animated Logo */}
+          {/* Logo Oficial — com animação suave e fundo aprimorado */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            className="relative w-full max-w-[200px] sm:max-w-60px md:max-w-[280px]"
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="relative"
           >
-            <div className="rounded-3xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover rounded-3xl"
-              >
-                <source
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Animac%CC%A7a%CC%83o%20logo-rkyssQp7IxgG0wZMm1WolGyZRoYVF1.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
+            <div className="absolute inset-0 bg-foreground/5 blur-3xl rounded-full scale-150" />
+            <img
+              src="/LogoBranco.svg"
+              alt="Bezerra Borges Logo"
+              className="relative z-10 w-24 h-24 md:w-32 md:h-32 object-contain brightness-110"
+            />
           </motion.div>
 
-          {/* Animated Tagline */}
+          {/* Headline — Exatamente como no print: serif, light, quebras específicas */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="space-y-4 md:space-y-6"
+            transition={{ duration: 1, delay: 0.3 }}
+            className="max-w-5xl"
           >
-            <h1 className="font-source-serif-pro text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-foreground leading-tight text-balance px-4">
-              Transformamos{" "}
-              <span className="italic text-muted-foreground">
-                complexidades
-              </span>
-              <br />
-              em <span className="font-bold">oportunidades</span>
+            <h1 className="font-source-serif-pro font-extralight tracking-tight text-white leading-[1.05] text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+              Transformamos<br />
+              <span className="italic">complexidades</span><br />
+              em oportunidades
             </h1>
 
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty px-4">
-              Atuamos como seu aliado na proteção e no crescimento patrimonial.
-              Com operações em mais de 12 países, desenvolvemos estruturas legais de alto rendimento em planejamento patrimonial, unindo segurança jurídica, otimização tributária e planejamento estratégico.
+            <p className="mt-8 text-sm sm:text-base md:text-lg text-white/50 max-w-2xl mx-auto leading-relaxed tracking-tight font-light">
+              Atuamos como seu aliado na proteção e no crescimento patrimonial. Com
+              operações em mais de 12 países, desenvolvemos estruturas legais de alto
+              rendimento em planejamento patrimonial.
             </p>
           </motion.div>
 
-          {/* Animated CTA Buttons */}
+          {/* CTA Buttons — Estilo Kast refinado */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4"
+            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-4"
           >
-            <Button
-              asChild
-              size="lg"
-              className="bg-foreground text-background hover:bg-white/90 text-base w-full sm:w-auto"
+            <a
+              href="https://wa.me/5521979901686?text=Ol%C3%A1,%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico%20com%20a%20Bezerra%20Borges%20Advogados"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center gap-2
+                         px-8 py-4 bg-white text-black
+                         border border-white
+                         font-medium text-sm tracking-widest uppercase
+                         hover:bg-transparent hover:text-white
+                         transition-all duration-300 w-full sm:w-auto"
             >
-              <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados" target="_blank" rel="noopener noreferrer">
-                Agendar Diagnóstico
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-white text-foreground hover:bg-white/10 text-base bg-transparent w-full sm:w-auto"
-            >
-              <Link href="/servicos">Conhecer Serviços</Link>
-            </Button>
-          </motion.div>
+              Agendar Diagnóstico
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </a>
 
-          {/* Trust Indicators */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.9 }}
-            className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-8 pt-8 text-xs sm:text-sm text-muted-foreground px-4"
-          >
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-white rounded-full shrink-0 text-chart-1" />
-              <span className="text-chart-2">Atuação em 12+ países</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-white rounded-full shrink-0" />
-              <span className="text-chart-2">R$ 122M+ economizados</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-white rounded-full shrink-0" />
-              <span className="text-center sm:text-left text-chart-2">
-                Especialistas em ativos digitais desde 2017
-              </span>
-            </div>
+            <a
+              href="https://www.formsbblaw.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2
+                         px-8 py-4 border border-white/20 text-white bg-transparent
+                         font-medium text-sm tracking-widest uppercase
+                         hover:border-white hover:bg-white hover:text-black
+                         transition-all duration-300 w-full sm:w-auto"
+            >
+              Iniciar Projeto
+            </a>
           </motion.div>
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Scroll indicator - mais minimalista */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block"
+        transition={{ duration: 1, delay: 1.5 }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-3"
       >
+        <span className="text-[10px] text-white/30 uppercase tracking-[0.3em] font-light">Explorar</span>
         <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-          className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-2"
-        >
-          <motion.div className="w-1 h-2 bg-white/50 rounded-full" />
-        </motion.div>
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          className="w-px h-12 bg-linear-to-b from-white/40 to-transparent"
+        />
       </motion.div>
     </section>
   );

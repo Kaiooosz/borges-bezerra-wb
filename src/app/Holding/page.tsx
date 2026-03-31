@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from "react"
+import { motion } from "framer-motion"
 import { Shield, Building2, TrendingUp, ArrowRight, Mail, Phone, Users, Lock, FileText } from "lucide-react"
 import { Header } from "@/components/header"
 import { Download } from 'lucide-react';
@@ -114,68 +115,64 @@ export default function HoldingPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-background text-foreground font-source-serif-pro">
+    <div className="min-h-screen bg-background text-foreground tracking-tight">
       <div
         className="fixed top-0 left-0 h-1 --muted-foregroun z-50 transition-all duration-300"
         style={{ width: `${scrollProgress}%` }}
       />
 
-      {/* HEADER */}
-      <Header />
+      {/* HEADER FOI REMOVIDO POIS JÁ ESTÁ NO LAYOUT */}
 
       {/* HERO SECTION */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
+        {/* Grid background responsivo ao tema */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-30 pointer-events-none" />
 
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl opacity-50" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl opacity-50" />
         </div>
 
         <div className="relative z-10 px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <div className="mb-12 flex justify-center">
-              <div className="w-full max-w-[100px] sm:max-w-140px md:max-w-[180px]">
-                <div className="rounded-3xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover rounded-3xl"
-                  >
-                    <source
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Animac%CC%A7a%CC%83o%20logo-fj6CGOTzhzrRYqVrNCXk6nZpFllLH3.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                </div>
-              </div>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1.2, ease: "easeOut" }}
+              className="mb-12 flex justify-center relative"
+            >
+              <div className="absolute inset-0 bg-foreground/5 blur-3xl rounded-full scale-150" />
+              <img
+                src="/LogoBranco.svg"
+                alt="Bezerra Borges Logo"
+                className="relative z-10 w-24 h-24 md:w-32 md:h-32 object-contain brightness-110"
+              />
+            </motion.div>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance">
-              Holdings Patrimoniais e Empresariais: <span className="italic text-zinc-400">Proteja e Multiplique</span>
+            <h1 className="font-source-serif-pro font-light text-4xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tight text-white mb-8 text-balance leading-[1.1]">
+              Holdings <span className="italic">Patrimoniais</span> <br />
+              <span className="font-bold">Proteja</span> e <span className="italic text-white/40">Multiplique</span>
             </h1>
-            <p className="text-lg md:text-xl text-zinc-400 max-w-3xl mx-auto text-pretty">
+            <p className="text-base md:text-xl text-white/50 max-w-3xl mx-auto text-pretty leading-relaxed font-light tracking-tight">
               Estruture seu patrimônio e empresas com segurança jurídica, eficiência tributária e planejamento sucessório inteligente. A BBLAW transforma complexidade em estratégia.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
               <a
-                href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+                href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group px-8 py-4 bg-white text-black rounded-full hover:bg-gray-200 transition-all font-semibold flex items-center justify-center gap-2 hover:scale-105 hover:shadow-xl duration-300"
+                className="btn-primary"
               >
-                Agendar Consultoria Paga ($125)
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                Agendar Consultoria ($125)
+                <ArrowRight className="h-4 w-4" />
               </a>
               <button
                 onClick={handleDownload}
-                className="px-8 py-4 border-2 border-white text-foreground rounded-full hover:bg-white/10 transition-all font-semibold hover:scale-105 duration-300 flex items-center justify-center gap-2"
+                className="btn-outline"
               >
                 Baixar Guia Completo
-                <Download className="h-5 w-5" />
+                <Download className="h-4 w-4" />
               </button>
             </div>
           </div>
@@ -186,8 +183,10 @@ export default function HoldingPage() {
       <section id="benefits" className="py-20 md:py-32 border-t border-border">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Por que criar uma holding?</h2>
-            <p className="text-zinc-400 text-lg max-w-2xl mx-auto text-pretty">
+            <h2 className="font-source-serif-pro font-light text-3xl md:text-5xl tracking-tight text-foreground">
+                Por que criar uma holding?
+            </h2>
+            <p className="text-muted-foreground text-sm md:text-base mt-2 max-w-xl mx-auto">
               Vantagens estratégicas que transformam a gestão do seu patrimônio
             </p>
           </div>
@@ -196,11 +195,15 @@ export default function HoldingPage() {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 group hover:shadow-xl hover:scale-105"
+                className="p-10 bg-muted/20 border border-white/5 rounded-none hover:bg-white/[0.02] transition-all duration-300 h-full flex flex-col"
               >
-                <benefit.icon className="h-10 w-10 mb-4 text-foreground group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">{benefit.description}</p>
+                <benefit.icon className="w-8 h-8 text-white mb-8 stroke-[1.5px]" />
+                <h3 className="font-source-serif-pro text-2xl lg:text-3xl text-white mb-4 tracking-tight">
+                  {benefit.title}
+                </h3>
+                <p className="text-base text-white/50 leading-relaxed font-light tracking-tight">
+                  {benefit.description}
+                </p>
               </div>
             ))}
           </div>
@@ -211,8 +214,10 @@ export default function HoldingPage() {
       <section id="types" className="py-20 md:py-32 border-t border-border">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Tipos de Holdings</h2>
-            <p className="text-zinc-400 text-lg max-w-2xl mx-auto text-pretty">
+            <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-6 tracking-tight">
+              Tipos de Holdings
+            </h2>
+            <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto font-light tracking-tight">
               Estruturas personalizadas para cada necessidade patrimonial e empresarial
             </p>
           </div>
@@ -221,14 +226,14 @@ export default function HoldingPage() {
             {holdingTypes.map((type, index) => (
               <div
                 key={index}
-                className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
+                className="p-8 bg-muted/30 border border-border rounded-sm hover:bg-muted/30 transition-all duration-300 hover:shadow-xl"
               >
-                <h3 className="text-2xl font-bold mb-3">{type.title}</h3>
-                <p className="text-zinc-400 mb-6 leading-relaxed">{type.description}</p>
+                <h3 className="text-2xl font-medium mb-3">{type.title}</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">{type.description}</p>
                 <ul className="space-y-2">
                   {type.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-3 --ring text-sm">
-                      <div className="w-2 h-2 rounded-full bg-white mt-2 shrink-0" />
+                      <div className="w-2 h-2 rounded-none bg-white mt-2 shrink-0" />
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -243,8 +248,10 @@ export default function HoldingPage() {
       <section id="process" className="py-20 md:py-32 border-t border-border">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Nosso processo de implementação</h2>
-            <p className="text-zinc-400 text-lg max-w-2xl mx-auto text-pretty">
+            <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-6 tracking-tight">
+              Nosso processo de implementação
+            </h2>
+            <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto font-light tracking-tight">
               Do planejamento à execução, cuidamos de cada detalhe
             </p>
           </div>
@@ -253,11 +260,11 @@ export default function HoldingPage() {
             {processSteps.map((step, index) => (
               <div
                 key={index}
-                className="relative p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
+                className="relative p-8 bg-muted/30 border border-border rounded-sm hover:bg-muted/30 transition-all duration-300 hover:shadow-xl"
               >
-                <div className="text-5xl font-bold text-foreground/10 mb-4">{step.number}</div>
-                <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">{step.description}</p>
+                <div className="text-5xl font-medium text-foreground/10 mb-4">{step.number}</div>
+                <h3 className="text-xl font-medium mb-3">{step.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
               </div>
             ))}
           </div>
@@ -268,17 +275,17 @@ export default function HoldingPage() {
       <section className="py-20 md:py-32 border-t border-border">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
-              <div className="text-5xl font-bold text-foreground mb-3">10+</div>
-              <p className="text-zinc-400">Anos de Experiência</p>
+            <div className="p-8 bg-muted/30 border border-border rounded-sm hover:bg-muted/30 transition-all duration-300 hover:shadow-lg">
+              <div className="text-5xl font-medium text-foreground mb-3">10+</div>
+              <p className="text-muted-foreground">Anos de Experiência</p>
             </div>
-            <div className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
-              <div className="text-5xl font-bold text-foreground mb-3">500+</div>
-              <p className="text-zinc-400">Holdings Estruturadas</p>
+            <div className="p-8 bg-muted/30 border border-border rounded-sm hover:bg-muted/30 transition-all duration-300 hover:shadow-lg">
+              <div className="text-5xl font-medium text-foreground mb-3">500+</div>
+              <p className="text-muted-foreground">Holdings Estruturadas</p>
             </div>
-            <div className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
-              <div className="text-5xl font-bold text-foreground mb-3">R$ 2B+</div>
-              <p className="text-zinc-400">em Patrimônio Protegido</p>
+            <div className="p-8 bg-muted/30 border border-border rounded-sm hover:bg-muted/30 transition-all duration-300 hover:shadow-lg">
+              <div className="text-5xl font-medium text-foreground mb-3">R$ 2B+</div>
+              <p className="text-muted-foreground">em Patrimônio Protegido</p>
             </div>
           </div>
         </div>
@@ -288,40 +295,40 @@ export default function HoldingPage() {
       <section id="contact" className="py-20 md:py-32 border-t border-border">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center space-y-8">
-            <h2 className="text-3xl md:text-5xl font-bold text-balance">
+            <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-8 tracking-tight">
               Pronto para Estruturar Sua Holding?
             </h2>
-            <p className="text-lg text-zinc-400 max-w-2xl mx-auto text-pretty">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
               Agende uma consultoria estratégica e descubra como uma holding pode transformar a gestão do seu patrimônio.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               <a
                 href="mailto:contato@borgesbezerra.com.br"
-                className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:scale-105"
+                className="p-6 bg-muted/30 border border-border rounded-sm hover:bg-muted/30 transition-all duration-300 hover:shadow-lg hover:scale-105"
               >
                 <Mail className="w-6 h-6 text-foreground mx-auto mb-3" />
-                <h3 className="font-bold text-foreground mb-2">Email</h3>
-                <p className="text-zinc-400 text-sm">contato@borgesbezerra.com.br</p>
+                <h3 className="font-medium text-foreground mb-2">Email</h3>
+                <p className="text-muted-foreground text-sm">contato@borgesbezerra.com.br</p>
               </a>
 
               <a
-                href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+                href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:scale-105"
+                className="p-6 bg-muted/30 border border-border rounded-sm hover:bg-muted/30 transition-all duration-300 hover:shadow-lg hover:scale-105"
               >
                 <Phone className="w-6 h-6 text-foreground mx-auto mb-3" />
-                <h3 className="font-bold text-foreground mb-2">WhatsApp</h3>
-                <p className="text-zinc-400 text-sm py-1">+55 11 98271-2025</p>
+                <h3 className="font-medium text-foreground mb-2">WhatsApp</h3>
+                <p className="text-muted-foreground text-sm py-1">+55 21 97990-1686</p>
               </a>
             </div>
 
             <a
-              href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+              href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-10 py-4 bg-white text-black rounded-full hover:bg-gray-200 transition-all font-semibold hover:scale-110 hover:shadow-xl"
+              className="inline-flex items-center gap-2 px-10 py-4 bg-white text-black rounded-none hover:bg-gray-200 transition-all font-semibold hover:scale-110 hover:shadow-xl"
             >
               Agendar Consultoria Paga ($125)
               <ArrowRight className="h-5 w-5" />

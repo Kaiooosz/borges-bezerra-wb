@@ -83,7 +83,7 @@ export default function ArtigosPage() {
                   <Button
                     asChild
                     size="lg"
-                    className="rounded-full bg-zinc-900 dark:bg-white text-zinc-100 dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-100 px-10 h-14 text-base font-semibold shadow-xl transition-all hover:scale-105 active:scale-95"
+                    className="rounded-none bg-zinc-900 dark:bg-white text-muted-foreground dark:text-muted-foreground hover:bg-zinc-800 dark:hover:bg-zinc-100 px-10 h-14 text-base font-semibold shadow-xl transition-all hover:scale-105 active:scale-95"
                   >
                     <Link href={`/artigos/${featuredArticle.slug}`}>
                       Ler artigo completo <ArrowRight className="ml-2 h-5 w-5" />
@@ -102,8 +102,8 @@ export default function ArtigosPage() {
           <button
             key={cat}
             onClick={() => setSelectedCategory(cat)}
-            className={`px-8 py-2.5 rounded-full text-[10px] font-bold tracking-widest uppercase transition-all duration-300 border ${selectedCategory === cat
-              ? "bg-zinc-900 dark:bg-zinc-100 border-zinc-900 dark:border-zinc-100 text-zinc-100 dark:text-zinc-900 shadow-lg scale-105"
+            className={`px-8 py-2.5 rounded-none text-[10px] font-medium tracking-widest uppercase transition-all duration-300 border ${selectedCategory === cat
+              ? "bg-zinc-900 dark:bg-zinc-100 border-zinc-900 dark:border-zinc-100 text-muted-foreground dark:text-muted-foreground shadow-lg scale-105"
               : "bg-card border-border text-muted-foreground hover:border-zinc-400 dark:hover:border-zinc-300 shadow-sm"
               }`}
           >
@@ -139,7 +139,7 @@ export default function ArtigosPage() {
                 </div>
 
                 <Link href={`/artigos/${article.slug}`}>
-                  <h3 className="font-source-serif-pro text-2xl font-bold leading-tight text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                  <h3 className="font-source-serif-pro text-2xl font-medium leading-tight text-foreground group-hover:text-primary transition-colors line-clamp-2">
                     {article.title}
                   </h3>
                 </Link>
@@ -150,13 +150,13 @@ export default function ArtigosPage() {
 
                 <div className="mt-8 pt-6 border-t border-border flex items-center justify-between">
                   <div className="flex flex-col">
-                    <span className="text-[10px] text-muted-foreground font-bold uppercase tracking-wider">{article.date}</span>
-                    <span className="text-[8px] text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.3em] mt-1 font-black">Bezerra Borges</span>
+                    <span className="text-[10px] text-muted-foreground font-medium uppercase tracking-wider">{article.date}</span>
+                    <span className="text-[8px] text-muted-foreground dark:text-muted-foreground uppercase tracking-[0.3em] mt-1 font-black">Bezerra Borges</span>
                   </div>
 
                   <Link
                     href={`/artigos/${article.slug}`}
-                    className="flex items-center justify-center w-12 h-12 bg-foreground text-background rounded-full transition-all duration-500 group-hover:scale-110 shadow-xl"
+                    className="flex items-center justify-center w-12 h-12 bg-foreground text-background rounded-none transition-all duration-500 group-hover:scale-110 shadow-xl"
                   >
                     <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-0.5" />
                   </Link>
@@ -172,7 +172,7 @@ export default function ArtigosPage() {
               variant="outline"
               size="lg"
               onClick={() => setVisibleCount((prev) => prev + 6)}
-              className="rounded-full px-12 h-14 border-border text-muted-foreground hover:bg-foreground hover:text-background transition-all duration-500 shadow-md hover:shadow-xl group"
+              className="rounded-none px-12 h-14 border-border text-muted-foreground hover:bg-foreground hover:text-background transition-all duration-500 shadow-md hover:shadow-xl group"
             >
               Carregar mais Insights
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

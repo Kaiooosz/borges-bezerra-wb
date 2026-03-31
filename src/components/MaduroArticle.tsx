@@ -5,9 +5,9 @@ export default function MaduroArticle() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
-      <nav className="border-b border-white/10">
+      <nav className="border-b border-border">
         {/* <div className="max-w-7xl mx-auto px-4 py-6">
-          <a href="/artigos" className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
+          <a href="/artigos" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
             <ArrowLeft className="h-4 w-4" />
             <span>Voltar para artigos</span>
           </a>
@@ -18,8 +18,8 @@ export default function MaduroArticle() {
       <div className="relative pt-20 md:pt-32 pb-12 md:pb-20 px-4">
         <div className="max-w-4xl mx-auto">
           {/* Category & Meta */}
-          <div className="flex flex-wrap items-center gap-3 md:gap-4 mb-6 md:mb-8 text-sm text-zinc-400">
-            <span className="px-3 py-1 bg-white/5 rounded-full border border-white/10">
+          <div className="flex flex-wrap items-center gap-3 md:gap-4 mb-6 md:mb-8 text-sm text-muted-foreground">
+            <span className="px-3 py-1 bg-muted/20 rounded-none border border-border">
               Cripto & Tributação
             </span>
             <div className="flex items-center gap-2">
@@ -38,16 +38,16 @@ export default function MaduroArticle() {
           </h1>
 
           {/* Author & Actions */}
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-t border-b border-white/10 py-4 md:py-6 mb-8 md:mb-12">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-t border-b border-border py-4 md:py-6 mb-8 md:mb-12">
             <div>
-              <p className="text-sm text-zinc-400 mb-1">Por</p>
+              <p className="text-sm text-muted-foreground mb-1">Por</p>
               <p className="text-base md:text-lg">Vinicius Borges, Bezerra Borges Advocacia</p>
             </div>
             <div className="flex gap-2">
-              <button className="p-2 hover:bg-white/5 rounded-lg transition-colors border border-white/10">
+              <button className="p-2 hover:bg-muted/20 rounded-sm transition-colors border border-border">
                 <Share2 className="h-5 w-5" />
               </button>
-              <button className="p-2 hover:bg-white/5 rounded-lg transition-colors border border-white/10">
+              <button className="p-2 hover:bg-muted/20 rounded-sm transition-colors border border-border">
                 <Bookmark className="h-5 w-5" />
               </button>
             </div>
@@ -57,14 +57,14 @@ export default function MaduroArticle() {
 
       {/* Featured Image */}
       <div className="max-w-5xl mx-auto px-4 mb-12 md:mb-20">
-        <div className="relative aspect-video rounded-lg overflow-hidden bg-white/5 border border-white/10">
+        <div className="relative aspect-video rounded-sm overflow-hidden bg-muted/20 border border-border">
           <img 
             src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=1200&h=675&fit=crop" 
             alt="Bitcoin e Venezuela" 
             className="w-full h-full object-cover"
           />
           <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black via-black/80 to-transparent p-4 md:p-6">
-            <p className="text-xs md:text-sm text-zinc-300 italic">
+            <p className="text-xs md:text-sm text-muted-foreground italic">
               Alex Saab abraça Nicolás Maduro em seu retorno a Caracas em dezembro de 2023. Com Maduro agora sob custódia dos EUA, Saab pode deter as chaves da fortuna oculta da Venezuela.
             </p>
           </div>
@@ -78,7 +78,7 @@ export default function MaduroArticle() {
           <h2 className="font-source-serif-pro text-2xl md:text-4xl font-normal mb-6 md:mb-8">
             Introdução: A Captura e a Pergunta de US$ 60 Bilhões
           </h2>
-          <div className="space-y-6 text-zinc-300 leading-relaxed text-base md:text-lg">
+          <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg">
             <p>
               Nas primeiras horas de 03 de janeiro de 2026, uma operação sigilosa das forças especiais norte-americanas resultou na captura de Nicolás Maduro em Caracas. O evento, uma das mais dramáticas intervenções dos EUA na América Latina desde a invasão do Panamá em 1989, foi celebrado em Washington como um golpe decisivo contra o narcotráfico e a tirania. Contudo, enquanto Maduro era transportado para Nova York para enfrentar acusações federais, uma pergunta muito mais complexa e urgente ecoava nos corredores da inteligência global: Onde está o dinheiro?
             </p>
@@ -100,7 +100,7 @@ export default function MaduroArticle() {
           <h3 className="font-source-serif-pro text-xl md:text-2xl font-normal mb-4 md:mb-6">
             O Arquiteto: Alex Saab, o Agente Duplo
           </h3>
-          <div className="space-y-6 text-zinc-300 leading-relaxed text-base md:text-lg mb-10 md:mb-12">
+          <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg mb-10 md:mb-12">
             <p>
               Nascido na Colômbia, Alex Saab ascendeu de empresário têxtil a principal facilitador financeiro de Maduro. Introduzido ao círculo de poder pela falecida senadora colombiana Piedad Córdoba, Saab se tornou o homem de confiança para as operações mais sensíveis do regime. Ele orquestrou desde esquemas de importação superfaturada, como no programa de habitação "Gran Mision Vivienda Venezuela", até a manipulação do programa de alimentos subsidiados (CLAP), usando uma teia de empresas de fachada em Hong Kong, Turquia e Emirados Árabes Unidos.
             </p>
@@ -115,7 +115,7 @@ export default function MaduroArticle() {
           <h3 className="font-source-serif-pro text-xl md:text-2xl font-normal mb-4 md:mb-6">
             O Mensageiro: David Nicolas Rubio Gonzalez
           </h3>
-          <div className="space-y-6 text-zinc-300 leading-relaxed text-base md:text-lg">
+          <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg">
             <p>
               Se Saab era o cérebro, a operação precisava de mãos confiáveis para o trabalho físico. Fontes da inteligência apontam para David Nicolas Rubio Gonzalez, filho de Álvaro Pulido (sócio de longa data de Saab), como um dos principais "mensageiros" do ouro. Enquanto seu pai foi indiciado criminalmente, David foi apenas sancionado pelo Tesouro dos EUA em 2019, uma assimetria que sugere um papel complexo, talvez de cooperação ou de menor relevância estratégica para os investigadores.
             </p>
@@ -131,75 +131,75 @@ export default function MaduroArticle() {
             O Esquema de Blindagem Financeira: As 4 Etapas
           </h2>
           
-          <div className="bg-white/5 border border-white/10 rounded-lg p-4 md:p-8 mb-8 md:mb-10">
+          <div className="bg-muted/20 border border-border rounded-sm p-4 md:p-8 mb-8 md:mb-10">
             <div className="space-y-6 md:space-y-8">
               {/* Step 1 */}
-              <div className="border-l-2 border-white/20 pl-4 md:pl-6">
+              <div className="border-l-2 border-border pl-4 md:pl-6">
                 <h4 className="text-lg md:text-xl font-semibold mb-3 md:mb-4">
                   1. Extração Ilegal e Exportação em Massa
                 </h4>
-                <p className="text-zinc-300 mb-2 text-sm md:text-base">
+                <p className="text-muted-foreground mb-2 text-sm md:text-base">
                   <span className="font-semibold">Ação:</span> O ouro é extraído na região do Arco Minero del Orinoco e processado pela estatal CVG Minerven.
                 </p>
-                <p className="text-zinc-300 mb-3 text-sm md:text-base">
+                <p className="text-muted-foreground mb-3 text-sm md:text-base">
                   <span className="font-semibold">Resultado:</span> Somente em 2018, 73,2 toneladas de ouro (equivalentes a US$ 2,7 bilhões) foram retiradas do país.
                 </p>
-                <p className="text-xs md:text-sm text-zinc-400">
+                <p className="text-xs md:text-sm text-muted-foreground">
                   Ativo: Ouro | Local: Venezuela
                 </p>
               </div>
 
               {/* Step 2 */}
-              <div className="border-l-2 border-white/20 pl-4 md:pl-6">
+              <div className="border-l-2 border-border pl-4 md:pl-6">
                 <h4 className="text-lg md:text-xl font-semibold mb-3 md:mb-4">
                   2. Refinamento em Mercados Alternativos
                 </h4>
-                <p className="text-zinc-300 mb-2 text-sm md:text-base">
+                <p className="text-muted-foreground mb-2 text-sm md:text-base">
                   <span className="font-semibold">Ação:</span> O ouro segue para refinarias e centros comerciais fora do radar ocidental.
                 </p>
-                <p className="text-zinc-300 mb-3 text-sm md:text-base">
+                <p className="text-muted-foreground mb-3 text-sm md:text-base">
                   <span className="font-semibold">Resultado:</span> Conversão do metal em moeda forte (Dólares e Euros).
                 </p>
-                <p className="text-xs md:text-sm text-zinc-400">
+                <p className="text-xs md:text-sm text-muted-foreground">
                   Ativo: Ouro, Dólares, Euros | Local: Turquia, Emirados Árabes Unidos, Irã
                 </p>
               </div>
 
               {/* Step 3 */}
-              <div className="border-l-2 border-white/20 pl-4 md:pl-6">
+              <div className="border-l-2 border-border pl-4 md:pl-6">
                 <h4 className="text-lg md:text-xl font-semibold mb-3 md:mb-4">
                   3. Lavagem de Lucros via Criptomoedas
                 </h4>
-                <p className="text-zinc-300 mb-2 text-sm md:text-base">
+                <p className="text-muted-foreground mb-2 text-sm md:text-base">
                   <span className="font-semibold">Ação:</span> Os lucros da venda do ouro são utilizados na aquisição de Bitcoin e outras criptomoedas.
                 </p>
-                <p className="text-zinc-300 mb-3 text-sm md:text-base">
+                <p className="text-muted-foreground mb-3 text-sm md:text-base">
                   <span className="font-semibold">Ferramenta:</span> Utilização de brokers Over-the-Counter (OTC), que atuam fora do sistema bancário tradicional.
                 </p>
-                <p className="text-xs md:text-sm text-zinc-400">
+                <p className="text-xs md:text-sm text-muted-foreground">
                   Ativo: Bitcoin (BTC), Tether (USDT) | Local: Turquia, Emirados Árabes Unidos
                 </p>
               </div>
 
               {/* Step 4 */}
-              <div className="border-l-2 border-white/20 pl-4 md:pl-6">
+              <div className="border-l-2 border-border pl-4 md:pl-6">
                 <h4 className="text-lg md:text-xl font-semibold mb-3 md:mb-4">
                   4. Ocultação e Armazenamento Inviolável
                 </h4>
-                <p className="text-zinc-300 mb-2 text-sm md:text-base">
+                <p className="text-muted-foreground mb-2 text-sm md:text-base">
                   <span className="font-semibold">Ação:</span> Os criptoativos são processados por "mixers" – serviços que embaralham transações para obliterar o rastro de origem.
                 </p>
-                <p className="text-zinc-300 mb-3 text-sm md:text-base">
+                <p className="text-muted-foreground mb-3 text-sm md:text-base">
                   <span className="font-semibold">Segurança:</span> O capital digital é armazenado em "cold wallets" (dispositivos físicos offline), cujas chaves de acesso são confiadas a um círculo interno ultrassecreto.
                 </p>
-                <p className="text-xs md:text-sm text-zinc-400">
+                <p className="text-xs md:text-sm text-muted-foreground">
                   Ativo: Bitcoin (BTC) | Local: Desconhecido
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="space-y-6 text-zinc-300 leading-relaxed text-base md:text-lg">
+          <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg">
             <p>
               Uma das operações mais audaciosas foi o swap ouro-por-gasolina com o Irã em abril de 2020. Nove toneladas de ouro venezuelano foram trocadas por 1,5 milhão de barris de gasolina, em uma operação coordenada pela Força Quds do IRGC e pelo Hezbollah, segundo vazamentos da seguradora Lloyd's.
             </p>
@@ -218,7 +218,7 @@ export default function MaduroArticle() {
           <h3 className="font-source-serif-pro text-xl md:text-2xl font-normal mb-4 md:mb-6">
             Sucesso no Sistema Tradicional
           </h3>
-          <div className="space-y-6 text-zinc-300 leading-relaxed text-base md:text-lg mb-10 md:mb-12">
+          <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg mb-10 md:mb-12">
             <p>
               <span className="font-semibold">Lava Jato (Suíça):</span> A Operação Lava Jato é o maior exemplo de sucesso na recuperação de ativos desviados para o exterior. Através de intensa cooperação jurídica internacional entre o Ministério Público Federal (MPF) e autoridades suíças, foi possível repatriar bilhões de reais. Até 2019, mais de R$ 1,1 bilhão já havia retornado ao Brasil, com outros R$ 2,8 bilhões ainda bloqueados em contas na Suíça.
             </p>
@@ -230,14 +230,14 @@ export default function MaduroArticle() {
           <h3 className="font-source-serif-pro text-xl md:text-2xl font-normal mb-4 md:mb-6">
             Fracasso na Autocustódia
           </h3>
-          <div className="space-y-6 text-zinc-300 leading-relaxed text-base md:text-lg mb-8 md:mb-10">
+          <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg mb-8 md:mb-10">
             <p>
               <span className="font-semibold">Faraó dos Bitcoins:</span> Em contraste direto, o caso de Glaidson Acácio dos Santos, o "Faraó dos Bitcoins", expõe a impotência do Estado diante da autocustódia. Preso na Operação Kryptos em 2021, Glaidson deixou para trás um notebook, hoje guardado na sede da Polícia Federal no Rio de Janeiro. Dentro dele, uma carteira de criptomoedas (Dash) com um saldo estimado em R$ 400 milhões.
             </p>
             <p>
               A PF não consegue acessar os fundos. Glaidson se recusa a fornecer a senha, mesmo com a oferta de um acordo de redução de pena. Sua resposta a um delegado resume o impasse:
             </p>
-            <blockquote className="border-l-2 border-white/20 pl-4 md:pl-6 italic text-lg md:text-xl my-6 md:my-8 text-zinc-200">
+            <blockquote className="border-l-2 border-border pl-4 md:pl-6 italic text-lg md:text-xl my-6 md:my-8 text-muted-foreground">
               "É a minha aposentadoria, doutor."
             </blockquote>
             <p>
@@ -246,33 +246,33 @@ export default function MaduroArticle() {
           </div>
 
           {/* Comparison Table */}
-          <div className="bg-white/5 border border-white/10 rounded-lg overflow-hidden">
+          <div className="bg-muted/20 border border-border rounded-sm overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full text-sm md:text-base">
-                <thead className="bg-white/5">
+                <thead className="bg-muted/20">
                   <tr>
-                    <th className="text-left p-3 md:p-4 font-semibold border-b border-white/10">Cenário de Ativos</th>
-                    <th className="text-left p-3 md:p-4 font-semibold border-b border-white/10">Eficácia da Justiça</th>
-                    <th className="text-left p-3 md:p-4 font-semibold border-b border-white/10">Exemplo</th>
+                    <th className="text-left p-3 md:p-4 font-semibold border-b border-border">Cenário de Ativos</th>
+                    <th className="text-left p-3 md:p-4 font-semibold border-b border-border">Eficácia da Justiça</th>
+                    <th className="text-left p-3 md:p-4 font-semibold border-b border-border">Exemplo</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-white/10">
-                  <tr className="hover:bg-white/5 transition-colors">
+                  <tr className="hover:bg-muted/20 transition-colors">
                     <td className="p-3 md:p-4">Ativos em Bancos (Exterior)</td>
                     <td className="p-3 md:p-4 font-semibold">Alta (com cooperação)</td>
                     <td className="p-3 md:p-4">Lava Jato (Suíça)</td>
                   </tr>
-                  <tr className="hover:bg-white/5 transition-colors">
+                  <tr className="hover:bg-muted/20 transition-colors">
                     <td className="p-3 md:p-4">Cripto em Exchanges (Brasil)</td>
                     <td className="p-3 md:p-4 font-semibold">Média a Alta</td>
                     <td className="p-3 md:p-4">Operação Cripto Car</td>
                   </tr>
-                  <tr className="hover:bg-white/5 transition-colors">
+                  <tr className="hover:bg-muted/20 transition-colors">
                     <td className="p-3 md:p-4">Cripto em Autocustódia</td>
                     <td className="p-3 md:p-4 font-semibold">Nula (sem cooperação)</td>
                     <td className="p-3 md:p-4">Faraó dos Bitcoins</td>
                   </tr>
-                  <tr className="hover:bg-white/5 transition-colors">
+                  <tr className="hover:bg-muted/20 transition-colors">
                     <td className="p-3 md:p-4">Cripto Transferido p/ Exterior</td>
                     <td className="p-3 md:p-4 font-semibold">Muito Baixa</td>
                     <td className="p-3 md:p-4">Esposa de Glaidson</td>
@@ -288,7 +288,7 @@ export default function MaduroArticle() {
           <h2 className="font-source-serif-pro text-2xl md:text-4xl font-normal mb-6 md:mb-8">
             Conclusão: A Nova Fronteira da Soberania e do Risco
           </h2>
-          <div className="space-y-6 text-zinc-300 leading-relaxed text-base md:text-lg">
+          <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg">
             <p>
               A captura de Nicolás Maduro pode ter encerrado um capítulo da história venezuelana, mas abriu um novo e complexo debate sobre a natureza do poder e da riqueza no século XXI. A arquitetura financeira supostamente criada por Alex Saab não é apenas um esquema de lavagem de dinheiro em escala épica; é um estudo de caso sobre os limites do sistema financeiro tradicional e a ascensão de uma alternativa descentralizada e resistente à censura.
             </p>
@@ -305,16 +305,16 @@ export default function MaduroArticle() {
         </section>
 
         {/* Disclaimer */}
-        <div className="bg-white/5 border border-white/10 rounded-lg p-4 md:p-6 mb-12 md:mb-16">
-          <p className="text-xs md:text-sm text-zinc-400 italic leading-relaxed">
+        <div className="bg-muted/20 border border-border rounded-sm p-4 md:p-6 mb-12 md:mb-16">
+          <p className="text-xs md:text-sm text-muted-foreground italic leading-relaxed">
             <span className="font-semibold not-italic">Aviso Legal:</span> Este artigo tem caráter informativo e não constitui aconselhamento jurídico. A estruturação de patrimônio, especialmente envolvendo ativos digitais e jurisdições internacionais, é uma matéria de alta complexidade que exige análise individualizada por profissionais qualificados. O escritório Bezerra Borges Advocacia possui expertise para analisar seu caso e propor as melhores soluções, sempre dentro dos limites da legalidade.
           </p>
         </div>
 
         {/* References */}
-        <section className="border-t border-white/10 pt-8 md:pt-10 mb-12 md:mb-16">
+        <section className="border-t border-border pt-8 md:pt-10 mb-12 md:mb-16">
           <h3 className="text-lg md:text-xl font-semibold mb-4 md:mb-6">Referências</h3>
-          <ol className="space-y-2 md:space-y-3 text-xs md:text-sm text-zinc-400 leading-relaxed">
+          <ol className="space-y-2 md:space-y-3 text-xs md:text-sm text-muted-foreground leading-relaxed">
             <li>[1] Hope, B., & Preve, C. (2026). The $60 Billion Question: Is Venezuela Secretly A Bitcoin Superpower? Whale Hunting / ZeroHedge.</li>
             <li>[2] U.S. Department of the Treasury. (2019). Treasury Disrupts Corruption Network Stealing from Venezuela's Food Program.</li>
             <li>[3] Iran International. (2020). Leaked Documents Show How Iran Gets Gold From Venezuela In Return For Gasoline.</li>
@@ -327,7 +327,7 @@ export default function MaduroArticle() {
         </section>
 
         <div className="max-w-7xl mx-auto px-4 py-6">
-          <a href="/artigos" className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
+          <a href="/artigos" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
             <ArrowLeft className="h-4 w-4" />
             <span>Voltar para artigos</span>
           </a>

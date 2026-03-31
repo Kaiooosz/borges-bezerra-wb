@@ -4,7 +4,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { HelpCircle } from "lucide-react";
 
 const faqs = [
   {
@@ -26,46 +25,45 @@ const faqs = [
   {
     question: "Quanto tempo leva para abrir uma empresa offshore?",
     answer:
-      "O prazo varia conforme a jurisdição escolhida, mas geralmente leva de 2 a 4 semanas. Jurisdições como Ilhas Virgens Britânicas e Panamá podem ser mais rápidas (7-10 dias), enquanto outras como Suíça ou Singapura podem levar até 6 semanas. Cuidamos de todo o processo para você.",
+      "O prazo varia conforme a jurisdição escolhida, mas geralmente leva de 2 a 4 semanas. Jurisdições como Ilhas Virgens Britânicas e Panamá podem ser mais rápidas (7–10 dias), enquanto outras como Suíça ou Singapura podem levar até 6 semanas. Cuidamos de todo o processo.",
   },
   {
     question: "Quais são os custos envolvidos?",
     answer:
-      "Os custos variam conforme a complexidade da estrutura, jurisdição escolhida e serviços necessários. Incluem taxas de constituição, registro, agente residente, manutenção anual e nossos honorários advocatícios. Fornecemos orçamento detalhado e transparente após análise do seu caso.",
+      "Os custos variam conforme a complexidade da estrutura, jurisdição escolhida e serviços necessários. Incluem taxas de constituição, registro, agente residente, manutenção anual e honorários advocatícios. Fornecemos orçamento detalhado e transparente após análise do seu caso.",
   },
   {
     question: "É legal ter uma empresa offshore?",
     answer:
-      "Sim, é completamente legal. Empresas offshore são utilizadas por milhões de pessoas e empresas no mundo todo para fins legítimos como internacionalização de negócios, proteção patrimonial e planejamento sucessório. O importante é manter total transparência e conformidade com as obrigações fiscais brasileiras.",
+      "Sim, é completamente legal. Empresas offshore são utilizadas por milhões de pessoas e empresas no mundo todo para fins legítimos como internacionalização de negócios, proteção patrimonial e planejamento sucessório. O importante é manter total transparência e conformidade com as obrigações fiscais.",
   },
 ];
 
 export function FAQ() {
   return (
-    <section className="py-24 px-4 bg-background">
+    <section className="py-24 px-4 bg-background border-t border-border">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto">
-          {/* Section header */}
-          <div className="text-center mb-12">
-            <h2 className="font-source-serif-pro text-3xl sm:text-4xl md:text-5xl font-light text-foreground mb-4 tracking-tight">
+          <div className="text-center mb-16">
+            <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-6 tracking-tight">
               Perguntas frequentes
             </h2>
-            <p className="text-base sm:text-lg text--chart-1 leading-relaxed">
+            <p className="text-lg md:text-xl text-white/50 font-light tracking-tight max-w-2xl mx-auto">
               Respostas para as dúvidas mais comuns sobre nossos serviços
             </p>
           </div>
 
-          {/* FAQ Accordion */}
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="divide-y divide-border border-t border-b border-border">
             {faqs.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-chart-5 border border-border rounded-lg px-6 data-[state=open]:bg-background">
-                <AccordionTrigger className="text-left text-foreground hover:--ring py-6 text-base md:text-lg font-source-serif-pro">
+                className="border-none"
+              >
+                <AccordionTrigger className="text-left text-white py-8 text-lg md:text-xl font-source-serif-pro hover:no-underline tracking-tight">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text--chart-2 leading-relaxed pb-6">
+                <AccordionContent className="text-white/50 leading-relaxed pb-8 text-base font-light tracking-tight max-w-2xl">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

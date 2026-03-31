@@ -95,12 +95,12 @@ export default function LegalGrowthPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <div className="inline-block px-4 py-2 bg-white/10 rounded-full text-sm text-foreground mb-6">
+              <div className="inline-block px-4 py-2 bg-muted/30 rounded-none text-sm text-foreground mb-6">
                 Exclusivo para Infoprodutores e Lançadores
               </div>
               <h1 className="font-source-serif-pro text-4xl md:text-6xl lg:text-7xl text-foreground mb-6 text-balance">
                 Do que adianta faturar{" "}
-                <span className="font-bold">7 dígitos</span> se você está
+                <span className="font-medium">7 dígitos</span> se você está
                 pagando{" "}
                 <span className="italic text-muted-foreground">
                   6 só de impostos
@@ -131,7 +131,7 @@ export default function LegalGrowthPage() {
         </section>
 
         {/* Problem Section */}
-        <section className="py-16 md:py-24 bg-white/5">
+        <section className="py-16 md:py-24 bg-muted/30">
           <div className=" px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -147,7 +147,7 @@ export default function LegalGrowthPage() {
               <Card className="p-8 md:p-10 bg-card border-border mb-8">
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
-                    <h3 className="text-xl font-bold text-foreground mb-4">
+                    <h3 className="text-xl font-medium text-foreground mb-4">
                       Simples Nacional
                     </h3>
                     <p className="text-muted-foreground mb-4">
@@ -157,41 +157,41 @@ export default function LegalGrowthPage() {
                       <p>21% de Simples Nacional</p>
                       <p>Direitos Trabalhistas</p>
                     </div>
-                    <p className="text-2xl font-bold text-red-400 mt-6">
+                    <p className="text-2xl font-medium text-red-400 mt-6">
                       R$ 418.740 de imposto
                     </p>
                   </div>
 
                   <div className="border-l-2 border-white/20 pl-8">
-                    <h3 className="text-xl font-bold text-foreground mb-4">
+                    <h3 className="text-xl font-medium text-foreground mb-4">
                       Com Legal Growth
                     </h3>
                     <p className="text-muted-foreground mb-4">
                       Mesmas 2000 vendas
                     </p>
-                    <div className="space-y-2 text-green-400">
+                    <div className="space-y-2 text-foreground">
                       <p>1,2% de Imposto de Renda</p>
                       <p>1,08% de CSLL</p>
                       <p>0% de ISS, ICMS, PIS, COFINS</p>
                     </div>
-                    <p className="text-2xl font-bold text-green-400 mt-6">
+                    <p className="text-2xl font-medium text-foreground mt-6">
                       R$ 45.463 de imposto
                     </p>
                   </div>
                 </div>
 
                 <div className="mt-8 pt-8 border-t border-white/20 text-center">
-                  <p className="text-3xl font-bold text-foreground">
+                  <p className="text-3xl font-medium text-foreground">
                     Economia de R$ 373.276,80
                   </p>
-                  <p className="text-xl text-green-400 mt-2">
+                  <p className="text-xl text-foreground mt-2">
                     ou 89,14% dos seus gastos atuais
                   </p>
                 </div>
               </Card>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-foreground flex items-center gap-2">
+                <h3 className="text-xl font-medium text-foreground flex items-center gap-2">
                   Além dos impostos, você enfrenta:
                 </h3>
                 <ul className="space-y-3">
@@ -200,7 +200,7 @@ export default function LegalGrowthPage() {
                       key={problem}
                       className="flex items-start gap-3 text-muted-foreground"
                     >
-                      <div className="w-2 h-2 bg-red-400 rounded-full mt-2 shrink-0" />
+                      <div className="w-2 h-2 bg-red-400 rounded-none mt-2 shrink-0" />
                       <span>{problem}</span>
                     </li>
                   ))}
@@ -243,7 +243,7 @@ export default function LegalGrowthPage() {
                     <h3 className="font-source-serif-pro text-xl text-foreground mb-2">
                       {pillar.title}
                     </h3>
-                    <p className="text-sm text-green-400 mb-4 font-semibold">
+                    <p className="text-sm text-foreground mb-4 font-semibold">
                       {pillar.subtitle}
                     </p>
                     <p className="text-muted-foreground mb-4 leading-relaxed">
@@ -258,7 +258,7 @@ export default function LegalGrowthPage() {
         </section>
 
         {/* Deliverables Section */}
-        <section className="py-16 md:py-24 bg-white/5">
+        <section className="py-16 md:py-24 bg-muted/30">
           <div className=" px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -279,9 +279,9 @@ export default function LegalGrowthPage() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: index * 0.05 }}
-                    className="flex items-start gap-3 p-4 bg-card rounded-lg border border-border"
+                    className="flex items-start gap-3 p-4 bg-card rounded-sm border border-border"
                   >
-                    <CheckCircle2 className="w-6 h-6 text-green-400 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-6 h-6 text-foreground shrink-0 mt-0.5" />
                     <span className="text-foreground">{item}</span>
                   </motion.div>
                 ))}

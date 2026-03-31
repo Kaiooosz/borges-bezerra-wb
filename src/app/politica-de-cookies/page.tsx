@@ -21,7 +21,7 @@ export default function CookiePolicyPage() {
                                 className="h-24 w-24 md:h-32 md:w-32 hidden dark:block"
                             />
                         </div>
-                        <h1 className="text-3xl md:text-5xl font-bold font-source-serif-pro tracking-tight">
+                        <h1 className="text-3xl md:text-5xl font-medium font-source-serif-pro tracking-tight">
                             POLÍTICA DE COOKIES
                         </h1>
                         <h2 className="text-xl md:text-2xl font-medium text-muted-foreground font-source-serif-pro tracking-wide uppercase">
@@ -31,14 +31,14 @@ export default function CookiePolicyPage() {
 
                     <section className="space-y-6">
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-bold font-source-serif-pro">1. O QUE SÃO COOKIES?</h3>
+                            <h3 className="text-2xl font-medium font-source-serif-pro">1. O QUE SÃO COOKIES?</h3>
                             <p className="leading-relaxed">
                                 Cookies são pequenos arquivos de texto que são armazenados em seu dispositivo (computador, tablet ou celular) quando você visita um site. Eles são amplamente utilizados para fazer com que os sites funcionem, ou funcionem de maneira mais eficiente, bem como para fornecer informações aos proprietários do site.
                             </p>
                         </div>
 
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-bold font-source-serif-pro">2. COMO UTILIZAMOS OS COOKIES</h3>
+                            <h3 className="text-2xl font-medium font-source-serif-pro">2. COMO UTILIZAMOS OS COOKIES</h3>
                             <p className="leading-relaxed">
                                 O Bezerra Borges Advogados utiliza cookies para melhorar a sua experiência de navegação, analisar o tráfego do site e personalizar o conteúdo. Utilizamos os seguintes tipos de cookies:
                             </p>
@@ -56,14 +56,14 @@ export default function CookiePolicyPage() {
                         </div>
 
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-bold font-source-serif-pro">3. GERENCIAMENTO DE COOKIES</h3>
+                            <h3 className="text-2xl font-medium font-source-serif-pro">3. GERENCIAMENTO DE COOKIES</h3>
                             <p className="leading-relaxed">
                                 Você pode controlar e/ou excluir cookies conforme desejar. A maioria dos navegadores aceita cookies automaticamente, mas você pode modificar as configurações do seu navegador para recusar cookies, se preferir. No entanto, isso pode impedir que você aproveite ao máximo o site.
                             </p>
                         </div>
 
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-bold font-source-serif-pro">4. MAIS INFORMAÇÕES</h3>
+                            <h3 className="text-2xl font-medium font-source-serif-pro">4. MAIS INFORMAÇÕES</h3>
                             <p className="leading-relaxed">
                                 Para mais informações sobre como tratamos seus dados pessoais, consulte nossa{" "}
                                 <Link href="/politica-de-privacidade" className="text-primary hover:underline font-semibold">

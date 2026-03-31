@@ -2,11 +2,18 @@
 
 import React, { useState, useEffect } from "react"
 import { Mail, Phone, Menu, X, Moon, Sun } from "lucide-react"
+import { useTheme } from "next-themes"
 
 export function Header() {
   const [scrollProgress, setScrollProgress] = useState(0)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isDark, setIsDark] = useState(false)
+  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  // Prevent hydration mismatch
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,13 +37,12 @@ export function Header() {
   }, [isMenuOpen])
 
   const toggleTheme = () => {
-    setIsDark(!isDark)
-    document.documentElement.classList.toggle('dark')
+    setTheme(theme === "dark" ? "light" : "dark")
   }
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background backdrop-blur-sm border-b border-border font-source-serif-pro">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background backdrop-blur-sm border-b border-border font-sans">
         <div
           className="fixed top-0 left-0 h-1 bg-muted-foreground z-50 transition-all duration-300"
           style={{ width: `${scrollProgress}%` }}
@@ -46,9 +52,9 @@ export function Header() {
         <div className="border-b border-border">
           <div className="mx-auto px-4 py-2">
             <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground">
-              <a href="tel:+5511982712025" className="flex items-center gap-2 hover:text-foreground transition-colors">
+              <a href="tel:+5521979901686" className="flex items-center gap-2 hover:text-foreground transition-colors">
                 <Phone className="h-3 w-3" />
-                <span>+55 11 98271-2025</span>
+                <span>+55 21 97990-1686</span>
               </a>
               <a
                 href="mailto:contato@bezerraborges.com.br"
@@ -117,17 +123,26 @@ export function Header() {
             <div className="hidden md:flex items-center gap-2">
               <button
                 onClick={toggleTheme}
-                className="p-2 hover:bg-muted rounded-lg transition-colors"
+                className="p-2 hover:bg-muted rounded-sm transition-colors"
                 aria-label="Toggle theme"
               >
-                {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+                {mounted ? (theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />) : <div className="h-5 w-5" />}
               </button>
 
               <a
-                href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+                href="https://www.formsbblaw.com.br/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-2 bg-foreground text-background rounded-full hover:opacity-90 transition-all font-semibold text-sm hover:scale-105 duration-300 shadow-md"
+                className="btn-outline !py-2 !px-5 text-xs"
+              >
+                Iniciar Projeto
+              </a>
+
+              <a
+                href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary !py-2 !px-5 text-xs"
               >
                 Agendar
               </a>
@@ -137,14 +152,14 @@ export function Header() {
             <div className="flex md:hidden items-center gap-3 z-50">
               <button
                 onClick={toggleTheme}
-                className="p-2 hover:bg-muted rounded-lg transition-colors"
+                className="p-2 hover:bg-muted rounded-sm transition-colors"
                 aria-label="Toggle theme"
               >
-                {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+                {mounted ? (theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />) : <div className="h-5 w-5" />}
               </button>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="p-2 hover:bg-muted rounded-lg transition-colors"
+                className="p-2 hover:bg-muted rounded-sm transition-colors"
                 aria-label="Toggle menu"
               >
                 {isMenuOpen ? (
@@ -167,14 +182,11 @@ export function Header() {
           />
 
           {/* Mobile Menu Content */}
-          <div className="md:hidden fixed inset-0 top-[105px] z-40 overflow-y-auto bg-popover font-source-serif-pro">
+          <div className="md:hidden fixed inset-0 top-[105px] z-40 overflow-y-auto bg-popover font-sans">
             <nav className="flex flex-col items-center justify-start min-h-full gap-5 px-4 py-8 pb-20">
               <a
                 href="/"
-                className="text-2xl font-bold text-popover-foreground transition-all duration-300 hover:scale-110"
-                style={{
-                  filter: 'drop-shadow(0 0 15px hsl(var(--popover-foreground) / 0.6)) drop-shadow(0 0 25px hsl(var(--popover-foreground) / 0.4))'
-                }}
+                className="text-3xl font-source-serif-pro text-white tracking-tight transition-colors duration-200 hover:opacity-60"
                 onClick={closeMenu}
               >
                 Home
@@ -182,10 +194,7 @@ export function Header() {
 
               <a
                 href="/servicos"
-                className="text-2xl font-bold text-popover-foreground transition-all duration-300 hover:scale-110"
-                style={{
-                  filter: 'drop-shadow(0 0 15px hsl(var(--popover-foreground) / 0.6)) drop-shadow(0 0 25px hsl(var(--popover-foreground) / 0.4))'
-                }}
+                className="text-3xl font-source-serif-pro text-white tracking-tight transition-colors duration-200 hover:opacity-60"
                 onClick={closeMenu}
               >
                 Serviços
@@ -193,10 +202,7 @@ export function Header() {
 
               <a
                 href="/sobre-nos"
-                className="text-2xl font-bold text-popover-foreground transition-all duration-300 hover:scale-110"
-                style={{
-                  filter: 'drop-shadow(0 0 15px hsl(var(--popover-foreground) / 0.6)) drop-shadow(0 0 25px hsl(var(--popover-foreground) / 0.4))'
-                }}
+                className="text-3xl font-source-serif-pro text-white tracking-tight transition-colors duration-200 hover:opacity-60"
                 onClick={closeMenu}
               >
                 Sobre Nós
@@ -204,10 +210,7 @@ export function Header() {
 
               <a
                 href="/Holding"
-                className="text-2xl font-bold text-popover-foreground transition-all duration-300 hover:scale-110"
-                style={{
-                  filter: 'drop-shadow(0 0 15px hsl(var(--popover-foreground) / 0.6)) drop-shadow(0 0 25px hsl(var(--popover-foreground) / 0.4))'
-                }}
+                className="text-3xl font-source-serif-pro text-white tracking-tight transition-colors duration-200 hover:opacity-60"
                 onClick={closeMenu}
               >
                 Holding
@@ -215,10 +218,7 @@ export function Header() {
 
               <a
                 href="/offshore"
-                className="text-2xl font-bold text-popover-foreground transition-all duration-300 hover:scale-110"
-                style={{
-                  filter: 'drop-shadow(0 0 15px hsl(var(--popover-foreground) / 0.6)) drop-shadow(0 0 25px hsl(var(--popover-foreground) / 0.4))'
-                }}
+                className="text-3xl font-source-serif-pro text-white tracking-tight transition-colors duration-200 hover:opacity-60"
                 onClick={closeMenu}
               >
                 Offshore
@@ -226,10 +226,7 @@ export function Header() {
 
               <a
                 href="/artigos"
-                className="text-2xl font-bold text-popover-foreground transition-all duration-300 hover:scale-110"
-                style={{
-                  filter: 'drop-shadow(0 0 15px hsl(var(--popover-foreground) / 0.6)) drop-shadow(0 0 25px hsl(var(--popover-foreground) / 0.4))'
-                }}
+                className="text-2xl font-light text-popover-foreground tracking-tight transition-colors duration-200 hover:opacity-60"
                 onClick={closeMenu}
               >
                 Artigos
@@ -237,28 +234,34 @@ export function Header() {
 
               <a
                 href="/contact"
-                className="text-2xl font-bold text-popover-foreground transition-all duration-300 hover:scale-110"
-                style={{
-                  filter: 'drop-shadow(0 0 15px hsl(var(--popover-foreground) / 0.6)) drop-shadow(0 0 25px hsl(var(--popover-foreground) / 0.4))'
-                }}
+                className="text-3xl font-source-serif-pro text-white tracking-tight transition-colors duration-200 hover:opacity-60"
                 onClick={closeMenu}
               >
                 Contato
               </a>
 
-              {/* Mobile CTA Button */}
-              <a
-                href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 px-10 py-4 bg-popover-foreground text-popover rounded-full hover:opacity-90 transition-all font-bold text-xl hover:scale-110 duration-300 shadow-lg"
-                style={{
-                  filter: 'drop-shadow(0 0 20px hsl(var(--popover-foreground) / 0.5))'
-                }}
-                onClick={closeMenu}
-              >
-                Agendar
-              </a>
+              {/* Mobile CTA Buttons */}
+              <div className="flex flex-col gap-3 mt-8 w-full max-w-xs mx-auto">
+                <a
+                  href="https://www.formsbblaw.com.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-3 border border-popover-foreground text-popover-foreground rounded-none hover:bg-popover-foreground hover:text-popover transition-colors font-medium text-base text-center"
+                  onClick={closeMenu}
+                >
+                  Iniciar Projeto
+                </a>
+
+                <a
+                  href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-3 bg-popover-foreground text-popover rounded-none hover:opacity-80 transition-opacity font-medium text-base text-center"
+                  onClick={closeMenu}
+                >
+                  Agendar
+                </a>
+              </div>
             </nav>
           </div>
         </>

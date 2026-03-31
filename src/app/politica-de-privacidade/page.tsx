@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
                                 className="h-24 w-24 md:h-32 md:w-32 hidden dark:block"
                             />
                         </div>
-                        <h1 className="text-3xl md:text-5xl font-bold font-source-serif-pro tracking-tight">
+                        <h1 className="text-3xl md:text-5xl font-medium font-source-serif-pro tracking-tight">
                             POLÍTICAS INTERNAS
                         </h1>
                         <h2 className="text-xl md:text-2xl font-medium text-muted-foreground font-source-serif-pro tracking-wide uppercase">
@@ -48,7 +48,7 @@ export default function PrivacyPolicyPage() {
 
                     <section className="space-y-6">
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-bold font-source-serif-pro">1. APRESENTAÇÃO INSTITUCIONAL</h3>
+                            <h3 className="text-2xl font-medium font-source-serif-pro">1. APRESENTAÇÃO INSTITUCIONAL</h3>
                             <p className="leading-relaxed">
                                 O presente documento estabelece as Políticas Internas, as normas de conduta, as diretrizes operacionais e os princípios de governança do Bezerra Borges Advogados, aplicáveis a todos os seus sócios, advogados associados, consultores, colaboradores, parceiros e terceiros que atuem direta ou indiretamente em nome do escritório.
                             </p>
@@ -62,7 +62,7 @@ export default function PrivacyPolicyPage() {
                         </div>
 
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-bold font-source-serif-pro">2. IDENTIDADE INSTITUCIONAL</h3>
+                            <h3 className="text-2xl font-medium font-source-serif-pro">2. IDENTIDADE INSTITUCIONAL</h3>
 
                             <div className="space-y-2">
                                 <h4 className="text-lg font-semibold">2.1 Missão</h4>
@@ -94,7 +94,7 @@ export default function PrivacyPolicyPage() {
                         </div>
 
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-bold font-source-serif-pro">3. ESCOPO DE ATUAÇÃO DO ESCRITÓRIO</h3>
+                            <h3 className="text-2xl font-medium font-source-serif-pro">3. ESCOPO DE ATUAÇÃO DO ESCRITÓRIO</h3>
                             <p className="leading-relaxed">
                                 As políticas previstas neste Manual aplicam-se a todas as áreas de atuação do Bezerra Borges Advogados, incluindo, sem se limitar a:
                             </p>
@@ -113,7 +113,7 @@ export default function PrivacyPolicyPage() {
                         </div>
 
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-bold font-source-serif-pro">4. POLÍTICA DE ÉTICA E CONDUTA PROFISSIONAL</h3>
+                            <h3 className="text-2xl font-medium font-source-serif-pro">4. POLÍTICA DE ÉTICA E CONDUTA PROFISSIONAL</h3>
 
                             <div className="space-y-2">
                                 <h4 className="text-lg font-semibold">4.1 Observância às Normas da Advocacia</h4>
@@ -136,7 +136,7 @@ export default function PrivacyPolicyPage() {
                         </div>
 
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-bold font-source-serif-pro">5. POLÍTICA DE COMPLIANCE E CONFORMIDADE LEGAL</h3>
+                            <h3 className="text-2xl font-medium font-source-serif-pro">5. POLÍTICA DE COMPLIANCE E CONFORMIDADE LEGAL</h3>
 
                             <div className="space-y-2">
                                 <h4 className="text-lg font-semibold">5.1 Conformidade Regulatória</h4>
@@ -173,7 +173,7 @@ export default function PrivacyPolicyPage() {
                         </div>
 
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-bold font-source-serif-pro">6. POLÍTICA DE PROTEÇÃO DE DADOS E CONFIDENCIALIDADE</h3>
+                            <h3 className="text-2xl font-medium font-source-serif-pro">6. POLÍTICA DE PROTEÇÃO DE DADOS E CONFIDENCIALIDADE</h3>
 
                             <div className="space-y-2">
                                 <h4 className="text-lg font-semibold">6.1 Proteção de Dados Pessoais</h4>
@@ -204,7 +204,7 @@ export default function PrivacyPolicyPage() {
                         </div>
 
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-bold font-source-serif-pro">7. POLÍTICA DE ATENDIMENTO AO CLIENTE</h3>
+                            <h3 className="text-2xl font-medium font-source-serif-pro">7. POLÍTICA DE ATENDIMENTO AO CLIENTE</h3>
 
                             <div className="space-y-2">
                                 <h4 className="text-lg font-semibold">7.1 Padrão de Atendimento</h4>
@@ -236,7 +236,7 @@ export default function PrivacyPolicyPage() {
                         </div>
 
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-bold font-source-serif-pro">8. POLÍTICA DE CONTRATAÇÃO E HONORÁRIOS</h3>
+                            <h3 className="text-2xl font-medium font-source-serif-pro">8. POLÍTICA DE CONTRATAÇÃO E HONORÁRIOS</h3>
 
                             <div className="space-y-2">
                                 <h4 className="text-lg font-semibold">8.1 Formalização Contratual</h4>
@@ -268,7 +268,7 @@ export default function PrivacyPolicyPage() {
                         </div>
 
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-bold font-source-serif-pro">9. POLÍTICA DE GOVERNANÇA INTERNA</h3>
+                            <h3 className="text-2xl font-medium font-source-serif-pro">9. POLÍTICA DE GOVERNANÇA INTERNA</h3>
 
                             <div className="space-y-2">
                                 <h4 className="text-lg font-semibold">9.1 Organização e Responsabilidades</h4>
@@ -293,7 +293,7 @@ export default function PrivacyPolicyPage() {
                         </div>
 
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-bold font-source-serif-pro">10. POLÍTICA DE TREINAMENTO E ATUALIZAÇÃO</h3>
+                            <h3 className="text-2xl font-medium font-source-serif-pro">10. POLÍTICA DE TREINAMENTO E ATUALIZAÇÃO</h3>
                             <p className="leading-relaxed">O Bezerra Borges Advogados incentiva e exige:</p>
                             <ul className="list-none space-y-2 pl-4">
                                 <li>I. atualização técnica contínua de seus profissionais;</li>
@@ -304,7 +304,7 @@ export default function PrivacyPolicyPage() {
                         </div>
 
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-bold font-source-serif-pro">11. DISPOSIÇÕES FINAIS</h3>
+                            <h3 className="text-2xl font-medium font-source-serif-pro">11. DISPOSIÇÕES FINAIS</h3>
                             <p className="leading-relaxed">
                                 O descumprimento das políticas e diretrizes estabelecidas neste Manual poderá ensejar, conforme o caso:
                             </p>

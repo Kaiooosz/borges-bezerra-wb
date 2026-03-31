@@ -1,12 +1,16 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { Shield, Globe, Bitcoin, Scale, Building2, TrendingUp, ArrowRight, CheckCircle2 } from "lucide-react"
+import { motion } from "framer-motion";
+import {
+  Shield,
+  Globe,
+  Bitcoin,
+  Scale,
+  Building2,
+  TrendingUp,
+  ArrowRight,
+  CheckCircle2,
+} from "lucide-react";
 
 const services = [
   {
@@ -88,17 +92,16 @@ const services = [
       "Causas envolvendo cripto",
     ],
   },
-]
+];
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-
+    <div className="min-h-screen bg-background text-foreground tracking-tight">
       <main>
         {/* Hero Section */}
         <section className="pt-24 md:pt-32 pb-12 md:pb-16 relative overflow-hidden px-4">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
+          {/* Grid background responsivo ao tema */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-30 pointer-events-none" />
 
           <div className="max-w-7xl mx-auto relative z-10">
             <motion.div
@@ -107,13 +110,14 @@ export default function ServicesPage() {
               transition={{ duration: 0.6 }}
               className="text-center max-w-4xl mx-auto"
             >
-              <h1 className="font-source-serif-pro text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-foreground mb-4 md:mb-6 text-balance">
-                Soluções Jurídicas para <span className="italic text-muted-foreground">Proteger</span>,{" "}
-                <span className="font-bold">Escalar</span> e{" "}
-                <span className="italic text-muted-foreground">Libertar</span>
+              <h1 className="font-source-serif-pro font-light text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-tight text-white mb-8 md:mb-10 text-balance leading-[1.1]">
+                Soluções Jurídicas <br />
+                <span className="italic">para</span> <span className="font-bold">Proteger</span>,<br />
+                <span className="font-bold">Escalar</span> e <span className="italic text-white/40">Libertar</span>
               </h1>
-              <p className="text-lg sm:text-xl text-muted-foreground text-pretty px-2">
-                Engenharia jurídica inteligente, segura e ética — dentro e fora do Brasil
+              <p className="text-base md:text-xl text-white/50 text-pretty max-w-3xl mx-auto font-light tracking-tight">
+                Engenharia jurídica inteligente, segura e ética — dentro e fora
+                do Brasil
               </p>
             </motion.div>
           </div>
@@ -131,44 +135,49 @@ export default function ServicesPage() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
-                  <Card
-                    className={`group p-6 md:p-8 lg:p-10 h-full border-border hover:border-white/30 transition-all duration-300 ${service.highlight ? "bg-white/5" : "bg-card"
-                      }`}
+                  <div
+                    className={`group p-8 md:p-10 h-full border border-border hover:border-foreground/30 transition-all duration-300 ${
+                      service.highlight ? "bg-muted/30" : "bg-card/50"
+                    }`}
                   >
-                    <div className="flex flex-col sm:flex-row items-start gap-4 md:gap-6 mb-4 md:mb-6">
-                      <div className="p-3 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors">
+                    <div className="flex flex-col sm:flex-row items-start gap-6 mb-6">
+                      <div className="p-3 bg-muted/40 rounded-none group-hover:bg-foreground/10 transition-colors">
                         <service.icon className="w-8 h-8 text-foreground" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-source-serif-pro text-xl sm:text-2xl md:text-3xl text-foreground mb-2 md:mb-3">{service.title}</h3>
-                        <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{service.description}</p>
+                        <h3 className="font-source-serif-pro text-2xl md:text-3xl lg:text-4xl text-white mb-4 tracking-tight">
+                          {service.title}
+                        </h3>
+                        <p className="text-base md:text-lg text-white/50 leading-relaxed font-light tracking-tight">
+                          {service.description}
+                        </p>
                       </div>
                     </div>
 
-                    <ul className="space-y-2 md:space-y-3 mb-6 md:mb-8">
+                    <ul className="space-y-3 mb-8">
                       {service.features.map((feature) => (
-                        <li key={feature} className="flex items-start gap-3 text-sm md:text-base text-muted-foreground">
-                          <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-foreground shrink-0 mt-0.5" />
+                        <li
+                          key={feature}
+                          className="flex items-start gap-4 text-sm md:text-base text-white/40 font-light"
+                        >
+                          <CheckCircle2 className="w-5 h-5 text-white/20 shrink-0 mt-0.5" />
                           <span>{feature}</span>
                         </li>
                       ))}
                     </ul>
 
-                    <Button
-                      asChild
-                      variant={service.highlight ? "default" : "outline"}
+                    <a
+                      href={`/servicos/${service.slug}`}
                       className={
                         service.highlight
-                          ? "bg-white text-black hover:bg-white/90 w-full"
-                          : "border-white text-foreground hover:bg-white/10 w-full"
+                          ? "btn-primary w-full"
+                          : "btn-outline w-full"
                       }
                     >
-                      <Link href={`/servicos/${service.slug}`}>
-                        Saiba Mais
-                        <ArrowRight className="ml-2 h-5 w-5" />
-                      </Link>
-                    </Button>
-                  </Card>
+                      Saiba Mais
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -185,20 +194,26 @@ export default function ServicesPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <h2 className="font-source-serif-pro text-2xl sm:text-3xl md:text-5xl text-foreground mb-4 md:mb-6 px-2">Pronto para Proteger seu Patrimônio?</h2>
+              <h2 className="font-source-serif-pro font-light text-2xl sm:text-3xl md:text-5xl text-foreground mb-4 md:mb-6 px-2">
+                Pronto para Proteger seu Patrimônio?
+              </h2>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 px-2">
-                Agende um diagnóstico estratégico gratuito e descubra como podemos ajudar
+                Agende um diagnóstico estratégico gratuito e descubra como
+                podemos ajudar
               </p>
-              <Button asChild size="lg" className="bg-white text-black hover:bg-white/90">
-                <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados" target="_blank" rel="noopener noreferrer">
-                  Agendar Diagnóstico Gratuito
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
+              <a
+                href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                Agendar Diagnóstico Estratégico
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
             </motion.div>
           </div>
         </section>
       </main>
     </div>
-  )
+  );
 }

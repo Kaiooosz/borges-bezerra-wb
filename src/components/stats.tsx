@@ -1,22 +1,26 @@
 "use client"
 
+const metrics = [
+  { value: "10+", label: "Anos de Experiência" },
+  { value: "500+", label: "Holdings Estruturadas" },
+  { value: "R$ 2B+", label: "em Patrimônio Protegido" },
+]
+
 export function Stats() {
   return (
     <section className="py-20 md:py-32 border-t border-border">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 text-center">
-          <div className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
-            <div className="text-5xl font-bold text-foreground mb-3">10+</div>
-            <p className="text-zinc-400">Anos de Experiência</p>
-          </div>
-          <div className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
-            <div className="text-5xl font-bold text-foreground mb-3">500+</div>
-            <p className="text-zinc-400">Holdings Estruturadas</p>
-          </div>
-          <div className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 hover:shadow-lg">
-            <div className="text-5xl font-bold text-foreground mb-3">R$ 2B+</div>
-            <p className="text-zinc-400">em Patrimônio Protegido</p>
-          </div>
+        <div className="grid md:grid-cols-3 gap-px bg-border border border-border">
+          {metrics.map((m, i) => (
+            <div key={i} className="p-12 bg-background text-center hover:bg-muted/30 transition-colors duration-300">
+              <div className="font-source-serif-pro text-4xl md:text-6xl font-light mb-2 tracking-tight">
+                {m.value}
+              </div>
+              <div className="text-xs uppercase tracking-widest text-muted-foreground font-medium">
+                {m.label}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

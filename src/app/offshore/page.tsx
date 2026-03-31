@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import {
   Shield, Globe, TrendingUp, Scale, DollarSign,
   CheckCircle2, AlertTriangle, Building2,
@@ -288,46 +289,44 @@ export default function OffshoreExpertPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-background text-foreground font-">
+    <div className="min-h-screen bg-background text-foreground tracking-tight">
       {/* Progress Bar */}
       <div
-        className="fixed top-0 left-0 h-1 bg-linear-to-r from-white via-zinc-300 to-white z-50 transition-all duration-300"
+        className="fixed top-0 left-0 h-1 bg-foreground z-50 transition-all duration-300"
         style={{ width: `${scrollProgress}%` }}
       />
 
       {/* Hero Premium */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" />
+        {/* Grid background responsivo ao tema */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-30 pointer-events-none" />
+        
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl opacity-50" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl opacity-50" />
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 text-center space-y-8 mt-20">
-          <div className="mb-12 flex justify-center">
-            <div className="w-full max-w-[100px] sm:max-w-140px md:max-w-[180px]">
-              <div className="rounded-3xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-full object-cover rounded-3xl"
-                >
-                  <source
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Animac%CC%A7a%CC%83o%20logo-fj6CGOTzhzrRYqVrNCXk6nZpFllLH3.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-            </div>
-          </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1.2, ease: "easeOut" }}
+              className="mb-12 flex justify-center relative"
+            >
+              <div className="absolute inset-0 bg-foreground/5 blur-3xl rounded-full scale-150" />
+              <img
+                src="/LogoBranco.svg"
+                alt="Bezerra Borges Logo"
+                className="relative z-10 w-24 h-24 md:w-32 md:h-32 object-contain brightness-110"
+              />
+            </motion.div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance">
-            Estrutura Offshore <span className="italic text-zinc-400">que realmente funcionam.</span>
+          <h1 className="font-source-serif-pro font-light text-4xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tight leading-[1.1] text-white py-4">
+            Estrutura <span className="font-bold">Offshore</span> <br />
+            <span className="italic text-white/40">que realmente funcionam.</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-zinc-400 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-white/50 max-w-3xl mx-auto leading-relaxed text-pretty font-light tracking-tight">
             Nossa atuação em Estruturas Offshore oferece o acesso a jurisdições estáveis e moedas fortes,
             funcionando como um pilar fundamental para a proteção patrimonial e diversificação de investimentos
             seguindo o mais alto nível de conformidade internacional.
@@ -335,17 +334,17 @@ export default function OffshoreExpertPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <a
-              href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+              href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
               target="_blank"
               rel="noopener noreferrer"
-              className="group px-10 py-5 bg-white text-black rounded-full font-bold text-lg hover:bg-zinc-200 transition-all duration-300 hover:scale-105 flex items-center gap-3"
+              className="btn-primary"
             >
               Agendar Consultoria ($125)
-              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="h-4 w-4" />
             </a>
             <a
               href="#how-it-works"
-              className="px-10 py-5 bg-white/10 border-2 border-white/30 text-foreground rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300 backdrop-blur-sm"
+              className="btn-outline"
             >
               Ver Como Funciona
             </a>
@@ -353,20 +352,20 @@ export default function OffshoreExpertPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-16 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">12+</div>
-              <div className="text-zinc-400 text-sm">Jurisdições</div>
+              <div className="text-4xl font-medium mb-2">12+</div>
+              <div className="text-muted-foreground text-sm">Jurisdições</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">200+</div>
-              <div className="text-zinc-400 text-sm">Estruturas Criadas</div>
+              <div className="text-4xl font-medium mb-2">200+</div>
+              <div className="text-muted-foreground text-sm">Estruturas Criadas</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">$50M+</div>
-              <div className="text-zinc-400 text-sm">Patrimônio Protegido</div>
+              <div className="text-4xl font-medium mb-2">$50M+</div>
+              <div className="text-muted-foreground text-sm">Patrimônio Protegido</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">100%</div>
-              <div className="text-zinc-400 text-sm">Compliance Legal</div>
+              <div className="text-4xl font-medium mb-2">100%</div>
+              <div className="text-muted-foreground text-sm">Compliance Legal</div>
             </div>
           </div>
         </div>
@@ -377,83 +376,88 @@ export default function OffshoreExpertPage() {
       </section>
 
       {/* Section: Por Que Offshore */}
-      <section className="py-32 border-t border-border bg-leniear-to-b from-black to-zinc-950">
+      <section className="py-32 border-t border-border bg-leniear-to-b from-black ">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6">
-              Por Que Você Precisa de
-              <br />
-              <span className="italic text-zinc-400">Uma Estrutura Offshore</span>
+            <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-6 leading-[1.1] tracking-tight">
+              Por que você precisa de <br />
+              <span className="italic ml-4 inline-block">uma estrutura offshore</span>
             </h2>
-            <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Planejamento patrimonial legítimo com conformidade internacional.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-10 bg-white/5 border border-border rounded-2xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
-              <Shield className="h-12 w-12 mb-6 text-foreground" />
-              <h3 className="text-2xl font-bold mb-4">Proteção Patrimonial</h3>
-              <p className="text-zinc-400 leading-relaxed mb-6">
+            <div className="p-10 bg-muted/20 border border-white/5 hover:bg-white/[0.02] transition-all duration-300 flex flex-col">
+              <Shield className="w-10 h-10 text-white mb-8 stroke-[1.5px]" />
+              <h3 className="font-source-serif-pro text-2xl md:text-3xl text-white mb-4 tracking-tight">
+                Proteção Patrimonial
+              </h3>
+              <p className="text-base text-white/50 leading-relaxed font-light tracking-tight mb-8">
                 Blindagem legal contra processos, bloqueios judiciais e riscos políticos.
                 Seus ativos ficam protegidos em jurisdições com forte rule of law.
               </p>
-              <ul className="space-y-3 text-sm text-zinc-400">
+              <ul className="space-y-3 text-sm text-white/40 font-light mt-auto">
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-white/20 shrink-0 mt-0.5" />
                   <span>Separação patrimonial pessoa física vs empresa</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-white/20 shrink-0 mt-0.5" />
                   <span>Proteção contra instabilidade política/econômica</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-white/20 shrink-0 mt-0.5" />
                   <span>Mitigação de riscos jurídicos mediante segregação patrimonial lícita e governança.</span>
                 </li>
               </ul>
             </div>
 
-            <div className="p-10 bg-white/5 border border-border rounded-2xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
-              <TrendingUp className="h-12 w-12 mb-6 text-foreground" />
-              <h3 className="text-2xl font-bold mb-4">Otimização Tributária</h3>
-              <p className="text-zinc-400 leading-relaxed mb-6">
+            <div className="p-10 bg-muted/20 border border-white/5 hover:bg-white/[0.02] transition-all duration-300 flex flex-col">
+              <TrendingUp className="w-10 h-10 text-white mb-8 stroke-[1.5px]" />
+              <h3 className="font-source-serif-pro text-2xl md:text-3xl text-white mb-4 tracking-tight">
+                Otimização Tributária
+              </h3>
+              <p className="text-base text-white/50 leading-relaxed font-light tracking-tight mb-8">
                 Otimize sua carga tributária de forma legal e transparente, conforme normas aplicáveis.
               </p>
-              <ul className="space-y-3 text-sm text-zinc-400">
+              <ul className="space-y-3 text-sm text-white/40 font-light mt-auto">
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-white/20 shrink-0 mt-0.5" />
                   <span>Potencial de eficiência tributária avaliado caso a caso, em conformidade.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-white/20 shrink-0 mt-0.5" />
                   <span>Diferimento de lucros e reinvestimento eficiente</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-white/20 shrink-0 mt-0.5" />
                   <span>Tratados internacionais para evitar dupla tributação</span>
                 </li>
               </ul>
             </div>
 
-            <div className="p-10 bg-white/5 border border-border rounded-2xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
-              <Globe className="h-12 w-12 mb-6 text-foreground" />
-              <h3 className="text-2xl font-bold mb-4">Liberdade Global</h3>
-              <p className="text-zinc-400 leading-relaxed mb-6">
+            <div className="p-10 bg-muted/20 border border-white/5 hover:bg-white/[0.02] transition-all duration-300 flex flex-col">
+              <Globe className="w-10 h-10 text-white mb-8 stroke-[1.5px]" />
+              <h3 className="font-source-serif-pro text-2xl md:text-3xl text-white mb-4 tracking-tight">
+                Liberdade Global
+              </h3>
+              <p className="text-base text-white/50 leading-relaxed font-light tracking-tight mb-8">
                 Opere internacionalmente sem barreiras burocráticas. Receba de qualquer país,
                 opere em múltiplas moedas e escale sem fronteiras.
               </p>
-              <ul className="space-y-3 text-sm text-zinc-400">
+              <ul className="space-y-3 text-sm text-white/40 font-light mt-auto">
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-white/20 shrink-0 mt-0.5" />
                   <span>Contas bancárias em USD, EUR, GBP, CHF</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-white/20 shrink-0 mt-0.5" />
                   <span>Facilidade para contratos e parcerias internacionais</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-white/20 shrink-0 mt-0.5" />
                   <span>Planejamento de residência fiscal estratégica</span>
                 </li>
               </ul>
@@ -461,11 +465,9 @@ export default function OffshoreExpertPage() {
           </div>
 
           <div className="text-center mb-40 mt-42 ">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6">
-              Jurisdições
-              Exclusivas em
-              <br />
-              <span className="italic text-zinc-400">obertura Global</span>
+            <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-6 leading-[1.1] tracking-tight">
+              Jurisdições exclusivas em <br />
+              <span className="italic ml-4 inline-block">cobertura global</span>
             </h2>
           </div>
 
@@ -479,7 +481,7 @@ export default function OffshoreExpertPage() {
             </div> 
           </Link> */}
 
-          <div className="mt-42 h-96 bg-white/5 border border-border rounded-2xl flex items-center justify-center">
+          <div className="mt-42 h-96 bg-muted/30 border border-border rounded-sm flex items-center justify-center">
             <div className="">
               <Image
                 src="/image-caribe.jpg"
@@ -491,7 +493,7 @@ export default function OffshoreExpertPage() {
             </div>
           </div>
 
-          <div className="mt-42 h-96 bg-white/5 border border-border rounded-2xl flex items-center justify-center">
+          <div className="mt-42 h-96 bg-muted/30 border border-border rounded-sm flex items-center justify-center">
             <div className="">
               <Image
                 src="/image-europa.jpg"
@@ -503,7 +505,7 @@ export default function OffshoreExpertPage() {
             </div>
           </div>
 
-          <div className="mt-42 h-96 bg-white/5 border border-border rounded-2xl flex items-center justify-center">
+          <div className="mt-42 h-96 bg-muted/30 border border-border rounded-sm flex items-center justify-center">
             <div className="">
               <Image
                 src="/image-asia.jpg"
@@ -515,7 +517,7 @@ export default function OffshoreExpertPage() {
             </div>
           </div>
 
-          <div className="mt-42 h-96 bg-white/5 border border-border rounded-2xl flex items-center justify-center">
+          <div className="mt-42 h-96 bg-muted/30 border border-border rounded-sm flex items-center justify-center">
             <div className="">
               <Image
                 src="/image-sul-africa.jpg"
@@ -533,12 +535,11 @@ export default function OffshoreExpertPage() {
       <section className="py-32 border-t border-border">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6">
-              Quebrando os Mitos Sobre
-              <br />
-              <span className="italic text-zinc-400">Estruturas Offshore</span>
+            <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-6 leading-[1.1] tracking-tight">
+              Quebrando os mitos sobre <br />
+              <span className="italic ml-4 inline-block">estruturas offshore</span>
             </h2>
-            <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Vamos endereçar todas as suas preocupações com transparência e dados reais.
             </p>
           </div>
@@ -547,41 +548,41 @@ export default function OffshoreExpertPage() {
             {objections.map((obj, i) => (
               <div
                 key={i}
-                className="p-8 bg-white/5 border border-border rounded-2xl hover:bg-white/10 transition-all duration-300"
+                className="p-8 bg-muted/30 border border-border rounded-sm hover:bg-muted/30 transition-all duration-300"
               >
                 <div className="flex items-start gap-6">
                   <div className="shrink-0">
-                    <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center">
+                    <div className="w-16 h-16 bg-muted/30 rounded-sm flex items-center justify-center">
                       <obj.icon className="h-8 w-8 text-foreground" />
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-3 text-foreground">{obj.objection}</h3>
-                    <p className="text-lg --ring mb-4 font-semibold">{obj.answer}</p>
-                    <p className="text-zinc-400 leading-relaxed">{obj.detail}</p>
+                    <h3 className="font-source-serif-pro text-2xl md:text-3xl text-white mb-3 tracking-tight">{obj.objection}</h3>
+                    <p className="text-lg text-white font-medium mb-4 tracking-tight">{obj.answer}</p>
+                    <p className="text-muted-foreground leading-relaxed">{obj.detail}</p>
                   </div>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="mt-16 p-10 bg-linear-to-br from-white/10 to-white/5 border border-white/20 rounded-2xl text-center">
+          <div className="mt-16 p-10 bg-linear-to-br from-white/10 to-white/5 border border-white/20 rounded-sm text-center">
             <Award className="h-16 w-16 mx-auto mb-6 text-foreground" />
-            <h3 className="text-3xl font-bold mb-4">Adoção de políticas e controles de compliance, com auditoria e atualização contínuas.</h3>
+            <h3 className="text-3xl font-medium mb-4">Adoção de políticas e controles de compliance, com auditoria e atualização contínuas.</h3>
             <p className="text-xl --ring mb-6 max-w-3xl mx-auto">
               Todas as nossas estruturas são 100% declaradas e em conformidade com a legislação brasileira e internacional.
-              <span className="text-foreground font-bold">Você não assume riscos legais - apenas otimiza o que é seu por direito.</span>
+              <span className="text-foreground font-medium">Você não assume riscos legais - apenas otimiza o que é seu por direito.</span>
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <div className="px-6 py-3 bg-white/10 rounded-full border border-white/20 backdrop-blur-sm">
+              <div className="px-6 py-3 bg-muted/30 rounded-none border border-white/20 backdrop-blur-sm">
                 <CheckCircle2 className="inline h-5 w-5 mr-2" />
                 Declaração DIRPF Completa
               </div>
-              <div className="px-6 py-3 bg-white/10 rounded-full border border-white/20 backdrop-blur-sm">
+              <div className="px-6 py-3 bg-muted/30 rounded-none border border-white/20 backdrop-blur-sm">
                 <CheckCircle2 className="inline h-5 w-5 mr-2" />
                 e-Financeira e CBE
               </div>
-              <div className="px-6 py-3 bg-white/10 rounded-full border border-white/20 backdrop-blur-sm">
+              <div className="px-6 py-3 bg-muted/30 rounded-none border border-white/20 backdrop-blur-sm">
                 <CheckCircle2 className="inline h-5 w-5 mr-2" />
                 CRS/FATCA Compliance
               </div>
@@ -592,23 +593,6 @@ export default function OffshoreExpertPage() {
 
       <OffshoreComplianceCard />
 
-      {/* Footer */}
-      <footer className="border-t border-border py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center">
-            <Building2 className="h-12 w-12 mx-auto mb-4 text-foreground" />
-            <h3 className="text-2xl font-bold mb-2">BBLAW - Bezerra Borges Advocacia</h3>
-            <p className="text-zinc-400 mb-8">Estruturas offshore profissionais desde 2016</p>
-            <div className="space-y-2 text-sm text-zinc-400">
-              <p>contato@borgesbezerra.com.br</p>
-              <p>+55 11 98271-2025</p>
-            </div>
-          </div>
-          <div className="mt-12 pt-8 border-t border-border text-center text-sm text--chart-1">
-            <p>© 2024 BBLAW. Todos os direitos reservados.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

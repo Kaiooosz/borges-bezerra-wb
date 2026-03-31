@@ -7,7 +7,7 @@ const BlogCard = ({ image, title, date, author, excerpt, fullContent }: any) => 
   return (
     <>
       {/* Card */}
-      <div className="bg-background rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col h-full font-source-serif-pro">
+      <div className="bg-background rounded-sm shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col h-full font-source-serif-pro">
         {/* Imagem */}
         <div className="relative h-64 overflow-hidden">
           <img 
@@ -19,7 +19,7 @@ const BlogCard = ({ image, title, date, author, excerpt, fullContent }: any) => 
 
         {/* Conteúdo */}
         <div className="p-6 flex flex-col grow">
-          <h3 className="text-xl font-bold text-foreground mb-3 line-clamp-3 hover:text-primary transition-colors">
+          <h3 className="text-xl font-medium text-foreground mb-3 line-clamp-3 hover:text-primary transition-colors">
             {title}
           </h3>
  
@@ -36,7 +36,7 @@ const BlogCard = ({ image, title, date, author, excerpt, fullContent }: any) => 
 
             <button
               onClick={() => setIsOpen(true)}
-              className="px-6 py-2 bg-chart-4 text-black rounded-full hover:bg-chart-2 transition-all font-semibold text-sm hover:scale-105 shadow-md"
+              className="px-6 py-2 bg-muted text-black rounded-none hover:bg-muted transition-all font-semibold text-sm hover:scale-105 shadow-md"
             >
               Ver Mais
             </button>
@@ -47,16 +47,16 @@ const BlogCard = ({ image, title, date, author, excerpt, fullContent }: any) => 
       {/* Modal da Matéria Completa */}
       {isOpen && (
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fadeIn">
-          <div className="bg-background rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-slideUp">
+          <div className="bg-background rounded-sm max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-slideUp">
             {/* Header do Modal */}
-            <div className="sticky top-0 bg-chart-5 border-b border-border px-8 py-6 flex items-center justify-between rounded-t-3xl">
+            <div className="sticky top-0 bg-muted border-b border-border px-8 py-6 flex items-center justify-between rounded-none">
               <div>
                 <p className="text-sm text-muted-foreground mb-1">{date}</p>
                 <p className="text-sm font-semibold text-foreground">Por: {author}</p>
               </div>
               <button
                 onClick={() => setIsOpen(false)}
-                className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+                className="p-2 hover:bg-gray-100 rounded-none transition-colors"
               >
                 <X className="h-6 w-6 text-foreground" />
               </button>
@@ -73,11 +73,11 @@ const BlogCard = ({ image, title, date, author, excerpt, fullContent }: any) => 
 
             {/* Conteúdo da Matéria */}
             <div className="px-8 py-8">
-              <h1 className="text-4xl font-bold text-foreground mb-6">
+              <h1 className="text-4xl font-medium text-foreground mb-6">
                 {title}
               </h1>
 
-              <div className="prose prose-lg max-w-none text-chart-3 leading-relaxed">
+              <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
                 {fullContent}
               </div>
 
@@ -85,7 +85,7 @@ const BlogCard = ({ image, title, date, author, excerpt, fullContent }: any) => 
               <div className="mt-8 pt-6 border-t border-gray-200 flex justify-center">
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="px-8 py-3 bg-chart-4 text-white rounded-full hover:bg-chart-2 transition-all font-semibold"
+                  className="px-8 py-3 bg-muted text-white rounded-none hover:bg-muted transition-all font-semibold"
                 >
                   Fechar Matéria
                 </button>
@@ -141,14 +141,14 @@ export default function BlogCards() {
           <p className="mb-4">
             Na Bezerra Borges, acreditamos que o planejamento patrimonial não é apenas sobre herança, mas sobre a perenidade da sua liberdade financeira.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">1. O Fim da Era da Reatividade</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">1. O Fim da Era da Reatividade</h2>
           <p className="mb-4">
             Até pouco tempo, muitos investidores buscavam o planejamento apenas diante de uma crise ou de um processo de sucessão iminente. Em 2026, a realidade mudou. Com o aumento progressivo das alíquotas de impostos sobre transmissão (ITCMD) e a maior transparência fiscal internacional, a antecipação tornou-se a ferramenta mais eficaz de economia.
           </p>
           <p className="mb-4">
             Estruturar o patrimônio hoje significa garantir que a carga tributária não consuma décadas de trabalho em um único evento sucessório.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">2. A Holding Internacional como Escudo de Proteção</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">2. A Holding Internacional como Escudo de Proteção</h2>
           <p className="mb-4">
             Para quem possui ativos digitais, investimentos em moeda estrangeira ou operações globais, a Holding Internacional (Offshore) continua sendo o "padrão ouro".
           </p>
@@ -161,7 +161,7 @@ export default function BlogCards() {
           <p className="mb-4">
             <strong>Flexibilidade:</strong> Jurisdições como Dubai, Delaware ou Ilhas Virgens Britânicas oferecem ambientes regulatórios que respeitam a vontade do titular, facilitando a sucessão sem a burocracia do inventário brasileiro.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">3. Planejamento Sucessório: Evitando o Inventário</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">3. Planejamento Sucessório: Evitando o Inventário</h2>
           <p className="mb-4">
             O inventário judicial no Brasil é lento, caro e emocionalmente desgastante. Um planejamento patrimonial bem executado utiliza instrumentos como:
           </p>
@@ -174,11 +174,11 @@ export default function BlogCards() {
           <p className="mb-4">
             <strong>Acordos de Sócios:</strong> Definem regras claras de gestão para empresas familiares, evitando que disputas pessoais destruam o negócio.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">4. O Papel dos Ativos Digitais e Criptoativos</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">4. O Papel dos Ativos Digitais e Criptoativos</h2>
           <p className="mb-4">
             Em 2026, não se pode falar de patrimônio sem mencionar a custódia de criptoativos. A integração desses ativos ao planejamento sucessório é um dos maiores desafios jurídicos atuais. Como garantir que seus herdeiros tenham acesso às chaves privadas de forma legal e segura? A estruturação correta evita que esses ativos fiquem em "limbo" jurídico e tecnológico.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">Conclusão: O Patrimônio é seu, a estratégia é nossa.</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">Conclusão: O Patrimônio é seu, a estratégia é nossa.</h2>
           <p className="mb-4">
             O planejamento patrimonial moderno é multidisciplinar. Ele une o direito de família, o direito tributário e a visão de negócios internacionais. Na Bezerra Borges, nossa missão é desenhar a estrutura que permita a você focar no crescimento, sabendo que a base está protegida.
           </p>
@@ -202,7 +202,7 @@ export default function BlogCards() {
           <p className="mb-4">
             Na Bezerra Borges, estruturamos soluções que integram o universo cripto ao planejamento patrimonial clássico, garantindo segurança jurídica sem abrir mão da soberania financeira.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">1. O Dilema das Chaves Privadas: Herança ou Perda?</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">1. O Dilema das Chaves Privadas: Herança ou Perda?</h2>
           <p className="mb-4">
             O maior risco do investidor de cripto não é a volatilidade, mas a perda de acesso. Sem um planejamento adequado, seus ativos podem ficar inacessíveis para seus herdeiros para sempre.
           </p>
@@ -212,32 +212,32 @@ export default function BlogCards() {
           <p className="mb-4">
             <strong>Testamento Digital:</strong> Como inserir as seed phrases ou o acesso a cold wallets em um inventário de forma que não exponha a segurança dos ativos enquanto você estiver vivo?
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">2. A Tributação de Cripto em 2026: Brasil vs. Exterior</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">2. A Tributação de Cripto em 2026: Brasil vs. Exterior</h2>
           <p className="mb-4">
             Com a consolidação da legislação que equiparou ativos digitais no exterior a investimentos financeiros tradicionais para fins de tributação, a estratégia de "buy and hold" na pessoa física tornou-se mais onerosa.
           </p>
           <p className="mb-4">
             <strong>Offshores para Cripto:</strong> Estruturar a custódia de seus ativos digitais por meio de uma empresa em jurisdições favoráveis (como Ilhas Cayman ou Bahamas) pode oferecer um diferimento tributário significativo, permitindo que o rebalanceamento de portfólio ocorra sem a incidência imediata de imposto de renda sobre cada ganho de capital.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">3. Proteção Patrimonial e Blindagem Digital</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">3. Proteção Patrimonial e Blindagem Digital</h2>
           <p className="mb-4">
             Criptoativos são frequentemente vistos como "impenhoráveis" para penhora, mas a realidade em 2026 é de maior rastreabilidade pelas autoridades.
           </p>
           <p className="mb-4">
             <strong>Segregação Jurídica:</strong> Integrar suas criptomoedas a uma Holding Patrimonial ou a um Trust internacional oferece uma camada adicional de proteção contra bloqueios judiciais locais e garante que o patrimônio esteja blindado contra riscos operacionais de suas empresas no Brasil.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">4. Tokenização de Ativos Reais (RWA)</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">4. Tokenização de Ativos Reais (RWA)</h2>
           <p className="mb-4">
             O planejamento patrimonial moderno agora inclui imóveis e participações societárias tokenizadas. Gerir esses ativos exige uma visão híbrida: o conhecimento do registro de imóveis tradicional somado à expertise em contratos inteligentes (smart contracts).
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">O Desafio da Conformidade (Compliance)</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">O Desafio da Conformidade (Compliance)</h2>
           <p className="mb-4">
             A Receita Federal e os órgãos internacionais intensificaram o cruzamento de dados. O planejamento patrimonial eficaz em 2026 não se baseia em ocultar ativos, mas em estruturá-los de forma inteligente.
           </p>
           <p className="mb-4">
             Ter um portfólio cripto declarado e organizado dentro de uma estrutura internacional não apenas reduz sua carga tributária legalmente, mas também facilita processos de saída definitiva do país ou obtenção de vistos de investidor (como nos EUA ou Emirados Árabes).
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">Conclusão: O Futuro do seu Legado é Digital</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">Conclusão: O Futuro do seu Legado é Digital</h2>
           <p className="mb-4">
             Se você possui uma parcela relevante do seu patrimônio em Bitcoin, Ethereum ou Stablecoins, o momento de formalizar sua sucessão e proteção é agora. A tecnologia avança rápido, mas as leis de sucessão e tributação estão alcançando o mundo digital.
           </p>
@@ -261,21 +261,21 @@ export default function BlogCards() {
           <p className="mb-4">
             Com alíquotas que agora podem chegar a 12% ou 16% em estados que antes mantinham patamares fixos de 4%, famílias de alto patrimônio e empresários do setor digital estão liderando uma "corrida de saída" para jurisdições como Dubai, Paraguai e Ilhas Cayman.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">O Fim da Alíquota Fixa e o Impacto no Caixa das Famílias</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">O Fim da Alíquota Fixa e o Impacto no Caixa das Famílias</h2>
           <p className="mb-4">
             Até 2025, muitos estados brasileiros operavam com taxas moderadas e lineares. No entanto, o cenário de 2026 impõe uma cobrança escalonada: quanto maior o patrimônio, maior a fatia abocanhada pelo Estado.
           </p>
           <p className="mb-4">
             "O que estamos observando não é apenas uma tentativa de pagar menos imposto, mas uma busca por sobrevivência patrimonial", afirma o corpo jurídico da Bezerra Borges. "Em um inventário de uma família com R$ 50 milhões em ativos, a diferença entre a regra antiga e a nova pode significar uma perda imediata de milhões de reais em liquidez, muitas vezes forçando a venda de bens para pagar o próprio imposto."
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">Criptoativos no Radar da Receita</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">Criptoativos no Radar da Receita</h2>
           <p className="mb-4">
             Outro fator que impulsionou o noticiário econômico neste início de ano foi a integração total dos sistemas da Receita Federal com o protocolo CARF (Crypto-Asset Reporting Framework) da OCDE.
           </p>
           <p className="mb-4">
             Agora, a rastreabilidade de ativos digitais em exchanges internacionais tornou-se quase instantânea. Isso eliminou a "zona cinzenta" onde muitos investidores mantinham seus ativos, transformando a estruturação de Holdings Offshore na única via legal e eficiente para quem deseja manter a privacidade e o diferimento tributário de seus lucros em cripto.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">A Ascensão de Dubai e Paraguai</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">A Ascensão de Dubai e Paraguai</h2>
           <p className="mb-4">
             Os dados de janeiro mostram que o fluxo de capitais brasileiros não está indo apenas para os EUA.
           </p>
@@ -285,7 +285,7 @@ export default function BlogCards() {
           <p className="mb-4">
             Paraguai tem atraído produtores rurais e empresários do setor de serviços que buscam a residência fiscal estratégica para reduzir a carga tributária sobre dividendos globais.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">O que esperar para o restante de 2026?</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">O que esperar para o restante de 2026?</h2>
           <p className="mb-4">
             Analistas preveem que o volume de processos de Saída Definitiva do País atinja o pico no primeiro semestre. A tendência é que o Planejamento Patrimonial deixe de ser visto como um "luxo de bilionários" e passe a ser uma necessidade básica para qualquer empresário com patrimônio superior a R$ 5 milhões.
           </p>
@@ -309,21 +309,21 @@ export default function BlogCards() {
           <p className="mb-4">
             A medida, que faz parte do pacote de ajuste fiscal e reforma da renda, tem gerado uma onda de consultas a escritórios especializados em planejamento patrimonial, como o Bezerra Borges, por parte de sócios de empresas de médio e grande porte.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">O "Pedágio" nos Dividendos</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">O "Pedágio" nos Dividendos</h2>
           <p className="mb-4">
             Diferente do modelo anterior, onde o lucro já tributado na empresa chegava limpo ao sócio, a nova regra impõe uma retenção na fonte. Para empresários que recebem mais de R$ 50 mil mensais em dividendos de uma única fonte, a mordida de 10% passou a ser automática desde 1º de janeiro.
           </p>
           <p className="mb-4">
             "O impacto é imediato no fluxo de caixa pessoal do empresário. Muitos que utilizavam a distribuição de lucros como principal forma de remuneração agora estão tendo que recalcular o custo da sua estrutura", afirma a equipe de estratégia jurídica da Bezerra Borges.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">A Fuga para a Internacionalização</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">A Fuga para a Internacionalização</h2>
           <p className="mb-4">
             A mudança na tributação doméstica acionou um sinal de alerta para quem possui excedente de capital. Em 2026, a busca por estruturas offshore e holdings internacionais deixou de ser uma estratégia de nicho para se tornar uma necessidade de eficiência.
           </p>
           <p className="mb-4">
             Ao manter lucros em jurisdições com tratados de não bitributação ou em zonas de baixa fiscalização (como os Emirados Árabes ou certas estruturas no Reino Unido), investidores buscam o diferimento tributário: a capacidade de reinvestir o lucro global sem a incidência imediata dos 10% brasileiros, tributando apenas o que é efetivamente repatriado para consumo pessoal.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">Reajuste do IRPF e a "Nova Pejotização"</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">Reajuste do IRPF e a "Nova Pejotização"</h2>
           <p className="mb-4">
             Embora a Lei 15.270 tenha ampliado a isenção para quem ganha até R$ 5 mil, a pressão sobre os profissionais de alta renda (o topo da pirâmide) aumentou.
           </p>
@@ -333,7 +333,7 @@ export default function BlogCards() {
           <p className="mb-4">
             <strong>Planejamento de Saída:</strong> Analistas observam um aumento de 35% nos pedidos de consultoria para "Saída Definitiva do País" neste primeiro trimestre, com empresários buscando residência fiscal em países com sistemas tributários mais simples, como o Paraguai.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">O Papel do Planejamento em 2026</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">O Papel do Planejamento em 2026</h2>
           <p className="mb-4">
             Para especialistas, o ano de 2026 marca o fim do "planejamento amador". Estruturas societárias que funcionavam bem até 2024 agora são consideradas ineficientes ou até perigosas sob o novo rigor fiscal.
           </p>
@@ -357,28 +357,28 @@ export default function BlogCards() {
           <p className="mb-4">
             Se 2025 foi o ano das discussões legislativas, 2026 é o ano da realidade no caixa. Com o fim da isenção de dividendos e o cerco fechado da Receita Federal aos criptoativos, a estruturação de Holdings Internacionais deixou de ser um diferencial competitivo para se tornar o único porto seguro para a preservação de legados familiares.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">1. O "Tsunami" do ITCMD: Estados abandonam alíquotas fixas</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">1. O "Tsunami" do ITCMD: Estados abandonam alíquotas fixas</h2>
           <p className="mb-4">
             A mudança mais sentida pelas famílias de alto patrimônio neste mês é a progressividade obrigatória do ITCMD (Imposto sobre Herança e Doações). Até o final de 2025, muitos estados brasileiros mantinham alíquotas lineares de 4%. Em 2026, a realidade é outra: o imposto agora escala conforme o valor do patrimônio, atingindo o teto de 8% (e em alguns casos, discutindo-se alíquotas de até 12% em propostas de emenda).
           </p>
           <p className="mb-4">
             Além do aumento da taxa, o critério de avaliação mudou. "O Fisco não aceita mais o valor histórico de aquisição. A regra agora é o valor de mercado", explica o corpo jurídico da Bezerra Borges. "Um imóvel comprado há 20 anos por R$ 1 milhão, que hoje vale R$ 10 milhões, será tributado sobre o valor atual, o que pode inviabilizar a liquidez dos herdeiros e forçar a venda do bem apenas para pagar o imposto."
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">2. Dividendos: A mordida de 10% no topo da pirâmide</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">2. Dividendos: A mordida de 10% no topo da pirâmide</h2>
           <p className="mb-4">
             A partir de 1º de janeiro de 2026, a distribuição de lucros e dividendos acima de R$ 50 mil mensais por CNPJ passou a ser tributada em 10% na fonte. Para empresários que utilizam a empresa como veículo de acúmulo de riqueza, o impacto é severo.
           </p>
           <p className="mb-4">
             Estrategistas patrimoniais observam que essa mudança está impulsionando a revisão de acordos de sócios e a criação de estruturas de diferimento tributário fora do Brasil. Ao centralizar investimentos em uma holding no exterior, o empresário consegue reinvestir o lucro global sem a incidência imediata do imposto doméstico, tributando apenas o que é repatriado para o seu consumo pessoal no Brasil.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">3. Criptoativos: O fim da era do "radar desligado"</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">3. Criptoativos: O fim da era do "radar desligado"</h2>
           <p className="mb-4">
             Para o investidor de ativos digitais, 2026 marca o início da vigência do CARF (Crypto-Asset Reporting Framework) da OCDE. Na prática, a Receita Federal brasileira agora recebe informações automáticas de mais de 100 jurisdições sobre a custódia de criptoativos de residentes no Brasil.
           </p>
           <p className="mb-4">
             A implementação da DeCripto (Declaração de Criptoativos via e-CAC), prevista para operação total em julho de 2026, centraliza todas as movimentações. "A estratégia de manter cripto 'escondido' em exchanges internacionais acabou. O investidor inteligente agora busca o compliance preventivo: declarar e estruturar esses ativos dentro de uma holding offshore para aproveitar a eficiência tributária legal, evitando multas que podem superar 75% do valor do ativo", alerta o escritório.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">4. O Triângulo de Ouro: Dubai, Paraguai e Reino Unido</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">4. O Triângulo de Ouro: Dubai, Paraguai e Reino Unido</h2>
           <p className="mb-4">
             A busca por jurisdições estratégicas redesenhou o mapa da riqueza brasileira em 2026:
           </p>
@@ -391,7 +391,7 @@ export default function BlogCards() {
           <p className="mb-4">
             <strong>Paraguai:</strong> Consolidado como a principal opção para quem busca a Saída Definitiva parcial ou total, mantendo proximidade com o Brasil, mas com um sistema tributário territorial muito mais leve.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">Conclusão: O Custo da Inércia</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">Conclusão: O Custo da Inércia</h2>
           <p className="mb-4">
             O relatório de tendências da Bezerra Borges para 2026 aponta que o atraso em tomar uma decisão de planejamento pode custar caro. O cenário é de transparência total e tributação progressiva. A segurança patrimonial hoje não está em "esconder", mas em governança.
           </p>
@@ -415,7 +415,7 @@ export default function BlogCards() {
           <p className="mb-4">
             O fenômeno, que vem sendo chamado de "O Despertar do Tigre Guarani", é impulsionado por uma combinação rara de estabilidade macroeconômica e agressividade fiscal. Para os especialistas da Bezerra Borges, o Paraguai deixou de ser uma alternativa secundária para se tornar o pilar central de muitos planejamentos patrimoniais de alta renda.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">A Regra dos "10-10-10": O Contraste com o Custo Brasil</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">A Regra dos "10-10-10": O Contraste com o Custo Brasil</h2>
           <p className="mb-4">
             O grande motor dessa migração é a simplicidade do sistema tributário paraguaio. Enquanto o Brasil discute novas camadas de impostos sobre consumo e renda em 2026, o Paraguai mantém sua famosa estrutura baseada em três pilares:
           </p>
@@ -431,14 +431,14 @@ export default function BlogCards() {
           <p className="mb-4">
             Mais do que as alíquotas baixas, o que atrai o investidor é o Princípio da Territorialidade. No Paraguai, rendimentos obtidos fora do país são, via de regra, isentos ou subtributados para residentes fiscais. Isso significa que um empresário digital ou um investidor de criptoativos pode gerir sua riqueza global a partir de Assunção com uma eficiência financeira impossível de ser replicada em solo brasileiro sob as novas regras de 2026.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">A "Lei da Maquila" e a Expansão Industrial</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">A "Lei da Maquila" e a Expansão Industrial</h2>
           <p className="mb-4">
             Não são apenas indivíduos que estão cruzando a fronteira. O setor industrial brasileiro registrou em 2025 o maior volume de abertura de filiais no Paraguai via Lei de Maquila. Este regime permite que empresas brasileiras importem máquinas e insumos com isenção de impostos, processem os produtos no Paraguai pagando apenas 1% de tributo sobre o valor agregado e reexportem para o Brasil ou para o mundo.
           </p>
           <p className="mb-4">
             A fundação da Cebras-PY (Câmara de Empresários Brasileiros no Paraguai) em dezembro de 2025 é o símbolo máximo dessa integração. A entidade já nasce com centenas de membros buscando segurança jurídica e logística para fugir do "Custo Brasil".
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">O Boom Imobiliário em Santa Teresa e Nova Assunção</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">O Boom Imobiliário em Santa Teresa e Nova Assunção</h2>
           <p className="mb-4">
             Quem caminha pelo eixo corporativo da Avenida Santa Teresa, em Assunção, sente o impacto direto desse fluxo de capitais. O mercado imobiliário paraguaio, precificado em dólar, tornou-se o destino preferencial para a diversificação de portfólio.
           </p>
@@ -448,21 +448,21 @@ export default function BlogCards() {
           <p className="mb-4">
             <strong>Nova Assunção:</strong> O projeto da ponte "Héroes del Chaco" transformou a região de Nova Assunção no novo eldorado imobiliário, com condomínios fechados sendo vendidos quase exclusivamente para brasileiros em busca de uma "segunda residência" segura.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">Facilidade de Residência: O Fator Decisivo</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">Facilidade de Residência: O Fator Decisivo</h2>
           <p className="mb-4">
             Um dos pontos que mais pesam na balança, segundo o escritório Bezerra Borges, é a ausência da obrigatoriedade de permanência física mínima de 183 dias para manter a residência fiscal paraguaia.
           </p>
           <p className="mb-4">
             "Diferente de outros países, o Paraguai permite que o empresário obtenha a cédula de identidade e o RUC (número fiscal) com relativa agilidade, exigindo apenas uma visita a cada dois ou três anos para manter o status de residente permanente. É o 'Plano B' perfeito para quem quer manter negócios no Brasil, mas proteger sua residência fiscal", afirma a equipe jurídica.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">Conclusão: Uma Questão de Estratégia, não de Distância</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">Conclusão: Uma Questão de Estratégia, não de Distância</h2>
           <p className="mb-4">
             O Paraguai em 2026 não é mais o país do comércio de fronteira; é uma plataforma de internacionalização de baixo custo e alta segurança. Com o Brasil apertando o cerco sobre a alta renda, o vizinho oferece o que o capital mais valoriza: previsibilidade.
           </p>
           <p className="mb-4">
             O empresário que ainda enxerga o Paraguai sob o prisma da década de 90 está perdendo a maior janela de oportunidade de proteção patrimonial da América do Sul.
           </p>
-          <p className="mb-4 font-bold">
+          <p className="mb-4 font-medium">
             Como a Bezerra Borges pode te ajudar?
           </p>
           <p className="mb-4">
@@ -488,15 +488,15 @@ export default function BlogCards() {
           <p className="mb-4">
             Neste artigo completo, vamos explorar 6 jurisdições privilegiadas que oferecem benefícios fiscais significativos para operações de tráfego pago e marketing digital.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">1. Dubai - Emirados Árabes Unidos</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">1. Dubai - Emirados Árabes Unidos</h2>
           <p className="mb-4">
             Dubai se destaca como um dos principais centros financeiros globais, oferecendo 0% de imposto sobre rendimentos para empresas estabelecidas em suas zonas francas...
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">2. Estônia - União Europeia</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">2. Estônia - União Europeia</h2>
           <p className="mb-4">
             A Estônia revolucionou o empreendedorismo digital com seu programa de e-Residency, permitindo que empresários de qualquer lugar do mundo estabeleçam empresas 100% digitais...
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">3. Portugal - Regime NHR</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">3. Portugal - Regime NHR</h2>
           <p className="mb-4">
             O Regime de Residentes Não Habituais oferece benefícios fiscais significativos para profissionais qualificados e empresários...
           </p>
@@ -517,11 +517,11 @@ export default function BlogCards() {
           <p className="mb-4">
             Abrir uma empresa no Reino Unido é um dos processos mais simples e eficientes da Europa, podendo ser concluído em apenas 24 horas.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">Por que escolher o Reino Unido?</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">Por que escolher o Reino Unido?</h2>
           <p className="mb-4">
             O Reino Unido oferece estabilidade jurídica, acesso ao mercado europeu e internacional, sistema tributário favorável e processo de abertura 100% online.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">Passo a passo completo</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">Passo a passo completo</h2>
           <p className="mb-4">
             1. Escolha do tipo de empresa (Limited Company é a mais comum)<br/>
             2. Registro na Companies House<br/>
@@ -545,15 +545,15 @@ export default function BlogCards() {
           <p className="mb-4">
             Em entrevista exclusiva ao podcast da Bezerra Borges, o empresário João Silva revela os desafios, conquistas e aprendizados de sua jornada de internacionalização.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">O Início da Jornada</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">O Início da Jornada</h2>
           <p className="mb-4">
             "Tudo começou quando percebi que meu negócio estava sendo sufocado pela alta carga tributária brasileira. Foi quando decidi explorar alternativas legais para proteger meu patrimônio e expandir globalmente."
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">Por que Dubai?</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">Por que Dubai?</h2>
           <p className="mb-4">
             Dubai ofereceu a combinação perfeita: 0% de imposto de renda pessoal, infraestrutura de classe mundial, segurança e qualidade de vida excepcional para a família.
           </p>
-          <h2 className="text-2xl font-bold mt-8 mb-4">Resultados</h2>
+          <h2 className="text-2xl font-medium mt-8 mb-4">Resultados</h2>
           <p className="mb-4">
             Após 2 anos em Dubai, a empresa cresceu 300%, a carga tributária reduziu drasticamente e a qualidade de vida da família melhorou significativamente.
           </p>
@@ -566,12 +566,12 @@ export default function BlogCards() {
   ];
 
   return (
-    <div className="min-h-screen bg-linear-to-br bg-background py-16 px-13 mt-40 mb-24 font-source-serif-pro">
+    <div className="min-h-screen bg-background py-16 px-13 mt-40 mb-24 font-source-serif-pro">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-5xl font-bold text-center mb-4 text-foreground">
+        <h1 className="text-5xl font-medium text-center mb-4 text-foreground">
           Últimos Posts
         </h1>
-        <p className="text-center text-chart-2 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Fique por dentro das últimas novidades sobre estruturação internacional, offshores e proteção patrimonial
         </p>
 

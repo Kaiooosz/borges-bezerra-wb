@@ -1,86 +1,142 @@
+"use client";
+
 import React from "react";
 import { motion } from "framer-motion";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ShieldCheck, Globe, FileText, Users } from "lucide-react";
+import { ShieldCheck, Globe, FileText, Users, ArrowRight } from "lucide-react";
 
+const defaultItems = [
+  {
+    title: "Conformidade",
+    description: "Políticas internas e auditorias periódicas",
+    icon: ShieldCheck,
+  },
+  {
+    title: "Transparência",
+    description: "Relatórios claros para stakeholders",
+    icon: Globe,
+  },
+  {
+    title: "Declarações (DIRPF, CBE, e-Financeira)",
+    description: "Suporte completo para declarações brasileiras",
+    icon: FileText,
+  },
+  {
+    title: "AML / KYC",
+    description: "Procedimentos robustos de prevenção",
+    icon: Users,
+  },
+  {
+    title: "Cooperação com Autoridades",
+    description: "Compliance e cooperação internacional",
+    icon: ShieldCheck,
+  },
+];
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, x: -12 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.4, type: "tween" as const },
+  },
+};
 
 export default function OffshoreComplianceCard({
   title = "Compliance & Transparência",
-  items = [
-    { title: "Conformidade", description: "Políticas internas e auditorias periódicas", icon: ShieldCheck },
-    { title: "Transparência", description: "Relatórios claros para stakeholders", icon: Globe },
-    {
-      title: "Declarações (DIRPF, CBE, e-Financeira)",
-      description: "Suporte completo para declarações brasileiras",
-      icon: FileText,
-    },
-    { title: "AML / KYC", description: "Procedimentos robustos de prevenção", icon: Users },
-    { title: "Cooperação com Autoridades", description: "Compliance e cooperação internacional" },
-  ],
-  ctaText = "Agende Consultoria ($125)",
-
+  items = defaultItems,
+}: {
+  title?: string;
+  items?: typeof defaultItems;
 }) {
   return (
-    <motion.article
-      initial={{ opacity: 0, y: 8 }}
-      animate={{ opacity: 1, y: 0 }}
-      whileHover={{ scale: 1.01 }}
-      transition={{ duration: 0.36 }}
-      className="w-full max-w-lg mx-auto"
-    >
-      <Card className="rounded-2xl p-6 shadow-2xl dark:shadow-none mb-30">
-        <CardHeader className="mb-4">
-          <CardTitle className="text-2xl font-semibold">{title}</CardTitle>
-        </CardHeader>
+    <section className="py-16 px-4 border-t border-border">
+      <div className="max-w-2xl mx-auto">
+        <motion.article
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-80px" }}
+          variants={containerVariants}
+        >
+          {/* Header */}
+          <motion.div variants={itemVariants} className="mb-8">
+            <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground mb-3">
+              Estrutura Legal
+            </p>
+            <h2 className="font-source-serif-pro text-3xl font-light tracking-tight text-foreground">
+              {title}
+            </h2>
+          </motion.div>
 
-        <CardContent className="grid gap-4">
-          {items.map((it, idx) => {
-            const Icon = it.icon || null;
-            return (
-              <div
-                key={idx}
-                className="flex items-start gap-4 p-4 rounded-xl border border-transparent hover:border-slate-200 dark:hover:border-chart-5 transition-colors"
-              >
-                <div className="shrink-0">
-                  {Icon ? (
-                    <div className="w-10 h-10 rounded-xl bg-background dark:bg-foreground flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-chart-4 dark:text-background" />
-                    </div>
-                  ) : (
-                    <div className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-foreground" />
-                  )}
-                </div>
-                <div className="flex-1">
-                  <h4 className="text-sm font-medium text-chart-5 dark:text-slate-100">{it.title}</h4>
-                  {it.description && (
-                    <p className="text-sm text-chart-2 dark:text-chart-2 mt-1">{it.description}</p>
-                  )}
-                </div>
-              </div>
-            );
-          })}
-
-          <div className="mt-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-            <p className="text-xs text-chart-2 dark:text-chart-2">Totalmente compatível com normas brasileiras e internacionais.</p>
-
-            <div className="ml-auto">
-              {/* Button style follows shadcn/ui conventions. We add a small utility to toggle dark/light-friendly look */}
-              <Button
-                className="rounded-xl px-5 py-2 text-sm font-semibold bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 dark:bg-chart-3 dark:text-background dark:border-slate-800"
-              >
-                <a
-                  href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
-                  target="_blank"
-                  rel="noopener noreferrer"
+          {/* Items */}
+          <motion.div
+            variants={containerVariants}
+            className="border-t border-border"
+          >
+            {items.map((it, idx) => {
+              const Icon = it.icon || ShieldCheck;
+              return (
+                <motion.div
+                  key={idx}
+                  variants={itemVariants}
+                  className="flex items-start gap-5 py-5 border-b border-border group"
                 >
-                  Agendar consultoria ($125)
-                </a>
-              </Button>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-    </motion.article>
+                  {/* Number */}
+                  <span className="text-xs font-medium text-muted-foreground tabular-nums w-5 shrink-0 mt-0.5">
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+
+                  {/* Icon */}
+                  <div className="shrink-0 mt-0.5">
+                    <Icon className="w-4 h-4 text-foreground" />
+                  </div>
+
+                  {/* Text */}
+                  <div className="flex-1 min-w-0">
+                    <h4 className="text-sm font-medium text-foreground leading-snug">
+                      {it.title}
+                    </h4>
+                    {it.description && (
+                      <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
+                        {it.description}
+                      </p>
+                    )}
+                  </div>
+                </motion.div>
+              );
+            })}
+          </motion.div>
+
+          {/* Footer CTA */}
+          <motion.div
+            variants={itemVariants}
+            className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5"
+          >
+            <p className="text-xs text-muted-foreground max-w-xs leading-relaxed">
+              Totalmente compatível com normas brasileiras e internacionais.
+            </p>
+            <a
+              href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background text-sm font-medium hover:opacity-80 transition-opacity whitespace-nowrap group"
+            >
+              Agendar consultoria
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            </a>
+          </motion.div>
+        </motion.article>
+      </div>
+    </section>
   );
 }

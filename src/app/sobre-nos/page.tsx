@@ -1,9 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
-import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
   Shield,
@@ -132,20 +129,20 @@ export default function SobreNosPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-background text-foreground font-source-serif-pro">
-      <Header />
+    <div className="min-h-screen bg-background text-foreground tracking-tight">
 
       {/* Hero Section - Aparece imediatamente fixo no topo */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
+        {/* Grid background responsivo ao tema */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-30 pointer-events-none" />
 
         <div className="relative z-10 px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="font-source-serif-pro text-4xl md:text-6xl lg:text-7xl leading-tight text-balance">
-              Liberdade real exige{" "}
-              <span className="italic text-zinc-400">estratégia</span>
+            <h1 className="font-source-serif-pro font-light text-4xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1.1] tracking-tight text-white text-balance mb-8">
+              Liberdade real exige <br />
+              <span className="italic">estratégia</span>
             </h1>
-            <p className="text-lg md:text-xl text-zinc-400 max-w-3xl mx-auto text-pretty">
+            <p className="text-base md:text-xl text-white/50 max-w-3xl mx-auto text-pretty leading-relaxed font-light tracking-tight">
               A BBLAW (Bezerra Borges Advocacia) é uma firma de advocacia e
               estratégia internacional especializada em proteção patrimonial,
               internacionalização e estruturação de negócios globais, com forte
@@ -159,18 +156,18 @@ export default function SobreNosPage() {
       <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
           <motion.div {...fadeInUp} className="max-w-4xl mx-auto space-y-8">
-            <h2 className="font-source-serif-pro text-3xl md:text-5xl text-center text-balance">
-              Mais do que um escritório, somos um{" "}
-              <span className="italic text-zinc-400">ecossistema</span>
+            <h2 className="font-source-serif-pro font-light text-3xl md:text-5xl lg:text-6xl text-center text-white text-balance leading-tight">
+              Mais do que um escritório, <br />
+              somos um <span className="italic">ecossistema</span>
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6 pt-8">
               <motion.div
                 {...fadeInUp}
-                className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors"
+                className="p-10 bg-muted/20 border border-white/5 hover:bg-white/[0.02] transition-colors flex flex-col"
               >
-                <h3 className="font-source-serif-pro text-xl mb-4">O que fazemos</h3>
-                <p className="text-zinc-400 leading-relaxed">
+                <h3 className="font-source-serif-pro text-2xl md:text-3xl text-white mb-6 tracking-tight">O que fazemos</h3>
+                <p className="text-base text-white/50 leading-relaxed font-light tracking-tight">
                   Transformamos complexidades legais em estruturas estratégicas.
                   Ajudamos pessoas e empresas a operar globalmente com
                   segurança, eficiência e liberdade.
@@ -179,10 +176,10 @@ export default function SobreNosPage() {
 
               <motion.div
                 {...fadeInUp}
-                className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors"
+                className="p-10 bg-muted/20 border border-white/5 hover:bg-white/[0.02] transition-colors flex flex-col"
               >
-                <h3 className="font-source-serif-pro text-xl mb-4">Nossa missão</h3>
-                <p className="text-zinc-400 leading-relaxed">
+                <h3 className="font-source-serif-pro text-2xl md:text-3xl text-white mb-6 tracking-tight">Nossa missão</h3>
+                <p className="text-base text-white/50 leading-relaxed font-light tracking-tight">
                   Proteger, escalar e libertar o patrimônio e as operações de
                   nossos clientes, utilizando engenharia jurídica inteligente,
                   segura e ética — dentro e fora do Brasil.
@@ -196,11 +193,11 @@ export default function SobreNosPage() {
       {/* Services Section */}
       <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
-          <motion.div {...fadeInUp} className="text-center mb-16">
-            <h2 className="font-source-serif-pro text-3xl md:text-5xl mb-4 text-balance">
+          <motion.div {...fadeInUp} className="text-center mb-16 md:mb-24">
+            <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-6 tracking-tight">
               Nossas linhas de atuação
             </h2>
-            <p className="text-zinc-400 text-lg max-w-2xl mx-auto text-pretty">
+            <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto font-light tracking-tight">
               Soluções completas para proteção patrimonial e crescimento
               internacional
             </p>
@@ -214,11 +211,11 @@ export default function SobreNosPage() {
               <motion.div
                 key={index}
                 {...fadeInUp}
-                className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all group"
+                className="p-10 bg-muted/20 border border-white/5 hover:bg-white/[0.02] transition-all flex flex-col"
               >
-                <service.icon className="h-10 w-10 mb-4 text-foreground group-hover:scale-110 transition-transform" />
-                <h3 className="font-source-serif-pro text-xl mb-3">{service.title}</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">
+                <service.icon className="w-10 h-10 text-white mb-8 stroke-[1.5px]" />
+                <h3 className="font-source-serif-pro text-2xl md:text-3xl text-white mb-4 tracking-tight">{service.title}</h3>
+                <p className="text-base text-white/50 leading-relaxed font-light tracking-tight">
                   {service.description}
                 </p>
               </motion.div>
@@ -230,8 +227,8 @@ export default function SobreNosPage() {
       {/* Differentials Section */}
       <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
-          <motion.div {...fadeInUp} className="text-center mb-16">
-            <h2 className="font-source-serif-pro text-3xl md:text-5xl mb-4 text-balance">
+          <motion.div {...fadeInUp} className="text-center mb-16 md:mb-24">
+            <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-6 tracking-tight">
               Por que escolher o BBLAW
             </h2>
           </motion.div>
@@ -244,11 +241,11 @@ export default function SobreNosPage() {
               <motion.div
                 key={index}
                 {...fadeInUp}
-                className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors text-center"
+                className="p-6 bg-muted/30 border border-border rounded-sm hover:bg-muted/30 transition-colors text-center"
               >
                 <div className="text-4xl mb-4">{item.icon}</div>
                 <h3 className="font-source-serif-pro text-lg mb-2">{item.title}</h3>
-                <p className="text-zinc-400 text-sm">{item.description}</p>
+                <p className="text-muted-foreground text-sm">{item.description}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -259,31 +256,31 @@ export default function SobreNosPage() {
       <section className="py-20 md:py-32 border-t border-border">
         <div className=" px-4">
           <motion.div {...fadeInUp} className="max-w-4xl mx-auto space-y-12">
-            <div className="text-center space-y-4">
-              <h2 className="font-source-serif-pro text-3xl md:text-5xl text-balance">
+            <div className="text-center space-y-6">
+              <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-6 tracking-tight">
                 Ecossistema BBLAW
               </h2>
-              <p className="text-zinc-400 text-lg text-pretty">
+              <p className="text-lg md:text-xl text-white/50 max-w-3xl mx-auto font-light tracking-tight">
                 Fazemos parte de um grupo de empresas criadas e assessoradas por
                 Vinícius Borges, voltadas à liberdade patrimonial e financeira
               </p>
             </div>
 
-            <motion.div {...stagger} className="space-y-4">
+            <motion.div {...stagger} className="grid sm:grid-cols-2 gap-6 lg:gap-8 pt-12">
               {ecosystem.map((company, index) => (
                 <motion.div
                   key={index}
                   {...fadeInUp}
-                  className="p-6 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors"
+                  className="p-10 bg-muted/20 border border-white/5 hover:bg-white/[0.02] transition-colors flex flex-col"
                 >
-                  <h3 className="font-source-serif-pro text-lg mb-2">{company.name}</h3>
-                  <p className="text-zinc-400 text-sm">{company.description}</p>
+                  <h3 className="font-source-serif-pro text-2xl text-white mb-4 tracking-tight">{company.name}</h3>
+                  <p className="text-base text-white/50 font-light tracking-tight">{company.description}</p>
                 </motion.div>
               ))}
             </motion.div>
 
             <motion.div {...fadeInUp} className="text-center pt-8">
-              <p className="text-zinc-400 italic">
+              <p className="text-muted-foreground italic">
                 Tudo integrado. Tudo pensado para quem quer crescer e se
                 proteger com inteligência.
               </p>
@@ -299,29 +296,28 @@ export default function SobreNosPage() {
         <div className=" px-4">
           <motion.div
             {...fadeInUp}
-            className="max-w-3xl mx-auto text-center space-y-8"
+            className="max-w-4xl mx-auto text-center space-y-12"
           >
-            <h2 className="font-source-serif-pro text-3xl md:text-5xl text-balance">
+            <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-white mb-6 tracking-tight">
               Nossa filosofia
             </h2>
-            <blockquote className="text-2xl md:text-3xl font-source-serif-pro italic --ring text-balance">
+            <blockquote className="text-3xl md:text-5xl font-source-serif-pro italic text-white/80 text-balance leading-tight">
               "O BBLAW não vende documentos — entrega caminhos."
             </blockquote>
-            <p className="text-lg text-zinc-400 text-pretty">
+            <p className="text-lg md:text-xl text-white/50 max-w-3xl mx-auto text-pretty font-light tracking-tight">
               Cada cliente recebe uma engenharia jurídica feita para durar,
               resistir e escalar. Acreditamos que liberdade patrimonial é um
               direito de quem se planeja — e nós entregamos o mapa para isso.
             </p>
-            <Button
-              asChild
-              size="lg"
-              className="bg-white text-black hover:bg-zinc-200 mt-8"
+            <a
+              href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary mt-8"
             >
-              <Link href="/#contato">
-                Agendar Diagnóstico Estratégico
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
+              Agendar Diagnóstico Estratégico
+              <ArrowRight className="h-4 w-4" />
+            </a>
           </motion.div>
         </div>
         <TeamCarousel />

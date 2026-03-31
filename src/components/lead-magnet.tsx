@@ -1,12 +1,9 @@
 "use client";
 
 import type React from "react";
-
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Card } from "@/components/ui/card";
-import { BookOpen, Download } from "lucide-react";
+import { BookOpen, Check } from "lucide-react";
 
 export function LeadMagnet() {
   const [email, setEmail] = useState("");
@@ -15,8 +12,6 @@ export function LeadMagnet() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would integrate with your email service
-    console.log("Lead magnet submission:", { name, email });
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
@@ -26,84 +21,75 @@ export function LeadMagnet() {
   };
 
   return (
-    <section className="py-24 px-4 bg-background">
+    <section className="py-24 px-4 bg-muted/20 border-t border-border">
       <div className="container mx-auto">
-        <Card className="max-w-4xl mx-auto bg-linear-to-br from-background border-border p-6 md:p-8 lg:p-12">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            {/* Left side - Content */}
-            <div>
-              <div className="inline-flex p-4 rounded-lg bg-white/5 mb-6">
-                <BookOpen className="h-8 w-8 text--chart-1" />
-              </div>
-              <h2 className="font-source-serif-pro text-2xl sm:text-3xl md:text-4xl font-light text--chart-1 mb-4 tracking-tight">
+        <div className="max-w-4xl mx-auto border border-border">
+          <div className="grid md:grid-cols-2">
+            {/* Left side */}
+            <div className="p-8 md:p-12 border-b md:border-b-0 md:border-r border-border">
+              <BookOpen className="h-7 w-7 text-foreground mb-6 opacity-80" />
+              <h2 className="font-source-serif-pro text-3xl sm:text-4xl font-extralight text-white mb-6 tracking-tight leading-tight">
                 Guia essencial de estruturas empresariais internacionais
               </h2>
-              <ul className="space-y-2 text-sm text--chart-1">
-                <li className="flex items-start gap-2">
-                  <span className="text--chart-1 mt-1">•</span>
-                  <span>Jurisdições estratégicas para seu negócio</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text--chart-1 mt-1">•</span>
-                  <span>Planejamento tributário internacional</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text--chart-1 mt-1">•</span>
-                  <span>Proteção patrimonial e privacidade</span>
-                </li>
+              <ul className="space-y-4">
+                {[
+                  "Jurisdições estratégicas para seu negócio",
+                  "Planejamento tributário internacional",
+                  "Proteção patrimonial e privacidade",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-4 text-base text-white/50 font-light tracking-tight">
+                    <span className="text-white/20">—</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
             {/* Right side - Form */}
-            <div>
+            <div className="p-8 md:p-12 flex flex-col justify-center">
               {submitted ? (
                 <div className="text-center py-8">
-                  <div className="inline-flex p-4 rounded-full bg-green-500/10 mb-4">
-                    <Download className="h-8 w-8 text-green-500" />
-                  </div>
-                  <h3 className="text-xl text--chart-1 mb-2">Obrigado!</h3>
-                  <p className="text--chart-1">
-                    Verifique seu email para baixar o ebook.
+                  <Check className="h-8 w-8 text-foreground mx-auto mb-4" />
+                  <h3 className="text-xl font-medium text-foreground mb-2">Recebido</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Verifique seu email para baixar o guia.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <Input
-                      type="text"
-                      placeholder="Seu nome completo"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      required
-                      className="bg-background/50 border-border text--chart-1 placeholder:text--chart-1 focus:border-white/30"
-                    />
-                  </div>
-                  <div>
-                    <Input
-                      type="email"
-                      placeholder="Seu melhor email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      required
-                      className="bg-background/50 border-border text--chart-1 placeholder:text--chart-1 focus:border-white/30"
-                    />
-                  </div>
-                  {/* <Button
+                  <p className="text-sm font-medium text-white/80 mb-6 uppercase tracking-widest">
+                    Receba o guia gratuitamente
+                  </p>
+                  <Input
+                    type="text"
+                    placeholder="Nome completo"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                    className="bg-background border-border text-foreground placeholder:text-muted-foreground rounded-none focus-visible:ring-0 focus-visible:border-foreground"
+                  />
+                  <Input
+                    type="email"
+                    placeholder="Seu melhor email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                    className="bg-background border-border text-foreground placeholder:text-muted-foreground rounded-none focus-visible:ring-0 focus-visible:border-foreground"
+                  />
+                  <button
                     type="submit"
-                    className="w-full bg-white text-black hover:bg-zinc-200"
-                    size="lg"
+                    className="btn-primary w-full"
                   >
-                    Baixar ebook gratuito
-                    <Download className="ml-2 h-4 w-4" />
-                  </Button> */}
-                  <p className="text-xs text--chart-1 text-center">
-                    Seus dados estão protegidos e não serão compartilhados
+                    Receber guia
+                  </button>
+                  <p className="text-xs text-muted-foreground text-center">
+                    Seus dados estão protegidos e não serão compartilhados.
                   </p>
                 </form>
               )}
             </div>
           </div>
-        </Card>
+        </div>
       </div>
     </section>
   );

@@ -2,11 +2,9 @@
 
 import type React from "react";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Card } from "@/components/ui/card";
-import { MessageSquare, Send } from "lucide-react";
+import { Send } from "lucide-react";
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -18,7 +16,6 @@ export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  // 🔗 URL do seu Webhook Bitrix24
   const webhookURL =
     "https://bblaw.bitrix24.com.br/rest/37/gexzxip6uycclp7j/crm.lead.add.json?NAME%3DformData.name%252C%2520%252F%252F%2520Nome%2520do%2520contato%26PHONE%3D%2520%255B%257B%2520VALUE%253A%2520formData.phone%252C%2520VALUE_TYPE%253A%2520%2522WORK%2522%2520%257D%255D%252C%2520%252F%252F%2520Telefone%26EMAIL%3D%255B%257B%2520VALUE%253A%2520formData.email%252C%2520VALUE_TYPE%253A%2520%2522WORK%2522%2520%257D%255D%252C%2520%252F%252F%2520E-mail%26COMMENTS%3DformData.message%252C%2520%252F%252F%2520Coment%25C3%25A1rios";
 
@@ -32,7 +29,7 @@ export function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           fields: {
-            TITLE: formData.name, // Nome do lead
+            TITLE: formData.name,
             NAME: formData.name,
             EMAIL: [{ VALUE: formData.email, VALUE_TYPE: "WORK" }],
             PHONE: [{ VALUE: formData.phone, VALUE_TYPE: "WORK" }],
@@ -51,10 +48,8 @@ export function ContactForm() {
         setTimeout(() => setSubmitted(false), 4000);
       } else {
         alert("Ocorreu um erro ao enviar o formulário. Tente novamente.");
-        console.error("Erro Bitrix:", data);
       }
     } catch (error) {
-      console.error("Erro de conexão:", error);
       alert("Erro de conexão. Verifique sua internet e tente novamente.");
     } finally {
       setLoading(false);
@@ -71,147 +66,118 @@ export function ContactForm() {
   };
 
   return (
-    <section id="contato" className="py-24 px-4 bg--background">
+    <section id="contato" className="py-24 px-4 bg-background border-t border-border">
       <div className="container mx-auto">
-        <div className="max-w-4xl mx-auto">
-          {/* Section header */}
-          <div className="text-center mb-12">
-            <div className="inline-flex p-4 rounded-lg bg--background mb-6">
-              <MessageSquare className="h-8 w-8 text-foreground" />
-            </div>
+        <div className="max-w-3xl mx-auto">
+          {/* Header */}
+          <div className="mb-12">
             <h2 className="font-source-serif-pro text-3xl sm:text-4xl md:text-5xl font-light text-foreground mb-4 tracking-tight">
               Comece sua jornada sem fronteiras
             </h2>
-            <p className="text-base sm:text-lg text-zinc-600 leading-relaxed">
-              Conte mais sobre o seu negócio e entraremos em contato
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+              Conte mais sobre o seu negócio e entraremos em contato.
             </p>
           </div>
 
-          {/* Form */}
-          <Card className="bg--chart-4 border-chart-1 p-6 md:p-8 lg:p-12">
-            {submitted ? (
-              <div className="text-center py-12">
-                <div className="inline-flex p-4 rounded-full bg-green-500/10 mb-4">
-                  <Send className="h-8 w-8 text-green-500" />
-                </div>
-                <h3 className="text-2xl text-foreground mb-2">
-                  Mensagem enviada!
-                </h3>
-                <p className="text--chart-4">Entraremos em contato em breve.</p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label
-                      htmlFor="name"
-                      className="block text-sm text--chart-4 mb-2"
-                    >
-                      Nome completo *
-                    </label>
-                    <Input
-                      id="name"
-                      name="name"
-                      type="text"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="bg-background/50 border-border text-foreground placeholder:text-zinc-600 focus:border-white/30"
-                      placeholder="Seu nome"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm text--chart-4 mb-2"
-                    >
-                      Email *
-                    </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="bg-background/50 border-border text-foreground placeholder:text-zinc-600 focus:border-white/30 resize-none"
-                      placeholder="seu@email.com"
-                    />
-                  </div>
-                </div>
-
+          {submitted ? (
+            <div className="py-16 border border-border text-center">
+              <Send className="h-8 w-8 text-foreground mx-auto mb-4" />
+              <h3 className="text-xl font-medium text-foreground mb-2">
+                Mensagem enviada
+              </h3>
+              <p className="text-muted-foreground text-sm">Entraremos em contato em breve.</p>
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label
-                    htmlFor="phone"
-                    className="block text-sm text--chart-4 mb-2"
-                  >
-                    Telefone / WhatsApp *
+                  <label htmlFor="name" className="block text-sm text-foreground mb-2">
+                    Nome completo *
                   </label>
                   <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
+                    id="name"
+                    name="name"
+                    type="text"
+                    value={formData.name}
                     onChange={handleChange}
                     required
-                    className="bg-background/50 border-border text-foreground placeholder:text-zinc-600 focus:border-white/30 resize-none"
-                    placeholder="(11) 99999-9999"
+                    className="bg-background border-border text-foreground placeholder:text-muted-foreground rounded-none focus-visible:ring-0 focus-visible:border-foreground"
+                    placeholder="Seu nome"
                   />
                 </div>
-
                 <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm text--chart-4 mb-2"
-                  >
-                    O seu caso *
+                  <label htmlFor="email" className="block text-sm text-foreground mb-2">
+                    Email *
                   </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={formData.email}
                     onChange={handleChange}
                     required
-                    rows={6}
-                    className="bg-background/50 border-border text-foreground placeholder:text-zinc-600 focus:border-white/30 resize-none"
-                    placeholder="Conte-nos sobre seu caso, objetivos e como podemos ajudar..."
+                    className="bg-background border-border text-foreground placeholder:text-muted-foreground rounded-none focus-visible:ring-0 focus-visible:border-foreground"
+                    placeholder="seu@email.com"
                   />
                 </div>
+              </div>
 
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button
-                    type="submit"
-                    className="flex-1 bg-chart-1 text-background hover:bg-chart-4"
-                    size="lg"
-                    disabled={loading}
-                  >
-                    {loading ? "Enviando..." : "Enviar mensagem"}
-                    {!loading && <Send className="ml-2 h-4 w-4" />}
-                  </Button>
-                  <Button
-                    type="button"
-                    asChild
-                    variant="outline"
-                    className="flex-1 border-white/20 text-foreground hover:bg-white/10 bg-chart-5"
-                    size="lg"
-                  >
-                    <a
-                      href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      WhatsApp direto
-                    </a>
-                  </Button>
-                </div>
+              <div>
+                <label htmlFor="phone" className="block text-sm text-foreground mb-2">
+                  Telefone / WhatsApp *
+                </label>
+                <Input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                  className="bg-background border-border text-foreground placeholder:text-muted-foreground rounded-none focus-visible:ring-0 focus-visible:border-foreground"
+                  placeholder="(21) 99999-9999"
+                />
+              </div>
 
-                <p className="text-xs text-zinc-600 text-center">
-                  Ao enviar, você concorda com nossa política de privacidade e
-                  proteção de dados (LGPD)
-                </p>
-              </form>
-            )}
-          </Card>
+              <div>
+                <label htmlFor="message" className="block text-sm text-foreground mb-2">
+                  O seu caso *
+                </label>
+                <Textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={6}
+                  className="bg-background border-border text-foreground placeholder:text-muted-foreground rounded-none focus-visible:ring-0 focus-visible:border-foreground resize-none"
+                  placeholder="Conte-nos sobre seu caso, objetivos e como podemos ajudar..."
+                />
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 bg-foreground text-background font-medium text-sm transition-opacity hover:opacity-80 disabled:opacity-50"
+                >
+                  {loading ? "Enviando..." : "Enviar mensagem"}
+                  {!loading && <Send className="h-4 w-4" />}
+                </button>
+                <a
+                  href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 border border-border text-foreground font-medium text-sm transition-colors hover:bg-muted/30"
+                >
+                  WhatsApp direto
+                </a>
+              </div>
+
+              <p className="text-xs text-muted-foreground text-center">
+                Ao enviar, você concorda com nossa política de privacidade e proteção de dados (LGPD)
+              </p>
+            </form>
+          )}
         </div>
       </div>
     </section>

@@ -39,22 +39,28 @@ export function Benefits() {
   return (
     <section id="benefits" className="py-20 md:py-32 border-t border-border">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Por que criar uma holding?</h2>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto text-pretty">
-            Vantagens estratégicas que transformam a gestão do seu patrimônio
+        <div className="text-center mb-16 md:mb-24">
+          <h2 className="font-source-serif-pro text-4xl md:text-6xl font-extralight text-foreground mb-6 tracking-tight">
+            Vantagens Estratégicas
+          </h2>
+          <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto font-light tracking-tight">
+            Engenharia jurídica que protege e potencializa seu patrimônio.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border max-w-6xl mx-auto border border-border">
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="p-8 bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-all duration-300 group hover:shadow-xl hover:scale-105"
+              className="p-10 bg-background hover:bg-white/[0.02] border-border transition-all duration-300 h-full flex flex-col"
             >
-              <benefit.icon className="h-10 w-10 mb-4 text-foreground group-hover:scale-110 transition-transform" />
-              <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed">{benefit.description}</p>
+              <benefit.icon className="w-8 h-8 text-white mb-8 stroke-[1.5px]" />
+              <h3 className="font-sans font-semibold text-lg md:text-xl text-white mb-3 tracking-tight">
+                {benefit.title}
+              </h3>
+              <p className="text-sm md:text-base text-white/50 leading-relaxed font-light">
+                {benefit.description}
+              </p>
             </div>
           ))}
         </div>

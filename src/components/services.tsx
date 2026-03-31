@@ -70,7 +70,7 @@ export function Services() {
           <h2 className="font-source-serif-pro text-3xl sm:text-4xl md:text-5xl text-foreground mb-4">
             Nossas especialidades
           </h2>
-          <p className="text-base sm:text-lg text-zinc-400">
+          <p className="text-base sm:text-lg text-muted-foreground">
             Soluções jurídicas completas para internacionalização, proteção
             patrimonial e expansão de negócios
           </p>
@@ -92,7 +92,7 @@ export function Services() {
                   <h3 className="font-source-serif-pro text-xl text-foreground mb-3 leading-tight">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-zinc-400 leading-relaxed grow">
+                  <p className="text-sm text-muted-foreground leading-relaxed grow">
                     {service.description}
                   </p>
                 </Card>

@@ -10,9 +10,9 @@ export function AnimatedHero() {
     offset: ["start start", "end start"],
   });
 
-  // Logo — visible from the first frame, grows slightly on scroll, fades as curtains open
-  const logoScale   = useTransform(scrollYProgress, [0, 0.50], [1.0, 1.10]);
-  const logoOpacity = useTransform(scrollYProgress, [0, 0.40, 0.58], [0.32, 0.32, 0]);
+  // Logo — visible from first frame, fades as curtains open
+  const logoScale   = useTransform(scrollYProgress, [0, 0.50], [1.0, 1.06]);
+  const logoOpacity = useTransform(scrollYProgress, [0, 0.40, 0.58], [0.22, 0.22, 0]);
 
   // Curtain panels slide apart on scroll
   const leftX  = useTransform(scrollYProgress, [0.10, 0.55], ["0%", "-100%"]);
@@ -32,17 +32,29 @@ export function AnimatedHero() {
         className="dark-section sticky top-0 h-screen overflow-hidden flex items-center justify-center"
         style={{ background: "#070d0a" }}
       >
-        {/* Logo 360 spinning — above curtains, visible from start */}
+        {/* Brand logo — left half, slides left with curtain */}
         <motion.div
-          style={{ scale: logoScale, opacity: logoOpacity }}
+          style={{ x: leftX, scale: logoScale, opacity: logoOpacity, clipPath: "inset(0 50% 0 0)" }}
           className="absolute inset-0 flex items-center justify-center will-change-transform z-[22]"
+          aria-hidden="true"
         >
           <img
-            src="/logo-360.gif"
+            src="/LogoBranco.svg"
             alt=""
-            aria-hidden="true"
-            className="w-[780px] h-[780px] object-contain"
-            style={{ mixBlendMode: "screen" }}
+            className="w-[420px] max-w-[60vw] object-contain select-none pointer-events-none"
+          />
+        </motion.div>
+
+        {/* Brand logo — right half, slides right with curtain */}
+        <motion.div
+          style={{ x: rightX, scale: logoScale, opacity: logoOpacity, clipPath: "inset(0 0 0 50%)" }}
+          className="absolute inset-0 flex items-center justify-center will-change-transform z-[22]"
+          aria-hidden="true"
+        >
+          <img
+            src="/LogoBranco.svg"
+            alt=""
+            className="w-[420px] max-w-[60vw] object-contain select-none pointer-events-none"
           />
         </motion.div>
 
@@ -141,6 +153,12 @@ export function AnimatedHero() {
             </div>
           </div>
         </motion.div>
+
+        {/* Bottom fade — blends into page background below hero */}
+        <div
+          className="absolute inset-x-0 bottom-0 h-48 pointer-events-none z-[35]"
+          style={{ background: "linear-gradient(to bottom, transparent 0%, var(--background) 100%)" }}
+        />
 
         {/* Scroll indicator */}
         <motion.div

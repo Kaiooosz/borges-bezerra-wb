@@ -242,8 +242,7 @@ function GlassPill({
       href={href}
       target={href.startsWith("http") ? "_blank" : undefined}
       rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-      className={`inline-flex items-center gap-2 px-7 py-3 font-light text-[11px] uppercase tracking-[0.22em] text-white rounded-full transition-opacity hover:opacity-80 ${className}`}
-      style={heroPillStyle}
+      className={`inline-flex items-center gap-2 px-7 py-3 font-light text-[11px] uppercase tracking-[0.22em] text-foreground border border-foreground/20 bg-foreground/5 rounded-full transition-opacity hover:opacity-80 ${className}`}
     >
       {children}
     </a>
@@ -260,7 +259,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function Bullet() {
   return (
-    <span className="mt-2 shrink-0 w-1 h-1 rounded-full bg-white/35 inline-block" />
+    <span className="mt-2 shrink-0 w-1 h-1 rounded-full bg-muted-foreground/40 inline-block" />
   );
 }
 
@@ -352,13 +351,13 @@ export default function OffshorePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
             {whyCards.map(({ Icon, title, bullets }) => (
               <div key={title} className="bg-card p-8 flex flex-col gap-5">
-                <Icon className="w-5 h-5 text-white/50 mb-5" />
+                <Icon className="w-5 h-5 text-muted-foreground mb-5" />
                 <h3 className="font-sans font-light text-base uppercase tracking-wide text-foreground">
                   {title}
                 </h3>
                 <ul className="space-y-3">
                   {bullets.map((b) => (
-                    <li key={b} className="flex items-start gap-3 text-sm font-light text-white/50 leading-relaxed">
+                    <li key={b} className="flex items-start gap-3 text-sm font-light text-muted-foreground leading-relaxed">
                       <Bullet />
                       {b}
                     </li>
@@ -400,28 +399,28 @@ export default function OffshorePage() {
                   >
                     {j.country}
                   </p>
-                  <p className="text-[11px] font-light uppercase tracking-[0.22em] text-white/40 mt-1">
+                  <p className="text-[11px] font-light uppercase tracking-[0.22em] text-muted-foreground mt-1">
                     {j.subtitle}
                   </p>
                 </div>
 
                 <div className="flex flex-wrap gap-3 mt-1">
-                  <span className="text-[10px] font-light uppercase tracking-[0.2em] text-white/50 border border-white/10 rounded-full px-3 py-1">
+                  <span className="text-[10px] font-light uppercase tracking-[0.2em] text-muted-foreground border border-border rounded-full px-3 py-1">
                     {j.tax}
                   </span>
-                  <span className="text-[10px] font-light uppercase tracking-[0.2em] text-white/50 border border-white/10 rounded-full px-3 py-1">
+                  <span className="text-[10px] font-light uppercase tracking-[0.2em] text-muted-foreground border border-border rounded-full px-3 py-1">
                     {j.setup}
                   </span>
                 </div>
 
-                <p className="text-[11px] font-light uppercase tracking-[0.18em] text-white/35 mt-1">
+                <p className="text-[11px] font-light uppercase tracking-[0.18em] text-muted-foreground mt-1">
                   A partir de{" "}
-                  <span className="text-white/65">{j.price}</span>
+                  <span className="text-foreground">{j.price}</span>
                 </p>
 
                 <ul className="space-y-2 mt-2">
                   {j.bullets.map((b) => (
-                    <li key={b} className="flex items-start gap-3 text-sm font-light text-white/45 leading-relaxed">
+                    <li key={b} className="flex items-start gap-3 text-sm font-light text-muted-foreground leading-relaxed">
                       <Bullet />
                       {b}
                     </li>
@@ -453,13 +452,13 @@ export default function OffshorePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
             {processSteps.map((s) => (
               <div key={s.num} className="bg-card p-8 flex flex-col gap-4">
-                <p className="text-[11px] font-light uppercase tracking-[0.28em] text-white/30">
+                <p className="text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground/60">
                   {s.num}
                 </p>
                 <h3 className="font-sans font-light text-sm uppercase tracking-wide text-foreground">
                   {s.title}
                 </h3>
-                <p className="text-sm font-light text-white/45 leading-relaxed">
+                <p className="text-sm font-light text-muted-foreground leading-relaxed">
                   {s.desc}
                 </p>
               </div>
@@ -492,12 +491,12 @@ export default function OffshorePage() {
                 className="flex flex-col gap-6 p-8"
                 style={{
                   background: p.featured
-                    ? "rgba(255,255,255,0.04)"
+                    ? "var(--accent)"
                     : "var(--card)",
                 }}
               >
                 <div>
-                  <p className="text-[11px] font-light uppercase tracking-[0.28em] text-white/40 mb-2">
+                  <p className="text-[11px] font-light uppercase tracking-[0.28em] text-muted-foreground mb-2">
                     {p.name}
                   </p>
                   <p
@@ -510,7 +509,7 @@ export default function OffshorePage() {
 
                 <ul className="space-y-3 flex-1">
                   {p.bullets.map((b) => (
-                    <li key={b} className="flex items-start gap-3 text-sm font-light text-white/45 leading-relaxed">
+                    <li key={b} className="flex items-start gap-3 text-sm font-light text-muted-foreground leading-relaxed">
                       <Bullet />
                       {b}
                     </li>
@@ -550,11 +549,11 @@ export default function OffshorePage() {
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
                   className="w-full flex items-center justify-between gap-4 px-7 py-5 text-left"
                 >
-                  <span className="text-sm font-light text-white/80 leading-relaxed">
+                  <span className="text-sm font-light text-foreground/80 leading-relaxed">
                     {faq.q}
                   </span>
                   <ChevronDown
-                    className="w-4 h-4 text-white/30 shrink-0 transition-transform duration-300"
+                    className="w-4 h-4 text-muted-foreground/50 shrink-0 transition-transform duration-300"
                     style={{
                       transform:
                         openFaq === i ? "rotate(180deg)" : "rotate(0deg)",
@@ -572,7 +571,7 @@ export default function OffshorePage() {
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                       className="overflow-hidden"
                     >
-                      <p className="px-7 pb-6 text-sm font-light text-white/45 leading-relaxed">
+                      <p className="px-7 pb-6 text-sm font-light text-muted-foreground leading-relaxed">
                         {faq.a}
                       </p>
                     </motion.div>

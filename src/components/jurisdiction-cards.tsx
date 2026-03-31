@@ -98,11 +98,11 @@ export function JurisdictionCards() {
   return (
     <section id="jurisdicoes-grade" className="relative pt-40 pb-40 md:pt-52 md:pb-52 bg-black overflow-hidden">
       {/* Fade from page background into black */}
-      <div className="absolute inset-x-0 top-0 h-48 pointer-events-none z-10"
-        style={{ background: "linear-gradient(to bottom, var(--background) 0%, transparent 100%)" }} />
+      <div className="absolute inset-x-0 top-0 h-56 pointer-events-none z-10"
+        style={{ background: "linear-gradient(to bottom, var(--background) 0%, rgba(0,0,0,0) 100%)" }} />
       {/* Fade back to page background at bottom */}
-      <div className="absolute inset-x-0 bottom-0 h-48 pointer-events-none z-10"
-        style={{ background: "linear-gradient(to top, var(--background) 0%, transparent 100%)" }} />
+      <div className="absolute inset-x-0 bottom-0 h-56 pointer-events-none z-10"
+        style={{ background: "linear-gradient(to top, var(--background) 0%, rgba(0,0,0,0) 100%)" }} />
 
       <div className="relative z-20 container mx-auto px-4 sm:px-6 max-w-7xl">
 

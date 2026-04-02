@@ -24,7 +24,7 @@ export default function ArtigosPage() {
       <Header />
 
       {/* Hero */}
-      <section className="dark-section pt-32 md:pt-40 pb-16 md:pb-24 px-4 relative overflow-hidden">
+      <section className="pt-32 md:pt-40 pb-16 md:pb-24 px-4 relative overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(15,35,25,0.45) 0%, transparent 70%)" }}

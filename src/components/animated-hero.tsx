@@ -1,131 +1,180 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export function AnimatedHero() {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+
+  // Logo — visible from first frame, fades as curtains open
+  const logoScale   = useTransform(scrollYProgress, [0, 0.50], [1.0, 1.06]);
+  const logoOpacity = useTransform(scrollYProgress, [0, 0.40, 0.58], [0.22, 0.22, 0]);
+
+  // Curtain panels slide apart on scroll
+  const leftX  = useTransform(scrollYProgress, [0.10, 0.55], ["0%", "-100%"]);
+  const rightX = useTransform(scrollYProgress, [0.10, 0.55], ["0%",  "100%"]);
+
+  // Revealed content fades in after curtains open
+  const contentOpacity = useTransform(scrollYProgress, [0.38, 0.62], [0, 1]);
+  const contentY       = useTransform(scrollYProgress, [0.38, 0.62], [36, 0]);
+
+  // Scroll indicator fades out as curtains begin opening
+  const indicatorOpacity = useTransform(scrollYProgress, [0, 0.08, 0.18], [1, 1, 0]);
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated background grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
+    <div ref={ref} className="relative h-[200vh]">
+      {/* Sticky viewport frame — always dark, dark-section forces white headings */}
+      <div
+        className="dark-section sticky top-0 h-screen overflow-hidden flex items-center justify-center"
+        style={{ background: "#070d0a" }}
+      >
+        {/* Brand logo — left half, slides left with curtain */}
+        <motion.div
+          style={{ x: leftX, scale: logoScale, opacity: logoOpacity, clipPath: "inset(0 50% 0 0)" }}
+          className="absolute inset-0 flex items-center justify-center will-change-transform z-[22]"
+          aria-hidden="true"
+        >
+          <img
+            src="/LogoBranco.svg"
+            alt=""
+            className="w-[420px] max-w-[60vw] object-contain select-none pointer-events-none"
+          />
+        </motion.div>
 
-      <div className="container relative z-10 px-4 py-32">
-        <div className="flex flex-col items-center text-center space-y-8 md:space-y-12">
+        {/* Brand logo — right half, slides right with curtain */}
+        <motion.div
+          style={{ x: rightX, scale: logoScale, opacity: logoOpacity, clipPath: "inset(0 0 0 50%)" }}
+          className="absolute inset-0 flex items-center justify-center will-change-transform z-[22]"
+          aria-hidden="true"
+        >
+          <img
+            src="/LogoBranco.svg"
+            alt=""
+            className="w-[420px] max-w-[60vw] object-contain select-none pointer-events-none"
+          />
+        </motion.div>
 
-          {/* Animated Logo */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            className="relative w-full max-w-[200px] sm:max-w-60px md:max-w-[280px]"
-          >
-            <div className="rounded-3xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover rounded-3xl"
-              >
-                <source
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Animac%CC%A7a%CC%83o%20logo-rkyssQp7IxgG0wZMm1WolGyZRoYVF1.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-          </motion.div>
+        {/* Atmospheric radial gradient */}
+        <div
+          className="absolute inset-0 z-[1]"
+          style={{
+            background:
+              "radial-gradient(ellipse 90% 70% at 50% 40%, rgba(10,20,15,0.45) 0%, rgba(5,10,8,0.88) 55%, #020603 100%)",
+          }}
+        />
 
-          {/* Animated Tagline */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="space-y-4 md:space-y-6"
-          >
-            <h1 className="font-source-serif-pro text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-foreground leading-tight text-balance px-4">
-              Transformamos{" "}
-              <span className="italic text-muted-foreground">
-                complexidades
-              </span>
-              <br />
-              em <span className="font-bold">oportunidades</span>
+        {/* LEFT CURTAIN */}
+        <motion.div
+          style={{ x: leftX }}
+          className="absolute inset-y-0 left-0 w-1/2 z-[20] will-change-transform"
+          aria-hidden="true"
+        >
+          <div className="w-full h-full" style={{ background: "#070d0a" }} />
+        </motion.div>
+
+        {/* RIGHT CURTAIN */}
+        <motion.div
+          style={{ x: rightX }}
+          className="absolute inset-y-0 right-0 w-1/2 z-[20] will-change-transform"
+          aria-hidden="true"
+        >
+          <div className="w-full h-full" style={{ background: "#070d0a" }} />
+        </motion.div>
+
+        {/* Revealed content — above logo */}
+        <motion.div
+          style={{ opacity: contentOpacity, y: contentY }}
+          className="relative z-[30] container px-4 will-change-transform"
+        >
+          <div className="flex flex-col items-center text-center">
+            <h1
+              className="font-sans font-light uppercase heading-gradient leading-[0.88] tracking-tight block"
+              style={{ fontSize: "clamp(2.6rem, 7.5vw, 6.5rem)", letterSpacing: "-0.03em" }}
+            >
+              Transformamos
+            </h1>
+            <h1
+              className="font-sans font-light uppercase heading-gradient leading-[0.88] tracking-tight block"
+              style={{ fontSize: "clamp(2.6rem, 7.5vw, 6.5rem)", letterSpacing: "-0.03em" }}
+            >
+              Complexidades.
             </h1>
 
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty px-4">
-              Atuamos como seu aliado na proteção e no crescimento patrimonial.
-              Com operações em mais de 12 países, desenvolvemos estruturas legais de alto rendimento em planejamento patrimonial, unindo segurança jurídica, otimização tributária e planejamento estratégico.
+            <p
+              className="text-[15px] sm:text-base font-light max-w-md mx-auto leading-relaxed mb-10 mt-5 px-4"
+              style={{ color: "rgba(255,255,255,0.4)" }}
+            >
+              Consultoria jurídica de elite para proteção patrimonial internacional,
+              otimização tributária e estruturação de holdings globais.
             </p>
-          </motion.div>
 
-          {/* Animated CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4"
-          >
-            <Button
-              asChild
-              size="lg"
-              className="bg-foreground text-background hover:bg-white/90 text-base w-full sm:w-auto"
+            <a
+              href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-12 py-4 font-light text-[11px] uppercase tracking-[0.22em] text-white rounded-full transition-all duration-300 hover:scale-[1.03] mb-16"
+              style={{
+                background: "rgba(255,255,255,0.08)",
+                border: "1px solid rgba(255,255,255,0.18)",
+                backdropFilter: "blur(12px)",
+              }}
             >
-              <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados" target="_blank" rel="noopener noreferrer">
-                Agendar Diagnóstico
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-white text-foreground hover:bg-white/10 text-base bg-transparent w-full sm:w-auto"
+              Iniciar Agora
+            </a>
+
+            <div
+              className="w-full max-w-2xl pt-8 grid grid-cols-3 gap-4 text-center px-4"
+              style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
             >
-              <Link href="/servicos">Conhecer Serviços</Link>
-            </Button>
-          </motion.div>
-
-          {/* Trust Indicators */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.9 }}
-            className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-8 pt-8 text-xs sm:text-sm text-muted-foreground px-4"
-          >
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-white rounded-full shrink-0 text-chart-1" />
-              <span className="text-chart-2">Atuação em 12+ países</span>
+              {[
+                { value: "12+", label: "Países" },
+                { value: "R$122M+", label: "Economizados" },
+                { value: "2017", label: "No Mercado" },
+              ].map((stat) => (
+                <div key={stat.label}>
+                  <p
+                    className="font-sans font-light text-white text-xl md:text-2xl tabular tracking-tight"
+                    style={{ textShadow: "0 0 30px rgba(255,255,255,0.1)" }}
+                  >
+                    {stat.value}
+                  </p>
+                  <p
+                    className="text-[10px] font-light uppercase tracking-widest mt-0.5"
+                    style={{ color: "rgba(255,255,255,0.3)" }}
+                  >
+                    {stat.label}
+                  </p>
+                </div>
+              ))}
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-white rounded-full shrink-0" />
-              <span className="text-chart-2">R$ 122M+ economizados</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-white rounded-full shrink-0" />
-              <span className="text-center sm:text-left text-chart-2">
-                Especialistas em ativos digitais desde 2017
-              </span>
-            </div>
-          </motion.div>
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block"
-      >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-          className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-2"
-        >
-          <motion.div className="w-1 h-2 bg-white/50 rounded-full" />
+          </div>
         </motion.div>
-      </motion.div>
-    </section>
+
+        {/* Bottom fade — blends into page background below hero */}
+        <div
+          className="absolute inset-x-0 bottom-0 h-48 pointer-events-none z-[35]"
+          style={{ background: "linear-gradient(to bottom, transparent 0%, var(--background) 100%)" }}
+        />
+
+        {/* Scroll indicator */}
+        <motion.div
+          style={{ opacity: indicatorOpacity }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-[25]"
+        >
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 2.4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+            className="w-5 h-9 rounded-full flex items-start justify-center p-1.5"
+            style={{ border: "1px solid rgba(255,255,255,0.1)" }}
+          >
+            <div className="w-0.5 h-2 rounded-full" style={{ background: "rgba(255,255,255,0.2)" }} />
+          </motion.div>
+        </motion.div>
+      </div>
+    </div>
   );
 }

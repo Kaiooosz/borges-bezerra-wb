@@ -69,7 +69,7 @@ const featured: FeaturedJurisdiction[] = [
   },
   {
     id: "caribe",
-    name: "ILHAS CARIBE",
+    name: "ILHA CAYMAN",
     tagline: "Confidencialidade e Estrutura Offshore",
     image: "/caribe-capital.jpg",
     href: "/servicos/internacionalizacao",
@@ -88,7 +88,7 @@ const standard: StandardJurisdiction[] = [
   { id: "paraguai", name: "PARAGUAI", image: "/paraguai.jpg", href: "/servicos/internacionalizacao", price: "US$ 1.200" },
   { id: "europa", name: "EUROPA", image: "/paris-eiffel-europa.jpg", href: "/servicos/internacionalizacao", price: "US$ 2.500" },
   { id: "london", name: "REINO UNIDO", image: "/big-ben.jpg", href: "/servicos/internacionalizacao", price: "US$ 1.800" },
-  { id: "africa", name: "ÁFRICA", image: "/africa-savanna-animals.jpg", href: "/servicos/internacionalizacao", price: "US$ 1.500" },
+  { id: "africa", name: "ÁFRICA DO SUL", image: "/africa-savanna-animals.jpg", href: "/servicos/internacionalizacao", price: "US$ 1.500" },
   { id: "asia", name: "ARÁBIA SAUDITA", image: "/riyadh-arabia-saudita.jpg", href: "/servicos/internacionalizacao", price: "US$ 2.100" },
 ];
 

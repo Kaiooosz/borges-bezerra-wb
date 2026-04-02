@@ -22,7 +22,7 @@ const plans = [
     badge: "ESTRATÉGICO",
     title: "Estratégia Offshore",
     price: "US$ 119",
-    description: "Sessão de 2h para a criação e execução de estratégia offshore personalizada.",
+    description: "Sessão de 1h para a criação e execução de estratégia offshore personalizada.",
     features: [
       "Planejamento jurisdicional completo",
       "Estruturação societária avançada",

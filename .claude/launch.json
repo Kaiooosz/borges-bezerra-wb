@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Next.js Dev",
+      "runtimeExecutable": "/Users/kaiotsunokawa/.nvm/versions/node/v22.14.0/bin/npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "/Users/kaiotsunokawa/Downloads/BBLAW/bezerra-borges-site",
+      "port": 3000,
+      "autoPort": true
+    },
+    {
+      "name": "Next.js Start (produção local)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start"],
+      "port": 3000
+    }
+  ]
+}

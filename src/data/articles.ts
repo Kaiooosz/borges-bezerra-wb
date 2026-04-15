@@ -12,6 +12,578 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+  // ARTIGO - VASP Estrangeira no Brasil
+  {
+    title: "VASP estrangeira pode operar no Brasil? O que grupos internacionais precisam avaliar",
+    excerpt: "As exigências para a entrada de plataformas globais no mercado brasileiro em 2026, a obrigatoriedade da presença local e os riscos de operar de forma remota sem a devida adequação às normas do Banco Central.",
+    category: "Cripto & Tributação",
+    date: "14 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1488229297570-58520851e868?q=80&w=2070&auto=format&fit=crop",
+    slug: "vasp-estrangeira-operacao-brasil-requisitos",
+    readTime: "8 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender as exigências para a entrada de plataformas globais no mercado brasileiro em 2026, a obrigatoriedade da presença local e os riscos de operar de forma remota sem a devida adequação às normas do Banco Central.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">O Brasil consolidou-se como um dos mercados mais dinâmicos e atraentes para ativos virtuais no mundo, mas essa oportunidade vem acompanhada de um rigor regulatório sem precedentes para players internacionais. Em 2026, a ideia de que uma VASP estrangeira pode atender o público brasileiro de forma puramente remota, sem presença física ou jurídica no país, tornou-se um risco insustentável. O Banco Central estabeleceu diretrizes claras: para oferecer serviços de forma ativa aos brasileiros, a instituição deve estar formalmente autorizada a funcionar no território nacional.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"No Brasil de 2026, a presença física e a responsabilidade jurídica local são as chaves que abrem as portas do mercado institucional de ativos virtuais."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Estrutura local: muito além do CNPJ</h2>
+      <p class="mb-6 leading-relaxed">A necessidade de uma estrutura local robusta é o primeiro pilar que grupos internacionais devem avaliar. Isso não se resume à abertura de um CNPJ de fachada, mas à constituição de uma subsidiária com capital social integralizado no Brasil e a nomeação de administradores residentes que respondam civil e penalmente perante as autoridades brasileiras. O regulador exige que as funções críticas de compliance, prevenção à lavagem de dinheiro e segurança cibernética possuam um responsável local capaz de interlocução direta com o Banco Central. Operar à margem desse rito caracteriza exercício irregular de atividade financeira, o que pode levar ao bloqueio de domínios, aplicativos e à interdição dos fluxos financeiros da plataforma no país.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Parcerias locais e corresponsabilidade</h2>
+      <p class="mb-6 leading-relaxed">Muitas plataformas globais utilizam Instituições de Pagamento locais como gateways para a rampa de entrada e saída de Reais. Contudo, sob as regras de 2026, o parceiro brasileiro é corresponsável pelo compliance da empresa estrangeira. Se o grupo internacional não demonstrar padrões de governança e segregação patrimonial compatíveis com a norma brasileira, o parceiro local é obrigado a encerrar a prestação de serviços para evitar sanções próprias.</p>
+
+      <div class="bg-card border border-border p-8 rounded-2xl my-10 shadow-sm">
+        <h4 class="font-bold mb-4">Erros comuns de entrada cross-border</h4>
+        <ul class="space-y-3 text-muted-foreground font-light">
+          <li>• Replicar políticas globais que conflitam com o Código de Defesa do Consumidor</li>
+          <li>• Ignorar as normas específicas de reporte da IN nº 704</li>
+          <li>• Iniciar campanhas de marketing antes de obter a outorga regulatória</li>
+          <li>• Tentar se estabelecer por fatos consumados sem licenciamento</li>
+        </ul>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-4 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Plataformas estrangeiras podem aceitar PIX sem ter sede no Brasil?</h4>
+          <p class="text-muted-foreground font-light text-sm">Em 2026, para aceitar PIX e oferecer serviços ativos ao público brasileiro, a VASP deve possuir autorização do Banco Central e estrutura jurídica local, ou operar através de parcerias estritamente reguladas.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">É obrigatório ter diretores residentes no Brasil para obter a licença?</h4>
+          <p class="text-muted-foreground font-light text-sm">Sim, o Banco Central exige que os administradores responsáveis pela operação no país residam no Brasil e possuam qualificações técnicas e de idoneidade comprovadas no processo de autorização.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Análise de entrada regulatória no mercado brasileiro</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Adaptar a tecnologia global às exigências específicas de custódia, câmbio e reporte nacional é o que garante que a operação internacional entre e permaneça no Brasil com segurança jurídica.</p>
+        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20analisar%20a%20entrada%20regulatória%20de%20uma%20VASP%20estrangeira%20no%20Brasil." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+      </div>
+    `
+  },
+
+  // ARTIGO - Stablecoins, Câmbio e Pagamentos Internacionais
+  {
+    title: "Stablecoins, câmbio e pagamentos internacionais: quando seu projeto entra em terreno regulatório sensível",
+    excerpt: "Entenda quando uma operação deixa de ser focada em ativos virtuais e passa a tocar o mercado de câmbio, as implicações de utilizar stablecoins em fluxos transfronteiriços e a conformidade com o Marco Legal do Câmbio em 2026.",
+    category: "Cripto & Tributação",
+    date: "14 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?q=80&w=2070&auto=format&fit=crop",
+    slug: "stablecoins-cambio-pagamentos-internacionais-brasil",
+    readTime: "8 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender o momento em que uma operação deixa de ser estritamente focada em ativos virtuais e passa a tocar o mercado de câmbio, quais são as implicações de utilizar stablecoins em fluxos transfronteiriços e por que a conformidade com o novo Marco Legal do Câmbio tornou-se indispensável para fintechs e estruturas híbridas em 2026.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">A fronteira entre o universo dos ativos virtuais e o mercado de câmbio tradicional tornou-se quase invisível com a consolidação das stablecoins pareadas ao dólar como ferramentas de liquidez global. Em 2026, por meio da integração entre a Lei nº 14.478/2022 e o Marco Legal do Câmbio (Lei nº 14.286/2021), o regulador estabeleceu que o uso desses ativos para transferências internacionais não retira a natureza cambial da operação.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"No terreno dos fluxos cross-border, a tecnologia liquida a transação, mas o compliance cambial é o que liquida o risco jurídico."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Quando a stablecoin vira câmbio</h2>
+      <p class="mb-6 leading-relaxed">Uma operação ingressa nessa zona de maior rigor quando a stablecoin deixa de ser um objeto de especulação interna e passa a funcionar como ponte para a saída ou entrada de valores no país. Se a sua plataforma permite que um cliente liquide uma fatura de importação ou envie recursos para o exterior utilizando ativos virtuais, ela está exercendo uma função de intermediação cambial. O Banco Central monitora esses fluxos com especial atenção para garantir que a eficiência tecnológica da blockchain não seja utilizada para contornar os registros obrigatórios no Sisbacen.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Carteiras autocustodiadas e rastreabilidade</h2>
+      <p class="mb-6 leading-relaxed">A utilização de carteiras autocustodiadas em fluxos internacionais traz camadas adicionais de complexidade ao compliance. O desafio para as empresas em 2026 é garantir a rastreabilidade da origem e do destino dos recursos, mesmo quando a transação ocorre fora de ambientes centralizados. O regulador espera que as instituições brasileiras que servem de rampa de entrada e saída realizem uma diligência profunda sobre as contrapartes estrangeiras, aplicando regras de monitoramento que impeçam o uso de stablecoins para atividades ilícitas ou violação de sanções internacionais.</p>
+
+      <div class="bg-card border border-border p-8 rounded-2xl my-10 shadow-sm">
+        <h4 class="font-bold mb-4">Riscos de operar sem conformidade cambial</h4>
+        <ul class="space-y-3 text-muted-foreground font-light">
+          <li>• Caracterização de evasão de divisas</li>
+          <li>• Exercício irregular de atividade financeira</li>
+          <li>• Sanções administrativas pesadas do Banco Central</li>
+          <li>• Riscos criminais para os administradores</li>
+        </ul>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-4 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">O uso de stablecoins para pagamentos internacionais é regulado no Brasil?</h4>
+          <p class="text-muted-foreground font-light text-sm">Sim. Em 2026, essas operações são monitoradas sob a ótica do Marco Legal do Câmbio e da regulação de ativos virtuais, exigindo reporte e conformidade com as normas do Banco Central.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">As fintechs precisam de licença de câmbio para operar com stablecoins?</h4>
+          <p class="text-muted-foreground font-light text-sm">Depende da estrutura da operação. Se a fintech facilita transferências internacionais de valor, ela precisa estar autorizada a operar em câmbio ou possuir parcerias devidamente estruturadas com instituições autorizadas.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Avalie os riscos regulatórios da sua estrutura cross-border</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Mapear os gatilhos regulatórios de uma operação cross-border permite que o projeto escale com transparência e segurança normativa.</p>
+        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20avaliar%20os%20riscos%20regulatórios%20da%20minha%20operação%20com%20stablecoins." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+      </div>
+    `
+  },
+
+  // ARTIGO - Segregação Patrimonial
+  {
+    title: "Segregação patrimonial em operações com ativos virtuais: por que isso importa",
+    excerpt: "Por que a segregação patrimonial tornou-se o ponto central de confiança no mercado brasileiro, como a separação entre ativos próprios e de terceiros protege a operação e os riscos reais da confusão patrimonial em 2026.",
+    category: "Cripto & Tributação",
+    date: "14 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2070&auto=format&fit=crop",
+    slug: "segregacao-patrimonial-cripto-brasil-importancia",
+    readTime: "8 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender por que a segregação patrimonial tornou-se o ponto central de confiança e conformidade no mercado brasileiro, como a separação entre ativos próprios e de terceiros protege a operação e quais são os riscos reais da confusão patrimonial para a perenidade do negócio em 2026.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">A segregação patrimonial consolidou-se como o divisor de águas entre o amadorismo e o profissionalismo institucional no ecossistema de ativos virtuais. Em 2026, a capacidade de demonstrar a separação absoluta entre os recursos da Prestadora de Serviços de Ativos Virtuais e o patrimônio dos usuários não é apenas uma boa prática de governança, mas um requisito existencial para a manutenção da licença de operação.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"Na economia digital de 2026, a separação clara de ativos é o alicerce que sustenta a confiança entre a plataforma e o investidor."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Por que a segregação protege todos</h2>
+      <p class="mb-6 leading-relaxed">A importância desse tema reside na proteção contra a insolvência e na garantia da credibilidade fiduciária. Historicamente, as maiores crises do mercado global de criptoativos foram causadas pela mistura de fundos. No ordenamento brasileiro atual, a segregação garante que, em caso de falência ou liquidação extrajudicial da instituição, os ativos virtuais dos usuários permaneçam intocados e sejam devolvidos integralmente, por não integrarem a massa falida.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">As três dimensões da segregação efetiva</h2>
+      <div class="grid md:grid-cols-3 gap-6 my-10">
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Jurídica</h4>
+          <p class="text-sm text-muted-foreground font-light">Contratos e termos de uso que definem claramente a natureza da custódia como guarda de terceiros.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Contábil</h4>
+          <p class="text-sm text-muted-foreground font-light">Registros transparentes e auditáveis que permitem identificar o saldo individualizado de cada cliente a qualquer momento.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Operacional</h4>
+          <p class="text-sm text-muted-foreground font-light">Arquitetura de carteiras on-chain que impossibilite a movimentação de ativos de usuários sem o devido rito de governança.</p>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-4 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">O que é segregação patrimonial no mercado cripto?</h4>
+          <p class="text-muted-foreground font-light text-sm">É a separação obrigatória entre os ativos de propriedade da empresa e os ativos pertencentes aos clientes, garantindo que os recursos dos usuários não sejam usados para obrigações da instituição.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Quais os riscos de não ter segregação patrimonial?</h4>
+          <p class="text-muted-foreground font-light text-sm">Os principais riscos incluem a perda da licença de operação, sanções administrativas graves, desconfiança de investidores institucionais e a exposição dos ativos dos clientes em caso de insolvência da empresa.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Veja se sua arquitetura operacional protege clientes e o negócio</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Avaliar se a sua arquitetura e contratos estão alinhados aos padrões de segregação exigidos pelo regulador é indispensável para qualquer player sério no setor.</p>
+        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20avaliar%20a%20segregação%20patrimonial%20da%20minha%20operação." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+      </div>
+    `
+  },
+
+  // ARTIGO - Custódia Cripto Brasil
+  {
+    title: "Custódia de ativos virtuais no Brasil: o que o regulador espera de uma operação séria",
+    excerpt: "Por que a custódia de criptoativos é tratada como tema jurídico e operacional de alta sensibilidade, a distinção entre segurança tecnológica e governança corporativa e como a gestão de riscos define a perenidade da operação.",
+    category: "Cripto & Tributação",
+    date: "14 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=2070&auto=format&fit=crop",
+    slug: "custodia-cripto-brasil-requisitos-regulatorios",
+    readTime: "8 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender por que a custódia de criptoativos é tratada como um tema jurídico e operacional de alta sensibilidade, a distinção fundamental entre segurança tecnológica e governança corporativa e como a gestão de riscos e incidentes define a perenidade de uma operação perante o Banco Central.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">A custódia de ativos virtuais em 2026 deixou de ser um desafio meramente tecnológico para se tornar o núcleo da responsabilidade fiduciária das Prestadoras de Serviços de Ativos Virtuais. Para o regulador brasileiro, a guarda de chaves privadas não é apenas um serviço acessório, mas uma atividade que exige garantias rigorosas de integridade e disponibilidade.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"Na custódia institucional, a tecnologia protege a chave, mas a governança protege o patrimônio e a reputação da empresa."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Segurança tecnológica ≠ Governança de custódia</h2>
+      <p class="mb-6 leading-relaxed">Existe uma distinção fundamental que o mercado institucional muitas vezes ignora: segurança tecnológica não é sinônimo de governança de custódia. Ter protocolos de ponta como computação multipartidária ou módulos de segurança de hardware é essencial, mas insuficiente se não houver um rito de decisão institucional. O regulador avalia quem possui autoridade para assinar transações, como são gerenciados os acessos em casos de emergência e se existem ritos de aprovação múltipla que impeçam que um único colaborador comprometa todo o sistema.</p>
+
+      <div class="grid md:grid-cols-2 gap-6 my-10">
+        <div class="p-8 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Segurança Tecnológica</h4>
+          <ul class="space-y-2 text-sm text-muted-foreground font-light">
+            <li>• Computação multipartidária (MPC)</li>
+            <li>• Módulos de segurança de hardware (HSM)</li>
+            <li>• Criptografia avançada de chaves</li>
+            <li>• Auditorias de penetração</li>
+          </ul>
+        </div>
+        <div class="p-8 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Governança de Custódia</h4>
+          <ul class="space-y-2 text-sm text-muted-foreground font-light">
+            <li>• Ritos de aprovação múltipla</li>
+            <li>• Planos de recuperação de desastres</li>
+            <li>• Sucessão administrativa documentada</li>
+            <li>• Relatórios de Prova de Reservas</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Custodiantes terceirizados e responsabilidade</h2>
+      <p class="mb-6 leading-relaxed">Quando a PSAV opta pela contratação de um prestador de custódia terceirizado, a responsabilidade perante o cliente final e o Banco Central permanece integralmente com a instituição brasileira autorizada. O uso de custodiantes globais não exime a empresa local de manter a visibilidade total sobre os ativos e de garantir que os dados e as chaves possam ser acessados conforme as exigências da autoridade supervisora brasileira.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-4 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">O que o Banco Central exige sobre a custódia de cripto?</h4>
+          <p class="text-muted-foreground font-light text-sm">O regulador exige segregação patrimonial absoluta, governança rigorosa sobre o acesso às chaves privadas, planos de contingência para incidentes e auditorias frequentes de prova de reservas.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Uma VASP pode usar um custodiante estrangeiro?</h4>
+          <p class="text-muted-foreground font-light text-sm">Sim, desde que a responsabilidade final e a visibilidade dos ativos permaneçam com a empresa autorizada no Brasil e que o terceiro atenda aos padrões de segurança e compliance exigidos pelo Banco Central.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Entenda quais pontos de custódia precisam ser tratados antes da escala</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">A robustez da custódia é o que permite ao investidor institucional entrar no mercado com segurança. Organize esses fluxos antes de escalar.</p>
+        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20avaliar%20a%20estrutura%20de%20custódia%20da%20minha%20operação." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+      </div>
+    `
+  },
+
+  // ARTIGO - PLD/CFT para VASPs
+  {
+    title: "PLD/CFT para VASPs: O que muda na prática para exchanges, mesas e custodiantes",
+    excerpt: "As exigências reais do novo ambiente de prevenção à lavagem de dinheiro e combate ao financiamento do terrorismo, por que o monitoramento on-chain tornou-se obrigatório e como isso define a bancabilidade da sua operação em 2026.",
+    category: "Cripto & Tributação",
+    date: "14 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=2070&auto=format&fit=crop",
+    slug: "pld-cft-vasp-brasil-regras-praticas",
+    readTime: "8 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender as exigências reais do novo ambiente de prevenção à lavagem de dinheiro e combate ao financiamento do terrorismo, por que o monitoramento on-chain tornou-se obrigatório e como a eficácia desses controles define a bancabilidade da sua operação em 2026.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">No cenário de 2026, a Prevenção à Lavagem de Dinheiro e ao Combate ao Financiamento do Terrorismo (PLD/CFT) deixou de ser uma política estática em PDF para se tornar o motor operacional das Prestadoras de Serviços de Ativos Virtuais. O Banco Central e o COAF elevaram o rigor das exigências, tratando as VASPs com o mesmo nível de responsabilidade fiduciária de um banco comercial.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"Em 2026, o compliance on-chain é o alicerce que garante a bancabilidade e a licença de uma operação VASP."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">KYC + rastreabilidade on-chain</h2>
+      <p class="mb-6 leading-relaxed">A base dessa nova fase do compliance é a integração entre a identificação do cliente (KYC) e a rastreabilidade on-chain. O regulador exige que a empresa utilize ferramentas analíticas de blockchain para identificar se os ativos recebidos possuem histórico de interação com endereços sancionados, mercados ilícitos ou protocolos de mistura (mixers). Uma mesa OTC que liquida grandes volumes sem realizar a devida diligência sobre a carteira de origem do cliente corre o risco de ser enquadrada em gestão temerária.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">KYT e monitoramento contínuo</h2>
+      <p class="mb-6 leading-relaxed">A governança de PLD/CFT em 2026 também exige processos rigorosos de Know Your Transaction (KYT) e monitoramento contínuo. Isso envolve a criação de algoritmos de alerta que identifiquem padrões suspeitos, como o fracionamento de depósitos ou movimentações atípicas. Além disso, o registro e o reporte de operações ao COAF tornaram-se automáticos para transações que ultrapassam os limites regulatórios ou que apresentam sinais de alerta previstos nas normas do Banco Central.</p>
+
+      <div class="bg-card border border-border p-8 rounded-2xl my-10 shadow-sm">
+        <h4 class="font-bold mb-4">Compliance e bancabilidade: a conexão direta</h4>
+        <p class="text-muted-foreground font-light leading-relaxed">Instituições financeiras tradicionais que provêm liquidez e trilhos de pagamento (como o PIX) realizam auditorias constantes em seus parceiros VASP. Se a política de PLD/CFT for considerada genérica ou ineficaz, o banco parceiro corta o acesso para proteger o próprio balanço. Portanto, investir em ferramentas de rastreabilidade de ponta é uma estratégia de sobrevivência comercial.</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-4 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">O que é KYT (Know Your Transaction) para VASPs?</h4>
+          <p class="text-muted-foreground font-light text-sm">O KYT é o processo de monitorar o histórico e a procedência dos ativos digitais on-chain, identificando se os endereços envolvidos possuem vínculos com atividades ilícitas ou carteiras sancionadas.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Toda VASP é obrigada a reportar ao COAF em 2026?</h4>
+          <p class="text-muted-foreground font-light text-sm">Sim, todas as prestadoras de serviços de ativos virtuais autorizadas pelo Banco Central possuem obrigações de reporte de operações suspeitas ou que atinjam os limites financeiros estabelecidos pelo regulador.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Avalie se sua operação está pronta para padrões institucionais de compliance</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">A maturidade em PLD/CFT é o selo de confiança que permite que as empresas de ativos virtuais operem plenamente integradas ao Sistema Financeiro Nacional.</p>
+        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20avaliar%20o%20compliance%20PLD%20da%20minha%20operação." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+      </div>
+    `
+  },
+
+  // ARTIGO - Quanto custa licença VASP
+  {
+    title: "Quanto custa estruturar uma operação preparada para licença VASP no Brasil",
+    excerpt: "Quais são os centros reais de custo envolvidos na montagem de uma operação regulada, por que o investimento em conformidade deve ser visto como infraestrutura institucional e como o modelo de negócio altera o capital necessário.",
+    category: "Cripto & Tributação",
+    date: "14 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop",
+    slug: "custo-licenca-vasp-brasil-investimento-necessario",
+    readTime: "8 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender quais são os centros reais de custo envolvidos na montagem de uma operação regulada, por que o investimento em conformidade deve ser visto como infraestrutura institucional e como a escolha do modelo de negócio altera drasticamente o capital necessário para o pleito.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">A estruturação de uma operação para obtenção da licença de Prestadora de Serviços de Ativos Virtuais no Brasil em 2026 exige uma visão clara de que o investimento não se resume a taxas governamentais, mas sim à construção de uma instituição financeira do zero. O custo total é diretamente proporcional ao risco da operação, ao volume transacional pretendido e à complexidade da tecnologia de custódia utilizada.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"No licenciamento VASP, o custo do improviso é sempre maior do que o investimento em conformidade especializada."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Os quatro centros de custo principais</h2>
+      <div class="space-y-6 my-10">
+        <div class="flex gap-6 p-6 border-b border-border">
+          <span class="text-4xl font-black text-primary/20">01</span>
+          <div>
+            <h4 class="font-bold mb-1">Capital social integralizado</h4>
+            <p class="text-sm text-muted-foreground font-light">Reserva regulatória mínima exigida pelo Banco Central. Varia conforme a classificação da PSAV — custodiantes e corretoras possuem patamares superiores. Este valor não é uma taxa perdida, mas um recurso de garantia de solvência.</p>
+          </div>
+        </div>
+        <div class="flex gap-6 p-6 border-b border-border">
+          <span class="text-4xl font-black text-primary/20">02</span>
+          <div>
+            <h4 class="font-bold mb-1">Bloco jurídico-regulatório e societário</h4>
+            <p class="text-sm text-muted-foreground font-light">Plano de negócios, manuais de governança, dossiê de idoneidade e defesa técnica do pleito. Uma assessoria especializada aqui reduz o custo total do projeto: o retrabalho por contratos mal redigidos costuma custar o triplo do investimento inicial.</p>
+          </div>
+        </div>
+        <div class="flex gap-6 p-6 border-b border-border">
+          <span class="text-4xl font-black text-primary/20">03</span>
+          <div>
+            <h4 class="font-bold mb-1">Governança e capital humano</h4>
+            <p class="text-sm text-muted-foreground font-light">Diretores qualificados para compliance, riscos e segurança cibernética. A escassez de profissionais que dominem mercado financeiro e blockchain eleva os honorários nessa área significativamente.</p>
+          </div>
+        </div>
+        <div class="flex gap-6 p-6 border-b border-border">
+          <span class="text-4xl font-black text-primary/20">04</span>
+          <div>
+            <h4 class="font-bold mb-1">Compliance e monitoramento contínuo</h4>
+            <p class="text-sm text-muted-foreground font-light">Ferramentas de rastreabilidade on-chain para PLD/CFT e auditorias de segurança. O que encarece um projeto VASP não é apenas o protocolo no Banco Central, mas a manutenção de uma estrutura auditável 24 horas por dia.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-4 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Qual o capital mínimo para abrir uma VASP no Brasil?</h4>
+          <p class="text-muted-foreground font-light text-sm">O capital mínimo varia conforme o modelo de negócio e o volume transacional, seguindo as faixas estabelecidas pelo Banco Central para garantir a solvência da operação em 2026.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Como reduzir o custo do processo de autorização?</h4>
+          <p class="text-muted-foreground font-light text-sm">A melhor forma de reduzir custos é evitar o retrabalho. Uma estruturação societária e de compliance correta antes do protocolo evita exigências do Bacen que atrasam a operação e consomem caixa.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Solicite uma estimativa preliminar para o seu projeto</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">O orçamento de uma PSAV deve ser tão preciso quanto seu algoritmo de negociação, garantindo fôlego financeiro para atravessar todas as fases do licenciamento.</p>
+        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20uma%20estimativa%20preliminar%20para%20estruturar%20minha%20operação%20VASP." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+      </div>
+    `
+  },
+
+  // ARTIGO - Erros que travam licença VASP
+  {
+    title: "Erros que travam um projeto de licença VASP antes mesmo do protocolo",
+    excerpt: "Onde projetos promissores de ativos virtuais se fragilizam precocemente, quais são as falhas concretas que impedem o sucesso perante o Banco Central e como uma abordagem preventiva pode economizar tempo e capital.",
+    category: "Cripto & Tributação",
+    date: "14 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1586880244406-556ebe35f282?q=80&w=2070&auto=format&fit=crop",
+    slug: "erros-comuns-licenca-vasp-brasil",
+    readTime: "8 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender onde projetos promissores de ativos virtuais se fragilizam precocemente, quais são as falhas concretas que impedem o sucesso perante o Banco Central e como uma abordagem preventiva pode economizar tempo e capital no pleito regulatório.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">Muitas empresas que buscam a licença de PSAV no cenário de 2026 falham não por falta de tecnologia ou mercado, mas por subestimar a barreira de entrada institucional. O Banco Central do Brasil não analisa apenas a intenção de conformidade, mas a maturidade da estrutura no momento zero. Quando um projeto chega ao regulador com fragilidades em seu alicerce, ele corre o risco de ser indeferido sumariamente ou de enfrentar sucessivas rodadas de exigências que custam meses de inatividade e queima de capital.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"No ambiente regulado do Banco Central, a solidez da base societária é tão importante quanto a eficiência do código."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Os 4 erros mais comuns</h2>
+      <div class="space-y-6 my-10">
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-2">1. Objeto social impreciso e desenho societário opaco</h4>
+          <p class="text-muted-foreground font-light text-sm">Cláusulas genéricas em contratos sociais são um convite ao indeferimento. Sociedades com cadeias de controle opacas são vistas com suspeição imediata, prejudicando o rito de idoneidade dos controladores.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-2">2. Manuais de compliance genéricos ou comprados prontos</h4>
+          <p class="text-muted-foreground font-light text-sm">O Banco Central identifica facilmente políticas de PLD que não possuem aderência técnica ao modelo de negócio. Se o manual descreve um processo que não está integrado à plataforma tecnológica, o documento torna-se irrelevante.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-2">3. Governança fraca e negligência com o banking</h4>
+          <p class="text-muted-foreground font-light text-sm">Muitas VASPs focam exclusivamente na licença e esquecem que a operação depende de acesso ao sistema de pagamentos. Sem contas bancárias operacionais, a VASP torna-se uma ilha tecnológica incapaz de processar recursos no Brasil.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-2">4. Falta de documentação de origem de recursos</h4>
+          <p class="text-muted-foreground font-light text-sm">O Banco Central exige que cada etapa do financiamento do projeto seja transparente. Tratar o licenciamento como um checklist burocrático em vez de uma reestruturação institucional é o equívoco que mais consome recursos no setor.</p>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-4 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Qual o erro mais comum no pedido de licença VASP?</h4>
+          <p class="text-muted-foreground font-light text-sm">O erro mais frequente é a inconsistência entre as políticas de compliance escritas e a realidade tecnológica da operação, somada a um objeto social mal definido no contrato da empresa.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Por que o Banco Central nega pedidos de autorização?</h4>
+          <p class="text-muted-foreground font-light text-sm">As negativas costumam ocorrer por falta de comprovação da origem de recursos, governança corporativa frágil ou incapacidade técnica de garantir a segregação patrimonial dos ativos dos clientes.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Faça um diagnóstico preventivo antes de investir no pleito</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">No Bezerra Borges, realizamos um choque de realidade regulatório antes que o cliente invista tempo e capital em um pleito imaturo.</p>
+        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20um%20diagnóstico%20preventivo%20do%20meu%20projeto%20VASP." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+      </div>
+    `
+  },
+
+  // ARTIGO - Documentos Licença VASP
+  {
+    title: "Quais documentos e estruturas o Banco Central analisa em um pedido de licença VASP",
+    excerpt: "Os blocos documentais e institucionais que dão consistência ao pleito regulatório, por que o regulador exige a comprovação minuciosa da origem de recursos e como a falta de coerência entre os manuais e a operação real pode inviabilizar a autorização.",
+    category: "Cripto & Tributação",
+    date: "14 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop",
+    slug: "documentos-licenca-vasp-banco-central",
+    readTime: "8 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender quais são os blocos documentais e institucionais que dão consistência ao pleito regulatório, por que o regulador exige a comprovação minuciosa da origem de recursos e como a falta de coerência entre os manuais e a operação real pode inviabilizar a sua autorização.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">Diferente de uma abertura de empresa convencional, o pedido de autorização para uma PSAV assemelha-se a uma auditoria estatal profunda. No cenário de 2026, o Banco Central do Brasil não busca apenas uma pilha de documentos bem redigidos, mas a prova de que a empresa possui substância operacional e capacidade de gerenciar riscos complexos.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"No licenciamento VASP, a coerência entre o que se escreve e o que se opera é o maior ativo de aprovação."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Os três pilares da análise do regulador</h2>
+
+      <div class="space-y-8 my-10">
+        <div class="p-8 border border-border rounded-2xl bg-card/50">
+          <h3 class="text-xl font-bold mb-4">1. Controladores e administradores — Fit and Proper</h3>
+          <p class="text-muted-foreground font-light">Além de certidões de idoneidade, o Banco Central avalia o currículo e a experiência técnica dos diretores indicados para as pastas de compliance, riscos e tecnologia. A ideia é garantir que a operação seja dirigida por profissionais que compreendam as obrigações fiduciárias e regulatórias do setor. Falhas na documentação pessoal podem travar o processo antes mesmo da análise do modelo de negócio.</p>
+        </div>
+        <div class="p-8 border border-border rounded-2xl bg-card/50">
+          <h3 class="text-xl font-bold mb-4">2. Plano de negócios e manuais de governança</h3>
+          <p class="text-muted-foreground font-light">O regulador exige uma descrição detalhada da viabilidade financeira da operação para os próximos cinco anos. O ponto mais crítico reside nas políticas de PLD/CFT, segurança cibernética e continuidade de negócios. Se a política descreve um monitoramento sofisticado, mas a estrutura tecnológica é simplista, a incoerência torna o documento irrelevante aos olhos do fiscal.</p>
+        </div>
+        <div class="p-8 border border-border rounded-2xl bg-card/50">
+          <h3 class="text-xl font-bold mb-4">3. Arquitetura tecnológica e fluxos de custódia</h3>
+          <p class="text-muted-foreground font-light">O Banco Central analisa diagramas de rede, protocolos de armazenamento de chaves e os contratos com terceiros. A exigência de segregação patrimonial deve estar refletida tanto nos documentos contábeis quanto na programação dos contratos inteligentes e carteiras.</p>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-4 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Quais documentos são exigidos para a licença VASP no Brasil?</h4>
+          <p class="text-muted-foreground font-light text-sm">A lista inclui o plano de negócios, comprovação de origem de recursos, currículos dos administradores, manuais de PLD/CFT, política de segurança cibernética e diagramas de fluxos operacionais e tecnológicos.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">O Banco Central avalia a tecnologia da empresa no licenciamento?</h4>
+          <p class="text-muted-foreground font-light text-sm">Sim, o regulador analisa a infraestrutura de custódia, os protocolos de segurança e a capacidade técnica da plataforma para garantir a proteção dos ativos e a continuidade das operações.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Receba um checklist estratégico das frentes que precisam ser organizadas</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Iniciar o processo com uma base documental sólida reduz drasticamente o tempo de resposta do Banco Central e evita rodadas intermináveis de exigências.</p>
+        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20receber%20um%20checklist%20para%20o%20processo%20de%20licença%20VASP." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+      </div>
+    `
+  },
+
+  // ARTIGO - Processo de Autorização PSAV
+  {
+    title: "Como funciona o processo de autorização de uma PSAV perante o Banco Central",
+    excerpt: "O fluxo real do pleito regulatório, os requisitos essenciais que devem estar prontos antes do protocolo e por que a autorização de uma PSAV deve ser tratada como um projeto de estruturação corporativa completa.",
+    category: "Cripto & Tributação",
+    date: "14 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop",
+    slug: "processo-autorizacao-psav-banco-central-fluxo",
+    readTime: "8 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender o fluxo real do pleito regulatório, os requisitos essenciais que devem estar prontos antes do protocolo e por que a autorização de uma Prestadora de Serviços de Ativos Virtuais deve ser tratada como um projeto de estruturação corporativa completa.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">O processo de autorização para uma PSAV no Banco Central não deve ser encarado como um simples protocolo documental ou uma petição jurídica isolada. Em 2026, com a plena vigência das Resoluções 519 e 520, o regulador brasileiro consolidou um rito de passagem que exige que a operação demonstre maturidade antes mesmo de receber o carimbo oficial. O pleito de autorização é, na verdade, a etapa final de uma jornada que envolve o alinhamento de cinco pilares fundamentais: societário, governança, capital, tecnologia e compliance.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"A licença VASP não é apenas um documento jurídico, é a prova de que sua operação possui maturidade institucional."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">As fases do processo</h2>
+      <div class="space-y-6 my-10">
+        <div class="flex gap-6 p-6 border-b border-border">
+          <span class="text-4xl font-black text-primary/20">01</span>
+          <div>
+            <h4 class="font-bold mb-1">Estruturação pré-protocolo</h4>
+            <p class="text-sm text-muted-foreground font-light">Capital social integralizado compatível com o risco da modalidade, estrutura societária transparente, plano de negócios e demonstração de viabilidade operacional. Esta é a fase mais crítica e a mais negligenciada.</p>
+          </div>
+        </div>
+        <div class="flex gap-6 p-6 border-b border-border">
+          <span class="text-4xl font-black text-primary/20">02</span>
+          <div>
+            <h4 class="font-bold mb-1">Instrução documental — IN 704</h4>
+            <p class="text-sm text-muted-foreground font-light">A Instrução Normativa BCB nº 704 funciona como o manual de instrução dos pedidos. O Banco Central espera consistência absoluta entre o que é descrito nos manuais de compliance e o que é efetivamente executado na tecnologia da plataforma.</p>
+          </div>
+        </div>
+        <div class="flex gap-6 p-6 border-b border-border">
+          <span class="text-4xl font-black text-primary/20">03</span>
+          <div>
+            <h4 class="font-bold mb-1">Exame de admissibilidade e interlocução técnica</h4>
+            <p class="text-sm text-muted-foreground font-light">Os diretores indicados podem ser chamados para entrevistas e esclarecimentos. O regulador avalia o perfil de idoneidade e a capacidade técnica dos administradores — o rito de Fit and Proper.</p>
+          </div>
+        </div>
+        <div class="flex gap-6 p-6 border-b border-border">
+          <span class="text-4xl font-black text-primary/20">04</span>
+          <div>
+            <h4 class="font-bold mb-1">Outorga e publicação no DOU</h4>
+            <p class="text-sm text-muted-foreground font-light">Somente após a validação da governança e a conferência da infraestrutura de segurança cibernética e custódia é que o Banco Central emite a outorga definitiva, publicada no Diário Oficial da União.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-4 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Quanto tempo demora o processo de autorização no Banco Central?</h4>
+          <p class="text-muted-foreground font-light text-sm">Embora os prazos variem conforme a complexidade do modelo, o mercado trabalha com uma estimativa de 12 a 18 meses para a conclusão de todas as fases, desde a estruturação inicial até a outorga final.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">O que é a IN 704 do Banco Central?</h4>
+          <p class="text-muted-foreground font-light text-sm">A Instrução Normativa nº 704 é a norma que estabelece os procedimentos e documentos necessários para instruir os pedidos de autorização de funcionamento das prestadoras de serviços de ativos virtuais no Brasil.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Posso operar enquanto aguardo a autorização?</h4>
+          <p class="text-muted-foreground font-light text-sm">Empresas que já operavam antes do marco regulatório possuem prazos de transição específicos. Novos projetos, contudo, não podem iniciar atividades reguladas sem a publicação da autorização definitiva.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Peça um roadmap inicial do seu processo regulatório</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">O segredo para um processo fluído não está na rapidez do protocolo, mas na profundidade da preparação prévia, garantindo que o discurso institucional e a realidade tecnológica caminhem em sintonia perante o regulador.</p>
+        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20um%20roadmap%20do%20processo%20de%20autorização%20PSAV." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+      </div>
+    `
+  },
+
   // ARTIGO - Exchange, OTC, Custódia ou Infraestrutura
   {
     title: "Exchange, mesa OTC, custodiante ou infraestrutura: em que modalidade seu projeto se enquadra?",

@@ -126,7 +126,7 @@ export default function OffshoreComplianceCard({
               Totalmente compatível com normas brasileiras e internacionais.
             </p>
             <a
-              href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+              href="https://wa.me/5511982712025?text=Olá!%20Tenho%20interesse%20em%20soluções%20offshore%20e%20internacionalização%20com%20a%20Bezerra%20Borges%20Advogados.%20Gostaria%20de%20uma%20análise%20da%20minha%20estrutura."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background text-sm font-medium hover:opacity-80 transition-opacity whitespace-nowrap group"

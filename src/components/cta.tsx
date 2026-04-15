@@ -25,20 +25,20 @@ export function Cta() {
             </a>
 
             <a
-              href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+              href="https://wa.me/5511982712025?text=Olá!%20Tenho%20interesse%20em%20agendar%20uma%20consultoria%20estratégica%20com%20a%20Bezerra%20Borges%20Advogados%20para%20discutir%20minha%20situação%20patrimonial."
               target="_blank"
               rel="noopener noreferrer"
               className="p-8 bg-muted/20 border border-white/5 hover:bg-white/[0.02] transition-colors"
             >
               <Phone className="w-6 h-6 text-white mb-4 mx-auto opacity-50" />
               <h3 className="font-source-serif-pro text-xl text-white mb-2">WhatsApp</h3>
-              <p className="text-white/40 text-sm font-light">+55 21 97990-1686</p>
+              <p className="text-white/40 text-sm font-light">+55 11 98271-2025</p>
             </a>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+              href="https://wa.me/5511982712025?text=Olá!%20Tenho%20interesse%20em%20agendar%20uma%20consultoria%20estratégica%20com%20a%20Bezerra%20Borges%20Advogados%20para%20discutir%20minha%20situação%20patrimonial."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"

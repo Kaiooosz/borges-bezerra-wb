@@ -92,7 +92,7 @@ const standard: StandardJurisdiction[] = [
   { id: "asia", name: "ARÁBIA SAUDITA", image: "/riyadh-arabia-saudita.jpg", href: "/servicos/internacionalizacao", price: "US$ 2.100" },
 ];
 
-const consultarURL = "https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20jurisdições%20offshore";
+const consultarURL = "https://wa.me/5511982712025?text=Olá!%20Tenho%20interesse%20em%20internacionalização%20e%20jurisdições%20offshore%20com%20a%20Bezerra%20Borges%20Advogados.%20Gostaria%20de%20uma%20análise%20do%20meu%20caso.";
 
 export function JurisdictionCards() {
   return (

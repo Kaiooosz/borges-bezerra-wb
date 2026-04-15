@@ -113,7 +113,7 @@ export function AnimatedHero() {
             </p>
 
             <a
-              href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados"
+              href="https://wa.me/5511982712025?text=Olá!%20Tenho%20interesse%20em%20proteção%20patrimonial%20e%20planejamento%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados.%20Gostaria%20de%20agendar%20uma%20consulta%20inicial."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-12 py-4 font-light text-[11px] uppercase tracking-[0.22em] text-white rounded-full transition-all duration-300 hover:scale-[1.03] mb-16"

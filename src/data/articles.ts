@@ -12,6 +12,190 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+  // ARTIGO VASP - Licença VASP Brasil
+  {
+    title: "Minha operação precisa de licença VASP no Brasil? Entenda o perímetro regulatório do Banco Central",
+    excerpt: "Entenda os critérios fundamentais para identificar se o seu modelo de negócio com ativos virtuais exige autorização do Banco Central e como o enquadramento correto evita riscos jurídicos severos.",
+    category: "Cripto & Tributação",
+    date: "14 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2070&auto=format&fit=crop",
+    slug: "minha-operacao-precisa-licenca-vasp-brasil",
+    readTime: "8 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender os critérios fundamentais para identificar se o seu modelo de negócio com ativos virtuais exige autorização do Banco Central, quais são as distinções técnicas entre infraestrutura e intermediação e como o enquadramento correto evita riscos jurídicos severos.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">O mercado de ativos virtuais no Brasil entrou em uma fase de maturidade institucional onde a tecnologia blockchain não serve mais como escudo para a ausência de regulação financeira. Com a consolidação da Lei nº 14.478/2022 e a supervisão direta do Banco Central, muitos fundadores se veem diante do desafio de identificar se sua operação cruzou a linha entre o desenvolvimento de software e a prestação de serviços financeiros regulados. A resposta para essa dúvida não reside no nome comercial do projeto, mas na função econômica que a empresa exerce no dia a dia.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O conceito funcional de PSAV</h2>
+      <p class="mb-6 leading-relaxed">Para compreender esse cenário, é preciso olhar para o conceito de Prestadora de Serviços de Ativos Virtuais, a PSAV, de forma funcional. Em termos simples, o Banco Central considera que uma operação está dentro do seu perímetro quando ela atua em nome de terceiros realizando trocas entre ativos virtuais e moeda soberana, transferências de ativos ou a custódia de instrumentos que permitam o controle sobre esses valores. Na prática, se a sua empresa facilita a entrada e saída de recursos ou mantém a guarda de chaves privadas dos clientes, ela deixa de ser uma plataforma de tecnologia pura para se tornar uma entidade sob vigilância do Sistema Financeiro Nacional.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"O verdadeiro risco regulatório não está na lei, mas na interpretação equivocada do seu próprio modelo de negócio."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Operação própria, intermediação e infraestrutura</h2>
+      <p class="mb-6 leading-relaxed">A diferenciação entre operação própria, intermediação e infraestrutura é o ponto onde a estratégia jurídica se define com clareza. Uma empresa que negocia ativos virtuais exclusivamente com capital próprio, no modelo de prop trading, possui um perfil de risco distinto daquela que atua como uma Exchange ou Mesa OTC. Enquanto a primeira foca em conformidade fiscal, as outras duas precisam de uma estrutura institucional completa para operar legalmente.</p>
+
+      <div class="grid md:grid-cols-3 gap-6 my-10">
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Prop Trading</h4>
+          <p class="text-sm text-muted-foreground font-light">Negocia com capital próprio. Foco em conformidade fiscal. Perfil de risco regulatório distinto.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Exchange / Mesa OTC</h4>
+          <p class="text-sm text-muted-foreground font-light">Atua como intermediador. Exige estrutura institucional completa e autorização do Banco Central.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Software House</h4>
+          <p class="text-sm text-muted-foreground font-light">Licencia tecnologia. Pode estar fora do perímetro — desde que não toque no fluxo financeiro ou nas chaves privadas.</p>
+        </div>
+      </div>
+
+      <p class="mb-6 leading-relaxed">Da mesma forma, existe uma distinção crucial para as chamadas software houses que apenas licenciam tecnologia sem tocar no fluxo financeiro ou no controle das chaves. No momento em que a empresa passa a gerenciar saldos ou influenciar a execução de transações de terceiros, o enquadramento como VASP torna-se mandatório.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Os erros mais comuns de enquadramento</h2>
+      <p class="mb-6 leading-relaxed">É fundamental ter clareza de que nem todo projeto cripto recebe o mesmo tratamento regulatório. O mercado exige uma análise minuciosa de como o valor flui dentro da plataforma e quem detém o poder de decisão sobre os ativos. Um erro comum é acreditar que modelos baseados em protocolos descentralizados ou o uso de parceiros estrangeiros isentam a operação brasileira de suas responsabilidades locais.</p>
+
+      <div class="bg-card border border-border p-8 rounded-2xl my-10 shadow-sm">
+        <h4 class="font-bold mb-4">Riscos de operar sem a devida autorização</h4>
+        <ul class="space-y-3 text-muted-foreground font-light">
+          <li>• Sanções administrativas e multas aplicadas pelo Banco Central</li>
+          <li>• Encerramento imediato de contas bancárias e bloqueio de operações</li>
+          <li>• Riscos criminais por exercício irregular de atividade financeira</li>
+          <li>• Interdições administrativas que inviabilizam o negócio por completo</li>
+        </ul>
+      </div>
+
+      <p class="mb-6 leading-relaxed">O Banco Central tem sido rigoroso ao identificar operações que tentam contornar o perímetro regulatório, o que pode resultar em dificuldades severas de relacionamento bancário e até em interdições administrativas que inviabilizam o negócio por completo.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">A importância do diagnóstico preciso</h2>
+      <p class="mb-6 leading-relaxed">A melhor decisão para quem busca escala e segurança não é o improviso, mas o diagnóstico preciso da estrutura. Entender exatamente em qual categoria sua operação se encaixa permite que o investimento em governança e compliance seja proporcional ao seu tamanho e ambição, evitando o desperdício de recursos ou a exposição a riscos desnecessários. No Bezerra Borges, priorizamos essa definição técnica logo no desenho do projeto para garantir que a transição para o ambiente regulado ocorra de forma fluida e sem surpresas.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-6 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">O que define se preciso de licença VASP no Brasil?</h4>
+          <p class="text-muted-foreground font-light text-sm">O fator decisivo é a prestação de serviços para terceiros. Se a operação envolve troca de ativos por reais, transferências ou custódia de chaves privadas, o enquadramento como PSAV perante o Banco Central é obrigatório.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Empresas que apenas desenvolvem software precisam de licença?</h4>
+          <p class="text-muted-foreground font-light text-sm">Se a empresa apenas fornece a tecnologia e não possui acesso às chaves privadas ou ao fluxo financeiro dos usuários, ela pode estar fora do perímetro regulatório. Contudo, qualquer controle residual sobre os ativos pode alterar essa classificação.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Qual o risco de operar sem a devida autorização do Banco Central?</h4>
+          <p class="text-muted-foreground font-light text-sm">Além das sanções administrativas e multas, a operação pode enfrentar o encerramento imediato de contas bancárias e riscos criminais por exercício irregular de atividade financeira no Brasil.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Solicite uma análise de enquadramento regulatório</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">
+          Antes de avançar para as próximas etapas de desenvolvimento ou captação de recursos, tenha segurança sobre o enquadramento da sua operação.
+        </p>
+        <a
+          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20solicitar%20uma%20análise%20de%20enquadramento%20regulatório%20VASP."
+          class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Falar com um Especialista
+        </a>
+      </div>
+    `
+  },
+
+  // ARTIGO REGULAÇÃO 2026
+  {
+    title: "O que mudou com a regulação de ativos virtuais no Brasil em 2026",
+    excerpt: "As Resoluções BCB nº 519, 520 e 521 mudaram estruturalmente o ambiente para empresas de ativos virtuais. Entenda os impactos práticos e os prazos de adequação.",
+    category: "Cripto & Tributação",
+    date: "10 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2070&auto=format&fit=crop",
+    slug: "regulacao-ativos-virtuais-brasil-2026-mudancas",
+    readTime: "7 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender as mudanças estruturais trazidas pelo novo pacote normativo do Banco Central, como as Resoluções 519, 520 e 521 alteram o dia a dia das empresas e o que os grupos que já operam ou pretendem começar precisam priorizar para garantir a conformidade institucional.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">O mercado de ativos virtuais no Brasil encerrou definitivamente seu ciclo de experimentação para ingressar em uma era de supervisão direta e profissional. Se antes a Lei nº 14.478/2022 oferecia apenas as diretrizes gerais, o cenário de 2026 é definido pelo detalhamento técnico do Banco Central, que assumiu o papel de autoridade máxima sobre as prestadoras de serviços de ativos virtuais. Essa transição representa uma mudança de paradigma onde a conformidade deixa de ser um diferencial ético para se tornar o único caminho legal para a operação e o crescimento sustentável no país.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"Em 2026, a conformidade regulatória deixou de ser um acessório para se tornar a espinha dorsal de qualquer operação de ativos virtuais."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O tripé normativo: Resoluções 519, 520 e 521</h2>
+      <p class="mb-6 leading-relaxed">Na prática, o impacto mais imediato para as empresas reais reside no tripé normativo formado pelas Resoluções BCB nº 519, 520 e 521. Essas normas passaram a disciplinar desde o rito de autorização até a governança interna e o reporte de capitais internacionais.</p>
+
+      <div class="grid md:grid-cols-3 gap-6 my-10">
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <div class="text-3xl font-black text-primary/30 mb-3">519</div>
+          <h4 class="font-bold mb-2 text-sm uppercase tracking-wider">Autorização</h4>
+          <p class="text-sm text-muted-foreground font-light">Rito de autorização para funcionamento das prestadoras de serviços de ativos virtuais.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <div class="text-3xl font-black text-primary/30 mb-3">520</div>
+          <h4 class="font-bold mb-2 text-sm uppercase tracking-wider">Funcionamento</h4>
+          <p class="text-sm text-muted-foreground font-light">Governança interna, diretores qualificados, políticas de risco e segregação patrimonial.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <div class="text-3xl font-black text-primary/30 mb-3">521</div>
+          <h4 class="font-bold mb-2 text-sm uppercase tracking-wider">Câmbio</h4>
+          <p class="text-sm text-muted-foreground font-light">Normas de câmbio e reporte de capitais internacionais, incluindo stablecoins e remessas.</p>
+        </div>
+      </div>
+
+      <p class="mb-6 leading-relaxed">A partir de 2 de fevereiro de 2026, data de vigência das principais regras, o regulador deixou claro que o funcionamento das sociedades depende de uma estrutura de controle compatível com a do Sistema Financeiro Nacional. Isso inclui a exigência de diretores qualificados, políticas de risco cibernético auditáveis e mecanismos de segregação patrimonial que impeçam a confusão entre os ativos da empresa e os dos clientes.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Empresas existentes: prazos de transição</h2>
+      <p class="mb-6 leading-relaxed">Para as empresas que já estavam operando antes da nova regulação, o desafio principal é o cumprimento dos prazos de transição. O Banco Central estabeleceu janelas específicas para que esses players protocolem seus pedidos de autorização sem interromper as atividades, mas essa continuidade depende da demonstração de que a base do negócio já está sendo adaptada aos novos padrões de capital e governança.</p>
+
+      <div class="bg-card border border-border p-8 rounded-2xl my-10 shadow-sm">
+        <h4 class="font-bold mb-4">O que muda para novos entrantes</h4>
+        <p class="text-muted-foreground font-light leading-relaxed">Para os novos entrantes, a regra é de barreira total: não se inicia uma operação de ativos virtuais no Brasil hoje sem a outorga prévia do regulador. Essa distinção força os grupos econômicos a planejarem sua entrada com antecedência, dado que o processo envolve análises profundas de capacidade financeira e idoneidade dos controladores.</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Capitais internacionais e stablecoins</h2>
+      <p class="mb-6 leading-relaxed">Outro ponto de virada fundamental em 2026 é a forma como o Banco Central monitora os fluxos de câmbio e pagamentos internacionais. A regulação avançou para integrar os ativos virtuais às normas de capitais internacionais, afetando diretamente as empresas que utilizam stablecoins para remessas ou liquidação de pagamentos. A mensagem do regulador é clara ao exigir um nível de reporte que antes era restrito aos bancos tradicionais. A tecnologia blockchain não serve mais como justificativa para a falta de registro ou para a opacidade dos fluxos financeiros transfronteiriços.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O custo de uma falha regulatória em 2026</h2>
+      <p class="mb-6 leading-relaxed">Em termos estratégicos, o que mudou não foi apenas o volume de documentos a serem entregues, mas a profundidade da fiscalização. O Banco Central possui ferramentas de análise para verificar a consistência dos dados enviados e a eficácia dos controles de prevenção à lavagem de dinheiro. Operar com estruturas frágeis ou compliance puramente formal tornou-se um risco insustentável, pois o custo de uma falha regulatória em 2026 inclui o bloqueio de canais bancários e a interdição da operação.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-6 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Quais são as principais resoluções do Banco Central sobre cripto?</h4>
+          <p class="text-muted-foreground font-light text-sm">As Resoluções BCB nº 519, 520 e 521 são os pilares atuais, tratando respectivamente do rito de autorização, do funcionamento das sociedades e das normas de câmbio para ativos virtuais.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">O que acontece com as empresas que já operavam no Brasil?</h4>
+          <p class="text-muted-foreground font-light text-sm">Essas empresas devem seguir o rito de transição estabelecido pelo Banco Central, protocolando o pedido de autorização dentro dos prazos legais para garantir a continuidade da operação.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">A segregação patrimonial é obrigatória em 2026?</h4>
+          <p class="text-muted-foreground font-light text-sm">Sim, a segregação patrimonial é um requisito central da regulação atual, exigindo que os ativos dos clientes sejam mantidos de forma totalmente separada do patrimônio da empresa.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Entenda como essas mudanças impactam sua estrutura</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">
+          No Bezerra Borges, acompanhamos cada atualização normativa para garantir que nossos clientes naveguem por essa transição com total segurança jurídica.
+        </p>
+        <a
+          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20entender%20o%20impacto%20da%20regulação%20de%202026%20na%20minha%20operação."
+          class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Falar com um Especialista
+        </a>
+      </div>
+    `
+  },
+
   // NOVO ARTIGO - Proteção Patrimonial
   {
     title: "Proteção Patrimonial: 5 Estratégias Essenciais para 2025",

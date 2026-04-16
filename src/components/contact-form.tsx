@@ -78,7 +78,7 @@ export function ContactForm() {
               <div className="space-y-3 pt-2">
                 <div className="text-sm text-muted-foreground">
                   <span className="text-foreground font-medium">WhatsApp</span><br />
-                  +55 11 98271-2025
+                  +55 21 97990-1686
                 </div>
                 <div className="text-sm text-muted-foreground">
                   <span className="text-foreground font-medium">Email</span><br />
@@ -176,7 +176,7 @@ export function ContactForm() {
                       {!loading && <Send className="h-3 w-3" />}
                     </button>
                     <a
-                      href="https://wa.me/5511982712025?text=Olá!%20Tenho%20interesse%20em%20falar%20diretamente%20com%20a%20Bezerra%20Borges%20Advogados%20sobre%20meu%20caso.%20Podemos%20conversar%3F"
+                      href="https://wa.me/5521979901686?text=Olá!%20Tenho%20interesse%20em%20falar%20diretamente%20com%20a%20Bezerra%20Borges%20Advogados%20sobre%20meu%20caso.%20Podemos%20conversar%3F"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 font-light text-[10px] uppercase tracking-[0.22em] rounded-full border border-border text-foreground transition-all duration-300 hover:border-foreground/40 hover:scale-[1.02]"

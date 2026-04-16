@@ -65,7 +65,7 @@ export const articles: Article[] = [
       <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
         <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Análise de entrada regulatória no mercado brasileiro</h3>
         <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Adaptar a tecnologia global às exigências específicas de custódia, câmbio e reporte nacional é o que garante que a operação internacional entre e permaneça no Brasil com segurança jurídica.</p>
-        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20analisar%20a%20entrada%20regulatória%20de%20uma%20VASP%20estrangeira%20no%20Brasil." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+        <a href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20analisar%20a%20entrada%20regulatória%20de%20uma%20VASP%20estrangeira%20no%20Brasil." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
       </div>
     `
   },
@@ -123,7 +123,7 @@ export const articles: Article[] = [
       <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
         <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Avalie os riscos regulatórios da sua estrutura cross-border</h3>
         <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Mapear os gatilhos regulatórios de uma operação cross-border permite que o projeto escale com transparência e segurança normativa.</p>
-        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20avaliar%20os%20riscos%20regulatórios%20da%20minha%20operação%20com%20stablecoins." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+        <a href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20avaliar%20os%20riscos%20regulatórios%20da%20minha%20operação%20com%20stablecoins." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
       </div>
     `
   },
@@ -184,7 +184,7 @@ export const articles: Article[] = [
       <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
         <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Veja se sua arquitetura operacional protege clientes e o negócio</h3>
         <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Avaliar se a sua arquitetura e contratos estão alinhados aos padrões de segregação exigidos pelo regulador é indispensável para qualquer player sério no setor.</p>
-        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20avaliar%20a%20segregação%20patrimonial%20da%20minha%20operação." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+        <a href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20avaliar%20a%20segregação%20patrimonial%20da%20minha%20operação." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
       </div>
     `
   },
@@ -253,7 +253,7 @@ export const articles: Article[] = [
       <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
         <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Entenda quais pontos de custódia precisam ser tratados antes da escala</h3>
         <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">A robustez da custódia é o que permite ao investidor institucional entrar no mercado com segurança. Organize esses fluxos antes de escalar.</p>
-        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20avaliar%20a%20estrutura%20de%20custódia%20da%20minha%20operação." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+        <a href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20avaliar%20a%20estrutura%20de%20custódia%20da%20minha%20operação." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
       </div>
     `
   },
@@ -306,7 +306,7 @@ export const articles: Article[] = [
       <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
         <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Avalie se sua operação está pronta para padrões institucionais de compliance</h3>
         <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">A maturidade em PLD/CFT é o selo de confiança que permite que as empresas de ativos virtuais operem plenamente integradas ao Sistema Financeiro Nacional.</p>
-        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20avaliar%20o%20compliance%20PLD%20da%20minha%20operação." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+        <a href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20avaliar%20o%20compliance%20PLD%20da%20minha%20operação." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
       </div>
     `
   },
@@ -380,7 +380,7 @@ export const articles: Article[] = [
       <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
         <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Solicite uma estimativa preliminar para o seu projeto</h3>
         <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">O orçamento de uma PSAV deve ser tão preciso quanto seu algoritmo de negociação, garantindo fôlego financeiro para atravessar todas as fases do licenciamento.</p>
-        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20uma%20estimativa%20preliminar%20para%20estruturar%20minha%20operação%20VASP." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+        <a href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20uma%20estimativa%20preliminar%20para%20estruturar%20minha%20operação%20VASP." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
       </div>
     `
   },
@@ -442,7 +442,7 @@ export const articles: Article[] = [
       <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
         <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Faça um diagnóstico preventivo antes de investir no pleito</h3>
         <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">No Bezerra Borges, realizamos um choque de realidade regulatório antes que o cliente invista tempo e capital em um pleito imaturo.</p>
-        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20um%20diagnóstico%20preventivo%20do%20meu%20projeto%20VASP." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+        <a href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20um%20diagnóstico%20preventivo%20do%20meu%20projeto%20VASP." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
       </div>
     `
   },
@@ -501,7 +501,7 @@ export const articles: Article[] = [
       <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
         <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Receba um checklist estratégico das frentes que precisam ser organizadas</h3>
         <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Iniciar o processo com uma base documental sólida reduz drasticamente o tempo de resposta do Banco Central e evita rodadas intermináveis de exigências.</p>
-        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20receber%20um%20checklist%20para%20o%20processo%20de%20licença%20VASP." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+        <a href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20receber%20um%20checklist%20para%20o%20processo%20de%20licença%20VASP." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
       </div>
     `
   },
@@ -579,7 +579,7 @@ export const articles: Article[] = [
       <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
         <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Peça um roadmap inicial do seu processo regulatório</h3>
         <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">O segredo para um processo fluído não está na rapidez do protocolo, mas na profundidade da preparação prévia, garantindo que o discurso institucional e a realidade tecnológica caminhem em sintonia perante o regulador.</p>
-        <a href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20um%20roadmap%20do%20processo%20de%20autorização%20PSAV." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
+        <a href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20um%20roadmap%20do%20processo%20de%20autorização%20PSAV." class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl">Falar com um Especialista</a>
       </div>
     `
   },
@@ -687,7 +687,7 @@ export const articles: Article[] = [
           A complexidade do ecossistema de ativos virtuais não permite mais espaço para interpretações amadoras sobre o papel de cada player no Sistema Financeiro Nacional.
         </p>
         <a
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20mapear%20a%20modalidade%20regulatória%20do%20meu%20projeto%20VASP."
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20mapear%20a%20modalidade%20regulatória%20do%20meu%20projeto%20VASP."
           class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Falar com um Especialista
@@ -822,7 +822,7 @@ export const articles: Article[] = [
           Antes de avançar para as próximas etapas de desenvolvimento ou captação de recursos, tenha segurança sobre o enquadramento da sua operação.
         </p>
         <a
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20solicitar%20uma%20análise%20de%20enquadramento%20regulatório%20VASP."
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20solicitar%20uma%20análise%20de%20enquadramento%20regulatório%20VASP."
           class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Falar com um Especialista
@@ -902,7 +902,7 @@ export const articles: Article[] = [
           A Bezerra Borges Advogados é especializada em estruturação de holdings e planejamento tributário internacional.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20sobre%20Proteção%20Patrimonial." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20estratégico%20sobre%20Proteção%20Patrimonial." 
           class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Agendar Consultoria Especializada
@@ -1013,7 +1013,7 @@ export const articles: Article[] = [
           Proteção patrimonial, eficiência sucessória e governança para seus ativos globais. Agende uma análise confidencial.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20abertura%20de%20uma%20holding%20internacional." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20abertura%20de%20uma%20holding%20internacional." 
           class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Consultar Especialista
@@ -1074,7 +1074,7 @@ export const articles: Article[] = [
           Não deixe sua segurança jurídica ao acaso. O planejamento profissional é seu maior ativo.
         </p>
         <a 
-          href="https://wa.me/5511982712025" 
+          href="https://wa.me/5521979901686" 
           class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Consultar Especialista
@@ -1142,7 +1142,7 @@ export const articles: Article[] = [
           Proteja sua riqueza digital com protocolos de custódia e validade jurídica.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20planejamento%20sucessório%20de%20criptoativos." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20falar%20sobre%20planejamento%20sucessório%20de%20criptoativos." 
           class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Consultar Especialista Cripto
@@ -1200,7 +1200,7 @@ export const articles: Article[] = [
           O custo da inércia em 2026 nunca foi tão alto. Proteja-se contra a progressividade do ITCMD.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20estruturação%20de%20holding%20internacional%20em%202026." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20falar%20sobre%20estruturação%20de%20holding%20internacional%20em%202026." 
           class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Agendar Consultoria
@@ -1248,7 +1248,7 @@ export const articles: Article[] = [
           Evite a bitributação e garanta o diferimento inteligente dos seus lucros.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20revisar%20minha%20estrutura%20societária%20devido%20à%20tributação%20de%20dividendos." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20revisar%20minha%20estrutura%20societária%20devido%20à%20tributação%20de%20dividendos." 
           class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Consultar Especialistas
@@ -1298,7 +1298,7 @@ export const articles: Article[] = [
           A segurança patrimonial hoje não está em "esconder", mas em governança profissional.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20vi%20o%20artigo%20sobre%20a%20grande%20migração%20patrimonial%20e%20quero%20revisar%20minha%20estratégia." 
+          href="https://wa.me/5521979901686?text=Olá,%20vi%20o%20artigo%20sobre%20a%20grande%20migração%20patrimonial%20e%20quero%20revisar%20minha%20estratégia." 
           class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Agendar Diagnóstico
@@ -1387,7 +1387,7 @@ export const articles: Article[] = [
           Cuidamos de todo o processo de Residência Fiscal, NIF Paraguaio e estruturação de Holdings.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20li%20o%20artigo%20sobre%20o%20Paraguai%20e%20gostaria%20de%20iniciar%20meu%20planejamento." 
+          href="https://wa.me/5521979901686?text=Olá,%20li%20o%20artigo%20sobre%20o%20Paraguai%20e%20gostaria%20de%20iniciar%20meu%20planejamento." 
           class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Consultar Especialista Paraguai
@@ -1506,7 +1506,7 @@ export const articles: Article[] = [
           Atuamos na estruturação jurídica estratégica de ativos digitais e proteção patrimonial internacional com foco em conformidade rigorosa.
         </p>
         <a
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20proteção%20e%20tributação%20de%20ativos%20digitais."
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20proteção%20e%20tributação%20de%20ativos%20digitais."
           class="inline-flex items-center justify-center px-10 py-3.5 rounded-full font-light text-[10px] uppercase tracking-[0.22em]"
         >
           Consultar Especialista
@@ -1614,7 +1614,7 @@ export const articles: Article[] = [
           Análise técnica de jurisdição, conformidade com regras de CFC e roadmap de implementação para o seu negócio digital.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20estruturação%20internacional%20para%20marketing%20digital." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20falar%20sobre%20estruturação%20internacional%20para%20marketing%20digital." 
           class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300"
         >
           Consultar Especialista
@@ -1684,7 +1684,7 @@ export const articles: Article[] = [
           Evite erros comuns de conformidade e garanta uma estrutura bancária sólida para seu negócio internacional no Reino Unido.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20abertura%20de%20empresa%20no%20Reino%20Unido." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20falar%20sobre%20abertura%20de%20empresa%20no%20Reino%20Unido." 
           class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Falar com um Especialista
@@ -1752,7 +1752,7 @@ export const articles: Article[] = [
           Se você busca previsibilidade jurídica de longo prazo e segurança patrimonial, agende uma análise técnica confidencial da sua estrutura atual.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20estratégia%20de%20internacionalização%20para%20Dubai." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20estratégia%20de%20internacionalização%20para%20Dubai." 
           class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Consultar Especialista
@@ -1815,7 +1815,7 @@ export const articles: Article[] = [
           A decisão de mudar sua jurisdição tributária deve ser técnica e multidisciplinar. Agende uma avaliação estratégica personalizada da sua estrutura patrimonial.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20residência%20fiscal%20no%20Paraguai." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20residência%20fiscal%20no%20Paraguai." 
           class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Consultar Especialista
@@ -1876,7 +1876,7 @@ export const articles: Article[] = [
           Análise de conformidade para ativos no exterior, apuração de ganho de capital e estruturação de holdings para investidores de cripto.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20tributação%20e%20regularização%20de%20criptoativos." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20tributação%20e%20regularização%20de%20criptoativos." 
           class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Consultar Especialista
@@ -1944,7 +1944,7 @@ export const articles: Article[] = [
           Analise o enquadramento regulatório da sua operação e garanta uma licença sólida para escalar no mercado americano.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20o%20licenciamento%20MSB%20para%20minha%20fintech." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20falar%20sobre%20o%20licenciamento%20MSB%20para%20minha%20fintech." 
           class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Consultar Especialista
@@ -2036,7 +2036,7 @@ export const articles: Article[] = [
           Proteção patrimonial, eficiência sucessória e governança para seus ativos globais. Agende uma análise confidencial técnica da sua estrutura atual.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20abertura%20de%20uma%20offshore%20em%20Dubai." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20abertura%20de%20uma%20offshore%20em%20Dubai." 
           class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Consultar Especialista
@@ -2096,7 +2096,7 @@ export const articles: Article[] = [
           Analise sua estrutura jurídica e tributária para garantir que seu crescimento seja sustentável e protegido.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20Legal%20Growth%20e%20estruturação%20para%20meu%20infoproduto." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20falar%20sobre%20Legal%20Growth%20e%20estruturação%20para%20meu%20infoproduto." 
           class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Falar com Especialista Digital
@@ -2164,7 +2164,7 @@ export const articles: Article[] = [
           Acesse a infraestrutura financeira britânica com segurança jurídica e conformidade técnica.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20abertura%20de%20empresa%20no%20Reino%20Unido." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20abertura%20de%20empresa%20no%20Reino%20Unido." 
           class="inline-block bg-foreground text-background px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Consultar Especialista Internacional
@@ -2262,7 +2262,7 @@ export const articles: Article[] = [
           Expansão para o mercado asiático com credibilidade bancária e eficiência tributária global.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20abertura%20de%20empresa%20em%20Singapura." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20abertura%20de%20empresa%20em%20Singapura." 
           class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Consultar Especialista
@@ -2347,7 +2347,7 @@ export const articles: Article[] = [
           Segurança jurídica, eficiência tributária e acesso ao mercado global. Inicie sua estruturação internacional hoje.
         </p>
         <a 
-          href="https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20abertura%20de%20empresa%20na%20Irlanda." 
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20falar%20sobre%20a%20abertura%20de%20empresa%20na%20Irlanda." 
           class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Agendar Consultoria Especializada
@@ -2413,7 +2413,7 @@ export const articles: Article[] = [
           Cuidamos da constituição da empresa, NIF, abertura de conta e planejamento tributário transfronteiriço.
         </p>
         <a 
-          href="https://wa.me/5511982712025" 
+          href="https://wa.me/5521979901686" 
           class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
         >
           Falar com Especialista Portugal

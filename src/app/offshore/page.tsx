@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer";
 import { WorldMapSection } from "@/components/world-map-section";
 
 const WHATSAPP =
-  "https://wa.me/5511982712025?text=Olá,%20gostaria%20de%20agendar%20uma%20consultoria%20offshore%20com%20a%20Bezerra%20Borges%20Advogados";
+  "https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20uma%20consultoria%20offshore%20com%20a%20Bezerra%20Borges%20Advogados";
 
 const titleStyle = {
   

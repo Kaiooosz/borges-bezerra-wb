@@ -7,7 +7,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 const WHATSAPP_URL =
-  "https://wa.me/5511982712025?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consultoria%20sobre%20Holding%20Patrimonial%20com%20a%20Bezerra%20Borges%20Advogados"
+  "https://wa.me/5521979901686?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consultoria%20sobre%20Holding%20Patrimonial%20com%20a%20Bezerra%20Borges%20Advogados"
 
 const titleStyle = {
   

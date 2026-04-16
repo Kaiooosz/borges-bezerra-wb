@@ -115,7 +115,7 @@ export function LeadMagnet() {
               </a>
 
               <a
-                href="https://wa.me/5511982712025?text=Olá!%20Tenho%20interesse%20no%20guia%20estratégico%20da%20Bezerra%20Borges%20Advogados%20e%20gostaria%20de%20falar%20com%20um%20especialista."
+                href="https://wa.me/5521979901686?text=Olá!%20Tenho%20interesse%20no%20guia%20estratégico%20da%20Bezerra%20Borges%20Advogados%20e%20gostaria%20de%20falar%20com%20um%20especialista."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 w-full py-4 font-light text-[11px] uppercase tracking-[0.22em] text-muted-foreground rounded-full border border-border transition-all duration-300 hover:text-foreground hover:border-foreground/30 hover:scale-[1.02]"

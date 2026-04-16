@@ -132,7 +132,7 @@ export function ConsultoriaPricing() {
 
                 <div>
                   <a
-                    href="https://wa.me/5511982712025?text=Olá!%20Tenho%20interesse%20em%20agendar%20uma%20consultoria%20com%20a%20Bezerra%20Borges%20Advogados.%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20disponíveis."
+                    href="https://wa.me/5521979901686?text=Olá!%20Tenho%20interesse%20em%20agendar%20uma%20consultoria%20com%20a%20Bezerra%20Borges%20Advogados.%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20disponíveis."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex w-full items-center justify-center py-3.5 font-light text-[10px] uppercase tracking-[0.22em] rounded-full transition-all duration-300 hover:scale-[1.02]"

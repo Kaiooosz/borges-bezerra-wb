@@ -99,7 +99,7 @@ export function Header() {
               </button>
 
               <a
-                href="https://wa.me/5511982712025?text=Olá!%20Tenho%20interesse%20em%20proteção%20patrimonial%20e%20planejamento%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados.%20Gostaria%20de%20agendar%20uma%20consulta%20inicial."
+                href="https://wa.me/5521979901686?text=Olá!%20Tenho%20interesse%20em%20proteção%20patrimonial%20e%20planejamento%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados.%20Gostaria%20de%20agendar%20uma%20consulta%20inicial."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-5 py-2.5 font-light text-[10px] uppercase tracking-[0.22em] rounded-full transition-all duration-200 hover:scale-[1.02]"
@@ -153,7 +153,7 @@ export function Header() {
             ))}
 
             <a
-              href="https://wa.me/5511982712025?text=Olá!%20Tenho%20interesse%20em%20proteção%20patrimonial%20e%20planejamento%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados.%20Gostaria%20de%20agendar%20uma%20consulta%20inicial."
+              href="https://wa.me/5521979901686?text=Olá!%20Tenho%20interesse%20em%20proteção%20patrimonial%20e%20planejamento%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados.%20Gostaria%20de%20agendar%20uma%20consulta%20inicial."
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 px-10 py-4 font-light text-[10px] uppercase tracking-[0.22em] rounded-full transition-all duration-200"

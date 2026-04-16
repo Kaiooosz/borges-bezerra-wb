@@ -56,7 +56,7 @@ export default function TermsOfUsePage() {
               Responsáveis legais: <strong className="text-foreground font-light">Vinicius Borges de Albuquerque</strong> e <strong className="text-foreground font-light">Renata Dorta Bezerra</strong>, sócios fundadores.
             </p>
             <p className="text-sm text-muted-foreground font-light leading-relaxed">
-              Contato: contato@bezerraborges.com.br | +55 11 98271-2025
+              Contato: contato@bezerraborges.com.br | +55 21 97990-1686
             </p>
           </section>
 

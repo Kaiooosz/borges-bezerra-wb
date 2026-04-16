@@ -91,11 +91,11 @@ export function Footer() {
                 </p>
               </div>
               <a
-                href="tel:+5511982712025"
+                href="tel:+5521979901686"
                 className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
               >
                 <Phone className="h-4 w-4 shrink-0" />
-                <span>+55 11 98271-2025</span>
+                <span>+55 21 97990-1686</span>
               </a>
               <a
                 href="mailto:contato@bezerraborges.com.br"

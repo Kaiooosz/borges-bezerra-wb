@@ -36,7 +36,7 @@ const plans = [
   },
   {
     id: "brasil",
-    productId: "prod_UDRMPR69CwTol8",
+    productId: "prod_UDRLAUzEIEB211",
     badge: "MAIS VENDIDO",
     title: "Estratégia Brasil",
     price: "US$ 149",

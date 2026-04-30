@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
           quantity: 1,
         },
       ],
-      success_url: `${origin}/consultoria?payment=success`,
+      success_url: `${origin}/consultoria/sucesso?produto=${encodeURIComponent(product.name)}`,
       cancel_url: `${origin}/consultoria?payment=cancelled`,
       locale: "pt-BR",
     });

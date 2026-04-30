@@ -1,11 +1,13 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
 const plans = [
   {
     id: "introdutorio",
+    productId: "prod_UDRN5K9P9Caz7T",
     badge: "INTRODUTÓRIO",
     title: "Consulta com Contador",
     price: "US$ 100",
@@ -19,6 +21,7 @@ const plans = [
   },
   {
     id: "estrategico",
+    productId: "prod_UDRNVJp9NTuhrU",
     badge: "ESTRATÉGICO",
     title: "Estratégia Offshore",
     price: "US$ 119",
@@ -33,6 +36,7 @@ const plans = [
   },
   {
     id: "brasil",
+    productId: "prod_UDRMPR69CwTol8",
     badge: "MAIS VENDIDO",
     title: "Estratégia Brasil",
     price: "US$ 149",
@@ -48,6 +52,29 @@ const plans = [
 ];
 
 export function ConsultoriaPricing() {
+  const [loadingId, setLoadingId] = useState<string | null>(null);
+
+  async function handleCheckout(productId: string, planId: string) {
+    setLoadingId(planId);
+    try {
+      const res = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ productId }),
+      });
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        alert("Erro ao iniciar pagamento. Tente novamente.");
+      }
+    } catch {
+      alert("Erro de conexão. Tente novamente.");
+    } finally {
+      setLoadingId(null);
+    }
+  }
+
   return (
     <section className="py-24 md:py-32 bg-background border-t border-border">
       <div className="container px-4 max-w-6xl mx-auto">
@@ -131,19 +158,18 @@ export function ConsultoriaPricing() {
                 </div>
 
                 <div>
-                  <a
-                    href="https://wa.me/5521979901686?text=Olá!%20Tenho%20interesse%20em%20agendar%20uma%20consultoria%20com%20a%20Bezerra%20Borges%20Advogados.%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20disponíveis."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex w-full items-center justify-center py-3.5 font-light text-[10px] uppercase tracking-[0.22em] rounded-full transition-all duration-300 hover:scale-[1.02]"
+                  <button
+                    onClick={() => handleCheckout(plan.productId, plan.id)}
+                    disabled={loadingId === plan.id}
+                    className="flex w-full items-center justify-center py-3.5 font-light text-[10px] uppercase tracking-[0.22em] rounded-full transition-all duration-300 hover:scale-[1.02] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
                     style={
                       plan.featured
                         ? { background: "rgba(255,255,255,0.92)", color: "#0a0a0a", border: "1px solid rgba(255,255,255,0.9)" }
                         : { background: "rgba(255,255,255,0.06)", color: "white", border: "1px solid rgba(255,255,255,0.14)", backdropFilter: "blur(12px)" }
                     }
                   >
-                    Contratar Agora
-                  </a>
+                    {loadingId === plan.id ? "Aguarde..." : "Contratar Agora"}
+                  </button>
                   <p className="text-[9px] text-muted-foreground text-center font-light mt-3 uppercase tracking-[0.15em]">
                     Valor 100% reembolsável no serviço final
                   </p>

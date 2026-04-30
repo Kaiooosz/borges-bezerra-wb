@@ -2421,6 +2421,452 @@ export const articles: Article[] = [
       </div>
     `
   },
+
+  // ARTIGO - Como declarar offshore no IR 2026
+  {
+    title: "Como declarar offshore no IR 2026: o que mudou e o que exige atenção",
+    excerpt: "Entenda os principais cuidados para declarar estruturas offshore no IR 2026, quais mudanças fiscais passaram a exigir mais atenção de investidores brasileiros e por que a análise da estrutura no exterior não deve ser tratada como mero preenchimento de declaração.",
+    category: "Planejamento Tributário",
+    date: "30 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
+    slug: "como-declarar-offshore-ir-2026",
+    readTime: "9 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender os principais cuidados para declarar estruturas offshore no IR 2026, quais mudanças fiscais passaram a exigir mais atenção de investidores brasileiros e por que a análise da estrutura no exterior não deve ser tratada como mero preenchimento de declaração.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">O patrimônio internacional deixou de ser um tema restrito a grandes fortunas e passou a fazer parte da rotina de empresários, investidores, profissionais digitais e famílias que buscam diversificação, proteção e acesso a mercados fora do Brasil. Ao mesmo tempo, a Receita Federal passou a olhar essas estruturas com muito mais precisão. A partir da consolidação da Lei nº 14.754/2023 e da regulamentação específica sobre renda no exterior, aplicações financeiras, entidades controladas e trusts, declarar uma offshore no IR deixou de ser apenas informar a existência de uma empresa fora do país: passou a exigir coerência entre controle, rendimentos, documentação e finalidade patrimonial.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"Declarar offshore no IR 2026 não é apenas preencher campos — é demonstrar coerência entre controle, rendimentos, documentação e finalidade patrimonial."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Ativos diretos no exterior versus entidade intermediária</h2>
+      <p class="mb-6 leading-relaxed">O primeiro ponto que exige atenção é a distinção entre possuir ativos diretamente no exterior e utilizar uma entidade intermediária, como uma offshore. Uma conta internacional, uma corretora estrangeira ou um investimento direto em ativos financeiros possuem uma lógica declaratória diferente de uma sociedade estrangeira controlada pelo contribuinte brasileiro. No caso das entidades controladas, a Receita não avalia apenas o nome da empresa ou a jurisdição escolhida, mas quem exerce o controle, como os lucros são apurados e se há diferimento artificial de tributação.</p>
+
+      <div class="grid md:grid-cols-2 gap-6 my-10">
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Ativos Diretos no Exterior</h4>
+          <p class="text-sm text-muted-foreground font-light">Conta internacional, corretora estrangeira, investimento direto. Lógica declaratória mais simples, mas exige organização de rendimentos e custo de aquisição.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Entidade Controlada (Offshore)</h4>
+          <p class="text-sm text-muted-foreground font-light">Sociedade estrangeira controlada pelo contribuinte brasileiro. Exige análise de controle, apuração de lucros e compatibilidade com o novo regime da Lei nº 14.754/2023.</p>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O novo regime tributário e o fim do diferimento automático</h2>
+      <p class="mb-6 leading-relaxed">Com o novo regime, os rendimentos de aplicações financeiras no exterior e lucros de entidades controladas passaram a ser submetidos a uma tributação anual específica, com alíquota uniforme, separada dos demais rendimentos. Isso muda profundamente a lógica de planejamento. Em muitos casos, a offshore continua fazendo sentido para governança, sucessão, organização patrimonial, acesso a bancos e investimentos internacionais. Mas ela deixa de ser uma resposta automática para simples economia de imposto. O valor da estrutura passa a depender da finalidade real, do volume patrimonial, da governança e da capacidade de manter documentação consistente.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Estruturas opacas, transparentes e trusts</h2>
+      <p class="mb-6 leading-relaxed">Outro ponto sensível é a classificação da estrutura como opaca ou transparente para fins fiscais. Essa decisão impacta a forma de declaração, o reconhecimento de rendimentos e a estratégia sucessória. Uma estrutura mal classificada pode gerar inconsistências entre a declaração da pessoa física, os extratos bancários, os balanços da entidade estrangeira e a documentação societária.</p>
+
+      <div class="bg-card border border-border p-8 rounded-2xl my-10 shadow-sm">
+        <h4 class="font-bold mb-4">Pontos críticos que geram inconsistência na declaração</h4>
+        <ul class="space-y-3 text-muted-foreground font-light">
+          <li>• Ausência de coerência entre participação societária, balanço e rendimentos declarados</li>
+          <li>• Origem dos recursos não documentada ou incompatível com a capacidade financeira</li>
+          <li>• Trusts e fundações privadas sem análise do tratamento fiscal brasileiro</li>
+          <li>• Estrutura mal classificada como opaca ou transparente para fins fiscais</li>
+          <li>• Dados importados de extrato estrangeiro sem validação patrimonial</li>
+        </ul>
+      </div>
+
+      <p class="mb-6 leading-relaxed">Trusts, fundações privadas e estruturas fiduciárias também exigem leitura cuidadosa. O uso desses instrumentos pode ser sofisticado e legítimo, especialmente em planejamentos sucessórios internacionais, mas não deve ser feito sem análise do tratamento fiscal brasileiro. A documentação deve refletir quem é o instituidor, quem são os beneficiários, quem controla decisões econômicas e como os bens serão tratados na declaração.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"O IR 2026 deve ser encarado como uma oportunidade de revisão. Antes de apenas repetir informações de anos anteriores, o contribuinte deve avaliar se a estrutura ainda faz sentido."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">A declaração como parte de uma análise patrimonial mais ampla</h2>
+      <p class="mb-6 leading-relaxed">Por isso, o IR 2026 deve ser encarado como uma oportunidade de revisão. Antes de apenas repetir informações de anos anteriores ou importar dados de um extrato internacional, o contribuinte deve avaliar se a estrutura ainda faz sentido, se a documentação está completa, se há ativos subdeclarados, se os rendimentos foram corretamente apurados e se a estratégia patrimonial continua alinhada com os objetivos da família ou do negócio.</p>
+      <p class="mb-6 leading-relaxed">No Bezerra Borges, a declaração de offshore é tratada como parte de uma análise patrimonial mais ampla. O objetivo não é apenas preencher campos, mas compreender se a estrutura está juridicamente coerente, fiscalmente defensável e estrategicamente útil para o patrimônio do cliente.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-6 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Quem precisa declarar offshore no IR 2026?</h4>
+          <p class="text-muted-foreground font-light text-sm">Deve declarar a pessoa física residente fiscal no Brasil que detenha participação, controle ou direitos sobre entidade no exterior, observadas as regras aplicáveis à natureza da estrutura, aos ativos detidos e aos rendimentos auferidos.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Offshore ainda vale a pena depois da Lei nº 14.754/2023?</h4>
+          <p class="text-muted-foreground font-light text-sm">Pode continuar fazendo sentido, mas não como solução automática de economia tributária. A utilidade da offshore passa a depender de governança, sucessão, acesso internacional, organização patrimonial e coerência econômica.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Qual o maior erro ao declarar offshore?</h4>
+          <p class="text-muted-foreground font-light text-sm">O erro mais comum é declarar a estrutura de forma superficial, sem compatibilizar participação societária, balanço, rendimentos, origem dos recursos, documentação bancária e finalidade patrimonial.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Revisão da sua estrutura internacional</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Antes de entregar sua declaração ou tomar decisões sobre manutenção, distribuição de lucros ou reorganização da estrutura no exterior, solicite uma revisão preliminar.</p>
+        <a
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20solicitar%20uma%20revisão%20da%20minha%20estrutura%20offshore%20para%20o%20IR%202026."
+          class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Falar com um Especialista
+        </a>
+      </div>
+    `
+  },
+
+  // ARTIGO - Residência no Paraguai para brasileiros
+  {
+    title: "Residência no Paraguai para brasileiros: quando vale a pena e quando não vale",
+    excerpt: "Entenda quando a residência no Paraguai pode fazer sentido para brasileiros, quais são os limites do discurso simplista de economia tributária e por que residência migratória, residência fiscal e planejamento patrimonial não são a mesma coisa.",
+    category: "Internacionalização",
+    date: "30 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2070&auto=format&fit=crop",
+    slug: "residencia-no-paraguai-para-brasileiros",
+    readTime: "9 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender quando a residência no Paraguai pode fazer sentido para brasileiros, quais são os limites do discurso simplista de economia tributária e por que residência migratória, residência fiscal e planejamento patrimonial não são a mesma coisa.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">O Paraguai se tornou um dos destinos mais comentados entre brasileiros que buscam menor carga tributária, mais liberdade econômica, proximidade geográfica e uma estrutura de vida mais simples dentro do Mercosul. A facilidade relativa de acesso, o custo operacional competitivo e o ambiente empresarial mais enxuto tornam o país uma alternativa real para empresários, investidores, profissionais digitais e famílias que desejam reorganizar sua vida internacional. O problema começa quando a residência no Paraguai é vendida como solução automática para todos os casos.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"Ter documentação migratória no Paraguai não significa, por si só, que a pessoa deixou de ser residente fiscal no Brasil."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Residência migratória versus residência fiscal</h2>
+      <p class="mb-6 leading-relaxed">A primeira distinção importante é entre obter documentação migratória e produzir efeitos fiscais reais. Ter residência, cédula ou conta bancária no Paraguai pode ser relevante, mas isso não significa, por si só, que a pessoa deixou de ser residente fiscal no Brasil. Para que a mudança produza efeitos corretos, é necessário analisar saída fiscal brasileira, vínculos remanescentes, local de moradia, centro de interesses econômicos, fonte de renda e coerência documental. Sem essa leitura, o contribuinte corre o risco de acreditar que mudou de jurisdição quando, para a Receita Federal, continua residente no Brasil.</p>
+
+      <div class="grid md:grid-cols-2 gap-6 my-10">
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Quando costuma fazer sentido</h4>
+          <p class="text-sm text-muted-foreground font-light">Mudança efetiva de vida, operação empresarial local, reorganização patrimonial, renda internacional, planejamento de longo prazo com substância fora do Brasil.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Quando costuma não fazer sentido</h4>
+          <p class="text-sm text-muted-foreground font-light">Apenas para pagar menos imposto sem mudança real, com família, empresas, renda e rotina no Brasil, sem análise da residência fiscal e sem saída definitiva formalizada.</p>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Quando o Paraguai tende a fazer sentido</h2>
+      <p class="mb-6 leading-relaxed">A residência no Paraguai tende a fazer mais sentido quando existe um projeto real por trás da mudança. Isso pode incluir mudança efetiva de vida, abertura de empresa com operação local, reorganização patrimonial, redução de exposição fiscal futura, internacionalização de negócios ou estruturação de uma base regional na América do Sul. Nesses casos, o Paraguai pode funcionar como uma peça estratégica dentro de um planejamento maior, especialmente quando há substância, presença, documentação e compatibilidade entre residência pessoal e atividade econômica.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Os limites do discurso simplista</h2>
+      <p class="mb-6 leading-relaxed">Por outro lado, a residência tende a fazer pouco sentido quando o objetivo é apenas "pagar menos imposto" sem mudança real de vida, sem reorganização do patrimônio e sem disposição para cumprir os procedimentos formais no Brasil. O risco aumenta quando a pessoa mantém residência habitual, família, empresas, renda principal e rotina econômica no Brasil, mas passa a declarar informalmente que "mora no Paraguai". Esse tipo de desalinhamento pode gerar problemas fiscais, bancários e patrimoniais no futuro.</p>
+
+      <div class="bg-card border border-border p-8 rounded-2xl my-10 shadow-sm">
+        <h4 class="font-bold mb-4">Elementos que a Receita Federal avalia na residência fiscal</h4>
+        <ul class="space-y-3 text-muted-foreground font-light">
+          <li>• Saída definitiva formalizada com comunicação à Receita Federal</li>
+          <li>• Local de moradia habitual e presença física comprovada</li>
+          <li>• Centro de interesses econômicos — onde está a renda, as empresas, os investimentos</li>
+          <li>• Vínculos remanescentes no Brasil: imóveis, dependentes, contas, contratos</li>
+          <li>• Coerência documental entre residência declarada e comportamento financeiro</li>
+        </ul>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Residência pessoal versus estrutura empresarial</h2>
+      <p class="mb-6 leading-relaxed">Também é importante separar residência pessoal de estrutura empresarial. Para alguns brasileiros, pode fazer sentido obter residência e operar parcialmente a partir do Paraguai. Para outros, pode ser mais adequado abrir uma empresa paraguaia sem necessariamente transferir imediatamente a residência fiscal da pessoa física. Em outros casos, nem residência nem empresa local resolvem o problema principal, e uma solução internacional mais robusta pode envolver outros países, holdings, contratos, contas bancárias e planejamento sucessório.</p>
+      <p class="mb-6 leading-relaxed">A melhor decisão não é aderir ao Paraguai por moda, mas entender se ele é uma peça adequada para o seu caso. Residência, empresa, banco, saída fiscal, contratos, patrimônio e renda precisam conversar entre si. No Bezerra Borges, a análise sobre Paraguai começa pela pergunta que realmente importa: qual problema você está tentando resolver?</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-6 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Ter residência no Paraguai significa automaticamente deixar de ser residente fiscal no Brasil?</h4>
+          <p class="text-muted-foreground font-light text-sm">Não. A residência migratória no Paraguai não substitui, por si só, a análise da residência fiscal brasileira. É necessário avaliar saída definitiva, vínculos, presença, centro de interesses e documentação.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Para quem a residência no Paraguai costuma fazer mais sentido?</h4>
+          <p class="text-muted-foreground font-light text-sm">Costuma fazer mais sentido para quem possui projeto real de mudança, reorganização patrimonial, operação empresarial, renda internacional ou planejamento de longo prazo com substância fora do Brasil.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Qual o maior erro de quem busca o Paraguai?</h4>
+          <p class="text-muted-foreground font-light text-sm">O maior erro é tratar o Paraguai como uma promessa simples de economia tributária, sem avaliar residência fiscal, operação real, documentação e riscos perante a Receita Federal brasileira.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Análise: o Paraguai faz sentido para o seu caso?</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Antes de iniciar uma mudança, abrir conta ou contratar uma residência por impulso, solicite uma análise para entender se o Paraguai realmente faz sentido para o seu perfil.</p>
+        <a
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20analisar%20se%20a%20residência%20no%20Paraguai%20faz%20sentido%20para%20o%20meu%20caso."
+          class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Falar com um Especialista
+        </a>
+      </div>
+    `
+  },
+
+  // ARTIGO - Holding patrimonial em 2026
+  {
+    title: "Holding patrimonial em 2026: quando faz sentido e quando não faz",
+    excerpt: "Entenda em quais situações a holding patrimonial pode ser uma ferramenta útil, quando ela tende a ser desnecessária ou mal utilizada e por que o planejamento patrimonial em 2026 exige mais estratégia do que simples abertura de CNPJ.",
+    category: "Planejamento Patrimonial",
+    date: "30 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+    slug: "holding-patrimonial-2026",
+    readTime: "9 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender em quais situações a holding patrimonial pode ser uma ferramenta útil, quando ela tende a ser desnecessária ou mal utilizada e por que o planejamento patrimonial em 2026 exige mais estratégia do que simples abertura de CNPJ.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">A holding patrimonial se tornou uma das estruturas mais populares no Brasil para organização de imóveis, sucessão familiar e gestão de patrimônio. O problema é que a popularização do tema também criou uma visão simplificada: muita gente passou a acreditar que abrir uma holding é, por si só, sinônimo de proteção patrimonial, economia tributária e sucessão resolvida. Na prática, a holding pode ser uma excelente ferramenta, mas também pode se tornar uma estrutura cara, ineficiente ou até arriscada quando utilizada sem diagnóstico adequado.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"Abrir uma holding não é sinônimo de proteção patrimonial. O valor da estrutura depende da finalidade, do patrimônio envolvido e da qualidade da governança."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Quando a holding tende a fazer sentido</h2>
+      <p class="mb-6 leading-relaxed">O primeiro ponto é compreender que a holding não é um produto universal. Ela tende a fazer sentido quando existe patrimônio relevante, especialmente imóveis, participações societárias, receitas recorrentes, risco sucessório ou necessidade de governança familiar. Nesses casos, a pessoa jurídica pode ajudar a organizar titularidade, regras de administração, distribuição de resultados, entrada e saída de herdeiros, cláusulas restritivas e mecanismos de continuidade patrimonial.</p>
+
+      <div class="grid md:grid-cols-3 gap-6 my-10">
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Sucessão Familiar</h4>
+          <p class="text-sm text-muted-foreground font-light">Organiza entrada e saída de herdeiros, cláusulas restritivas e mecanismos de continuidade patrimonial com previsibilidade.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Governança Patrimonial</h4>
+          <p class="text-sm text-muted-foreground font-light">Separa patrimônio pessoal, imobiliário e operação de risco, reduzindo conflito e criando camadas claras de organização.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Gestão de Imóveis</h4>
+          <p class="text-sm text-muted-foreground font-light">Centraliza titularidade, facilita administração e pode otimizar tributação sobre renda de aluguéis quando bem estruturada.</p>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Quando a holding pode não fazer sentido</h2>
+      <p class="mb-6 leading-relaxed">Por outro lado, a holding pode não fazer sentido quando o patrimônio é pequeno, quando os custos de manutenção superam os benefícios, quando não existe planejamento sucessório claro ou quando o único objetivo é "pagar menos imposto" sem análise concreta. Em muitos casos, instrumentos como doação com reserva de usufruto, testamento, acordo de sócios, seguro, reorganização contratual ou simples regularização documental podem ser mais adequados do que criar uma nova pessoa jurídica.</p>
+
+      <div class="bg-card border border-border p-8 rounded-2xl my-10 shadow-sm">
+        <h4 class="font-bold mb-4">Pontos críticos na integralização de imóveis na holding</h4>
+        <ul class="space-y-3 text-muted-foreground font-light">
+          <li>• ITBI: análise da imunidade e da atividade preponderante imobiliária</li>
+          <li>• Valor de integralização: base de custo fiscal e implicações futuras de ganho de capital</li>
+          <li>• Registro imobiliário: compatibilidade entre escritura, contrato social e documentação contábil</li>
+          <li>• Custos cartorários inesperados que podem comprometer a vantagem tributária projetada</li>
+          <li>• Risco de autuação por inconsistência entre finalidade declarada e atividade real</li>
+        </ul>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O contexto de 2026: sucessão e reforma tributária</h2>
+      <p class="mb-6 leading-relaxed">Em 2026, a discussão sucessória também ganha peso adicional diante do avanço de reformas e debates sobre ITCMD, progressividade e tratamento de estruturas familiares e internacionais. Isso não significa que toda família precisa correr para abrir uma holding, mas sim que estruturas antigas ou improvisadas devem ser revisadas. O planejamento feito há cinco anos pode não ser o melhor para a realidade patrimonial, tributária e familiar atual.</p>
+      <p class="mb-6 leading-relaxed">A pergunta correta não é "devo abrir uma holding?". A pergunta correta é: qual problema patrimonial a holding resolveria melhor do que as demais alternativas? No Bezerra Borges, a holding é tratada como parte de uma arquitetura patrimonial. Avaliamos patrimônio, família, imóveis, empresas, riscos, custos e objetivos antes de recomendar a estrutura.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-6 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Holding patrimonial sempre reduz impostos?</h4>
+          <p class="text-muted-foreground font-light text-sm">Não. A economia tributária depende do tipo de patrimônio, da renda gerada, do regime fiscal, dos custos envolvidos e da forma como a estrutura será utilizada.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Quando a holding patrimonial costuma fazer sentido?</h4>
+          <p class="text-muted-foreground font-light text-sm">Costuma fazer sentido quando há patrimônio relevante, imóveis, sucessão familiar, participações societárias, necessidade de governança ou separação entre patrimônio e risco operacional.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Qual o maior risco de abrir uma holding sem análise?</h4>
+          <p class="text-muted-foreground font-light text-sm">O maior risco é criar uma estrutura que não resolve o problema principal, gera custos recorrentes, cria inconsistências fiscais ou compromete a segurança da transferência de bens.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Revisão estratégica do seu patrimônio</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Antes de abrir uma holding ou transferir patrimônio para uma pessoa jurídica, solicite uma revisão estratégica para entender se essa é realmente a estrutura certa para você.</p>
+        <a
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20fazer%20uma%20revisão%20estratégica%20sobre%20holding%20patrimonial."
+          class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Falar com um Especialista
+        </a>
+      </div>
+    `
+  },
+
+  // ARTIGO - Como declarar cripto no IR 2026
+  {
+    title: "Como declarar cripto no IR 2026: o que mudou e o que continua exigindo atenção",
+    excerpt: "Os principais cuidados para declarar criptoativos no IR 2026, quais informações precisam estar organizadas e por que autocustódia, exchanges estrangeiras e operações descentralizadas exigem atenção redobrada.",
+    category: "Cripto & Tributação",
+    date: "30 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=2070&auto=format&fit=crop",
+    slug: "como-declarar-cripto-ir-2026",
+    readTime: "9 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender os principais cuidados para declarar criptoativos no IR 2026, quais informações precisam estar organizadas e por que autocustódia, exchanges estrangeiras e operações descentralizadas exigem atenção redobrada.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">Declarar criptoativos deixou de ser uma tarefa simples de informar saldo aproximado em Bitcoin, Ethereum ou stablecoins. O mercado amadureceu, a Receita Federal ampliou sua capacidade de fiscalização e o intercâmbio internacional de informações tende a tornar operações em exchanges estrangeiras cada vez mais visíveis. Para quem possui patrimônio relevante em cripto, a declaração de IR deve ser tratada como uma etapa de governança patrimonial, não como um preenchimento improvisado no fim do prazo.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"A autocustódia pode ser uma excelente prática de segurança patrimonial, mas não elimina deveres fiscais. O contribuinte precisa demonstrar origem, custo de aquisição e histórico de movimentações."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Organizar a posição patrimonial em 31 de dezembro</h2>
+      <p class="mb-6 leading-relaxed">O primeiro cuidado é organizar a posição patrimonial em 31 de dezembro do ano-calendário. Isso envolve identificar quais ativos foram mantidos, onde estavam custodiados, qual foi o custo de aquisição, qual a quantidade de cada ativo e se houve transferência entre carteiras, exchanges nacionais, exchanges estrangeiras, protocolos DeFi ou autocustódia. A falta de rastreabilidade entre compra, transferência e saldo final é uma das principais fontes de inconsistência.</p>
+
+      <div class="grid md:grid-cols-3 gap-6 my-10">
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Declaração de Bens</h4>
+          <p class="text-sm text-muted-foreground font-light">Informar existência do ativo na ficha de bens e direitos com custo de aquisição e quantidade em 31/12.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Ganho de Capital</h4>
+          <p class="text-sm text-muted-foreground font-light">Apuração obrigatória quando há alienação tributável — não confundir transferência entre carteiras com venda.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Obrigações Acessórias</h4>
+          <p class="text-sm text-muted-foreground font-light">Operações relevantes fora de exchanges brasileiras podem exigir prestação de informações específicas à Receita Federal.</p>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Autocustódia e a ilusão do "fora do radar"</h2>
+      <p class="mb-6 leading-relaxed">A custódia própria merece atenção especial. Muitos investidores acreditam que, por manterem cripto em hardware wallet ou cold wallet, estão fora do radar fiscal. Esse raciocínio é perigoso. A autocustódia pode ser uma excelente prática de segurança patrimonial, mas não elimina deveres fiscais. O contribuinte precisa conseguir demonstrar origem dos recursos, data e valor de aquisição, histórico de movimentações e coerência entre patrimônio declarado e capacidade financeira.</p>
+
+      <div class="bg-card border border-border p-8 rounded-2xl my-10 shadow-sm">
+        <h4 class="font-bold mb-4">Operações que exigem atenção especial no IR 2026</h4>
+        <ul class="space-y-3 text-muted-foreground font-light">
+          <li>• Stablecoins e operações em dólar — conversão cambial e momento de reconhecimento</li>
+          <li>• Plataformas DeFi: staking, yield, empréstimos e bridges</li>
+          <li>• Tokens recebidos como remuneração — natureza do rendimento e tributação</li>
+          <li>• Exchanges estrangeiras — documentação adicional e intercâmbio de informações</li>
+          <li>• Cartões internacionais vinculados a saldo cripto</li>
+        </ul>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Regularização de anos anteriores: como não errar</h2>
+      <p class="mb-6 leading-relaxed">Para investidores que possuem cripto há anos sem declarar corretamente, o problema não deve ser resolvido com uma retificação impulsiva. Antes de qualquer ajuste, é preciso reconstruir histórico, identificar origem dos recursos, mapear operações, avaliar exposição fiscal e definir um plano coerente de regularização. Em casos relevantes, o erro não está apenas em não declarar o ativo, mas em não conseguir explicar como ele foi formado.</p>
+      <p class="mb-6 leading-relaxed">O IR 2026 exige, portanto, uma postura mais profissional. Quem possui cripto em valores modestos pode resolver a declaração com organização básica. Mas quem possui patrimônio relevante, operações internacionais, autocustódia, renda em cripto ou histórico incompleto deve buscar uma análise mais cuidadosa. No Bezerra Borges, a análise de criptoativos combina visão fiscal, patrimonial e de custódia.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-6 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Preciso declarar cripto mesmo se estiver em carteira própria?</h4>
+          <p class="text-muted-foreground font-light text-sm">Sim. A autocustódia não elimina a obrigação de declarar ativos, apurar eventuais ganhos e manter documentação capaz de comprovar origem e custo de aquisição.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Operações em exchange estrangeira precisam de atenção especial?</h4>
+          <p class="text-muted-foreground font-light text-sm">Sim. Operações fora de exchanges brasileiras podem exigir controle documental maior e, em certos casos, prestação de informações específicas à Receita Federal.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">O que mais gera risco na declaração de cripto?</h4>
+          <p class="text-muted-foreground font-light text-sm">Os principais riscos são ausência de custo de aquisição, histórico incompleto de operações, uso de exchanges estrangeiras sem documentação, confusão entre transferência e venda e falta de coerência entre patrimônio declarado e origem dos recursos.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Revisão da sua posição em criptoativos</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Antes de entregar sua declaração ou retificar anos anteriores sem estratégia, solicite uma revisão da sua posição em criptoativos.</p>
+        <a
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20fazer%20uma%20revisão%20da%20minha%20posição%20em%20criptoativos%20para%20o%20IR%202026."
+          class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Falar com um Especialista
+        </a>
+      </div>
+    `
+  },
+
+  // ARTIGO - Como internacionalizar uma empresa brasileira
+  {
+    title: "Como internacionalizar uma empresa brasileira sem improviso jurídico e tributário",
+    excerpt: "Os principais pontos que uma empresa brasileira deve avaliar antes de iniciar uma operação internacional, abrir entidade fora do país ou prestar serviços ao exterior sem criar riscos fiscais, societários e bancários desnecessários.",
+    category: "Internacionalização",
+    date: "30 de Abril, 2026",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2070&auto=format&fit=crop",
+    slug: "internacionalizar-empresa-brasileira",
+    readTime: "10 min",
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          Neste artigo, você vai entender os principais pontos que uma empresa brasileira deve avaliar antes de iniciar uma operação internacional, abrir entidade fora do país ou prestar serviços ao exterior sem criar riscos fiscais, societários e bancários desnecessários.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">A internacionalização empresarial deixou de ser um movimento exclusivo de grandes grupos econômicos. Empresas de tecnologia, serviços, educação, infoprodutos, consultorias, fintechs, marketplaces e negócios digitais passaram a vender para fora, contratar pessoas em outros países, receber em moeda estrangeira e considerar estruturas internacionais para crescer com mais eficiência. O problema é que muitas empresas começam esse movimento de forma improvisada: abrem uma LLC, recebem em uma conta estrangeira ou assinam contratos internacionais sem analisar o impacto jurídico e fiscal no Brasil.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"A primeira pergunta não deve ser 'em qual país abrir empresa?', mas 'qual é o objetivo da internacionalização?'"</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">A pergunta que precisa vir primeiro</h2>
+      <p class="mb-6 leading-relaxed">A primeira pergunta não deve ser "em qual país abrir empresa?", mas "qual é o objetivo da internacionalização?". Uma estrutura para receber clientes estrangeiros é diferente de uma estrutura para captar investimento, proteger propriedade intelectual, operar com parceiros internacionais, contratar fornecedores, reduzir atrito bancário ou criar presença comercial fora do Brasil. Sem essa definição, a escolha da jurisdição vira uma aposta baseada em custo de abertura, e não em estratégia.</p>
+
+      <div class="grid md:grid-cols-2 gap-6 my-10">
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Estrutura Operacional</h4>
+          <p class="text-sm text-muted-foreground font-light">Presença comercial real, contratação internacional, operação fora do Brasil. Exige substância, banco local e coerência com a atividade declarada.</p>
+        </div>
+        <div class="p-6 border border-border rounded-2xl bg-card/50">
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Estrutura Patrimonial / IP</h4>
+          <p class="text-sm text-muted-foreground font-light">Proteção de propriedade intelectual, captação de investimento, organização societária. Exige planejamento de royalties, contratos entre partes relacionadas e governança.</p>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Exportação de serviços, operação real e interposição de entidade</h2>
+      <p class="mb-6 leading-relaxed">Também é necessário distinguir exportação de serviços, operação internacional real e mera interposição de entidade estrangeira. Uma empresa brasileira pode prestar serviços para clientes no exterior e receber de forma regular, desde que contratos, notas, câmbio, tributação e documentação estejam bem alinhados. Por outro lado, criar uma empresa fora apenas para receber receitas que continuam sendo geradas, executadas e controladas no Brasil pode gerar questionamentos fiscais e bancários, especialmente se não houver substância operacional fora do país.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">A escolha da jurisdição vai além do imposto</h2>
+      <p class="mb-6 leading-relaxed">A escolha da jurisdição deve considerar mais do que imposto. É preciso avaliar reputação bancária, facilidade de abertura e manutenção, substância exigida, tratados, custos contábeis, aceitação por adquirentes, investidores e parceiros, regime de distribuição de lucros, obrigações locais e compatibilidade com a legislação brasileira. Uma jurisdição barata pode se tornar cara se dificultar abertura de conta, recebimento de pagamentos ou diligências de compliance.</p>
+
+      <div class="bg-card border border-border p-8 rounded-2xl my-10 shadow-sm">
+        <h4 class="font-bold mb-4">O que avaliar antes de escolher a jurisdição</h4>
+        <ul class="space-y-3 text-muted-foreground font-light">
+          <li>• Reputação bancária e facilidade de abertura de conta operacional</li>
+          <li>• Substância exigida: escritório, funcionários, diretores locais</li>
+          <li>• Aceitação por adquirentes, investidores e parceiros comerciais</li>
+          <li>• Compatibilidade com a legislação brasileira de controladas no exterior</li>
+          <li>• Custos contábeis, legais e de manutenção recorrentes</li>
+          <li>• Tratados de dupla tributação e normas de preço de transferência</li>
+        </ul>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Fluxo financeiro, propriedade intelectual e governança</h2>
+      <p class="mb-6 leading-relaxed">Outro ponto central é o fluxo financeiro. Receber valores do exterior exige coerência entre contrato, invoice, natureza cambial, banco, beneficiário econômico e registro contábil. Quando o dinheiro entra por uma empresa, mas o serviço é prestado por outra, ou quando a receita internacional não conversa com a estrutura contratual, o risco aumenta.</p>
+      <p class="mb-6 leading-relaxed">A propriedade intelectual também deve ser analisada desde o início. Em negócios digitais, software, marcas, plataformas e bases de dados podem estar no centro do valor da empresa. Internacionalizar sem definir onde ficam os direitos, quem licencia a tecnologia e como os contratos entre partes relacionadas funcionam pode comprometer uma futura captação, venda da empresa ou expansão para novos mercados.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"No Bezerra Borges, a internacionalização é tratada como arquitetura de negócio. Avaliamos operação, contratos, tributos, câmbio, banco, sócios, propriedade intelectual e governança antes de recomendar a abertura de qualquer entidade fora do Brasil."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O desenho correto depende do estágio do negócio</h2>
+      <p class="mb-6 leading-relaxed">Internacionalizar corretamente não significa necessariamente criar uma estrutura complexa. Em alguns casos, a melhor solução é ajustar contratos e câmbio no Brasil. Em outros, faz sentido abrir uma entidade estrangeira operacional. Em estruturas mais sofisticadas, pode haver holding internacional, empresa operacional local, contratos de licenciamento, política de preços entre partes relacionadas e contas bancárias em diferentes jurisdições. O desenho correto depende do estágio, faturamento, risco regulatório e objetivo de expansão.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-6 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Toda empresa brasileira que vende para fora precisa abrir empresa no exterior?</h4>
+          <p class="text-muted-foreground font-light text-sm">Não. Muitas operações podem ser estruturadas a partir do Brasil com contratos, câmbio e tributação adequados. A entidade estrangeira só deve ser criada quando resolver um problema real de operação, banco, investimento, expansão ou governança.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Qual o maior erro ao internacionalizar uma empresa brasileira?</h4>
+          <p class="text-muted-foreground font-light text-sm">O maior erro é escolher a jurisdição antes de definir o objetivo da operação. País barato ou popular nem sempre é adequado para banco, investidores, compliance ou tributação brasileira.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Quando faz sentido abrir uma empresa fora do Brasil?</h4>
+          <p class="text-muted-foreground font-light text-sm">Pode fazer sentido quando há clientes estrangeiros recorrentes, necessidade de conta internacional, captação, operação fora do país, proteção de propriedade intelectual, contratação internacional ou expansão comercial real.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Diagnóstico de internacionalização do seu negócio</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Antes de abrir uma empresa no exterior ou reorganizar receitas internacionais, solicite um diagnóstico de internacionalização do seu negócio.</p>
+        <a
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20fazer%20um%20diagnóstico%20de%20internacionalização%20para%20minha%20empresa."
+          class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Falar com um Especialista
+        </a>
+      </div>
+    `
+  },
 ];
 
 export const categories = [

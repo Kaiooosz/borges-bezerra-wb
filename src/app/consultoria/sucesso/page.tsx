@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { CheckCircle, MessageCircle } from "lucide-react";
@@ -9,7 +9,7 @@ import { Footer } from "@/components/footer";
 
 const WHATSAPP_NUMBER = "5521979901686";
 
-export default function ConsultoriaSucessoPage() {
+function SucessoContent() {
   const searchParams = useSearchParams();
   const produto = searchParams.get("produto") || "consultoria";
   const [countdown, setCountdown] = useState(5);
@@ -83,5 +83,13 @@ export default function ConsultoriaSucessoPage() {
 
       <Footer />
     </div>
+  );
+}
+
+export default function ConsultoriaSucessoPage() {
+  return (
+    <Suspense>
+      <SucessoContent />
+    </Suspense>
   );
 }

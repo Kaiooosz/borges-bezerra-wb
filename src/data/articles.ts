@@ -2871,6 +2871,7 @@ export const articles: Article[] = [
 
 export const categories = [
   "Todos",
+  "Recentes",
   "Planejamento Patrimonial",
   "Internacionalização",
   "Cripto & Tributação",
@@ -2878,3 +2879,6 @@ export const categories = [
   "Fintechs & Regulação",
   "Jurídico Estratégico",
 ];
+
+// Número de artigos considerados "recentes" (sempre os últimos adicionados ao array)
+export const RECENT_COUNT = 9;

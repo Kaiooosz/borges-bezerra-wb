@@ -6,15 +6,26 @@ import Link from "next/link";
 import { ArrowRight, Clock } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { articles, categories } from "@/data/articles";
+import { articles, categories, RECENT_COUNT } from "@/data/articles";
 
 export default function ArtigosPage() {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
 
-  const featuredArticle = articles.find((a) => a.featured) || articles[0];
-  const filteredArticles = articles
+  // Exibe do mais novo para o mais antigo (últimos adicionados ao array = mais recentes)
+  const sortedArticles = [...articles].reverse();
+
+  const featuredArticle = sortedArticles.find((a) => a.featured) || sortedArticles[0];
+
+  // Slugs dos artigos recentes (últimos RECENT_COUNT do array original)
+  const recentSlugs = new Set(articles.slice(-RECENT_COUNT).map((a) => a.slug));
+
+  const filteredArticles = sortedArticles
     .filter((a) => a.slug !== featuredArticle.slug)
-    .filter((a) => selectedCategory === "Todos" || a.category === selectedCategory);
+    .filter((a) => {
+      if (selectedCategory === "Todos") return true;
+      if (selectedCategory === "Recentes") return recentSlugs.has(a.slug);
+      return a.category === selectedCategory;
+    });
 
   const [visibleCount, setVisibleCount] = useState(9);
   const visibleArticles = filteredArticles.slice(0, visibleCount);

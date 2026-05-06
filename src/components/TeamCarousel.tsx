@@ -67,7 +67,6 @@ export default function TeamCarousel() {
 
   const team = [
     { name: 'Vinicius', role: 'Sócio Fundador', image: '/vinicius.jpg' },
-    { name: 'Fabiano', role: 'Closer Sênior e Advogado', image: '/fabiano.jpg' },
     { name: 'Alice', role: 'Head de Offshore', image: '/alice.jpg' },
     { name: 'Clara', role: 'Business Partner', image: '/clara.jpg' },
     { name: 'Micaelle', role: 'Consultora Internacional', image: '/micaelle.jpg' },

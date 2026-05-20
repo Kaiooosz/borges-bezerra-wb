@@ -95,13 +95,13 @@ export function AnimatedHero() {
               className="font-sans font-light uppercase heading-gradient leading-[0.88] tracking-tight block"
               style={{ fontSize: "clamp(2.6rem, 7.5vw, 6.5rem)", letterSpacing: "-0.03em" }}
             >
-              Transformamos
+              Inteligência Jurídica
             </h1>
             <h1
               className="font-sans font-light uppercase heading-gradient leading-[0.88] tracking-tight block"
               style={{ fontSize: "clamp(2.6rem, 7.5vw, 6.5rem)", letterSpacing: "-0.03em" }}
             >
-              Complexidades.
+              em Oportunidades.
             </h1>
 
             <p

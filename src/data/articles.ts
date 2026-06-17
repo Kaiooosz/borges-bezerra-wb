@@ -2867,6 +2867,382 @@ export const articles: Article[] = [
       </div>
     `
   },
+
+  // ARTIGO PILAR - Lei 14.754/2023
+  {
+    title: "Lei 14.754/2023: como ficou a tributação de offshores, fundos exclusivos e trusts para brasileiros",
+    excerpt: "O que mudou no regime de tributação de aplicações financeiras no exterior, entidades controladas (offshores), fundos exclusivos e trusts a partir da Lei 14.754/2023 — e o que considerar antes de estruturar ou reorganizar patrimônio fora do Brasil.",
+    category: "Planejamento Tributário",
+    date: "16 de Junho, 2026",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2070&auto=format&fit=crop",
+    slug: "lei-14754-tributacao-offshore-fundos-trust-brasil",
+    readTime: "11 min",
+    featured: true,
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          A Lei nº 14.754/2023 redesenhou a forma como o Brasil tributa a renda no exterior de pessoas físicas residentes. Neste guia, você entende o que mudou para aplicações financeiras, entidades controladas (offshores), fundos exclusivos e trusts, e quais pontos analisar antes de estruturar ou reorganizar patrimônio fora do país.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">Durante anos, a tributação de lucros de empresas no exterior detidas por brasileiros podia ser diferida: enquanto o lucro não fosse distribuído, não havia imposto no Brasil. A Lei nº 14.754/2023 encerrou esse diferimento para determinadas estruturas e introduziu um regime anual de tributação, além de regras específicas para fundos de investimento no país e para a transparência de trusts. O efeito prático é direto: estruturas internacionais deixaram de ser avaliadas apenas pela existência e passaram a exigir coerência entre controle, apuração de resultados, documentação e finalidade patrimonial.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"A nova lógica não é sobre esconder patrimônio, e sim sobre declarar e tributar de forma coerente. A estrutura precisa fazer sentido para além do imposto."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Aplicações financeiras no exterior</h2>
+      <p class="mb-6 leading-relaxed">Rendimentos de aplicações financeiras no exterior — como contas remuneradas, títulos e determinados ativos detidos diretamente pela pessoa física — passaram a ser tributados de forma anual na Declaração de Ajuste Anual, sob alíquota definida pela legislação para esse tipo de rendimento. A variação cambial integra a base de cálculo em diversas situações, o que exige atenção ao registro do custo de aquisição e à conversão de valores. O modelo de "tributar apenas no resgate" deu lugar a uma apuração periódica, ainda que com regras de compensação de perdas dentro da categoria.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Entidades controladas no exterior (offshores)</h2>
+      <p class="mb-6 leading-relaxed">Este é o ponto que mais afeta quem possui uma holding ou empresa fora do Brasil. Para entidades controladas localizadas em jurisdição de tributação favorecida ou que aufiram renda predominantemente passiva, os lucros passaram a ser tributados anualmente no Brasil, em 31 de dezembro de cada ano, independentemente de distribuição. Ou seja, o lucro apurado no balanço da offshore é levado à tributação da pessoa física residente, encerrando o antigo diferimento.</p>
+      <p class="mb-6 leading-relaxed">A lei também trouxe uma opção relevante: o regime de transparência, em que o contribuinte pode optar por tributar os ativos da entidade como se fossem detidos diretamente. A escolha entre tributar a entidade de forma opaca (pelo lucro) ou transparente (pelos ativos) depende do tipo de patrimônio, da liquidez e do objetivo de longo prazo — e é justamente onde o diagnóstico técnico faz diferença.</p>
+
+      <div class="bg-card border border-border p-8 rounded-2xl my-10 shadow-sm">
+        <h4 class="font-bold mb-4">O que entra na análise de uma offshore sob a nova regra</h4>
+        <ul class="space-y-3 text-muted-foreground font-light">
+          <li>• Caracterização de controle e de renda ativa vs. passiva</li>
+          <li>• Jurisdição e se há tributação favorecida ou regime privilegiado</li>
+          <li>• Apuração de lucros em balanço e conversão cambial</li>
+          <li>• Opção, ou não, pelo regime de transparência</li>
+          <li>• Obrigações acessórias: IR, CBE (Banco Central) e e-Financeira quando aplicável</li>
+        </ul>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Fundos exclusivos no Brasil</h2>
+      <p class="mb-6 leading-relaxed">Embora seja um tema doméstico, a mesma lei alcançou os fundos de investimento fechados — os chamados fundos exclusivos. Passou a incidir a tributação periódica conhecida como "come-cotas", em regra semestral, sobre os rendimentos, alterando a dinâmica de acumulação que antes só era tributada no resgate. Para famílias e empresários que utilizavam esses fundos como veículo de concentração de investimentos, isso recoloca a conversa sobre estrutura, custo e finalidade.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Trusts e transparência patrimonial</h2>
+      <p class="mb-6 leading-relaxed">A Lei nº 14.754/2023 deu, pela primeira vez, tratamento expresso aos trusts na legislação tributária brasileira. Em linhas gerais, os bens e direitos objeto do trust passam a ser considerados, para fins fiscais, como permanecendo sob titularidade do instituidor enquanto este for vivo, transferindo-se ao beneficiário no momento da distribuição ou do falecimento. Isso afasta a ideia de que o trust, por si só, "isola" o patrimônio do alcance fiscal e reforça a necessidade de documentação e coerência entre a estrutura e a realidade econômica.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"Estruturas internacionais continuam legítimas e úteis. O que mudou é o nível de rigor: documentação, apuração e finalidade precisam estar alinhadas."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O que isso significa na prática</h2>
+      <p class="mb-6 leading-relaxed">Para quem já possui uma offshore, o caminho é revisar a estrutura à luz do novo regime: verificar a classificação da renda, decidir sobre o regime de transparência, organizar balanços e regularizar obrigações acessórias. Para quem está avaliando internacionalizar, a decisão deixou de ser sobre "pagar menos imposto" e passou a ser sobre desenhar uma estrutura fiscalmente coerente com a operação, o patrimônio e os objetivos de sucessão. Em muitos casos, a melhor resposta vem antes da escolha da jurisdição: vem do diagnóstico.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-4 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">A Lei 14.754/2023 acabou com as offshores?</h4>
+          <p class="text-muted-foreground font-light text-sm">Não. Estruturas no exterior continuam lícitas e úteis. O que mudou foi o regime de tributação dos lucros, que passou a ser anual para determinadas entidades, e a exigência de maior coerência documental e de apuração.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Preciso declarar minha empresa no exterior?</h4>
+          <p class="text-muted-foreground font-light text-sm">A depender do caso, há obrigações junto à Receita Federal (Imposto de Renda) e ao Banco Central (Declaração de Capitais Brasileiros no Exterior — CBE), além de eventuais obrigações acessórias. A análise é individualizada.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">O regime de transparência é sempre vantajoso?</h4>
+          <p class="text-muted-foreground font-light text-sm">Não há resposta única. A opção pela transparência depende do tipo de ativo, da liquidez, do horizonte de tempo e do objetivo patrimonial, e deve ser avaliada caso a caso com apoio técnico.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Sua estrutura está adequada à Lei 14.754/2023?</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Revisar uma offshore existente ou desenhar uma nova estrutura sob o regime atual exige diagnóstico técnico. As informações deste artigo têm caráter educativo e não substituem análise individualizada.</p>
+        <a
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20revisar%20minha%20estrutura%20internacional%20à%20luz%20da%20Lei%2014.754/2023."
+          class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Solicitar Diagnóstico
+        </a>
+      </div>
+    `
+  },
+
+  // ARTIGO PILAR - CBE Banco Central
+  {
+    title: "CBE: o que é a Declaração de Capitais Brasileiros no Exterior e quem precisa entregar",
+    excerpt: "Quem é obrigado a declarar bens e ativos fora do Brasil ao Banco Central, os prazos da CBE anual e trimestral, o que entra na declaração e os riscos de não declarar.",
+    category: "Internacionalização",
+    date: "17 de Junho, 2026",
+    image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=2070&auto=format&fit=crop",
+    slug: "cbe-declaracao-capitais-brasileiros-exterior-banco-central",
+    readTime: "9 min",
+    featured: true,
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          A Declaração de Capitais Brasileiros no Exterior (CBE) é a principal obrigação de quem possui empresa, conta, investimentos ou imóveis fora do Brasil. Neste guia, você entende quem precisa entregar, os prazos, o que declarar e por que a CBE não se confunde com a declaração de Imposto de Renda.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">Internacionalizar patrimônio ou operação envolve duas frentes que costumam ser confundidas: a tributária, junto à Receita Federal, e a cambial e de capitais, junto ao Banco Central. A CBE pertence à segunda. Trata-se de uma declaração de natureza estatística e de controle cambial em que o residente no Brasil informa os ativos que mantém no exterior. Entregar o Imposto de Renda não substitui a CBE, e o contrário também é verdadeiro: são obrigações distintas, com órgãos, finalidades e penalidades próprias.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"Declarar no Imposto de Renda não dispensa a CBE. São dois trilhos paralelos: Receita Federal e Banco Central."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Quem precisa entregar</h2>
+      <p class="mb-6 leading-relaxed">A obrigatoriedade da CBE é definida por um limite de valor total dos ativos no exterior em determinada data-base. Pessoas físicas e jurídicas residentes, domiciliadas ou com sede no Brasil que detenham ativos fora do país acima do patamar estabelecido pelo Banco Central passam a ter o dever de declarar. Abaixo desse limite, não há obrigação de entrega. Por isso, o primeiro passo é mensurar corretamente o conjunto de ativos no exterior na data-base aplicável.</p>
+
+      <div class="bg-card border border-border p-8 rounded-2xl my-10 shadow-sm">
+        <h4 class="font-bold mb-4">O que costuma entrar na CBE</h4>
+        <ul class="space-y-3 text-muted-foreground font-light">
+          <li>• Participações em empresas no exterior (offshores, LLCs, holdings)</li>
+          <li>• Depósitos e contas bancárias fora do país</li>
+          <li>• Investimentos, títulos e fundos no exterior</li>
+          <li>• Imóveis e outros bens detidos lá fora</li>
+          <li>• Créditos e haveres contra não residentes</li>
+        </ul>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">CBE anual e CBE trimestral</h2>
+      <p class="mb-6 leading-relaxed">Existem duas modalidades. A CBE anual, com data-base em 31 de dezembro, é a mais comum e alcança a maioria dos declarantes a partir do limite aplicável. A CBE trimestral, com data-base em 31 de março, 30 de junho e 30 de setembro, é exigida apenas de quem possui patrimônio no exterior acima de um patamar substancialmente mais elevado. Cada modalidade tem janela específica de entrega, e perder o prazo é uma das causas mais frequentes de penalidade.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">CBE e Lei 14.754/2023: como se conectam</h2>
+      <p class="mb-6 leading-relaxed">A CBE informa a existência e o valor dos ativos no exterior ao Banco Central; a Lei nº 14.754/2023 define como os rendimentos desses ativos são tributados pela Receita Federal. Uma offshore, por exemplo, normalmente aparece nas duas frentes: declarada na CBE quanto à participação societária e submetida ao regime de tributação anual de lucros no Imposto de Renda. Tratar as duas de forma coordenada evita inconsistências entre o que foi informado ao Banco Central e o que foi declarado à Receita.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Riscos de não declarar</h2>
+      <p class="mb-6 leading-relaxed">A ausência, o atraso ou a prestação de informação incorreta na CBE estão sujeitos a multas aplicadas pelo Banco Central, que variam conforme a infração e podem ser majoradas em casos de informação falsa. Além da penalidade direta, divergências entre a CBE e as declarações fiscais aumentam a exposição do contribuinte a questionamentos. A regularização, quando há omissão de períodos anteriores, deve ser conduzida com cuidado técnico para organizar a situação sem gerar novas inconsistências.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-4 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Quem declara Imposto de Renda já está dispensado da CBE?</h4>
+          <p class="text-muted-foreground font-light text-sm">Não. A CBE é uma obrigação junto ao Banco Central, independente da declaração de Imposto de Renda entregue à Receita Federal. Quem ultrapassa o limite de ativos no exterior precisa entregar as duas.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Tenho uma conta pequena no exterior. Preciso declarar?</h4>
+          <p class="text-muted-foreground font-light text-sm">A obrigatoriedade depende do valor total dos seus ativos no exterior na data-base. Abaixo do limite definido pelo Banco Central, não há obrigação de entrega da CBE. A medição correta do conjunto de ativos é o que determina o dever.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Esqueci de declarar em anos anteriores. O que faço?</h4>
+          <p class="text-muted-foreground font-light text-sm">É possível regularizar, mas a forma e os efeitos dependem do caso. O ideal é uma análise individualizada para organizar a entrega e alinhar a CBE com as declarações fiscais do período.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Precisa entregar ou regularizar sua CBE?</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Avaliamos seus ativos no exterior, identificamos a obrigatoriedade e organizamos a entrega de forma coordenada com suas declarações fiscais. As informações deste artigo têm caráter educativo e não substituem análise individualizada.</p>
+        <a
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20avaliar%20a%20entrega%20ou%20regularização%20da%20minha%20CBE%20no%20Banco%20Central."
+          class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Solicitar Diagnóstico
+        </a>
+      </div>
+    `
+  },
+
+  // ARTIGO PILAR - LLC para brasileiros
+  {
+    title: "LLC nos EUA para brasileiros: como funciona, quando faz sentido e o que muda no imposto",
+    excerpt: "O que é uma LLC americana, a tributação pass-through, quando ela é adequada para prestadores de serviço e negócios digitais brasileiros e como ela se enquadra na Lei 14.754/2023 e na CBE.",
+    category: "Internacionalização",
+    date: "17 de Junho, 2026",
+    image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=2070&auto=format&fit=crop",
+    slug: "llc-eua-para-brasileiros-como-funciona-tributacao",
+    readTime: "10 min",
+    featured: true,
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          A LLC americana é uma das estruturas mais procuradas por brasileiros que prestam serviço ou vendem para o exterior. Neste guia, você entende o que ela é, como funciona a tributação pass-through, quando faz sentido e o que muda à luz da Lei 14.754/2023 e da CBE.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">A Limited Liability Company (LLC) é um tipo societário dos Estados Unidos que combina responsabilidade limitada dos sócios com flexibilidade de gestão. Sua popularidade entre brasileiros decorre de três fatores: credibilidade internacional para receber de clientes e plataformas globais, facilidade relativa de abertura e o regime de tributação pass-through. Mas a LLC não é um atalho fiscal universal — sua adequação depende do perfil da operação e da correta integração com as obrigações brasileiras.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"A LLC resolve credibilidade e recebimento internacional. O imposto, porém, segue a residência fiscal do sócio — e isso muda tudo."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O que é a tributação pass-through</h2>
+      <p class="mb-6 leading-relaxed">Por padrão, a LLC é fiscalmente transparente nos EUA: ela não paga imposto de renda como entidade. O resultado "passa" para os sócios, que respondem pela tributação. Para um sócio não residente nos EUA, sem presença comercial relevante no país, pode não haver imposto federal americano sobre determinadas receitas de serviço. Isso não significa ausência de imposto: significa que a tributação se desloca para o país de residência do sócio — no caso, o Brasil.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Como a LLC se enquadra na Lei 14.754/2023</h2>
+      <p class="mb-6 leading-relaxed">Aqui está o ponto que muitos ignoram. Uma LLC detida por residente brasileiro normalmente é uma entidade controlada no exterior. Dependendo da natureza da renda e da jurisdição, os lucros podem estar sujeitos ao regime de tributação anual previsto na Lei nº 14.754/2023, ou o contribuinte pode avaliar o regime de transparência. A LLC também deve compor a CBE junto ao Banco Central quando ultrapassado o limite de ativos no exterior. Ou seja, a economia eventual nos EUA não elimina a obrigação de declarar e, conforme o caso, tributar no Brasil.</p>
+
+      <div class="bg-card border border-border p-8 rounded-2xl my-10 shadow-sm">
+        <h4 class="font-bold mb-4">Quando a LLC tende a fazer sentido</h4>
+        <ul class="space-y-3 text-muted-foreground font-light">
+          <li>• Prestadores de serviço e profissionais digitais com clientes no exterior</li>
+          <li>• Negócios que precisam receber de plataformas e gateways globais</li>
+          <li>• Operações que buscam credibilidade e conta bancária internacional</li>
+          <li>• Estruturas que serão declaradas e tributadas de forma coerente no Brasil</li>
+        </ul>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Quando a LLC NÃO é a melhor escolha</h2>
+      <p class="mb-6 leading-relaxed">A LLC tende a não ser adequada quando a expectativa é "não pagar imposto no Brasil", quando a operação tem substância nos EUA capaz de gerar tributação americana, ou quando o objetivo real é proteção patrimonial e sucessão — situações em que uma holding ou outra arquitetura pode ser mais eficiente. Abrir uma LLC sem desenhar a camada brasileira é a origem mais comum de problemas posteriores com a Receita Federal e o Banco Central.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-4 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Tenho uma LLC. Preciso declarar no Brasil?</h4>
+          <p class="text-muted-foreground font-light text-sm">Em regra, sim. A participação na LLC entra na CBE quando ultrapassado o limite de ativos no exterior, e os lucros podem estar sujeitos ao regime da Lei 14.754/2023. A análise é individualizada.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">A LLC me isenta de imposto?</h4>
+          <p class="text-muted-foreground font-light text-sm">Não. A LLC pode reduzir ou afastar imposto nos EUA para certos perfis de não residente, mas a tributação se desloca para o país de residência do sócio. No Brasil, há regras próprias a observar.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Vale a pena para quem está começando?</h4>
+          <p class="text-muted-foreground font-light text-sm">Depende do volume, do tipo de cliente e do objetivo. Há casos em que a estrutura brasileira é suficiente no início. O diagnóstico evita custo e complexidade desnecessários.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Uma LLC faz sentido para o seu caso?</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Avaliamos sua operação, seus recebimentos e seus objetivos antes de indicar a estrutura. As informações deste artigo têm caráter educativo e não substituem análise individualizada.</p>
+        <a
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20avaliar%20se%20uma%20LLC%20nos%20EUA%20faz%20sentido%20para%20o%20meu%20caso."
+          class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Solicitar Diagnóstico
+        </a>
+      </div>
+    `
+  },
+
+  // ARTIGO PILAR - Holding familiar e governança
+  {
+    title: "Holding familiar: como organiza patrimônio, sucessão e governança entre gerações",
+    excerpt: "O que é uma holding familiar, como ela estrutura a sucessão sem inventário litigioso, o papel do acordo de sócios e da governança e quando faz sentido constituir uma.",
+    category: "Planejamento Patrimonial",
+    date: "17 de Junho, 2026",
+    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2070&auto=format&fit=crop",
+    slug: "holding-familiar-patrimonio-sucessao-governanca",
+    readTime: "10 min",
+    featured: true,
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          A holding familiar é uma das ferramentas mais eficazes para organizar patrimônio e sucessão entre gerações. Neste guia, você entende o que ela é, como estrutura a transmissão de bens, o papel da governança e do acordo de sócios e quando faz sentido constituir uma.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">Uma holding familiar é uma sociedade constituída para concentrar e administrar o patrimônio de uma família — participações em empresas, imóveis e investimentos. Em vez de cada bem ser detido diretamente pelas pessoas físicas, ele passa a integrar a holding, e os membros da família tornam-se sócios. Essa simples mudança de titularidade abre espaço para organizar sucessão, governança e regras de convivência patrimonial de forma documentada e previsível.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"A holding familiar não é sobre pagar menos imposto. É sobre evitar conflito, organizar a sucessão e dar regras claras ao patrimônio."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Sucessão sem inventário litigioso</h2>
+      <p class="mb-6 leading-relaxed">No modelo tradicional, a transmissão de bens depende de inventário — processo que pode ser longo, custoso e gerador de conflito. Com a holding, os pais podem doar quotas aos herdeiros em vida, em regra reservando o usufruto, mantendo o controle e os rendimentos enquanto vivem. A sucessão deixa de ser um evento abrupto e passa a ser um processo planejado, com a definição prévia de quem recebe o quê e sob quais condições.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Cláusulas de proteção</h2>
+      <p class="mb-6 leading-relaxed">As quotas doadas podem ser gravadas com cláusulas que protegem o patrimônio da família: inalienabilidade, impenhorabilidade, incomunicabilidade e reversão. Na prática, isso ajuda a manter os bens dentro da linhagem familiar diante de divórcios, dívidas de herdeiros ou decisões precipitadas. São instrumentos lícitos de organização, não de ocultação, e devem ser desenhados conforme a realidade e os objetivos de cada família.</p>
+
+      <div class="bg-card border border-border p-8 rounded-2xl my-10 shadow-sm">
+        <h4 class="font-bold mb-4">O que uma holding familiar bem estruturada contempla</h4>
+        <ul class="space-y-3 text-muted-foreground font-light">
+          <li>• Acordo de sócios com regras de entrada, saída e decisão</li>
+          <li>• Governança: papéis, alçadas e resolução de conflitos</li>
+          <li>• Doação de quotas com reserva de usufruto</li>
+          <li>• Cláusulas de proteção sobre as quotas</li>
+          <li>• Integração com testamento e, quando houver, ativos no exterior</li>
+        </ul>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Governança: o que evita o conflito</h2>
+      <p class="mb-6 leading-relaxed">A holding cria o veículo; a governança o faz funcionar. O acordo de sócios define como decisões são tomadas, como um sócio pode sair, como entram novos membros da família e como divergências são resolvidas. Sem governança, a holding apenas adia o conflito para a geração seguinte. Com ela, a família ganha um conjunto de regras que sustenta o patrimônio ao longo do tempo.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Quando faz sentido</h2>
+      <p class="mb-6 leading-relaxed">A holding familiar tende a fazer sentido quando há patrimônio relevante a organizar, mais de um herdeiro, participação em empresas ou imóveis, e preocupação genuína com sucessão e continuidade. Não é uma solução padronizada: o desenho, o regime tributário aplicável e as cláusulas dependem do caso. Por isso, a decisão começa por um diagnóstico patrimonial, e não pela constituição imediata da sociedade.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-4 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Holding familiar serve para pagar menos imposto?</h4>
+          <p class="text-muted-foreground font-light text-sm">O objetivo central é organização patrimonial, sucessão e governança. Pode haver eficiência tributária conforme o caso e o regime aplicável, mas isso é consequência de uma estrutura bem desenhada, não uma promessa padronizada.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Perco o controle do meu patrimônio ao doar as quotas?</h4>
+          <p class="text-muted-foreground font-light text-sm">Não necessariamente. A doação com reserva de usufruto permite manter o controle e os rendimentos enquanto o instituidor for vivo, transferindo a nua-propriedade aos herdeiros.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">E se parte do patrimônio estiver no exterior?</h4>
+          <p class="text-muted-foreground font-light text-sm">A holding pode ser articulada com a estrutura internacional, observando a Lei 14.754/2023 e a CBE. A coordenação entre as camadas nacional e internacional é parte do planejamento.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Uma holding familiar faz sentido para a sua família?</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Começamos pelo diagnóstico patrimonial e sucessório antes de indicar qualquer estrutura. As informações deste artigo têm caráter educativo e não substituem análise individualizada.</p>
+        <a
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20entender%20se%20uma%20holding%20familiar%20faz%20sentido%20para%20a%20minha%20família."
+          class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Solicitar Diagnóstico Patrimonial
+        </a>
+      </div>
+    `
+  },
+
+  // ARTIGO PILAR - Cidadania paraguaia
+  {
+    title: "Cidadania e residência no Paraguai para brasileiros: como funciona e para quem faz sentido",
+    excerpt: "As rotas de residência e cidadania paraguaia, a documentação envolvida, o sistema territorial de tributação e o que considerar antes de transferir residência fiscal.",
+    category: "Internacionalização",
+    date: "17 de Junho, 2026",
+    image: "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?q=80&w=2070&auto=format&fit=crop",
+    slug: "cidadania-residencia-paraguai-brasileiros-como-funciona",
+    readTime: "9 min",
+    featured: true,
+    content: `
+      <div class="mb-12">
+        <p class="text-xl text-muted-foreground font-light leading-relaxed">
+          O Paraguai tornou-se um destino frequente para brasileiros que buscam residência, presença regional e um ambiente tributário mais simples. Neste guia, você entende as rotas de residência e cidadania, a documentação envolvida e o que considerar antes de mudar a residência fiscal.
+        </p>
+      </div>
+
+      <p class="mb-6 leading-relaxed">A proximidade geográfica, o custo de vida e o sistema tributário territorial fizeram do Paraguai um polo de interesse para empresários e profissionais brasileiros. É importante, porém, distinguir três coisas que costumam ser tratadas como uma só: a residência (direito de morar e se estabelecer), a cidadania (vínculo de nacionalidade, obtida após período de residência e requisitos próprios) e a residência fiscal (onde a pessoa é tributada). Cada uma tem regras, prazos e efeitos distintos.</p>
+
+      <div class="my-10 p-8 border-l-4 border-primary bg-muted/30">
+        <p class="text-foreground font-light italic leading-relaxed">"Obter residência no Paraguai não muda automaticamente a residência fiscal no Brasil. São decisões diferentes, com consequências diferentes."</p>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Residência: a porta de entrada</h2>
+      <p class="mb-6 leading-relaxed">A residência paraguaia é o primeiro passo e dá direito a documentos locais, como a cédula de identidade. Ela viabiliza abrir conta, constituir empresa e estabelecer presença no país. A obtenção envolve documentação brasileira apostilada, antecedentes e o cumprimento de requisitos migratórios. É um processo administrativo que, conduzido corretamente, costuma ser objetivo — desde que a documentação esteja completa e coerente.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">Sistema territorial de tributação</h2>
+      <p class="mb-6 leading-relaxed">O Paraguai adota, em linhas gerais, um sistema territorial: tributa-se prioritariamente a renda de fonte paraguaia. Esse é um dos principais atrativos, mas exige cautela. Para um brasileiro, o benefício só se concretiza com a efetiva mudança de residência fiscal do Brasil, que tem regras próprias e formalidades — incluindo a comunicação e a declaração de saída definitiva do país. Manter residência fiscal no Brasil e apenas obter documento paraguaio não altera a tributação brasileira.</p>
+
+      <div class="bg-card border border-border p-8 rounded-2xl my-10 shadow-sm">
+        <h4 class="font-bold mb-4">Rotas mais procuradas por brasileiros</h4>
+        <ul class="space-y-3 text-muted-foreground font-light">
+          <li>• Residência e documentação (cédula de identidade)</li>
+          <li>• Abertura de empresa no Paraguai</li>
+          <li>• Conta bancária local</li>
+          <li>• Validação de diploma</li>
+          <li>• Caminho para a cidadania após o período de residência</li>
+        </ul>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">O que avaliar antes de decidir</h2>
+      <p class="mb-6 leading-relaxed">A pergunta certa não é "como obter residência no Paraguai", e sim "o que eu quero resolver". Para quem busca presença regional, conta e empresa, a residência resolve. Para quem busca efeito tributário, é indispensável avaliar a saída fiscal do Brasil, a substância da mudança e a coerência com o restante do patrimônio. Decisões tomadas apenas pelo apelo fiscal, sem substância e sem formalização, tendem a gerar problemas futuros tanto no Brasil quanto no exterior.</p>
+
+      <h2 class="text-3xl font-bold mt-12 mb-6 font-source-serif-pro">FAQ</h2>
+      <div class="space-y-4 my-8">
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Obter residência no Paraguai me isenta de imposto no Brasil?</h4>
+          <p class="text-muted-foreground font-light text-sm">Não automaticamente. A tributação no Brasil depende da residência fiscal. Sem a saída fiscal formalizada e com substância, a pessoa continua sendo tributada como residente brasileira.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Em quanto tempo consigo a cidadania?</h4>
+          <p class="text-muted-foreground font-light text-sm">A cidadania exige período de residência e o cumprimento de requisitos próprios. Os prazos e condições variam, e a residência é sempre a etapa anterior necessária.</p>
+        </div>
+        <div class="p-6 border border-border rounded-xl">
+          <h4 class="font-bold mb-2">Preciso morar no Paraguai o tempo todo?</h4>
+          <p class="text-muted-foreground font-light text-sm">Os requisitos de presença dependem do objetivo (residência, cidadania ou efeito fiscal). Para efeito tributário, a substância da mudança é especialmente relevante. A análise é individualizada.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 p-10 bg-foreground text-background rounded-[2.5rem] text-center shadow-xl">
+        <h3 class="text-3xl font-bold mb-6 font-source-serif-pro text-background">Quer avaliar a rota certa no Paraguai?</h3>
+        <p class="max-w-2xl mx-auto text-lg mb-8 opacity-80 font-light">Identificamos o que você precisa — residência, empresa, conta ou efeito fiscal — e organizamos o caminho com coordenação local. As informações deste artigo têm caráter educativo e não substituem análise individualizada.</p>
+        <a
+          href="https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20avaliar%20residência%20ou%20cidadania%20no%20Paraguai%20para%20o%20meu%20caso."
+          class="inline-block bg-background text-foreground px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+        >
+          Solicitar Diagnóstico
+        </a>
+      </div>
+    `
+  },
 ];
 
 export const categories = [

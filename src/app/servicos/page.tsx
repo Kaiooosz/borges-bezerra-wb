@@ -70,8 +70,8 @@ const services = [
     slug: "legal-growth",
     description: "Solução jurídica completa para negócios digitais, infoprodutores e grandes lançamentos.",
     features: [
-      "Redução de até 90% em impostos",
-      "Blindagem trabalhista completa",
+      "Estrutura tributária conforme o regime aplicável",
+      "Organização de riscos trabalhistas",
       "Proteção contra alunos e reembolsos",
       "Registro de marcas e produtos",
       "Contratos com sócios e parceiros",

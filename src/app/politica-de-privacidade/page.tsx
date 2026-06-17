@@ -138,7 +138,7 @@ export default function PrivacyPolicyPage() {
                 "Criptoativos, blockchain e ativos digitais;",
                 "Consultoria jurídica estratégica para empresários e investidores;",
                 "Reorganizações societárias e patrimoniais;",
-                "Proteção patrimonial lícita e blindagem jurídica preventiva.",
+                "Proteção patrimonial lícita e organização jurídica preventiva.",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground font-light">
                   <span className="mt-2 shrink-0 w-1 h-1 rounded-full bg-white/30 inline-block" />

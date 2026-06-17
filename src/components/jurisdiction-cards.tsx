@@ -10,7 +10,6 @@ type FeaturedJurisdiction = {
   image: string;
   href: string;
   highlights: string[];
-  price: string;
 };
 
 type StandardJurisdiction = {
@@ -18,7 +17,6 @@ type StandardJurisdiction = {
   name: string;
   image: string;
   href: string;
-  price: string;
 };
 
 const featured: FeaturedJurisdiction[] = [
@@ -29,18 +27,17 @@ const featured: FeaturedJurisdiction[] = [
     image: "/dubai-business-skyline-uae.jpg",
     href: "/servicos/internacionalizacao",
     highlights: [
-      "0% de imposto sobre renda",
+      "Regime fiscal favorável a empresas",
       "Residência fiscal estratégica",
-      "Abertura rápida com controle total",
+      "Abertura ágil com governança definida",
       "Acesso ao mercado do Oriente Médio",
-      "Privacidade patrimonial elevada",
+      "Discrição patrimonial dentro das regras",
     ],
-    price: "US$ 6.500",
   },
   {
     id: "estados-unidos",
     name: "ESTADOS UNIDOS",
-    tagline: "Proteção Jurídica e Blindagem Patrimonial",
+    tagline: "Proteção Jurídica e Organização Patrimonial",
     image: "/new-york-usa.jpg",
     href: "/servicos/internacionalizacao",
     highlights: [
@@ -48,9 +45,8 @@ const featured: FeaturedJurisdiction[] = [
       "Credibilidade internacional",
       "Acesso ao mercado americano",
       "Estrutura ideal para fintechs",
-      "Proteção de ativos digitais",
+      "Organização de ativos digitais",
     ],
-    price: "US$ 990",
   },
   {
     id: "singapura",
@@ -65,7 +61,6 @@ const featured: FeaturedJurisdiction[] = [
       "Alta reputação internacional",
       "Ideal para empresas de tecnologia",
     ],
-    price: "US$ 3.200",
   },
   {
     id: "caribe",
@@ -77,19 +72,18 @@ const featured: FeaturedJurisdiction[] = [
       "Confidencialidade patrimonial",
       "Estrutura holding eficiente",
       "Custos operacionais reduzidos",
-      "Zero imposto sobre ganhos de capital",
+      "Regime sem ganho de capital local",
       "Abertura em poucos dias",
     ],
-    price: "US$ 2.900",
   },
 ];
 
 const standard: StandardJurisdiction[] = [
-  { id: "paraguai", name: "PARAGUAI", image: "/paraguai.jpg", href: "/servicos/internacionalizacao", price: "US$ 1.200" },
-  { id: "europa", name: "EUROPA", image: "/paris-eiffel-europa.jpg", href: "/servicos/internacionalizacao", price: "US$ 2.500" },
-  { id: "london", name: "REINO UNIDO", image: "/big-ben.jpg", href: "/servicos/internacionalizacao", price: "US$ 1.800" },
-  { id: "africa", name: "ÁFRICA DO SUL", image: "/africa-savanna-animals.jpg", href: "/servicos/internacionalizacao", price: "US$ 1.500" },
-  { id: "asia", name: "ARÁBIA SAUDITA", image: "/riyadh-arabia-saudita.jpg", href: "/servicos/internacionalizacao", price: "US$ 2.100" },
+  { id: "paraguai", name: "PARAGUAI", image: "/paraguai.jpg", href: "/servicos/internacionalizacao" },
+  { id: "europa", name: "EUROPA", image: "/paris-eiffel-europa.jpg", href: "/servicos/internacionalizacao" },
+  { id: "london", name: "REINO UNIDO", image: "/big-ben.jpg", href: "/servicos/internacionalizacao" },
+  { id: "africa", name: "ÁFRICA DO SUL", image: "/africa-savanna-animals.jpg", href: "/servicos/internacionalizacao" },
+  { id: "asia", name: "ARÁBIA SAUDITA", image: "/riyadh-arabia-saudita.jpg", href: "/servicos/internacionalizacao" },
 ];
 
 const consultarURL = "https://wa.me/5521979901686?text=Olá!%20Tenho%20interesse%20em%20internacionalização%20e%20jurisdições%20offshore%20com%20a%20Bezerra%20Borges%20Advogados.%20Gostaria%20de%20uma%20análise%20do%20meu%20caso.";
@@ -194,14 +188,6 @@ export function JurisdictionCards() {
                     </ul>
                   </div>
 
-                  {/* Price */}
-                  <div className="mb-4">
-                    <span className="block text-[10px] uppercase tracking-widest text-white/40 font-light mb-0.5">
-                      Preço Inicial
-                    </span>
-                    <span className="text-lg font-bold text-white">{j.price}</span>
-                  </div>
-
                   {/* CTA */}
                   <a
                     href={consultarURL}
@@ -209,7 +195,7 @@ export function JurisdictionCards() {
                     rel="noopener noreferrer"
                     className="block w-full text-center py-2.5 bg-white/10 hover:bg-white/20 border border-white/15 text-white text-xs font-semibold uppercase tracking-widest rounded-lg transition-all duration-200"
                   >
-                    Consultar
+                    Avaliar meu caso
                   </a>
                 </div>
               </div>
@@ -240,17 +226,16 @@ export function JurisdictionCards() {
 
                 {/* Content */}
                 <div className="absolute inset-0 flex flex-col justify-end p-4">
-                  <h3 className="text-sm font-bold text-white mb-0.5 tracking-wide">
+                  <h3 className="text-sm font-bold text-white mb-3 tracking-wide">
                     {j.name}
                   </h3>
-                  <p className="text-xs text-white/60 font-light mb-3">{j.price}</p>
                   <a
                     href={consultarURL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-center py-1.5 bg-white/10 hover:bg-white/20 border border-white/15 text-white text-[10px] font-semibold uppercase tracking-widest rounded-lg transition-all duration-200"
                   >
-                    Consultar
+                    Avaliar meu caso
                   </a>
                 </div>
               </div>

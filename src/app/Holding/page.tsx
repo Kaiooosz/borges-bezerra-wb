@@ -7,7 +7,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 const WHATSAPP_URL =
-  "https://wa.me/5521979901686?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consultoria%20sobre%20Holding%20Patrimonial%20com%20a%20Bezerra%20Borges%20Advogados"
+  "https://wa.me/5521979901686?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20diagn%C3%B3stico%20patrimonial%20com%20a%20Bezerra%20Borges%20Advogados"
 
 const titleStyle = {
   
@@ -45,7 +45,7 @@ const benefits = [
     icon: TrendingUp,
     title: "Planejamento Tributário",
     description:
-      "Planejamento fiscal estratégico que pode reduzir significativamente a carga tributária sobre patrimônio e lucros empresariais.",
+      "Planejamento fiscal estratégico que organiza a carga tributária sobre patrimônio e lucros empresariais conforme o regime aplicável.",
   },
   {
     icon: Users,
@@ -90,13 +90,13 @@ const holdingTypes = [
     title: "Holding Mista",
     description:
       "Combina gestão patrimonial e empresarial em uma única estrutura integrada.",
-    features: ["Gestão completa", "Eficiência tributária", "Flexibilidade máxima"],
+    features: ["Gestão completa", "Estrutura fiscal coerente", "Flexibilidade operacional"],
   },
   {
     title: "Holding Internacional",
     description:
-      "Estrutura offshore para proteção e internacionalização do patrimônio familiar.",
-    features: ["Jurisdições seguras", "Otimização fiscal", "Privacidade ampliada"],
+      "Estrutura no exterior para organização e internacionalização do patrimônio familiar.",
+    features: ["Jurisdições adequadas ao caso", "Estrutura fiscal coerente", "Discrição dentro das regras"],
   },
 ]
 
@@ -128,9 +128,9 @@ const processSteps = [
 ]
 
 const stats = [
-  { value: "10+", label: "Anos de Experiência" },
-  { value: "500+", label: "Holdings Estruturadas" },
-  { value: "R$2B+", label: "em Patrimônio Protegido" },
+  { value: "10+", label: "Anos de atuação" },
+  { value: "4", label: "Tipos de estrutura" },
+  { value: "360°", label: "Análise integrada" },
 ]
 
 export default function HoldingPage() {
@@ -164,8 +164,9 @@ export default function HoldingPage() {
             </h1>
 
             <p className="mt-10 text-base font-light text-muted-foreground max-w-xl mx-auto leading-relaxed">
-              Estruture seu patrimônio com segurança jurídica, eficiência tributária e
-              planejamento sucessório inteligente. Transformamos complexidade em estratégia.
+              Estruturação patrimonial e sucessória para empresários e famílias.
+              Organizamos holdings, governança, sucessão, contratos familiares e estruturas
+              patrimoniais com análise jurídica, tributária e societária integrada.
             </p>
 
             <div className="mt-12">
@@ -175,7 +176,7 @@ export default function HoldingPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-12 py-4 font-light text-[11px] uppercase tracking-[0.22em] rounded-full border border-foreground bg-foreground text-background transition-all duration-300 hover:opacity-80"
               >
-                Agendar Consultoria
+                Solicitar Diagnóstico Patrimonial
               </a>
             </div>
           </motion.div>

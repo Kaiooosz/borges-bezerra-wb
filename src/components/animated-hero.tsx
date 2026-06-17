@@ -138,8 +138,9 @@ export function AnimatedHero() {
               className="text-[15px] sm:text-base font-light max-w-md mx-auto leading-relaxed mb-10 mt-5 px-4"
               style={{ color: "rgba(255,255,255,0.4)" }}
             >
-              Consultoria jurídica de elite para proteção patrimonial internacional,
-              otimização tributária e estruturação de holdings globais.
+              Atuamos na interseção entre empresa, patrimônio, contratos, tributação,
+              regulação e internacionalização, desenhando caminhos jurídicos para
+              operações que exigem mais do que soluções padronizadas.
             </p>
 
             <a
@@ -162,7 +163,7 @@ export function AnimatedHero() {
             >
               {[
                 { value: "12+", label: "Países" },
-                { value: "R$122M+", label: "Economizados" },
+                { value: "6", label: "Áreas de atuação" },
                 { value: "2017", label: "No Mercado" },
               ].map((stat) => (
                 <div key={stat.label}>

@@ -13,12 +13,12 @@ const faqs = [
   {
     question: "Como a internacionalização pode ajudar meu negócio?",
     answer:
-      "A internacionalização oferece diversificação de riscos, acesso a mercados globais, otimização tributária legal, proteção cambial e maior credibilidade internacional. Permite também estruturar operações em jurisdições com ambiente regulatório mais favorável e custos operacionais reduzidos.",
+      "A internacionalização oferece diversificação de riscos, acesso a mercados globais, estrutura fiscal coerente com o regime aplicável, proteção cambial e maior credibilidade internacional. Permite também estruturar operações em jurisdições com ambiente regulatório mais favorável e custos operacionais reduzidos.",
   },
   {
     question: "Como funciona o cumprimento de obrigações fiscais em estruturas internacionais?",
     answer:
-      "Mantemos total conformidade com as legislações brasileiras e internacionais. Todas as estruturas são declaradas conforme exigências da Receita Federal, incluindo Declaração de Capitais Brasileiros no Exterior (CBE) e Imposto de Renda. Nosso planejamento tributário é 100% legal e transparente.",
+      "As estruturas são orientadas à conformidade com as legislações brasileiras e internacionais e declaradas conforme as exigências da Receita Federal, incluindo a Declaração de Capitais Brasileiros no Exterior (CBE) e o Imposto de Renda. O planejamento tributário segue a legislação aplicável, com transparência e documentação completa.",
   },
   {
     question: "Quanto tempo leva para abrir uma empresa offshore?",

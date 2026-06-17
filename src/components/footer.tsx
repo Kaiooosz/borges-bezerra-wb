@@ -121,8 +121,19 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Disclaimer */}
+        <div className="pt-8 border-t border-border">
+          <p className="text-[11px] text-muted-foreground/70 font-light leading-relaxed">
+            As informações deste site têm caráter educativo e não constituem promessa
+            padronizada de resultado, economia tributária ou proteção. Cada estrutura é
+            definida a partir de diagnóstico individualizado, e regimes fiscais, prazos e
+            obrigações variam conforme a jurisdição e o caso concreto, sujeitos à legislação
+            aplicável e às obrigações junto à Receita Federal.
+          </p>
+        </div>
+
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-8 mt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
             © 2025 Bezerra Borges Advogados. Todos os direitos reservados.
           </p>

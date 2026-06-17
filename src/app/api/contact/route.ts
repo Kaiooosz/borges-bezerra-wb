@@ -18,7 +18,7 @@ export async function POST(request: Request) {
       method: "POST",
       redirect: "follow",
       headers: { "Content-Type": "text/plain" },
-      body: JSON.stringify({ ...body, type: "contact" }),
+      body: JSON.stringify({ ...body, type: body.type || "contact" }),
     });
 
     const text = await response.text();

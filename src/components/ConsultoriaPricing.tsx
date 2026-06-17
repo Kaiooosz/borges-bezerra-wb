@@ -40,10 +40,10 @@ const plans = [
     badge: "MAIS VENDIDO",
     title: "Estratégia Brasil",
     price: "US$ 149",
-    description: "Sessão de 2h para elaborar estratégia de otimização tributária e proteção jurídica no Brasil.",
+    description: "Sessão de 2h para elaborar estratégia tributária e de proteção jurídica no Brasil, conforme o regime aplicável.",
     features: [
-      "Planejamento Proteção Patrimonial no Brasil",
-      "Otimização fiscal nacional",
+      "Planejamento de proteção patrimonial no Brasil",
+      "Estrutura fiscal nacional coerente",
       "Integração com offshore",
       "Valor 100% reembolsável ao fechar plano de abertura",
     ],

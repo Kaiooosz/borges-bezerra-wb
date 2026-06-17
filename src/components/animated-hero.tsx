@@ -1,20 +1,11 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
-import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
-
-const CYCLING_WORDS = ["mais resultados", "clareza", "segurança", "oportunidades"];
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export function AnimatedHero() {
   const ref = useRef<HTMLDivElement>(null);
-  const [wordIndex, setWordIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setWordIndex((i) => (i + 1) % CYCLING_WORDS.length);
-    }, 2800);
-    return () => clearInterval(interval);
-  }, []);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
@@ -114,24 +105,10 @@ export function AnimatedHero() {
               que transforma complexidades
             </h1>
             <h1
-              className="font-sans font-light uppercase heading-gradient leading-[0.88] tracking-tight flex items-baseline justify-center gap-[0.25em] flex-wrap"
+              className="font-sans font-light uppercase heading-gradient leading-[0.88] tracking-tight block"
               style={{ fontSize: "clamp(2rem, 5.5vw, 4.8rem)", letterSpacing: "-0.03em" }}
             >
-              <span>em</span>
-              <span className="relative inline-flex overflow-hidden" style={{ minWidth: "6ch" }}>
-                <AnimatePresence mode="wait">
-                  <motion.span
-                    key={CYCLING_WORDS[wordIndex]}
-                    initial={{ y: "100%", opacity: 0 }}
-                    animate={{ y: "0%", opacity: 1 }}
-                    exit={{ y: "-100%", opacity: 0 }}
-                    transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-                    className="inline-block whitespace-nowrap"
-                  >
-                    {CYCLING_WORDS[wordIndex]}.
-                  </motion.span>
-                </AnimatePresence>
-              </span>
+              em oportunidades.
             </h1>
 
             <p

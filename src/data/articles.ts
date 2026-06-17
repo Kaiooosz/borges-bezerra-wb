@@ -3178,7 +3178,7 @@ export const articles: Article[] = [
     excerpt: "As rotas de residência e cidadania paraguaia, a documentação envolvida, o sistema territorial de tributação e o que considerar antes de transferir residência fiscal.",
     category: "Internacionalização",
     date: "17 de Junho, 2026",
-    image: "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?q=80&w=2070&auto=format&fit=crop",
+    image: "/paraguai.jpg",
     slug: "cidadania-residencia-paraguai-brasileiros-como-funciona",
     readTime: "9 min",
     featured: true,

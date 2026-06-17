@@ -9,21 +9,21 @@ import { Building2, TrendingDown, ShieldOff, Award, ArrowRight } from "lucide-re
 const features = [
   {
     icon: TrendingDown,
-    title: "Redução de Impostos",
-    subtitle: "Até 90%",
-    description: "Estruturas tributárias legais que reduzem drasticamente a carga fiscal para infoprodutores.",
+    title: "Estrutura",
+    subtitle: "Tributária",
+    description: "Estruturas tributárias legais que organizam a carga fiscal conforme o regime aplicável a infoprodutores.",
   },
   {
     icon: ShieldOff,
-    title: "Blindagem",
-    subtitle: "Trabalhista",
-    description: "Proteção completa contra riscos trabalhistas com afiliados, parceiros e colaboradores.",
+    title: "Riscos",
+    subtitle: "Trabalhistas",
+    description: "Organização de riscos trabalhistas com afiliados, parceiros e colaboradores.",
   },
   {
     icon: Building2,
     title: "Proteção",
     subtitle: "de Lançamentos",
-    description: "Blindagem jurídica contra reembolsos abusivos, alunos mal-intencionados e disputas.",
+    description: "Proteção jurídica contra reembolsos abusivos, alunos mal-intencionados e disputas.",
   },
   {
     icon: Award,
@@ -34,8 +34,8 @@ const features = [
 ];
 
 const benefits = [
-  "Redução de até 90% em impostos",
-  "Blindagem trabalhista completa",
+  "Estrutura tributária conforme o regime aplicável",
+  "Organização de riscos trabalhistas",
   "Proteção contra alunos e reembolsos",
   "Registro de marcas e produtos",
   "Contratos com sócios e parceiros",
@@ -56,7 +56,7 @@ const process = [
   {
     step: "03",
     title: "Proteção Legal",
-    description: "Contratos, marcas e blindagem trabalhista implementados.",
+    description: "Contratos, marcas e organização de riscos trabalhistas implementados.",
   },
   {
     step: "04",

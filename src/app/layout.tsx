@@ -19,17 +19,50 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Bezerra Borges Advogados | Proteção Patrimonial e Offshore",
+  metadataBase: new URL("https://www.bezerraborges.com.br"),
+  title: {
+    default: "BBLAW | Estratégia Jurídica Empresarial, Patrimonial e Internacional",
+    template: "%s | BBLAW",
+  },
   description:
-    "Escritório especializado em abertura de empresas offshore, planejamento tributário internacional, proteção patrimonial e consultoria para criptomoedas. Transformamos complexidades em oportunidades.",
+    "Escritório com atuação em direito empresarial, tributário, societário, internacional, patrimonial, sucessório, cripto, fintechs e negócios digitais.",
   keywords:
-    "offshore, empresa offshore, planejamento tributário, proteção patrimonial, consultoria internacional, criptomoedas, holdings, conta internacional",
+    "direito empresarial, internacionalização empresarial, estruturação internacional, planejamento patrimonial, holding patrimonial, planejamento sucessório, governança familiar, direito tributário, cripto, fintech, negócios digitais, Lei 14.754",
   openGraph: {
-    title: "Bezerra Borges Advogados | Proteção Patrimonial e Offshore",
+    title: "BBLAW | Estratégia Jurídica Empresarial, Patrimonial e Internacional",
     description:
-      "Transformamos complexidades em oportunidades. Acesso global para indivíduos e negócios.",
+      "Estratégia jurídica para empresários, famílias e negócios digitais em decisões complexas.",
     type: "website",
   },
+};
+
+const legalServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  name: "Bezerra Borges Advogados",
+  alternateName: "BBLAW",
+  url: "https://www.bezerraborges.com.br",
+  description:
+    "Escritório com atuação em direito empresarial, tributário, societário, internacional, patrimonial, sucessório, cripto, fintechs e negócios digitais.",
+  email: "contato@bezerraborges.com.br",
+  telephone: "+55-21-97990-1686",
+  areaServed: "BR",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Av. Paulista, 1636, Conj. 4, 15º andar — Cerqueira César",
+    addressLocality: "São Paulo",
+    addressRegion: "SP",
+    addressCountry: "BR",
+  },
+  sameAs: ["https://www.instagram.com/bezerraeborges"],
+  knowsAbout: [
+    "Internacionalização empresarial",
+    "Holding patrimonial",
+    "Planejamento sucessório",
+    "Direito tributário",
+    "Cripto e fintechs",
+    "Lei 14.754",
+  ],
 };
 
 export default function RootLayout({
@@ -42,6 +75,10 @@ export default function RootLayout({
       <body
         className={`${sourceSerif.variable} ${inter.variable} font-sans antialiased relative`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(legalServiceSchema) }}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

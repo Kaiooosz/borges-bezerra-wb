@@ -10,7 +10,7 @@ const jurisdictions = [
   { name: "Estados Unidos", flag: "🇺🇸", benefits: "LLC, C-Corp, conta bancária" },
   { name: "Uruguai", flag: "🇺🇾", benefits: "SA, residência fiscal favorável" },
   { name: "Paraguai", flag: "🇵🇾", benefits: "Residência rápida, baixa tributação" },
-  { name: "Dubai", flag: "🇦🇪", benefits: "Free zones, 0% imposto de renda" },
+  { name: "Dubai", flag: "🇦🇪", benefits: "Free zones, regime fiscal favorável" },
   { name: "Estônia", flag: "🇪🇪", benefits: "E-residency, empresa 100% digital" },
   { name: "Nevis", flag: "🇰🇳", benefits: "Offshore clássico, privacidade" },
 ];

@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer";
 import { WorldMapSection } from "@/components/world-map-section";
 
 const WHATSAPP =
-  "https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20agendar%20uma%20consultoria%20offshore%20com%20a%20Bezerra%20Borges%20Advogados";
+  "https://wa.me/5521979901686?text=Olá,%20gostaria%20de%20solicitar%20um%20diagnóstico%20de%20internacionalização%20com%20a%20Bezerra%20Borges%20Advogados";
 
 const titleStyle = {
   
@@ -30,18 +30,18 @@ const heroPillStyle: React.CSSProperties = {
 const whyCards = [
   {
     Icon: Shield,
-    title: "Proteção Patrimonial",
+    title: "Organização Patrimonial",
     bullets: [
-      "Blindagem legal contra bloqueios judiciais",
+      "Separação patrimonial lícita e governança",
       "Separação patrimonial pessoa física vs empresa",
       "Mitigação de riscos com segregação lícita",
     ],
   },
   {
     Icon: TrendingUp,
-    title: "Otimização Tributária",
+    title: "Estrutura Tributária",
     bullets: [
-      "Eficiência fiscal legal e transparente",
+      "Estrutura fiscal coerente com o regime aplicável",
       "Diferimento de lucros e reinvestimento eficiente",
       "Tratados internacionais contra dupla tributação",
     ],
@@ -96,14 +96,14 @@ const jurisdictions = [
   },
   {
     country: "Nevis",
-    subtitle: "Máxima proteção",
+    subtitle: "Separação patrimonial robusta",
     tax: "0% sobre renda externa",
     setup: "Setup: 1–2 semanas",
     price: "$5.000 – $10.000",
     bullets: [
-      "Proteção contra credores líder mundial",
-      "Privacidade absoluta",
-      "Estruturas blindadas e trusts",
+      "Regime sólido de separação patrimonial",
+      "Níveis elevados de privacidade e documentação",
+      "Estruturas patrimoniais e trusts",
     ],
   },
   {
@@ -126,7 +126,7 @@ const jurisdictions = [
     price: "$6.000 – $12.000",
     bullets: [
       "Hub internacional premium",
-      "0% imposto pessoal",
+      "Regime fiscal favorável a empresas",
       "Infraestrutura de classe mundial",
     ],
   },
@@ -299,26 +299,28 @@ export default function OffshorePage() {
                 lineHeight: 1.05,
               }}
             >
-              Estruturas
+              Estrutura
             </h1>
             <h1
               className="font-sans font-light uppercase heading-gradient"
               style={{
-                fontSize: "clamp(3rem, 9vw, 8rem)",
+                fontSize: "clamp(2.6rem, 7.2vw, 6.4rem)",
                 ...dimTitleStyle,
                 lineHeight: 1.05,
               }}
             >
-              Offshore.
+              Internacional.
             </h1>
 
             <p className="mt-8 text-base font-light text-white/55 max-w-xl mx-auto leading-relaxed">
-              Proteção patrimonial e liberdade financeira com conformidade
-              internacional total.
+              Para negócios digitais e patrimoniais com operação, receita ou patrimônio
+              fora do Brasil. Avaliamos empresa, conta, contratos, recebimentos, tributação,
+              residência fiscal, patrimônio e sucessão para definir a estrutura
+              internacional adequada ao seu caso.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-3 justify-center">
-              <GlassPill href={WHATSAPP}>Agendar Consultoria</GlassPill>
+              <GlassPill href={WHATSAPP}>Solicitar Diagnóstico de Internacionalização</GlassPill>
               <GlassPill href="#jurisdicoes">Ver Jurisdições</GlassPill>
             </div>
           </motion.div>
@@ -608,6 +610,13 @@ export default function OffshorePage() {
             Patrimônio.
           </h2>
           <GlassPill href={WHATSAPP}>Falar com um Especialista</GlassPill>
+
+          <p className="mt-12 text-[11px] font-light text-muted-foreground/70 max-w-2xl mx-auto leading-relaxed">
+            Cada estrutura é definida a partir de diagnóstico individualizado. As informações
+            desta página são de caráter educativo e não constituem promessa padronizada de
+            resultado, economia tributária ou proteção. Regimes fiscais, prazos e obrigações
+            variam conforme a jurisdição e o caso concreto, sujeitos à legislação aplicável.
+          </p>
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export function AnimatedHero() {
@@ -120,19 +121,31 @@ export function AnimatedHero() {
               operações que exigem mais do que soluções padronizadas.
             </p>
 
-            <a
-              href="https://wa.me/5521979901686?text=Olá!%20Tenho%20interesse%20em%20proteção%20patrimonial%20e%20planejamento%20estratégico%20com%20a%20Bezerra%20Borges%20Advogados.%20Gostaria%20de%20agendar%20uma%20consulta%20inicial."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-12 py-4 font-light text-[11px] uppercase tracking-[0.22em] text-white rounded-full transition-all duration-300 hover:scale-[1.03] mb-16"
-              style={{
-                background: "rgba(255,255,255,0.08)",
-                border: "1px solid rgba(255,255,255,0.18)",
-                backdropFilter: "blur(12px)",
-              }}
-            >
-              Iniciar Agora
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-16">
+              <Link
+                href="/servicos"
+                className="inline-flex items-center justify-center px-10 py-4 font-light text-[11px] uppercase tracking-[0.22em] text-white rounded-full transition-all duration-300 hover:scale-[1.03]"
+                style={{
+                  background: "rgba(255,255,255,0.08)",
+                  border: "1px solid rgba(255,255,255,0.18)",
+                  backdropFilter: "blur(12px)",
+                }}
+              >
+                Conhecer áreas de atuação
+              </Link>
+              <a
+                href="https://wa.me/5521979901686?text=Olá!%20Gostaria%20de%20falar%20com%20a%20equipe%20da%20Bezerra%20Borges%20Advogados%20sobre%20o%20meu%20caso."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-10 py-4 font-light text-[11px] uppercase tracking-[0.22em] rounded-full transition-all duration-300 hover:scale-[1.03]"
+                style={{
+                  color: "rgba(255,255,255,0.7)",
+                  border: "1px solid rgba(255,255,255,0.12)",
+                }}
+              >
+                Falar com a equipe
+              </a>
+            </div>
 
             <div
               className="w-full max-w-2xl pt-8 grid grid-cols-3 gap-4 text-center px-4"

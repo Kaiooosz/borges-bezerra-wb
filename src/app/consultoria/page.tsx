@@ -7,6 +7,7 @@ import { Footer } from "@/components/footer";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Send, Calendar, CheckCircle } from "lucide-react";
+import { trackEvent } from "@/lib/gtag";
 
 // Substitua pelo link público de agendamento do Google Calendar
 // Crie em: Google Calendar → Criar → Compromisso → Configurar página de agendamento
@@ -54,6 +55,7 @@ export default function ConsultoriaPage() {
       });
       const data = await response.json();
       if (data.success) {
+        trackEvent("form_submit", { form: "consultoria" });
         setStep("success");
       } else {
         alert("Ocorreu um erro ao enviar. Tente novamente.");

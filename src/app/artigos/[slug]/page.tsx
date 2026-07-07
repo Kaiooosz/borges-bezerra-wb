@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { articles } from '@/data/articles';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import { ArticleReadTracker } from '@/components/article-read-tracker';
 import { Calendar, Clock, Share2, Linkedin, Twitter, Mail, ArrowLeft, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
@@ -119,6 +120,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                     dark:prose-headings:text-white dark:prose-p:text-white/60 dark:prose-strong:text-white dark:prose-li:text-white/60"
                     dangerouslySetInnerHTML={{ __html: article.content || '<p>Conteúdo não disponível.</p>' }}
                 />
+                <ArticleReadTracker slug={article.slug} />
 
                 {/* Share */}
                 <div className="border-t border-border pt-10 mt-12">

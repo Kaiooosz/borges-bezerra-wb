@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Send } from "lucide-react";
+import { trackEvent } from "@/lib/gtag";
 
 const OBJETIVOS = [
   "Internacionalização empresarial",
@@ -122,6 +123,7 @@ export function ContactForm() {
       });
       const data = await response.json();
       if (data.success) {
+        trackEvent("form_submit", { form: "contato" });
         setSubmitted(true);
         setFormData(EMPTY);
         setTimeout(() => setSubmitted(false), 6000);

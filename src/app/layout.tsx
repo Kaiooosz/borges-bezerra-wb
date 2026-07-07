@@ -4,6 +4,7 @@ import { Source_Serif_4, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "@/styles/global.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { AnalyticsEvents } from "@/components/analytics-events";
 import Script from "next/script";
 
 const sourceSerif = Source_Serif_4({
@@ -116,8 +117,14 @@ export default function RootLayout({
             gtag('js', new Date());
 
             gtag('config', 'AW-17998581237');
+            ${
+              process.env.NEXT_PUBLIC_GA_ID
+                ? `gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');`
+                : ""
+            }
           `}
         </Script>
+        <AnalyticsEvents />
         <Analytics />
       </body>
     </html>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import { trackEvent } from "@/lib/gtag";
 
 const plans = [
   {
@@ -55,6 +56,7 @@ export function ConsultoriaPricing() {
   const [loadingId, setLoadingId] = useState<string | null>(null);
 
   async function handleCheckout(productId: string, planId: string) {
+    trackEvent("begin_checkout", { plan: planId });
     setLoadingId(planId);
     try {
       const res = await fetch("/api/checkout", {

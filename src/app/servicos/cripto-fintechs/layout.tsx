@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Cripto, Fintechs e Regulação",
   description:
     "Licenças VASP, MSB e pagamentos, compliance AML/KYC, estruturação de exchanges e tokenização.",
+  alternates: { canonical: "/servicos/cripto-fintechs" },
 };
 
 export default function CriptoFintechsLayout({ children }: { children: React.ReactNode }) {

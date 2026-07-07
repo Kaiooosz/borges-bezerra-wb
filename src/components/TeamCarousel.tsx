@@ -87,13 +87,8 @@ export default function TeamCarousel() {
               className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
               style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
             >
-              Nosso Time
-            </h2>
-            <h2
-              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
-              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
-            >
-              De Especialistas.
+              <span className="block">Nosso Time</span>
+              <span className="block">De Especialistas.</span>
             </h2>
           </div>
           <p className="text-[15px] text-muted-foreground font-light max-w-sm mt-4">

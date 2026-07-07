@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Contencioso Estratégico",
   description:
     "Litígios empresariais e societários, defesa patrimonial, medidas cautelares e arbitragem internacional.",
+  alternates: { canonical: "/servicos/contencioso" },
 };
 
 export default function ContenciosoLayout({ children }: { children: React.ReactNode }) {

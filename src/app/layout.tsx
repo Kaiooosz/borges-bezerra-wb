@@ -33,6 +33,24 @@ export const metadata: Metadata = {
     description:
       "Estratégia jurídica para empresários, famílias e negócios digitais em decisões complexas.",
     type: "website",
+    url: "https://www.bezerraborges.com.br",
+    siteName: "Bezerra Borges Advogados",
+    locale: "pt_BR",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Bezerra Borges Advogados",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BBLAW | Estratégia Jurídica Empresarial, Patrimonial e Internacional",
+    description:
+      "Estratégia jurídica para empresários, famílias e negócios digitais em decisões complexas.",
+    images: ["/og-image.png"],
   },
 };
 

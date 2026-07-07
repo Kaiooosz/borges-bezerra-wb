@@ -97,19 +97,9 @@ export function AnimatedHero() {
               className="font-sans font-light uppercase heading-gradient leading-[0.88] tracking-tight block"
               style={{ fontSize: "clamp(2rem, 5.5vw, 4.8rem)", letterSpacing: "-0.03em" }}
             >
-              Inteligência Jurídica
-            </h1>
-            <h1
-              className="font-sans font-light uppercase heading-gradient leading-[0.88] tracking-tight block"
-              style={{ fontSize: "clamp(2rem, 5.5vw, 4.8rem)", letterSpacing: "-0.03em" }}
-            >
-              que transforma complexidades
-            </h1>
-            <h1
-              className="font-sans font-light uppercase heading-gradient leading-[0.88] tracking-tight block"
-              style={{ fontSize: "clamp(2rem, 5.5vw, 4.8rem)", letterSpacing: "-0.03em" }}
-            >
-              em oportunidades.
+              <span className="block">Inteligência Jurídica</span>
+              <span className="block">que transforma complexidades</span>
+              <span className="block">em oportunidades.</span>
             </h1>
 
             <p

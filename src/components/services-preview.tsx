@@ -72,13 +72,8 @@ export function ServicesPreview() {
                 className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
                 style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
               >
-                Nossas Áreas
-              </h2>
-              <h2
-                className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
-                style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
-              >
-                De Atuação.
+                <span className="block">Nossas Áreas</span>
+                <span className="block">De Atuação.</span>
               </h2>
             </div>
             <p className="text-[15px] text-muted-foreground font-light max-w-xs leading-relaxed md:pb-2">

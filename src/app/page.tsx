@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Header } from "@/components/header";
 import { AnimatedHero } from "@/components/animated-hero";
 import { ServicesPreview } from "@/components/services-preview";
@@ -7,6 +8,11 @@ import { ContactForm } from "@/components/contact-form";
 import { FAQ } from "@/components/faq";
 import TeamCarousel from '@/components/TeamCarousel';
 import { ConsultoriaPricing } from "@/components/ConsultoriaPricing";
+
+export const metadata: Metadata = {
+  title: { absolute: "BBLAW | Advocacia Empresarial, Patrimonial e Internacional" },
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   return (

@@ -94,13 +94,8 @@ export function ConsultoriaPricing() {
               className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
               style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
             >
-              Agende Agora
-            </h2>
-            <h2
-              className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
-              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)",  letterSpacing: "-0.025em" }}
-            >
-              Sua Consultoria.
+              <span className="block">Agende Agora</span>
+              <span className="block">Sua Consultoria.</span>
             </h2>
           </div>
         </motion.div>

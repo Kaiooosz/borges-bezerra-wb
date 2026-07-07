@@ -114,16 +114,16 @@ export function JurisdictionCards() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-2">
             <div>
               <h2
-                className="font-sans font-light uppercase text-white leading-[0.9] tracking-tight"
+                className="font-sans font-light uppercase leading-[0.9] tracking-tight"
                 style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
               >
-                Onde Estruturamos
-              </h2>
-              <h2
-                className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
-                style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)", color: "rgba(255,255,255,0.24)" }}
-              >
-                Seu Patrimônio.
+                <span className="block text-white">Onde Estruturamos</span>
+                <span
+                  className="block heading-gradient"
+                  style={{ color: "rgba(255,255,255,0.24)" }}
+                >
+                  Seu Patrimônio.
+                </span>
               </h2>
             </div>
             <p className="text-[14px] text-white/40 font-light max-w-xs leading-relaxed md:pb-2">

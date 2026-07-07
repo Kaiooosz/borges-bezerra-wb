@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Jurídico Estratégico Empresarial",
   description:
     "Contratos nacionais e internacionais, acordos societários, reorganização societária e apoio a startups e scale-ups.",
+  alternates: { canonical: "/servicos/juridico-estrategico" },
 };
 
 export default function JuridicoEstrategicoLayout({ children }: { children: React.ReactNode }) {

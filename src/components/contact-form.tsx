@@ -159,13 +159,8 @@ export function ContactForm() {
                   className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
                   style={{ fontSize: "clamp(2rem, 5vw, 4rem)" }}
                 >
-                  Solicite Seu
-                </h2>
-                <h2
-                  className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
-                  style={{ fontSize: "clamp(2rem, 5vw, 4rem)" }}
-                >
-                  Diagnóstico.
+                  <span className="block">Solicite Seu</span>
+                  <span className="block">Diagnóstico.</span>
                 </h2>
               </div>
               <p className="text-muted-foreground leading-relaxed">

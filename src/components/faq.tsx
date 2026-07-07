@@ -102,13 +102,8 @@ export function FAQ() {
                 className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
                 style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
               >
-                Perguntas
-              </h2>
-              <h2
-                className="font-sans font-light uppercase heading-gradient leading-[0.9] tracking-tight"
-                style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
-              >
-                Frequentes.
+                <span className="block">Perguntas</span>
+                <span className="block">Frequentes.</span>
               </h2>
             </div>
           </motion.div>

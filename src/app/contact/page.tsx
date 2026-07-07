@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Solicite seu Diagnóstico",
   description:
     "Responda algumas perguntas sobre o seu caso e receba o direcionamento certo para internacionalização, holding, sucessão ou proteção patrimonial.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

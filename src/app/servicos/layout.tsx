@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   },
   description:
     "Planejamento patrimonial, internacionalização, cripto e fintechs, jurídico estratégico, legal growth e contencioso estratégico.",
+  alternates: { canonical: "/servicos" },
 };
 
 export default function ServicosLayout({ children }: { children: React.ReactNode }) {

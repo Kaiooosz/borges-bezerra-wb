@@ -38,7 +38,7 @@ export function Header() {
     { href: "/", label: "Home" },
     { href: "/servicos", label: "Serviços" },
     { href: "/sobre-nos", label: "Sobre Nós" },
-    { href: "/Holding", label: "Holding" },
+    { href: "/holding", label: "Holding" },
     { href: "/offshore", label: "Offshore" },
     { href: "/artigos", label: "Artigos" },
     { href: "/contact", label: "Contato" },

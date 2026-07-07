@@ -117,11 +117,7 @@ export default function RootLayout({
             gtag('js', new Date());
 
             gtag('config', 'AW-17998581237');
-            ${
-              process.env.NEXT_PUBLIC_GA_ID
-                ? `gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');`
-                : ""
-            }
+            gtag('config', 'G-9YS6CVST2E');
           `}
         </Script>
         <AnalyticsEvents />

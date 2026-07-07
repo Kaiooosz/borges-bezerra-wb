@@ -76,6 +76,27 @@
   --sidebar-ring: oklch(0.95 0 0);
 }
 
+/* Seções sempre escuras (heros): mantêm as variáveis do tema escuro
+   mesmo quando o site está no tema claro, para texto/bordas com
+   text-foreground, border-foreground etc. não sumirem no fundo escuro */
+.dark-section {
+  --background: oklch(0.07 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.1 0 0);
+  --card-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.95 0 0);
+  --primary-foreground: oklch(0.07 0 0);
+  --secondary: oklch(0.14 0 0);
+  --secondary-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.15 0 0);
+  --muted-foreground: oklch(0.52 0 0);
+  --accent: oklch(0.15 0 0);
+  --accent-foreground: oklch(0.95 0 0);
+  --border: oklch(0.19 0 0);
+  --input: oklch(0.16 0 0);
+  --ring: oklch(0.95 0 0);
+}
+
 @theme inline {
   --font-sans: var(--font-sans), "Inter", system-ui, sans-serif;
   --font-source-serif-pro: var(--font-source-serif-pro), "Source Serif 4", Georgia, serif;
